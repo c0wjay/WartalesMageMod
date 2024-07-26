@@ -40817,6 +40817,10 @@
             <name>혼란 가루</name>
             <desc>닿으면 피부가 화끈거리고 가려워지는 가루입니다.</desc>
         </ConfusingPowder>
+        <MasterBall>
+            <name>마스터 볼</name>
+            <desc>이 볼은 포획 불가능한 적을 일정 확률로 포획할 수 있습니다.</desc>
+        </MasterBall>
         <IncendiaryFlask>
             <name>화염병</name>
             <desc>술에 적신 천 조각이 병 중간까지 들어가 있습니다.</desc>
@@ -47778,6 +47782,10 @@
             <name>혼란</name>
             <desc>범위 안의 모든 유닛이 [Confus] 상태가 됩니다.</desc>
         </ConfusingPowder>
+        <MasterBall>
+            <name>마스터 볼 던지기</name>
+            <desc>남은 [Health]이(가) ::value2::% 이하의 대상에게 마스터 볼을 던져 ::value1::%의 확률로 포획합니다.</desc>
+        </MasterBall>
         <FogPowder>
             <name>먼지구름</name>
             <desc>[DustFog]를 생성합니다.</desc>

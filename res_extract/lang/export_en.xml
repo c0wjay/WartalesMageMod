@@ -40817,6 +40817,10 @@
             <name>Confusion Powder</name>
             <desc>This powder burns and itches when it comes into contact with the skin.</desc>
         </ConfusingPowder>
+        <MasterBall>
+            <name>Master Ball</name>
+            <desc>This ball has a chance to capture non-capturable enemies.</desc>
+		</MasterBall>
         <IncendiaryFlask>
             <name>Incendiary Flask</name>
             <desc>An alcohol-soaked rag inserted partway into a flask.</desc>
@@ -47778,6 +47782,10 @@
             <name>Confusion</name>
             <desc>All units in the area get the [Confus] status.</desc>
         </ConfusingPowder>
+        <MasterBall>
+            <name>Throwing Master Ball</name>
+            <desc>Throw a Master Ball at a target with less than or equal to ::value2::% remaining [Health], with a chance to catch it at ::value1::%.</desc>
+		</MasterBall>
         <FogPowder>
             <name>Dust Cloud</name>
             <desc>Creates a [DustFog].</desc>
