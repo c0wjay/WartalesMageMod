@@ -1,0 +1,207 @@
+{
+    "id": "EarthQuake",
+    "name": "Earthquake",
+    "desc": "",
+    "mode": 5,
+    "range": {
+        "type": 0,
+        "radius": 1,
+        "baseDistance": 6
+    },
+    "props": {
+		"isHeroic": true,
+		"apCost": 0,
+        "defaultAction": true,
+		"vars": {
+            "multiplier": 0.4,
+            "fixdmg": 50,
+            "elite": 0.25
+		},
+		"needDisengaged": true,
+        "castFx": "prefabs/fx/environment/RockSlide/RockSlide.fx",
+        "flags": 1
+    },
+    "script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.stats.health + t.stats.armor;\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * (skill.unit.stats.willpower / 100);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedElement ) {\n\t\t\tdamage += ( damage * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\treturn ceil(damage);\n}",
+    "notes": "",
+	"levels": [
+		{
+			"props": {
+				"vars": {
+					"multiplier": 0.5,
+					"fixdmg": 100
+				}
+			}
+		}
+	],
+    "icon": {
+        "file": "ui/Icons/BattleIcons_02_96PX.png",
+        "size": 96,
+        "x": 3,
+        "y": 7
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "FireBall",
+    "name": "Fire Ball",
+    "desc": "",
+    "mode": 5,
+    "range": {
+        "type": 0,
+        "radius": 3,
+        "allowedTargets": 4,
+        "baseDistance": 6
+    },
+    "props": {
+		"isHeroic": true,
+        "tooltipStatus": [
+            {
+                "st": "Fire"
+            },
+            {
+                "st": "Burning"
+            }
+        ],
+        "apCost": 1,
+        "damageType": [
+            0
+        ],
+        "castFx": "prefabs/fx/fight/Explosion/Molotov/MolotovExplosion.fx",
+        "vars": {
+            "multiplier": 0.15,
+            "fixdmg": 20,
+            "elite": 0.20
+        },
+        "flags": 1,
+        "throwFx": "prefabs/fx/activity/Rouste/FlameBall.fx",
+        "needDisengaged": true
+    },
+    "script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction onZoneHit() {\n\tcreateSkillZone(Skill.FireZone);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.stats.health + t.stats.armor;\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * (skill.unit.stats.willpower / 100);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedElement ) {\n\t\t\tdamage += ( damage * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\treturn ceil(damage);\n}",
+    "notes": "",
+	"levels": [
+		{
+			"props": {
+				"vars": {
+					"multiplier": 0.2,
+					"fixdmg": 30
+				}
+			}
+		}
+	],
+    "icon": {
+        "file": "ui/Icons/BattleIcons_02_96PX.png",
+        "size": 96,
+        "x": 10,
+        "y": 19
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "ThunderStorm",
+    "name": "Thunder Storm",
+    "desc": "",
+    "mode": 5,
+    "range": {
+        "type": 0,
+        "radius": 2,
+        "allowedTargets": 4,
+        "baseDistance": 6
+    },
+    "props": {
+		"isHeroic": true,
+        "apCost": 2,
+        "castFx": "prefabs/fx/environment/lightning/EyeLightning_SecretStrike.fx",
+        "vars": {
+            "multiplier": 0.2,
+            "fixdmg": 25,
+            "elite": 0.33
+        },
+        "needDisengaged": true,
+        "flags": 2
+    },
+    "script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction onPostSkill() {\n\tif ( skill.level == 2 )\n\t\tcast(Skill.ThunderStormZone, { skill : skill }, skill);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.stats.health;\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * (skill.unit.stats.willpower / 100);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedElement ) {\n\t\t\tdamage += ( damage * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\treturn ceil(damage);\n}",
+    "notes": "",
+	"levels": [
+		{
+			"props": {
+				"vars": {
+					"multiplier": 0.3,
+					"fixdmg": 50
+				},
+				"tooltipStatus": [
+					{
+						"st": "Immobile"
+					}
+				]
+			}
+		}
+	],
+    "icon": {
+        "file": "ui/Icons/BattleIcons_02_96PX.png",
+        "size": 96,
+        "x": 0,
+        "y": 19
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "ThunderStormZone",
+    "name": "Charged Cloud",
+    "desc": "",
+    "mode": 5,
+    "range": {
+        "type": 0,
+        "radius": 2,
+        "allowedTargets": 4
+    },
+    "props": {
+        "castFx": "prefabs/fx/environment/lightning/CelestiumBattleLightning.fx",
+        "flags": 2,
+        "tooltipStatus": [
+            {
+                "st": "Immobile"
+            }
+        ],
+        "zoneFx": "prefabs/fx/environment/lightning/BattleCelestiumElectrifiedZone.fx"
+    },
+    "script": "function onSkill() {\n\tcreateAreaEffect(\"Infinite\", 0);\n}\n\nfunction onZoneIn( a ) {\n\ta.stopMove(true);\n\tcast(Skill.Discharge, { unit : a.target }, skill);\n\ta.target.addStatus(Status.Immobile);\n\ta.remove();\n}",
+    "notes": "",
+    "iconeDone": true,
+    "group": 16,
+    "icon": {
+        "file": "ui/Icons/BattleIcons_02_96PX.png",
+        "size": 96,
+        "x": 1,
+        "y": 19
+    },
+    "done": 2
+},
+{
+    "id": "Discharge",
+    "name": "",
+    "desc": "",
+    "mode": 0,
+    "range": {
+        "allowedTargets": 5
+    },
+    "props": {
+        "flags": 2,
+        "vars": {
+            "value1": 20,
+            "value2": 5
+        },
+        "castFx": "prefabs/fx/fight/status/Electrified.fx"
+    },
+    "script": "function onEval(a) {\n\tvar value = a.target.hasStatus(Status.Champion) ? vars.value2 : vars.value1;\n\ta.dmg = floor(a.target.health * value / 100);\n}",
+    "notes": "",
+    "done": 2,
+    "iconeDone": true,
+    "group": 16,
+    "minDmg": 1
+},

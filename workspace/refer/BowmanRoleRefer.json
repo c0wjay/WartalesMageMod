@@ -1,0 +1,352 @@
+{
+	"id": "Bowman",
+	"weaponTypes": [
+		{
+			"wp": "Bow"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "Aim",
+			"minLevel": 0
+		},
+		{
+			"skill": "Dash",
+			"minLevel": 0
+		},
+		{
+			"skill": "FirstAid",
+			"minLevel": 0
+		},
+		{
+			"skill": "BraveBoldness",
+			"minLevel": 2
+		},
+		{
+			"skill": "BraveVictory",
+			"minLevel": 2
+		},
+		{
+			"skill": "BraveSupport",
+			"minLevel": 2
+		},
+		{
+			"skill": "ReinforcedArrows",
+			"minLevel": 5
+		},
+		{
+			"skill": "Precision",
+			"minLevel": 5
+		},
+		{
+			"skill": "BeastMaster",
+			"minLevel": 5
+		},
+		{
+			"skill": "TrainingArrow",
+			"minLevel": 8
+		},
+		{
+			"skill": "ThrillOfTheHunt",
+			"minLevel": 8
+		},
+		{
+			"skill": "AnimalConnection",
+			"minLevel": 8
+		},
+		{
+			"skill": "WeaponSwapBow",
+			"minLevel": 10
+		},
+		{
+			"skill": "Anticipation",
+			"minLevel": 10
+		},
+		{
+			"skill": "LoneWolf",
+			"minLevel": 10
+		},
+		{
+			"skill": "SuppressFire",
+			"minLevel": 12
+		},
+		{
+			"skill": "ClassSpecialization",
+			"minLevel": 12
+		}
+	],
+	"props": {
+		"flags": 2
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 5,
+			"attribute": "Dexterity",
+			"upValue": 38
+		},
+		{
+			"value": 8,
+			"attribute": "Constitution",
+			"upValue": 44
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 6,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_B.prefab",
+	"notes": "",
+	"name": "Archer",
+	"tier": 0,
+	"equipment": [
+		{
+			"armor": "BaseArmorStart1",
+			"weapon": "BowStart"
+		}
+	],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Hunter",
+	"weaponTypes": [
+		{
+			"wp": "Bow"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "RecoilShot"
+		}
+	],
+	"props": {
+		"armorKind": "ArmorLight",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 5,
+			"attribute": "Dexterity",
+			"upValue": 38
+		},
+		{
+			"value": 8,
+			"attribute": "Constitution",
+			"upValue": 44
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 6,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_B.prefab",
+	"name": "Chasseur",
+	"notes": "VL",
+	"tier": 1,
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "BeastMaster",
+	"weaponTypes": [
+		{
+			"wp": "Bow"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "ATTACK"
+		}
+	],
+	"props": {
+		"armorKind": "ArmorLight",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 5,
+			"attribute": "Dexterity",
+			"upValue": 38
+		},
+		{
+			"value": 8,
+			"attribute": "Constitution",
+			"upValue": 44
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 6,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_B.prefab",
+	"name": "Dresseur",
+	"notes": "L",
+	"tier": 1,
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Skirmisher",
+	"weaponTypes": [
+		{
+			"wp": "Bow"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "Barrage"
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorLight",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 5,
+			"attribute": "Dexterity",
+			"upValue": 38
+		},
+		{
+			"value": 8,
+			"attribute": "Constitution",
+			"upValue": 44
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 6,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_B.prefab",
+	"notes": "VL",
+	"name": "Tirailleur",
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Marksman",
+	"weaponTypes": [
+		{
+			"wp": "Bow"
+		}
+	],
+	"equipment": [],
+	"baseSkills": [
+		{
+			"skill": "AimedShot"
+		},
+		{
+			"skill": "Subtlety",
+			"minLevel": 5
+		},
+		{
+			"skill": "HuntingDownEasyprey",
+			"minLevel": 8
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorLight",
+		"flags": 2080
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 5,
+			"attribute": "Dexterity",
+			"upValue": 38
+		},
+		{
+			"value": 8,
+			"attribute": "Constitution",
+			"upValue": 44
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 6,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_B.prefab",
+	"notes": "VL",
+	"name": "Tireur",
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},

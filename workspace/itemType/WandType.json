@@ -1,0 +1,24 @@
+{
+    "id": "Wand",
+    "name": "Canne",
+    "icon": {
+        "file": "ui/Icons/WM_Icons.png",
+        "size": 42,
+        "x": 5,
+        "y": 0
+    },
+    "parentType": "Weapon",
+    "props": {
+        "isCraftSeparator": true,
+        "dismantleLoot": "DismantleWand",
+        "baseBonusDefault": "WandBase",
+        "nameCraftCategory": "Cannes"
+    },
+    "equipDefault": {
+        "file": "ui/Icons/GearIcons/1HHammersIcons.png",
+        "size": 96,
+        "x": 0,
+        "y": 0,
+        "height": 2
+    }
+}

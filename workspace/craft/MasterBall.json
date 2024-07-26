@@ -1,0 +1,40 @@
+// under "Grapple"
+
+
+{
+    "item": "MasterBall",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 12,
+            "item": "Rimesteel"
+        },
+        {
+            "qty": 8,
+            "item": "GoldMineral"
+        },
+        {
+            "qty": 3,
+            "item": "AlazarFeast"
+        },
+        {
+            "qty": 2,
+            "item": "OilWindfury"
+        },
+        {
+            "qty": 2,
+            "item": "OilSlowProc1"
+        }
+    ],
+    "props": {
+        "produces": 2
+    },
+    "learnCost": [
+        {
+            "qty": 3,
+            "item": "Knowledge"
+        }
+    ],
+    "itemCost": [],
+    "jobLevel": 5
+}

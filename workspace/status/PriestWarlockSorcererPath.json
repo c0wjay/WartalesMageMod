@@ -1,0 +1,104 @@
+{
+    "id": "ReinforcedRecovery",
+    "name": "Reinforced Recovery",
+    "desc": "",
+    "props": {
+        "stackable": true,
+        "maxStacks": 10
+    },
+    "group": 4,
+    "icon": {
+        "file": "ui/Icons/statusIcons.png",
+        "size": 32,
+        "x": 13,
+        "y": 8
+    },
+    "attributes": [
+        {
+            "kind": "Willpower",
+            "value": 2,
+            "isPercentage": true,
+            "valueEasy": 3,
+            "valueHard": 1
+        }
+    ],
+    "iconeDone": true
+},
+{
+    "id": "ReinforcedCurse",
+    "name": "Reinforced Curse",
+    "desc": "",
+    "props": {
+        "stackable": true,
+        "maxStacks": 10
+    },
+    "group": 4,
+    "icon": {
+        "file": "ui/Icons/statusIcons.png",
+        "size": 32,
+        "x": 13,
+        "y": 8
+    },
+    "attributes": [
+        {
+            "kind": "Willpower",
+            "value": 2,
+            "isPercentage": true,
+            "valueEasy": 3,
+            "valueHard": 1
+        }
+    ],
+    "iconeDone": true
+},
+{
+    "id": "ReinforcedElement",
+    "name": "Reinforced Element",
+    "desc": "",
+    "props": {
+        "stackable": true,
+        "maxStacks": 10
+    },
+    "group": 4,
+    "icon": {
+        "file": "ui/Icons/statusIcons.png",
+        "size": 32,
+        "x": 13,
+        "y": 8
+    },
+    "attributes": [
+        {
+            "kind": "Willpower",
+            "value": 2,
+            "isPercentage": true,
+            "valueEasy": 3,
+            "valueHard": 1
+        }
+    ],
+    "iconeDone": true
+},
+{
+    "id": "ReinforcedNecromancy",
+    "name": "Reinforced Necromancy",
+    "desc": "",
+    "props": {
+        "stackable": true,
+        "maxStacks": 10
+    },
+    "group": 4,
+    "icon": {
+        "file": "ui/Icons/statusIcons.png",
+        "size": 32,
+        "x": 13,
+        "y": 8
+    },
+    "attributes": [
+        {
+            "kind": "Willpower",
+            "value": 2,
+            "isPercentage": true,
+            "valueEasy": 3,
+            "valueHard": 1
+        }
+    ],
+    "iconeDone": true
+},

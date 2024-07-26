@@ -1,0 +1,3722 @@
+{
+    "name": "status",
+    "columns": [
+        {
+            "typeStr": "0",
+            "name": "id"
+        },
+        {
+            "typeStr": "14",
+            "name": "icon"
+        },
+        {
+            "typeStr": "1",
+            "name": "name",
+            "kind": "localizable"
+        },
+        {
+            "typeStr": "1",
+            "name": "namePlural",
+            "kind": "localizable",
+            "opt": true
+        },
+        {
+            "typeStr": "1",
+            "name": "desc",
+            "kind": "localizable"
+        },
+        {
+            "typeStr": "8",
+            "name": "attributes"
+        },
+        {
+            "typeStr": "17",
+            "name": "props"
+        },
+        {
+            "typeStr": "1",
+            "name": "notes",
+            "opt": true
+        },
+        {
+            "typeStr": "2",
+            "name": "iconeDone",
+            "editor": {
+                "categories": [
+                    "todoInfo"
+                ]
+            }
+        }
+    ],
+    "lines": [
+        {
+            "id": "No_Status",
+            "name": "MUST BE CHANGED",
+            "desc": "",
+            "attributes": [],
+            "props": {},
+            "iconeDone": true,
+            "group": 0,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 2
+            }
+        },
+        {
+            "id": "Targeting",
+            "name": "Ciblage",
+            "desc": "Cette unité prépare une compétence. Elle ne peut faire aucune autre action  et ne peut pas se faire engager.",
+            "props": {},
+            "group": 0,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 15,
+                "y": 1
+            },
+            "attributes": [],
+            "iconeDone": true
+        },
+        {
+            "id": "Engaged",
+            "name": "Engagé",
+            "desc": "Cette unité peut seulement cibler l'adversaire engagé et a [VALUE]% de chances de subir un coup critique de la part des autres unités (20% de dos).",
+            "attributes": [],
+            "props": {
+                "value": 10,
+                "important": true
+            },
+            "group": 0,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "CriticalHit",
+            "name": "Coup critique",
+            "desc": "[DamageBonusPercent] de l'attaque augmentés de [VALUE]%.",
+            "attributes": [],
+            "props": {
+                "value": 25,
+                "attributeValue": "CritHitDamageBonusPercent"
+            },
+            "group": 1,
+            "iconeDone": true
+        },
+        {
+            "id": "OpportunityAttack",
+            "name": "Attaque d'opportunité",
+            "desc": "Une attaque qui inflige [VALUE]% de l'attribut principal, [Strength] ou [Dexterity].",
+            "attributes": [],
+            "props": {
+                "value": 100,
+                "attributeValue": "DamageBonusOppAttack"
+            },
+            "group": 1,
+            "iconeDone": true
+        },
+        {
+            "id": "Pushback",
+            "name": "Repousser",
+            "desc": "La cible effectue un déplacement forcé dans la direction opposée.",
+            "attributes": [],
+            "props": {},
+            "group": 1,
+            "iconeDone": true
+        },
+        {
+            "id": "ActionBase",
+            "name": "Action de base",
+            "desc": "Vous ne pouvez utiliser qu'une seule action ou attaque de base par tour. ",
+            "attributes": [],
+            "props": {},
+            "group": 1,
+            "iconeDone": true
+        },
+        {
+            "id": "Ultimate",
+            "name": "Coup d'éclat",
+            "desc": "Ces compétences vous permettront d'établir de nouvelles stratégies dans vos combats.\n\nVotre troupe peut réaliser un seul Coup d'éclat par round. Chaque compagnon a le possibilité de faire son Coup d'éclat qu'une seule fois par combat.",
+            "attributes": [],
+            "props": {},
+            "iconeDone": true,
+            "group": 1
+        },
+        {
+            "id": "Leader",
+            "name": "Leader",
+            "desc": "[Strength], [Dexterity] et [Constitution] augmentées de [ATTR_0]%. Ne peux pas être capturé.",
+            "props": {
+                "important": true,
+                "persistent": true
+            },
+            "group": 2,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 9
+            },
+            "attributes": [
+                {
+                    "kind": "Strength",
+                    "value": 30,
+                    "isPercentage": true,
+                    "valueEasy": 30,
+                    "valueHard": 30
+                },
+                {
+                    "kind": "Dexterity",
+                    "value": 30,
+                    "isPercentage": true,
+                    "valueHard": 30,
+                    "valueEasy": 30
+                },
+                {
+                    "kind": "Constitution",
+                    "value": 30,
+                    "isPercentage": true,
+                    "valueHard": 30,
+                    "valueEasy": 30
+                },
+                {
+                    "kind": "Willpower",
+                    "value": 30,
+                    "isPercentage": true,
+                    "valueHard": 30,
+                    "valueEasy": 30
+                }
+            ],
+            "iconeDone": true
+        },
+        {
+            "id": "Gladiator",
+            "name": "Gladiateur",
+            "desc": "[Strength], [Dexterity] et [Constitution] augmentées de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "Strength",
+                    "value": 50,
+                    "isPercentage": true,
+                    "valueEasy": 40,
+                    "valueHard": 60
+                },
+                {
+                    "kind": "Dexterity",
+                    "value": 50,
+                    "isPercentage": true,
+                    "valueEasy": 40,
+                    "valueHard": 60
+                },
+                {
+                    "kind": "Constitution",
+                    "value": 50,
+                    "isPercentage": true,
+                    "valueEasy": 40,
+                    "valueHard": 60
+                }
+            ],
+            "props": {
+                "important": true,
+                "persistent": true
+            },
+            "group": 2,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 9
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Champion",
+            "name": "Elite",
+            "desc": "Peut utiliser plusieurs compétences dans un même round.\nLes dégâts sur la durée sont grandement diminués et ne se déclenchent qu'à la fin du round.\nNe peut pas être capturé.",
+            "attributes": [],
+            "props": {
+                "important": true,
+                "persistent": true
+            },
+            "group": 2,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 17,
+                "y": 0
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Skilled",
+            "name": "Aguerri",
+            "desc": "[Strength], [Dexterity] et [Constitution] augmentées de [ATTR_0]%.\nNe peut pas être capturé.",
+            "attributes": [
+                {
+                    "kind": "Strength",
+                    "value": 20,
+                    "isPercentage": true,
+                    "valueEasy": 15,
+                    "valueHard": 30
+                },
+                {
+                    "kind": "Dexterity",
+                    "value": 20,
+                    "isPercentage": true,
+                    "valueEasy": 15,
+                    "valueHard": 30
+                },
+                {
+                    "kind": "Constitution",
+                    "value": 20,
+                    "isPercentage": true,
+                    "valueEasy": 15,
+                    "valueHard": 30
+                }
+            ],
+            "props": {
+                "important": true,
+                "persistent": true
+            },
+            "iconeDone": true,
+            "group": 2,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 12,
+                "y": 9
+            }
+        },
+        {
+            "id": "ImportantUnit",
+            "name": "Personnage important",
+            "desc": "Cette unité est un personnage important. Si cette unité meurt, vous devrez relancer le combat.",
+            "attributes": [],
+            "props": {
+                "important": true,
+                "preventCancel": true
+            },
+            "group": 2,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 15,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "ScaredUnit",
+            "name": "Personnage apeuré",
+            "desc": "Cette unité est apeurée. Elle ne peut que se défendre ou fuir.",
+            "attributes": [],
+            "props": {
+                "important": true,
+                "preventCancel": true
+            },
+            "iconeDone": true,
+            "group": 2,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 3,
+                "y": 9
+            }
+        },
+        {
+            "id": "Tired",
+            "name": "Fatigué",
+            "desc": "[Strength] et [Dexterity] réduites de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "Strength",
+                    "value": -30,
+                    "isPercentage": true
+                },
+                {
+                    "kind": "Dexterity",
+                    "value": -30,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "persistent": true,
+                "important": true
+            },
+            "group": 3,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 12,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "HairGrowing",
+            "name": "Repousse de cheveux",
+            "desc": "Selon les inscriptions sur le flacon, il faut dormir pour que le repousse-cheveux fasse effet.",
+            "attributes": [],
+            "props": {
+                "hideInFight": true,
+                "persistent": true,
+                "importantCamp": true,
+                "cancelOn": 7,
+                "refElement": "HairGrowingElement"
+            },
+            "group": 3,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 7,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Galvanization",
+            "name": "Galvanisation",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.",
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 1
+            },
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 50
+                }
+            ],
+            "iconeDone": true
+        },
+        {
+            "id": "Motivation",
+            "name": "Motivé",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 10
+                }
+            ],
+            "props": {},
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 1,
+                "y": 8
+            }
+        },
+        {
+            "id": "Fury",
+            "name": "Fureur",
+            "desc": "[DamageBonusPercent] de la prochaine attaque augmentés de [ATTR_0]%.",
+            "props": {
+                "cancelOn": 5
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 10,
+                "y": 0
+            },
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 50
+                }
+            ],
+            "iconeDone": true
+        },
+        {
+            "id": "Brutality",
+            "name": "Brutalité",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.",
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 13,
+                "y": 0
+            },
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 30
+                }
+            ],
+            "iconeDone": true
+        },
+        {
+            "id": "Protection",
+            "name": "Protection",
+            "desc": "[DamageReducePercent] réduits de [ATTR_0]%.",
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 14,
+                "y": 0
+            },
+            "attributes": [
+                {
+                    "kind": "DamageReducePercent",
+                    "value": 30
+                }
+            ],
+            "iconeDone": true
+        },
+        {
+            "id": "Inspiration",
+            "name": "Inspiration",
+            "desc": "[Movement] doublé.",
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 8,
+                "y": 0
+            },
+            "attributes": [
+                {
+                    "kind": "Movement",
+                    "value": 100,
+                    "isPercentage": true
+                }
+            ],
+            "iconeDone": true
+        },
+        {
+            "id": "Deftness",
+            "name": "Habileté",
+            "desc": "Portée de la prochaine attaque doublée et précision améliorée.",
+            "attributes": [
+                {
+                    "kind": "DistanceBonus",
+                    "value": 100,
+                    "isPercentage": true
+                },
+                {
+                    "kind": "PrecisionBonus",
+                    "value": 100
+                }
+            ],
+            "props": {
+                "cancelOn": 5
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 3,
+                "y": 0
+            },
+            "notes": "",
+            "iconeDone": true
+        },
+        {
+            "id": "Deflection",
+            "name": "Déviation",
+            "desc": "[DamageReducePercent] de la prochaine attaque réduits de [ATTR_0]%.",
+            "props": {
+                "cancelOn": 4
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 1,
+                "y": 0
+            },
+            "attributes": [
+                {
+                    "kind": "DamageReducePercent",
+                    "value": 70
+                }
+            ],
+            "iconeDone": true
+        },
+        {
+            "id": "Riposte",
+            "name": "Riposte",
+            "desc": "La prochaine fois que cette unité est attaquée par son adversaire engagé, elle le frappe en retour avec une attaque d'opportunité.\nRetiré si se déplace.",
+            "props": {
+                "cancelOn": 2
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 4,
+                "y": 0
+            },
+            "attributes": [],
+            "notes": "hard coded",
+            "iconeDone": true
+        },
+        {
+            "id": "Dodge",
+            "name": "Esquive",
+            "desc": "Esquive entièrement la prochaine attaque subie.\nRetiré si se déplace.",
+            "props": {
+                "cancelOn": 2
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 7,
+                "y": 0
+            },
+            "attributes": [],
+            "iconeDone": true
+        },
+        {
+            "id": "OilStrengthProc1",
+            "name": "",
+            "desc": "[Strength] augmentée de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "Strength",
+                    "value": 10,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 3
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "OilDexterityProc1",
+            "name": "",
+            "desc": "[Dexterity] augmentée de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "Dexterity",
+                    "value": 10,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 3
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "OilDamageTakenProc1",
+            "name": "",
+            "desc": "[DamageReducePercent] réduits de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageReducePercent",
+                    "value": 10
+                }
+            ],
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 3
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "BeltAccGuardEngaged",
+            "name": "",
+            "desc": "[Guard] augmentée de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "Guard",
+                    "value": 10
+                }
+            ],
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 7,
+                "y": 3
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Fog",
+            "name": "Brouillard",
+            "desc": "Cette unité est invisible des autres unités.",
+            "attributes": [],
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 18,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Unity",
+            "name": "Unité",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]% car adjacent à un allié.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 10
+                }
+            ],
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 16,
+                "y": 3
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Loneliness",
+            "name": "Solitude",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]% car non-adjacent à un allié.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 5
+                }
+            ],
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 15,
+                "y": 3
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Wrath",
+            "name": "Courroux",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 30
+                }
+            ],
+            "props": {
+                "stackable": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 17,
+                "y": 3
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Supported",
+            "name": "Supporté",
+            "desc": "Cette unité est engagée et adjacente à [VALUE] alliés libres.\n\n[DamageReducePercent] réduits de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageReducePercent",
+                    "value": 20
+                }
+            ],
+            "props": {
+                "important": true,
+                "value": 2
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 18,
+                "y": 3
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "CriticalLeader",
+            "name": "Agressivité du chef",
+            "desc": "[CritHitPercent] augmentés de [ATTR_0]%",
+            "attributes": [
+                {
+                    "kind": "CritHitPercent",
+                    "value": 30,
+                    "valueEasy": 20,
+                    "valueHard": 40
+                }
+            ],
+            "props": {
+                "important": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 4,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "ProtectionLeader",
+            "name": "Protection du chef",
+            "desc": "[DamageReducePercent] réduits de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageReducePercent",
+                    "value": 15,
+                    "valueEasy": 10,
+                    "valueHard": 20
+                }
+            ],
+            "props": {
+                "important": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "TrueDamageLeader",
+            "name": "Opportunisme du chef",
+            "desc": "Les attaques de cette unité font également perdre [VALUE]% de la [Health] des unités touchées.",
+            "attributes": [],
+            "props": {
+                "value": 5,
+                "important": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 5,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "InspirationLeader",
+            "name": "Inspiration du chef",
+            "desc": "[Movement] augmenté de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "Movement",
+                    "value": 50,
+                    "isPercentage": true,
+                    "valueEasy": 40,
+                    "valueHard": 60
+                }
+            ],
+            "props": {
+                "important": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 3,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "BrutalityLeader",
+            "name": "Brutalité du chef",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 20,
+                    "valueEasy": 15,
+                    "valueHard": 25
+                }
+            ],
+            "props": {
+                "important": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "DmgPerBonusLeader",
+            "name": "Volonté du chef",
+            "desc": "[DamageBonusPercent] augmentés de [VALUE]% pour chaque Bonus appliqué sur la cible de ses attaques.",
+            "attributes": [],
+            "props": {
+                "value": 40,
+                "important": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 7,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "SupportLeader",
+            "name": "Soutien du chef",
+            "desc": "La [Guard] de cette unité est égale à la meilleure [Guard] parmi celles de cette unité et de ses alliés proches ([VALUE] mètres).",
+            "attributes": [],
+            "props": {
+                "value": 4
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 8
+            },
+            "notes": ""
+        },
+        {
+            "id": "AnimalProtection",
+            "name": "Protection animale",
+            "desc": "[DamageReducePercent] réduits de [ATTR_0]%.\nCumulable.",
+            "attributes": [
+                {
+                    "kind": "DamageReducePercent",
+                    "value": 15
+                }
+            ],
+            "props": {
+                "stackable": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 1,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Berserk",
+            "name": "Berserk",
+            "desc": "[DamageBonusPercent] et [DamageTakenPercent] augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 100
+                },
+                {
+                    "kind": "DamageTakenPercent",
+                    "value": 100
+                }
+            ],
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 8,
+                "y": 3
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "BerserkStack",
+            "name": "Colère montante",
+            "desc": "Au bout de [VALUE] rats tués, cette unité se déchaîne.",
+            "attributes": [],
+            "props": {
+                "value": 3,
+                "stackable": true,
+                "hideNotif": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 0,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "BloodReserve",
+            "name": "Réserve de sang",
+            "desc": "Au bout de [VALUE] applications, cette unité régénère entièrement sa [Health].",
+            "attributes": [],
+            "props": {
+                "stackable": true,
+                "value": 2,
+                "important": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 9,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Relentlessness",
+            "name": "Acharnement",
+            "desc": "Après avoir attaqué, cette unité effectue une attaque d'opportunité.\nRetiré si n'est plus engagée.",
+            "attributes": [],
+            "props": {
+                "skill": "Relentlessness"
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 16,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "AnimalMarkedBonus",
+            "name": "Rage",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.\nCumulable.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 5
+                }
+            ],
+            "props": {
+                "stackable": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 18,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Savagery",
+            "name": "Sauvagerie",
+            "desc": "Gagne [Riposte] si termine son tour engagé.",
+            "attributes": [],
+            "props": {
+                "skill": "Savagery"
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 0,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Rivalry",
+            "name": "Rivalité",
+            "desc": "[DamageReducePercent] causés par l'adversaire engagé réduits de [VALUE]%.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 1,
+                "skill": "Rivalry",
+                "value": 50
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 17,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "BionnPanic",
+            "name": "Panique de Bionn",
+            "desc": "Correspond au nombre de pestiférés appelés par le Hurlement despéréré de Bionn.",
+            "attributes": [],
+            "props": {
+                "stackable": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 1,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "FenrisCourage",
+            "name": "Courage",
+            "desc": "Niveau de Courage de Fenris",
+            "attributes": [],
+            "props": {
+                "stackable": true,
+                "notifyNegative": true
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 1,
+                "y": 5
+            },
+            "namePlural": "",
+            "iconeDone": true
+        },
+        {
+            "id": "Whipped",
+            "name": "Fouetté",
+            "desc": "",
+            "attributes": [],
+            "props": {
+                "cancelOn": 7
+            },
+            "group": 4,
+            "iconeDone": true
+        },
+        {
+            "id": "DieAfterRest",
+            "name": "",
+            "desc": "",
+            "attributes": [],
+            "props": {},
+            "group": 4,
+            "iconeDone": true
+        },
+        {
+            "id": "BestFriendAdjacent",
+            "name": "Meilleurs Amis",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 5
+                }
+            ],
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 0,
+                "y": 6
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Angry",
+            "name": "Énervé",
+            "desc": "[Strength] et [Dexterity] augmentées de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "Strength",
+                    "value": 10,
+                    "isPercentage": true
+                },
+                {
+                    "kind": "Dexterity",
+                    "value": 10,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "cancelOn": 7
+            },
+            "group": 4,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 1,
+                "y": 6
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Watchful",
+            "name": "Vigilant",
+            "desc": "Zone d'agression des ennemis dans le monde réduite.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 7,
+                "value": 5,
+                "hideInFight": true
+            },
+            "group": 4,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 3,
+                "y": 6
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Satiated",
+            "name": "Rassasié",
+            "desc": "La consommation de nourriture de cette unité au prochain Repos est réduite à 0.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 7,
+                "hideInFight": true
+            },
+            "group": 4,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 4,
+                "y": 6
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Endurance",
+            "name": "Endurant",
+            "desc": "Vitesse de déplacement dans le monde augmentée de [VALUE]%.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 7,
+                "value": 10,
+                "hideInFight": true
+            },
+            "group": 4,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 5,
+                "y": 6
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Ratkiller",
+            "name": "Désinfesteur",
+            "desc": "[DamageBonusPercent] contre les Excroissances pestiférées augmentés de [VALUE]%.\n\nStatut retiré après un affrontement contre les invasions de rats.",
+            "attributes": [],
+            "props": {
+                "value": 50,
+                "persistent": true
+            },
+            "group": 4,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 6
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Inspired",
+            "name": "Inspiré",
+            "desc": "[Willpower] augmentée de [ATTR].",
+            "attributes": [
+                {
+                    "kind": "Willpower",
+                    "value": 5,
+                    "isPercentage": false
+                }
+            ],
+            "props": {
+                "cancelOn": 7
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 7,
+                "y": 6
+            },
+            "namePlural": "",
+            "iconeDone": true
+        },
+        {
+            "id": "GoldDigger",
+            "name": "Chercheur d'or",
+            "desc": "Le prochain gain de krowns est augmenté de [VALUE]%.",
+            "attributes": [],
+            "props": {
+                "value": 10
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 6
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Unleashed",
+            "name": "Déchaîné",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]% et ne peut pas être engagé.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 5
+                }
+            ],
+            "props": {},
+            "group": 4,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 16,
+                "y": 6
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Unwavering",
+            "name": "Inébranlable",
+            "desc": "Ne peut pas être repoussé.",
+            "attributes": [],
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 13,
+                "y": 6
+            },
+            "namePlural": "",
+            "iconeDone": true
+        },
+        {
+            "id": "LinkedByWill",
+            "name": "Lié par la volonté",
+            "desc": "À la fin du Round, si au moins un allié a encore de la [Health], cette unité régénère la moitié de sa [Health].",
+            "attributes": [],
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 1,
+                "y": 7
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "BrothersFury",
+            "name": "Fureur fraternelle",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 300
+                }
+            ],
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 0,
+                "y": 7
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "PrideInfused",
+            "name": "Infusion d'orgueil",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 50
+                }
+            ],
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 7
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "ResistFire",
+            "name": "Résistance au feu",
+            "desc": "Les dégâts de feu sont réduits à 0.",
+            "attributes": [],
+            "props": {
+                "damageType": [
+                    0
+                ]
+            },
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 3,
+                "y": 7
+            },
+            "namePlural": "",
+            "iconeDone": true,
+            "notes": "hard coded to prevent other damage fire bonus"
+        },
+        {
+            "id": "LoneWolf",
+            "name": "Loup Solitaire",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.\n[DamageReducePercent] réduits de [ATTR_1]%.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 10
+                },
+                {
+                    "kind": "DamageReducePercent",
+                    "value": 10
+                }
+            ],
+            "props": {},
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 4,
+                "y": 7
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "MischiefMakerCritical",
+            "name": "Expérience des pillages",
+            "desc": "[CritHitDamageBonusPercent] de la troupe augmentés de [ATTR_0]%",
+            "attributes": [
+                {
+                    "kind": "CritHitDamageBonusPercent",
+                    "value": 30
+                }
+            ],
+            "props": {},
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 4,
+                "y": 4
+            }
+        },
+        {
+            "id": "Doped",
+            "name": "Drogué",
+            "desc": "L'unité ignore sa prochaine blessure.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 7
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 0,
+                "y": 8
+            }
+        },
+        {
+            "id": "Zeal",
+            "name": "Zèle",
+            "desc": "[CritHitPercent] et [CritHitDamageBonusPercent] augmentés de [ATTR_0]%",
+            "attributes": [
+                {
+                    "kind": "CritHitPercent",
+                    "value": 30
+                },
+                {
+                    "kind": "CritHitDamageBonusPercent",
+                    "value": 30
+                }
+            ],
+            "props": {
+                "cancelOn": 1,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 12,
+                "y": 8
+            }
+        },
+        {
+            "id": "Frenzy",
+            "name": "Frénésie",
+            "desc": "Les dégâts de cette unité augmentent proportionnellement à sa vie manquante et sont toujours critiques.",
+            "attributes": [
+                {
+                    "kind": "CritHitPercent",
+                    "value": 100
+                }
+            ],
+            "props": {
+                "feature": "Alazar1_Update",
+                "skill": "FrenzyStatus"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 13,
+                "y": 8
+            }
+        },
+        {
+            "id": "DefensiveStance",
+            "name": "Posture défensive",
+            "desc": "[DamageReducePercent] réduits de [ATTR_0]%.\nCumulable.\nAu bout de [VALUE] applications, bascule en posture berserker.",
+            "attributes": [
+                {
+                    "kind": "DamageReducePercent",
+                    "value": 10
+                }
+            ],
+            "props": {
+                "stackable": true,
+                "value": 10,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 14,
+                "y": 8
+            }
+        },
+        {
+            "id": "BerserkerStance",
+            "name": "Posture berserker",
+            "desc": "[DamageTakenPercent] et [DamageBonusPercent] augmentés de [ATTR_0]%.\nCumulable.\nAu bout de [VALUE] applications, bascule en posture défensive.",
+            "attributes": [
+                {
+                    "kind": "DamageTakenPercent",
+                    "value": 10
+                },
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 10
+                }
+            ],
+            "props": {
+                "stackable": true,
+                "value": 10,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 15,
+                "y": 8
+            }
+        },
+        {
+            "id": "Euphoria",
+            "name": "Euphorie",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.\nCumulable.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 50
+                }
+            ],
+            "props": {
+                "stackable": true,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 16,
+                "y": 8
+            }
+        },
+        {
+            "id": "A1ArenaRedGazZone",
+            "name": "Vapeurs stimulantes",
+            "desc": "Au début de son tour, cette unité gagne [A1ArenaRedGaz].",
+            "attributes": [],
+            "props": {
+                "feature": "Alazar1_Update",
+                "important": true
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 17,
+                "y": 8
+            }
+        },
+        {
+            "id": "A1ArenaRedGaz",
+            "name": "Stimulé",
+            "desc": "Augmente les dégâts infligés aux unités engagées de [VALUE]%.",
+            "attributes": [],
+            "props": {
+                "skill": "A1ArenaRedGazStatus",
+                "value": 100,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 18,
+                "y": 8
+            }
+        },
+        {
+            "id": "A1ArenaBlueGazZone",
+            "name": "Vapeurs tonifiantes",
+            "desc": "Au début de son tour, cette unité gagne [A1ArenaBlueGaz].",
+            "attributes": [],
+            "props": {
+                "feature": "Alazar1_Update",
+                "important": true
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 4,
+                "y": 9
+            }
+        },
+        {
+            "id": "A1ArenaBlueGaz",
+            "name": "Tonifié",
+            "desc": "Augmente les dégâts infligés aux unités non-engagées de [VALUE]%.",
+            "attributes": [],
+            "props": {
+                "skill": "A1ArenaBlueGazStatus",
+                "value": 100,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 5,
+                "y": 9
+            }
+        },
+        {
+            "id": "Replay",
+            "name": "Deuxième chance",
+            "desc": "Cette unité rejouera dans ce round.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 8,
+                "important": true
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 8,
+                "y": 8
+            }
+        },
+        {
+            "id": "Ordered",
+            "name": "Ordonné",
+            "desc": "Cette unité génère le double de Points de Bravoure.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 8,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 3,
+                "y": 8
+            },
+            "namePlural": "",
+            "notes": ""
+        },
+        {
+            "id": "ToPosition",
+            "name": "En position",
+            "desc": "La garde de cette unité est doublée.",
+            "attributes": [
+                {
+                    "kind": "Guard",
+                    "value": 100,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "cancelOn": 1,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 4,
+                "y": 8
+            },
+            "namePlural": "",
+            "notes": ""
+        },
+        {
+            "id": "Entrenched",
+            "name": "Retranché",
+            "desc": "[DamageReducePercent] réduits de [ATTR_0]%.\nCumulable. (Maximum [VALUE]%).",
+            "attributes": [
+                {
+                    "kind": "DamageReducePercent",
+                    "value": 10
+                }
+            ],
+            "props": {
+                "feature": "Alazar1_Update",
+                "value": 50,
+                "stackable": true,
+                "maxStacks": 5
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 5,
+                "y": 8
+            },
+            "namePlural": "",
+            "notes": ""
+        },
+        {
+            "id": "BackEyed",
+            "name": "Yeux dans le dos",
+            "desc": "Cette unité n'a pas de faiblesse de dos.",
+            "attributes": [],
+            "props": {
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 8
+            },
+            "notes": ""
+        },
+        {
+            "id": "Electrified",
+            "name": "Électricité statique",
+            "desc": "Les dégâts d'éclair sont réduits à 0.\nLorsqu'une autre unité utilise une compétence ou termine son tour adjacent à cette unité, elle subit un coup d'éclair qui lui fait perdre [VALUE]% de sa [Health] maximum (effet\naffaiblit sur les Élites).",
+            "attributes": [],
+            "props": {
+                "feature": "Alazar1_Update",
+                "skill": "Electrified",
+                "value": 20
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 0,
+                "y": 9
+            },
+            "notes": ""
+        },
+        {
+            "id": "Enervate",
+            "name": "En colère",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.\r\nCumulable.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 20
+                }
+            ],
+            "props": {
+                "stackable": true,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 1,
+                "y": 9
+            }
+        },
+        {
+            "id": "Executer",
+            "name": "Exécuteur",
+            "desc": "[Movement] augmenté de [ATTR_0] et [CritHitPercent] augmenté de [ATTR_1]%.",
+            "attributes": [
+                {
+                    "kind": "Movement",
+                    "value": 3
+                },
+                {
+                    "kind": "CritHitPercent",
+                    "value": 20
+                }
+            ],
+            "props": {
+                "cancelOn": 1
+            },
+            "iconeDone": true,
+            "group": 4,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 9,
+                "y": 8
+            }
+        },
+        {
+            "id": "Weakening",
+            "name": "Affaiblissement",
+            "desc": "[DamageBonusPercent] réduits de [ATTR_0]%.",
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 0
+            },
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": -50
+                }
+            ],
+            "iconeDone": true
+        },
+        {
+            "id": "Fragility",
+            "name": "Fragilité",
+            "desc": "[DamageTakenPercent] augmentés de [ATTR_0]%.",
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 12,
+                "y": 0
+            },
+            "attributes": [
+                {
+                    "kind": "DamageTakenPercent",
+                    "value": 30
+                }
+            ],
+            "iconeDone": true
+        },
+        {
+            "id": "Destabilization",
+            "name": "Déstabilisation",
+            "desc": "[Guard] réduite à 0.",
+            "attributes": [
+                {
+                    "kind": "Guard",
+                    "value": -1000
+                }
+            ],
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 14,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Slowdown",
+            "name": "Ralentissement",
+            "desc": "[Movement] réduit de moitié.",
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 5,
+                "y": 0
+            },
+            "attributes": [
+                {
+                    "kind": "Movement",
+                    "value": -50,
+                    "isPercentage": true
+                }
+            ],
+            "iconeDone": true
+        },
+        {
+            "id": "Bleeding",
+            "name": "Saignement",
+            "props": {
+                "value": 20,
+                "attributePercent": "Health",
+                "important": true,
+                "playFxOnSelect": true,
+                "impactFx": "prefabs/fx/fight/hits & impacts/impactBleedAdd.fx"
+            },
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 0,
+                "y": 0
+            },
+            "desc": "Perd [VALUE]% de sa [Health] maximum à la fin de son tour.\n<extra>Dégâts : <bad>[VALUE%]</bad></extra>",
+            "group": 5,
+            "attributes": [],
+            "iconeDone": true
+        },
+        {
+            "id": "Poison",
+            "name": "Poison",
+            "desc": "Perd [VALUE]% de sa [Health] maximum à la fin de son tour.\nCumulable (actuel: [VALUE_STACK]%).\n<extra>Dégâts : <bad>[VALUE%]</bad></extra>",
+            "props": {
+                "stackable": true,
+                "value": 5,
+                "attributePercent": "Health",
+                "damageType": [
+                    1
+                ],
+                "important": true,
+                "playFxOnSelect": true,
+                "impactFx": "prefabs/fx/fight/hits & impacts/impactPoisonAdd.fx"
+            },
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 16,
+                "y": 0
+            },
+            "group": 5,
+            "attributes": [],
+            "namePlural": "Poisons",
+            "iconeDone": true
+        },
+        {
+            "id": "PoisonCloud",
+            "name": "Nuage de poison",
+            "desc": "Applique [VALUE] [Poison]s à toute unité qui traverse ou termine son tour dans le nuage.",
+            "attributes": [],
+            "props": {
+                "value": 2,
+                "hideNotif": true
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 12,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "DustFog",
+            "name": "Nuage de poussière",
+            "desc": "Les unités à l'intérieur ne sont pas visibles.",
+            "attributes": [],
+            "props": {},
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 18,
+                "y": 2
+            },
+            "namePlural": "",
+            "iconeDone": true
+        },
+        {
+            "id": "Burning",
+            "name": "Brûlure",
+            "desc": "Perd [VALUE]% de sa [Health] maximum et se propage aux unités adjacentes à la fin de son tour.\nRetiré lorsque l'unité se déplace par l'effet d'une compétence.",
+            "props": {
+                "value": 15,
+                "cancelOn": 3,
+                "attributePercent": "Health",
+                "damageType": [
+                    0
+                ],
+                "important": true,
+                "playFxOnSelect": true,
+                "impactFx": "prefabs/fx/fight/hits & impacts/impactFireAdd.fx"
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 0
+            },
+            "attributes": [],
+            "iconeDone": true
+        },
+        {
+            "id": "Vulnerability",
+            "name": "Vulnérabilité",
+            "props": {
+                "cancelOn": 4
+            },
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 15,
+                "y": 0
+            },
+            "desc": "La prochaine attaque subie sera un coup critique.",
+            "group": 5,
+            "attributes": [],
+            "iconeDone": true
+        },
+        {
+            "id": "Stun",
+            "name": "Étourdissement",
+            "desc": "Ne peut effectuer aucune action.",
+            "props": {},
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 0
+            },
+            "group": 5,
+            "attributes": [],
+            "iconeDone": true
+        },
+        {
+            "id": "Dying",
+            "name": "Mourant",
+            "desc": "Cette unité ne peut plus utiliser de compétences et se déplace de la moitié de sa capacité.\nElle meurt si elle subit des dégâts.",
+            "attributes": [
+                {
+                    "kind": "Movement",
+                    "value": -50,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "important": true
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 9,
+                "y": 0
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Surrounded",
+            "name": "Encerclé",
+            "desc": "Cette unité est engagée et adjacente à [VALUE] ennemis libres.\n\n[DamageTakenPercent] augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageTakenPercent",
+                    "value": 20
+                }
+            ],
+            "props": {
+                "important": true,
+                "preventCancel": true,
+                "value": 2
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 13,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Sentence",
+            "name": "Sentence",
+            "desc": "Cette unité est prise pour cible...",
+            "attributes": [],
+            "props": {
+                "important": true,
+                "preventCancel": true
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 15,
+                "y": 0
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Fever",
+            "name": "Fièvre",
+            "desc": "[DamageTakenPercent] augmentés de [ATTR_0]%.\nCumulable.",
+            "attributes": [
+                {
+                    "kind": "DamageTakenPercent",
+                    "value": 10
+                }
+            ],
+            "props": {
+                "stackable": true
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 2
+            },
+            "namePlural": "Fièvres",
+            "iconeDone": true
+        },
+        {
+            "id": "Plagued",
+            "name": "Contamination",
+            "desc": "Cette unité est contaminée par la Peste.\nElle ne peut se nourrir que de viande et risque de perdre la raison si elle est affamée.",
+            "attributes": [],
+            "props": {
+                "persistent": true,
+                "injury": 2
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 8,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Plagued_Starved",
+            "name": "Contamination - Affamé",
+            "desc": "Cette unité est contaminée par la Peste et affamée car elle n'a pas mangé de viande lors du dernier repos.\nElle peut perdre la raison en combat au début de chaque round.",
+            "attributes": [],
+            "props": {
+                "skill": "Plague_Madness",
+                "importantCamp": true,
+                "persistent": true,
+                "similarStatus": "Plagued",
+                "important": true,
+                "custom": {
+                    "maxPerRest": 3,
+                    "max": 5
+                },
+                "injury": 2
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 5,
+                "y": 2
+            },
+            "notes": "when unit gets between 1 and VALUE Madness_Counter stacks per rest",
+            "iconeDone": true
+        },
+        {
+            "id": "Plagued_Madness",
+            "name": "Contamination - Folie",
+            "desc": "Cette unité est contaminée par la Peste et a perdu la raison. Elle est incontrôlable et peut attaquer les unités alliés.",
+            "attributes": [],
+            "props": {
+                "importantCamp": true,
+                "persistent": true,
+                "custom": {
+                    "crunch": 1,
+                    "plagued": 0.5
+                },
+                "similarStatus": "Plagued_Starved",
+                "injury": 2
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 17,
+                "y": 2
+            },
+            "notes": "No weapon, get Plagueridden skills",
+            "iconeDone": true
+        },
+        {
+            "id": "Plagued_Injured",
+            "name": "Blessure pestiférée",
+            "desc": "Cette unité doit être soignée avant le prochain Repos. Sinon, elle sera Contaminée.",
+            "attributes": [],
+            "props": {
+                "persistent": true,
+                "importantCamp": true,
+                "custom": {
+                    "remedy": 0.25
+                },
+                "injury": 2
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 4,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "PreventEngage",
+            "name": "",
+            "desc": "Cette unité ne peut pas être engagée.",
+            "attributes": [],
+            "props": {
+                "preventCancel": true
+            },
+            "group": 5,
+            "iconeDone": true
+        },
+        {
+            "id": "Unpushable",
+            "name": "",
+            "desc": "Cette unité ne peut pas être poussée.",
+            "attributes": [],
+            "props": {},
+            "group": 5,
+            "iconeDone": true
+        },
+        {
+            "id": "Fire",
+            "name": "Feu",
+            "desc": "Applique [Burning] à toute unité qui traverse la zone.",
+            "attributes": [],
+            "props": {},
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 15,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "OilDotEffect1",
+            "name": "",
+            "desc": "Perd [VALUE] de [Health] à la fin de son tour.\nCumulable (actuel : [VALUE_STACK]).",
+            "attributes": [],
+            "props": {
+                "stackable": true,
+                "value": 1,
+                "cancelOn": 1
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 0,
+                "y": 0
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Terror",
+            "name": "Terreur",
+            "desc": "Au bout de [VALUE] applications, l'unité terrorisée fuit le combat.",
+            "attributes": [],
+            "props": {
+                "value": 5,
+                "stackable": true
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 4
+            },
+            "namePlural": "Terreurs",
+            "iconeDone": true
+        },
+        {
+            "id": "TerrorFog",
+            "name": "Brouillard Fantôme",
+            "desc": "Applique [VALUE] [Terror] à toute unité qui traverse ou termine son tour dans le brouillard.",
+            "attributes": [],
+            "props": {
+                "value": 1
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 12,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "TerrorLink",
+            "name": "Lien de terreur",
+            "desc": "Cette unité subit [VALUE] [Terror] à la fin de son tour.\nRetiré quand devient adjacent à un allié affecté par cet effet.",
+            "attributes": [],
+            "props": {
+                "value": 3
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 10,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Blind",
+            "name": "Aveuglement",
+            "desc": "A [VALUE]% de chances de manquer sa prochaine attaque.",
+            "attributes": [],
+            "props": {
+                "value": 50,
+                "cancelOn": 5
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 3
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Surprised",
+            "name": "Surprise",
+            "desc": "[DamageTakenPercent] augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageTakenPercent",
+                    "value": 10
+                }
+            ],
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 14,
+                "y": 4
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Bloodshed",
+            "name": "Effusion de sang",
+            "desc": "Perd [VALUE] de [Health] par application à la fin de son tour puis est retiré.\nCumulable.",
+            "attributes": [],
+            "props": {
+                "stackable": true,
+                "value": 1,
+                "cancelOn": 1,
+                "important": true
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 13,
+                "y": 4
+            },
+            "namePlural": "Effusions de sang",
+            "iconeDone": true
+        },
+        {
+            "id": "AnimalMarked",
+            "name": "Marquage",
+            "desc": "Chaque fois que cette unité est attaquée par un animal, l'animal attaquant augmente ses dégâts.",
+            "attributes": [],
+            "props": {
+                "skill": "AnimalMarked"
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "FearPlague",
+            "name": "Peur des pestiférés",
+            "desc": "[DamageBonusPercent] réduits de [ATTR_0]% pour chaque pestiféré au combat.\nCumulable.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": -10
+                }
+            ],
+            "props": {
+                "stackable": true
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 5,
+                "y": 5
+            },
+            "notes": "",
+            "iconeDone": true
+        },
+        {
+            "id": "Disarm",
+            "name": "Désarmement",
+            "desc": "Ne peut plus utiliser de compétence nécessitant l'usage de son arme.\nNe fonctionne pas sur les champions.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 3,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Mud",
+            "name": "Boue",
+            "desc": "[Movement] requis doublé",
+            "attributes": [],
+            "props": {
+                "value": 50
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 4,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "NarsesMark",
+            "name": "Marque de Narsès",
+            "desc": "Quand ce statut est consommé, l'attaquant effectue une attaque d'opportunité.",
+            "attributes": [],
+            "props": {},
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "HorounMark",
+            "name": "Marque de Horoun",
+            "desc": "Quand ce statut est consommé, l'attaquant génère <apt>[VALUE]</apt> Points de Bravoure.",
+            "attributes": [],
+            "props": {
+                "value": 2
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 7,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Noisy",
+            "name": "Bruyant",
+            "desc": "Zone d'agression des ennemis dans le monde augmentée.",
+            "attributes": [],
+            "props": {
+                "value": 5,
+                "cancelOn": 7
+            },
+            "group": 5,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 8,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Mistrustful",
+            "name": "Méfiant",
+            "desc": "Réduit de [VALUE] la Relation de cette unité envers tout compagnon qui blesse un autre compagnon.",
+            "attributes": [],
+            "props": {
+                "value": 3,
+                "cancelOn": 7
+            },
+            "group": 5,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 9,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Exhausted",
+            "name": "Épuisé",
+            "desc": "Après un Repos, la troupe régénère [VALUE]% de Fatigue en moins.",
+            "attributes": [],
+            "props": {
+                "value": 10,
+                "cancelOn": 7,
+                "cancelCount": 3
+            },
+            "group": 5,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 10,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Sulky",
+            "name": "Boudeur",
+            "desc": "Après un Repos, la quantité de points de Bravoure gagnée par la troupe est diminuée de [VALUE].",
+            "attributes": [],
+            "props": {
+                "value": 2,
+                "cancelCount": 3,
+                "cancelOn": 7
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Fearless",
+            "name": "Imprudent",
+            "desc": "Le Soupçon généré augmente fortement.",
+            "attributes": [],
+            "props": {
+                "value": 20,
+                "cancelOn": 7,
+                "cancelCount": 3
+            },
+            "group": 5,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 12,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Nightmare",
+            "name": "Cauchemar",
+            "desc": "Après un Repos, la quantité de Bonheur gagnée par la troupe est diminuée de [VALUE].",
+            "attributes": [],
+            "props": {
+                "value": 5,
+                "cancelOn": 7,
+                "cancelCount": 3
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 13,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Ratmare",
+            "name": "Phobie des rats",
+            "desc": "Cette unité quittera la troupe si elle combat dans une tanière de rats.",
+            "attributes": [],
+            "props": {
+                "value": 10,
+                "cancelOn": 7,
+                "cancelCount": 2
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 14,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "LatentTerror",
+            "name": "Terreur latente",
+            "desc": "Cette unité peut fuir un combat sans raison.\n\nStatut retiré si fuit.",
+            "attributes": [],
+            "props": {
+                "skill": "LatentTerror",
+                "persistent": true
+            },
+            "group": 5,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 15,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "SlowReflexes",
+            "name": "Réflexes lents",
+            "desc": "Les dégâts des <b>attaques d'opportunité</b> de cette unité sont réduits de moitié.",
+            "attributes": [],
+            "props": {
+                "hideNotif": true,
+                "value": -50
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 18,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "NoReflexes",
+            "name": "Amorphe",
+            "desc": "La prochaine attaque d'opportunité de cette unité n'inflige pas de dégâts.",
+            "attributes": [],
+            "props": {},
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 17,
+                "y": 6
+            },
+            "namePlural": "",
+            "iconeDone": true
+        },
+        {
+            "id": "KogoTarget",
+            "name": "Cible de Kogo",
+            "desc": "Dégâts subis de la part de Kogo augmentés de [VALUE]%.\nDégâts infligés à Toro augmentés de [VALUE]%.\nCumulable.",
+            "attributes": [],
+            "props": {
+                "value": 5,
+                "stackable": true
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 7,
+                "y": 7
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "ToroTarget",
+            "name": "Cible de Toro",
+            "desc": "Dégâts subis de la part de Toro augmentés de [VALUE]%.\nDégâts infligés à Kogo augmentés de [VALUE]%.\nCumulable.",
+            "attributes": [],
+            "props": {
+                "value": 5,
+                "stackable": true
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 8,
+                "y": 7
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "BodyParalysis",
+            "name": "Paralysie physique",
+            "desc": "Lorsque cette unité reçoit un malus, elle le génère en double.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 9,
+                "y": 7
+            },
+            "notes": "WAITING",
+            "iconeDone": true
+        },
+        {
+            "id": "Confus",
+            "name": "Confus",
+            "desc": "Cette unité ne peut pas recevoir de bonus.\nNe fonctionne pas sur les champions.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 1
+            },
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 16,
+                "y": 2
+            },
+            "notes": "",
+            "iconeDone": true
+        },
+        {
+            "id": "Corrosion",
+            "name": "Corrosion",
+            "desc": "Perd [VALUE]% de son [Armor] maximum à la fin de son tour.",
+            "attributes": [],
+            "props": {
+                "value": 15,
+                "stackable": true,
+                "skill": "Corrosion"
+            },
+            "iconeDone": true,
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 14,
+                "y": 7
+            }
+        },
+        {
+            "id": "Condemn",
+            "name": "Condamnation",
+            "desc": "Quand cette unité est tuée, elle confère <apt>[VALUE]</apt> Points de Bravoure.",
+            "attributes": [],
+            "props": {
+                "value": 5,
+                "skill": "Condemn",
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 7,
+                "y": 8
+            }
+        },
+        {
+            "id": "Immobile",
+            "name": "Immobile",
+            "desc": " L’unité ne peut pas se déplacer.",
+            "attributes": [
+                {
+                    "kind": "Movement",
+                    "value": -1000,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "cancelOn": 1,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 10,
+                "y": 8
+            }
+        },
+        {
+            "id": "Chased",
+            "name": "Poursuivi",
+            "desc": "Cette unité devient la cible prioritaire des animaux et augmente les [DamageTakenPercent] par leurs attaques de [VALUE]%.",
+            "attributes": [],
+            "props": {
+                "value": 30,
+                "cancelOn": 1,
+                "feature": "Alazar1_Update",
+                "skill": "Chased"
+            },
+            "iconeDone": true,
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 9
+            },
+            "notes": ""
+        },
+        {
+            "id": "CelestiumLightning",
+            "name": "Châtié",
+            "desc": "",
+            "attributes": [],
+            "props": {
+                "skill": "CelestiumLightningStatus",
+                "cancelOn": 1,
+                "value": 10,
+                "descSkill": "CelestiumLightningStatusZone",
+                "impactFx": "prefabs/fx/fight/hits & impacts/impactElectrical.fx",
+                "playFxOnSelect": true
+            },
+            "iconeDone": true,
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 8
+            },
+            "namePlural": ""
+        },
+        {
+            "id": "Frightened",
+            "name": "Apeuré",
+            "desc": "Cette unité fait perdre [VALUE]% de moral en plus en mourant.",
+            "attributes": [],
+            "props": {
+                "value": 10,
+                "feature": "Alazar1_Update"
+            },
+            "iconeDone": true,
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 3,
+                "y": 9
+            },
+            "notes": ""
+        },
+        {
+            "id": "BeeArea",
+            "name": "Essaim d'abeille",
+            "desc": "Une zone d'abeilles qui inflige des dégâts à toutes les unités qui traversent la zone.",
+            "attributes": [],
+            "props": {},
+            "iconeDone": false,
+            "group": 5,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 2
+            }
+        },
+        {
+            "id": "AIBehaviourDefault",
+            "name": "Comportement : Attaquer",
+            "desc": "À son tour, cette unité se déplacera et attaquera les unités à proximité.",
+            "attributes": [],
+            "props": {
+                "important": true
+            },
+            "group": 6,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 10,
+                "y": 6
+            },
+            "namePlural": "",
+            "iconeDone": true
+        },
+        {
+            "id": "AIBehaviourStop",
+            "name": "Comportement : Défendre",
+            "desc": "À son tour, cette unité restera à sa position et attaquera les unités à proximité.",
+            "attributes": [],
+            "props": {
+                "important": true
+            },
+            "group": 6,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 9,
+                "y": 6
+            },
+            "namePlural": "",
+            "iconeDone": true
+        },
+        {
+            "id": "AIBehaviourRunaway",
+            "name": "Comportement : Fuir",
+            "desc": "À son tour, cette unité cherchera à s'éloigner des unités ennemies et à rester à proximité des unités alliées.",
+            "attributes": [],
+            "props": {
+                "important": true
+            },
+            "group": 6,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 8,
+                "y": 6
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Whiplash",
+            "name": "Coup de fouet",
+            "desc": "Si cette unité est fouettée de nouveau, elle perdra la vie.",
+            "attributes": [],
+            "props": {
+                "injury": 1,
+                "specialApply": true
+            },
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 17,
+                "y": 5
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "LigamentRupture",
+            "name": "Rupture des ligaments",
+            "desc": "Cette unité se déplace de la moitié de sa capacité.",
+            "attributes": [
+                {
+                    "kind": "Movement",
+                    "value": -50,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "injury": 1
+            },
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 4,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "HeadTrauma",
+            "name": "Traumatisme crânien",
+            "desc": "[Willpower] réduite de moitié.",
+            "attributes": [
+                {
+                    "kind": "Willpower",
+                    "value": -50,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "injury": 1
+            },
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Tear",
+            "name": "Déchirure",
+            "desc": "Cette unité ne peut plus infliger de coup critique.",
+            "attributes": [],
+            "props": {
+                "skill": "Tear",
+                "injury": 1
+            },
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 3,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Contusion",
+            "name": "Contusion",
+            "desc": "[Constitution] réduite de moitié.",
+            "attributes": [
+                {
+                    "kind": "Constitution",
+                    "value": -50,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "injury": 1
+            },
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 5,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Fracture",
+            "name": "Fracture",
+            "desc": "[DamageBonusPercent] réduits de moitié.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": -50
+                }
+            ],
+            "props": {
+                "injury": 1
+            },
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 0,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Bruise",
+            "name": "Ecchymose",
+            "desc": "[DamageTakenPercent] doublés.",
+            "attributes": [
+                {
+                    "kind": "DamageTakenPercent",
+                    "value": 50
+                }
+            ],
+            "props": {
+                "injury": 1
+            },
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 1,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Sprain",
+            "name": "Entorse",
+            "desc": "Ne peut plus être choisi pour effectuer une activité.",
+            "attributes": [],
+            "props": {
+                "injury": 1
+            },
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 10,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Colic",
+            "name": "Colique",
+            "desc": "[Movement] réduit de [ATTR].",
+            "attributes": [
+                {
+                    "kind": "Movement",
+                    "value": -2
+                }
+            ],
+            "props": {
+                "injury": 1,
+                "specialApply": true
+            },
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 9,
+                "y": 1
+            },
+            "notes": "Via délicat (trait)",
+            "iconeDone": true
+        },
+        {
+            "id": "Sting",
+            "name": "Piqûre",
+            "desc": "[Strength] et [Dexterity] réduites de [ATTR]%.",
+            "attributes": [
+                {
+                    "kind": "Strength",
+                    "value": -30,
+                    "isPercentage": true
+                },
+                {
+                    "kind": "Dexterity",
+                    "value": -30,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "injury": 1,
+                "specialApply": true
+            },
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 8,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "StruckByTheEye",
+            "name": "Frappé par l'Œil",
+            "desc": "Cette unité a été touché par l'Œil. [MaxHealth] réduit de [ATTR]%.",
+            "attributes": [
+                {
+                    "kind": "MaxHealth",
+                    "value": -20,
+                    "isPercentage": true
+                }
+            ],
+            "props": {
+                "injury": 1,
+                "specialApply": true
+            },
+            "iconeDone": true,
+            "group": 7,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 15,
+                "y": 7
+            }
+        },
+        {
+            "id": "Arena_HealthDamaged",
+            "name": "",
+            "desc": "",
+            "attributes": [
+                {
+                    "kind": "Health",
+                    "value": -1
+                }
+            ],
+            "props": {
+                "stackable": true
+            },
+            "group": 8,
+            "notes": "Used in arena mode, to save health lost",
+            "iconeDone": true
+        },
+        {
+            "id": "Arena_Hit",
+            "name": "",
+            "desc": "",
+            "attributes": [],
+            "props": {},
+            "iconeDone": true,
+            "group": 8,
+            "notes": "Unit has been hit"
+        },
+        {
+            "id": "Arena_Dying",
+            "name": "Hors-Combat",
+            "desc": "Cette unité a été mise hors-combat.\nElle ne peut plus combattre lors de ce combat.",
+            "attributes": [],
+            "props": {},
+            "group": 8,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 10,
+                "y": 1
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Arena_Willforce",
+            "name": "Force de volonté",
+            "desc": "[DamageReducePercent] réduits de [ATTR_0]%.\nL'unité ne peut pas être [Arena_Dying].",
+            "attributes": [
+                {
+                    "kind": "DamageReducePercent",
+                    "value": 100
+                }
+            ],
+            "props": {},
+            "iconeDone": true,
+            "group": 8,
+            "namePlural": "",
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 7
+            }
+        },
+        {
+            "id": "Arena_DemandTarget",
+            "name": "Exigence",
+            "desc": "Cette unité est une condition de l'exigence du public.",
+            "attributes": [],
+            "props": {
+                "important": true
+            },
+            "group": 8,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Arena_DemandAlreadyContribute",
+            "name": "Exigence",
+            "desc": "Cette unité a déjà contribué à l'exigence du public.",
+            "attributes": [],
+            "props": {},
+            "group": 8,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 7,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "Pyrophobia",
+            "name": "Pyrophobie",
+            "desc": "[DamageTakenPercent] de feu augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageTypeBonus",
+                    "value": 50
+                }
+            ],
+            "props": {
+                "damageType": [
+                    0
+                ],
+                "hideNotif": true
+            },
+            "group": 9,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 9,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "PlaguedRatEnraged",
+            "name": "Rage",
+            "desc": "[DamageBonusPercent] augmentés de [ATTR_0]%.",
+            "attributes": [
+                {
+                    "kind": "DamageBonusPercent",
+                    "value": 30
+                }
+            ],
+            "props": {
+                "flags": 0
+            },
+            "group": 9,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 10,
+                "y": 2
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "PoisonHeal",
+            "name": "",
+            "desc": "",
+            "attributes": [
+                {
+                    "kind": "DamageTypeBonus",
+                    "value": -200
+                }
+            ],
+            "props": {
+                "damageType": [
+                    1
+                ]
+            },
+            "group": 9,
+            "notes": "poison heals instead of damage",
+            "iconeDone": true
+        },
+        {
+            "id": "FleeWithBackpack",
+            "name": "Fuyard",
+            "desc": "Cette unité transporte des objets et essaye de fuir le combat.",
+            "attributes": [],
+            "props": {
+                "important": true
+            },
+            "group": 10,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 12,
+                "y": 6
+            },
+            "iconeDone": true
+        },
+        {
+            "id": "FleeWithoutBackpack",
+            "name": "Fuyard",
+            "desc": "Cette unité n'est pas un combattant mais veut quand même survivre à ce combat. La fuite est la meilleure des stratégies dans ce cas-là.",
+            "attributes": [],
+            "props": {
+                "important": true
+            },
+            "iconeDone": true,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 12,
+                "y": 6
+            },
+            "group": 10
+        },
+        {
+            "id": "BallCarrier",
+            "name": "Porteur de Ballon",
+            "desc": "",
+            "attributes": [],
+            "props": {},
+            "group": 11,
+            "notes": "Porteur de balle (sport mode)",
+            "iconeDone": true,
+            "namePlural": ""
+        },
+        {
+            "id": "NoWeapon",
+            "name": "",
+            "desc": "",
+            "attributes": [],
+            "props": {},
+            "group": 11,
+            "notes": "(sport mode)",
+            "iconeDone": true
+        },
+        {
+            "id": "NoArmor",
+            "name": "",
+            "desc": "",
+            "attributes": [],
+            "props": {},
+            "group": 11,
+            "notes": "(sport mode)",
+            "iconeDone": true
+        },
+        {
+            "id": "SportDown",
+            "name": "À Terre",
+            "desc": "",
+            "attributes": [],
+            "props": {},
+            "group": 11,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 2,
+                "y": 0
+            },
+            "notes": "(sport mode)",
+            "iconeDone": true
+        },
+        {
+            "id": "SportStrengthUnit",
+            "name": "Force",
+            "desc": "Cette unité privilégie la Force",
+            "attributes": [],
+            "props": {
+                "hideNotif": true
+            },
+            "iconeDone": true,
+            "group": 11,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 10,
+                "y": 7
+            },
+            "notes": "(sport mode)"
+        },
+        {
+            "id": "SportDexterityUnit",
+            "name": "Dextérité",
+            "desc": "Cette unité privilégie la Dextérité",
+            "attributes": [],
+            "props": {
+                "hideNotif": true
+            },
+            "iconeDone": true,
+            "group": 11,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 7
+            },
+            "notes": "(sport mode)"
+        },
+        {
+            "id": "SportLocalTeam",
+            "name": "Joue à Domicile",
+            "desc": "+[VALUE]% à tous les tirages de compétences",
+            "attributes": [],
+            "props": {
+                "value": 5,
+                "hideNotif": true
+            },
+            "iconeDone": true,
+            "group": 11,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 12,
+                "y": 7
+            }
+        },
+        {
+            "id": "SportGuard",
+            "name": "Défendre la position",
+            "desc": "Cette unité a +[VALUE]% de chances de réussir un tacle ou d'encaisser une avoine.",
+            "attributes": [],
+            "props": {
+                "value": 20,
+                "cancelOn": 2
+            },
+            "iconeDone": true,
+            "group": 11,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 9,
+                "y": 9
+            }
+        },
+        {
+            "id": "SportRole_Captain",
+            "name": "Capitaine d'équipe",
+            "desc": "Le Capitaine engage la partie.\n[Movement] augmenté de [ATTR].\n+[VALUE]% de chances de réussir une avoine.",
+            "attributes": [
+                {
+                    "kind": "Movement",
+                    "value": 2
+                }
+            ],
+            "props": {
+                "value": 10
+            },
+            "iconeDone": true,
+            "group": 11,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 6,
+                "y": 9
+            }
+        },
+        {
+            "id": "SportRole_Offensive",
+            "name": "Attaquant",
+            "desc": "[Movement] augmenté de [ATTR].",
+            "attributes": [
+                {
+                    "kind": "Movement",
+                    "value": 2
+                }
+            ],
+            "props": {},
+            "iconeDone": true,
+            "group": 11,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 8,
+                "y": 9
+            }
+        },
+        {
+            "id": "SportRole_Defensive",
+            "name": "Défenseur",
+            "desc": "+[VALUE]% de chances de réussir une avoine.",
+            "attributes": [],
+            "props": {
+                "value": 10
+            },
+            "iconeDone": true,
+            "group": 11,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 7,
+                "y": 9
+            }
+        },
+        {
+            "id": "DeadlyPoisoned",
+            "name": "",
+            "desc": "",
+            "attributes": [],
+            "props": {},
+            "group": 12,
+            "notes": "unit will die at next rest (Hate confession)",
+            "iconeDone": true
+        },
+        {
+            "id": "WillpowerDying",
+            "name": "",
+            "desc": "",
+            "attributes": [],
+            "props": {},
+            "group": 12,
+            "iconeDone": true
+        },
+        {
+            "id": "Repositioning",
+            "name": "Se repositionne",
+            "desc": "Cette unité se repositionne, elle ne peut plus utiliser de compétences et d'action de base jusqu'à la fin de son tour.",
+            "attributes": [],
+            "props": {
+                "cancelOn": 1
+            },
+            "iconeDone": true,
+            "group": 12,
+            "icon": {
+                "file": "ui/Icons/statusIcons.png",
+                "size": 32,
+                "x": 11,
+                "y": 7
+            }
+        },
+        {
+            "id": "ForceTerrorize",
+            "name": "",
+            "desc": "",
+            "attributes": [],
+            "props": {},
+            "iconeDone": true,
+            "group": 12
+        }
+    ],
+    "props": {
+        "hasGroup": true,
+        "displayIcon": "icon"
+    },
+    "separators": [
+        {
+            "title": "Tooltips",
+            "id": "CriticalHit"
+        },
+        {
+            "title": "Perks",
+            "id": "Leader"
+        },
+        {
+            "title": "Gestion",
+            "id": "Tired"
+        },
+        {
+            "title": "Bonus",
+            "id": "Galvanization"
+        },
+        {
+            "title": "Malus",
+            "id": "Weakening"
+        },
+        {
+            "title": "AIBehaviour",
+            "id": "AIBehaviourDefault"
+        },
+        {
+            "title": "Injuries",
+            "id": "Whiplash"
+        },
+        {
+            "title": "Arena",
+            "id": "Arena_HealthDamaged"
+        },
+        {
+            "title": "RatInvasion",
+            "id": "Pyrophobia"
+        },
+        {
+            "title": "Escape",
+            "id": "FleeWithBackpack"
+        },
+        {
+            "title": "Sport",
+            "id": "BallCarrier"
+        },
+        {
+            "title": "Misc",
+            "id": "DeadlyPoisoned"
+        }
+    ]
+},

@@ -1,0 +1,56 @@
+{
+	"id": "Sorcerer",
+	"weaponTypes": [
+		{
+			"wp": "Wand"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "SorcererPath"
+		}
+	],
+	"props": {
+		"armorKind": "ArmorLight",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 6,
+			"attribute": "Constitution",
+			"upValue": 32
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 6,
+			"attribute": "Movement"
+		},
+		{
+			"value": 6,
+			"attribute": "Willpower",
+			"upValue": 30
+		}
+	],
+	"model": "chars/Prefabs/Prefab_WP.prefab",
+	"notes": "",
+	"name": "Sorcerer",
+	"tier": 1,
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},

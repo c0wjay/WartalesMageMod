@@ -1,0 +1,137 @@
+{
+	"id": "Mage",
+	"weaponTypes": [
+		{
+			"wp": "Wand"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "Wrath",
+			"minLevel": 0
+		},
+		{
+			"skill": "Dash",
+			"minLevel": 0
+		},
+		{
+			"skill": "FirstAid",
+			"minLevel": 0
+		},
+		{
+			"skill": "TargetHeal",
+			"minLevel": 2
+		},
+		{
+			"skill": "FearVoice",
+			"minLevel": 2
+		},
+		{
+			"skill": "EarthQuake",
+			"minLevel": 2
+		},
+		{
+			"skill": "SummonBeast",
+			"minLevel": 2
+		},
+		{
+			"skill": "RangeHeal",
+			"minLevel": 5
+		},
+		{
+			"skill": "DeathScent",
+			"minLevel": 5
+		},
+		{
+			"skill": "FireBall",
+			"minLevel": 5
+		},
+		{
+			"skill": "SummonUndead",
+			"minLevel": 5
+		},
+		{
+			"skill": "Meditation",
+			"minLevel": 8
+		},
+		{
+			"skill": "Enlightment",
+			"minLevel": 8
+		},
+		{
+			"skill": "AutoSwapPosition",
+			"minLevel": 8
+		},
+		{
+			"skill": "GroupHeal",
+			"minLevel": 10
+		},
+		{
+			"skill": "PainLess",
+			"minLevel": 10
+		},
+		{
+			"skill": "ThunderStorm",
+			"minLevel": 10
+		},
+		{
+			"skill": "SummonChampion",
+			"minLevel": 10
+		},
+		{
+			"skill": "SwapPosition",
+			"minLevel": 12
+		},
+		{
+			"skill": "ClassSpecialization",
+			"minLevel": 12
+		}
+	],
+	"props": {
+		"flags": 2
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 6,
+			"attribute": "Constitution",
+			"upValue": 32
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 6,
+			"attribute": "Movement"
+		},
+		{
+			"value": 6,
+			"attribute": "Willpower",
+			"upValue": 30
+		}
+	],
+	"model": "chars/Prefabs/Prefab_WP.prefab",
+	"notes": "",
+	"name": "Wizard",
+	"tier": 0,
+	"equipment": [
+		{
+			"armor": "BaseArmorStart1",
+			"weapon": "WandStart"
+		}
+	],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+}

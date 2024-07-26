@@ -1,0 +1,37 @@
+{
+    "id": "WandStart",
+    "name": "Basic Wand",
+    "weight": 0.5,
+    "baseBonus": [
+        {
+            "value": 1,
+            "attribute": "Willpower"
+        }
+    ],
+    "props": {
+        "model": "chars/Weapons/Mace_01.fbx",
+        "skill": "MagicMissile",
+        "disableLoot": true
+    },
+    "icon": {
+        "file": "ui/Icons/GearIcons/1HHammersIcons.png",
+        "size": 96,
+        "x": 0,
+        "y": 0,
+        "height": 2
+    },
+    "type": "Wand",
+    "price": 11,
+    "desc": "",
+    "rarity": 0,
+    "group": 4,
+    "iconeDone": true
+},
+
+// separators under BowStart
+
+{
+    "title": "Wands",
+    "level": 2,
+    "id": "WandStart"
+}

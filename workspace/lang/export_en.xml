@@ -1,0 +1,145 @@
+    </Bow>
+    <Wand>
+      <name>Wand</name>
+      <props.nameCraftCategory>Wand</props.nameCraftCategory>
+    </Wand>
+
+    </BowLegendaryArenaH1>
+    <WandStart>
+      <name>Clunky Wand</name>
+      <desc>It's a lousy wand.</desc>
+    </WandStart>
+
+    </Brute>
+    <Mage>
+      <name>Mage</name>
+    </Mage>
+    <Priest>
+      <name>Priest</name>
+    </Priest>
+    <Warlock>
+      <name>Warlock</name>
+    </Warlock>
+    
+    </InsectSmash>
+    <TargetHeal>
+      <name>Distance Heal</name>
+      <desc>Restores [Health] to an allied unit. This skill is affected by the caster's [Willpower].</desc>
+      <levels>
+        <line0>
+          <desc>Restores [Health] to an allied unit. This skill is affected by the caster's [Willpower].<br/>Increases healing and repairs some of the target's [Armour]..</desc>
+        </line0>
+      </levels>
+    </TargetHeal>
+    <RangeHeal>
+      <name>Healing Bomb</name>
+      <desc>Restores [Health] to all allied units in the area. This skill is affected by the caster's [Willpower].</desc>
+      <levels>
+        <line0>
+          <desc>Restores [Health] to all allied units in the area. This skill is affected by the caster's [Willpower].<br/>Increases healing and has a chance to apply ::value2:: [Protection] for a round.</desc>
+        </line0>
+      </levels>
+    </RangeHeal>
+    <GroupHeal>
+      <name>Group Heal</name>
+      <desc>Restores [Health] to all allied units on the battlefield. This skill is affected by the caster's [Willpower].</desc>
+      <levels>
+        <line0>
+          <desc>
+            Restores [Health] to all allied units on the battlefield. This skill is affected by the caster's [Willpower].<br/>Increases healing.
+          </desc>
+        </line0>
+      </levels>
+    </GroupHeal>
+    <FearVoice>
+      <name>Voice of Fear</name>
+      <desc>Enemies who hear the voice will receive between 1 and 5 [Terror]. The higher the caster's [Willpower], the more [Terror] they can deal.</desc>
+      <levels>
+        <line0>
+          <desc>Enemies who hear the voice will receive between 1 and 5 [Terror]. The higher the caster's [Willpower], the more [Terror] they can deal.<br/>Higher chance to deal more [Terror], and have a chance to inflict [Immobile] for 1 turn.</desc>
+        </line0>
+      </levels>
+    </FearVoice>
+    <DeathScent>
+      <name>Scent of Death</name>
+      <desc>Enemies in the range will be in one of the following states: [Fragility], [Fracture], [Weakening], or [Bruise]. If the caster's [Willpower] is low, there is a chance of failure.</desc>
+      <levels>
+        <line0>
+          <desc>Enemies in the range will be in one of the following states: [Fragility], [Fracture], [Weakening], or [Bruise]. If the caster's [Willpower] is low, there is a chance of failure.<br/>Enemies have a low chance to be [Stun] for 2 turns.</desc>
+        </line0>
+      </levels>
+    </DeathScent>
+    <PainLess>
+      <name>Painless</name>
+      <desc>The targeted ally will be in one of the following states: [Enervate], [Berserk], or [BrothersFury]. If the caster's [Willpower] is low, there is a chance of failure.</desc>
+      <levels>
+        <line0>
+          <desc>The targeted ally will be in one of the following states: [Enervate], [Berserk], or [BrothersFury]. If the caster's [Willpower] is low, there is a chance of failure.<br/>Allies have a low chance to become [Arena_Willforce] for 2 turns.</desc>
+        </line0>
+      </levels>
+    </PainLess>
+    <Meditation>
+      <name>Meditation</name>
+      <desc>Restores ::value1:: Valour points.</desc>
+    </Meditation>
+    <Enlightment>
+      <name>Enlightment</name>
+      <desc>Unit's [Willpower] is increased by [ATTR]%.</desc>
+    </Enlightment>
+    <AutoSwapPosition>
+      <name>Escape Maneuver</name>
+      <desc>When this unit is attacked, it swaps position with an unengaged ally nearby.<br/>Ally gains [Dodge] and attacking enemy gains [Confuse] for 1 turn.</desc>
+    </AutoSwapPosition>
+    <SwapPosition>
+      <name>Position Swap</name>
+      <desc>This unit swaps places with a selected ally.<br/>The swapped ally gains [Dodge].</desc>
+    </SwapPosition>
+    <MagicMissile>
+      <name>Magic Missile</name>
+      <desc>
+        Deals [DMG] to the target.
+      </desc>
+    </MagicMissile>
+    <PriestPath>
+      <name>Path of Priest</name>
+      <desc>
+        At the start of combat, you gain [ReinforcedRecovery].
+      </desc>
+    </PriestPath>
+    <WarlockPath>
+      <name>Path of Warlock</name>
+      <desc>
+        At the start of combat, you gain [ReinforcedCurse].
+      </desc>
+    </WarlockPath>
+    <SorcererPath>
+      <name>Path of Sorcerer</name>
+      <desc>
+        At the start of combat, you gain [ReinforcedElement].
+      </desc>
+    </SorcererPath>
+
+    </Executer>
+    <ReinforcedRecovery>
+      <name>Reinforced Recovery</name>
+      <desc>
+        Increases the effectiveness of the [Priest] class skill. Increases [Willpower] by [ATTR_0]%.
+      </desc>
+    </ReinforcedRecovery>
+    <ReinforcedCurse>
+      <name>Reinforced Curse</name>
+      <desc>
+        Increases the effectiveness of the [Warlock] class skill. Increases [Willpower] by [ATTR_0]%.
+      </desc>
+    </ReinforcedCurse>
+    <ReinforcedElement>
+      <name>Reinforced Element</name>
+      <desc>
+        Increases the effectiveness of the [Sorcerer] class skill. Increases [Willpower] by [ATTR_0]%.
+      </desc>
+    </ReinforcedElement>
+
+    <Willpower>
+      <name>Willpower</name>
+      <desc>Used to boost the troop's Morale in combat. Also increases the [CritHitPercent].<br/>Affect skill efficiency for the mage class.</desc>
+    </Willpower>

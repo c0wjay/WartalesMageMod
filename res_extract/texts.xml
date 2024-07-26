@@ -1,0 +1,2837 @@
+<texts>
+	<t id="fmt_dmg"><b>::value::</b> dégâts</t>
+
+	<t id="list_name">::names:: <default>et</default> ::last::</t>
+
+	<t id="level">Niveau</t>
+
+	<g id="unit_ranks">
+		<t>Aucun</t>
+		<t>Lieutenant</t>
+		<t>Capitaine</t>
+	</g>
+
+	<g id="time">
+		<t id="short_perday">/j</t>
+		<t id="hours">::h:: heures</t>
+		<t id="day">un jour et ::h:: heures</t>
+		<t id="days">::d:: jours et ::h:: heures</t>
+		<t id="current_time">Jour ::day::, ::hour::h</t>
+		<t id="current_time_month">Mois ::month::, jour ::day::, ::hour::h</t>
+		<t id="current_day_month">Mois ::month::, jour ::day::</t>
+		<t id="current_day">Jour ::day::</t>
+		<t id="short_days_label">(::days::j)</t>
+		<t id="yesterday">Hier</t>
+		<t id="today">Aujourd'hui</t>
+		<t id="tomorrow">Demain</t>
+		<t id="days_ago">Il y a ::days:: jours</t>
+		<t id="days_future">Dans ::days:: jours</t>
+	</g>
+
+	<g id="trait_levels">
+		<t>Débutant</t>
+		<t>Novice</t>
+		<t>Apprenti</t>
+		<t>Confirmé</t>
+		<t>Compagnon</t>
+		<t>Maître</t>
+	</g>
+
+	<g id="unit_info">
+		<t id="defense">Défense</t>
+		<t id="stuff">Équipement</t>
+		<t id="skills">Compétences</t>
+		<t id="skill_action">[LMB] Apprendre</t>
+		<t id="restore_skillbar">Réinitialiser l'ordre</t>
+		<t id="status">Blessures et Statuts</t>
+		<t id="exp">Expérience</t>
+		<t id="attribs">Attributs</t>
+		<t id="traits">Traits</t>
+		<t id="level">Niveau ::level::</t>
+		<t id="levelMaxed">Niveau maximum atteint</t>
+		<t id="xp">XP</t>
+		<t id="salary">Solde</t>
+		<t id="food">Consommation</t>
+		<t id="crit_damages">Dégâts critique: <good>+::value::%</good></t>
+		<t id="escape">Capacité d'évasion</t>
+		<t id="willpower_resolve_bonus"><b>::value:: points :</b> La première fois que cette unité est censée mourir au combat, elle reste en vie (une fois par combat).</t>
+		<t id="attribute_upgrade">Ajouter 1<img src="icon/UnitInfoLevelUp"/> pour <influence>::value::</influence></t>
+		<t id="attribute_upgrade_action">[LMB] Améliorer</t>
+		<t id="attribute_upgrade_add">[LMB] Ajouter 1<img src="icon/UnitInfoLevelUp"/></t>
+		<t id="attribute_upgrade_remove">[RMB] Supprimer 1<img src="icon/UnitInfoLevelUp"/></t>
+	</g>
+
+	<g id="escape">
+		<t id="desc">Les prisonniers peuvent s'enfuir pendant le repos.</t>
+		<t id="escape_chance">Probabilité de fuite au prochain repos :</t>
+		<t id="none"><good>Aucun</good></t>
+		<t id="low"><good>Faible</good></t>
+		<t id="medium"><warn>Moyenne</warn></t>
+		<t id="high"><bad>Élevée</bad></t>
+	</g>
+
+	<g id="happy_bonus">
+		<t id="campfire">Compagnons assignés au feu de camp</t>
+		<t id="comfortable_fur">Compagnons à proximité de ::unit::</t>
+		<t id="starvation">Vos compagnons ont faim !</t>
+		<t id="starvation2">Vos compagnons sont affamés !</t>
+		<t id="salaries_late">Vos compagnons sont mécontents du retard de solde !</t>
+		<t id="salaries_late2">Vos compagnons sont furieux du retard de solde !</t>
+		<t id="bad_diet">Régime alimentaire non respecté</t>
+		<t id="rest_forest">Repos en forêt</t>
+		<t id="food_bonus">Nourriture</t>
+		<t id="wood_bonus">Feu de camp entretenu</t>
+		<t id="other_bonus">Autre effet positif</t>
+		<t id="other_malus">Autre effet négatif</t>
+		<t id="smelly_odour">Odeur pestilentielle dans le camp</t>
+		<t id="bestfriend_adjacent">Meilleurs amis dorment ensemble</t>
+		<t id="bestfriend_tool">Meilleurs amis assignés au même outil de camp</t>
+		<t id="enemy_adjacent">Ennemis dorment ensemble</t>
+		<t id="enemy_tool">Ennemis assignés au même outil de camp</t>
+		<t id="animal_friendship">Animal heureux</t>
+	</g>
+
+
+	<g id="compass">
+		<t>Nord</t>
+		<t>Nord-est</t>
+		<t>Est</t>
+		<t>Sud-est</t>
+		<t>Sud</t>
+		<t>Sud-ouest</t>
+		<t>Ouest</t>
+		<t>Nord-ouest</t>
+	</g>
+
+	<g id="battle">
+		<t id="allies">Alliés</t>
+		<t id="newRound">Un nouveau round commence.</t>
+		<t id="end_turn">Terminer le tour de ::unit::</t>
+		<t id="unit_has_played">Ce compagnon a déjà joué son tour.</t>
+		<t id="unit_can_play">Ce compagnon n'a pas encore joué son tour.</t>
+		<t id="anotherUnitPlaying">Un autre compagnon a démarré son tour.</t>
+		<t id="reinforcement">Renfort</t>
+		<t id="knockout_successful">Assommé !</t>
+		<t id="capture_successful">Capturé !</t>
+		<t id="corrupt_successful">Soudoyé !</t>
+		<t id="willpower_resolve_bonus">Volonté !</t>
+		<t id="miss">Manqué</t>
+		<t id="ouch">Aïe !</t>
+		<t id="timeline_your_unit">Vous pouvez jouer n'importe quelle unité vous appartenant n'ayant pas joué à ce round.</t>
+		<t id="timeline_enemy_unit">L'adversaire jouera n'importe quelle unité lui appartenant n'ayant pas joué à ce round.</t>
+		<t id="timeline_unit">::name:: jouera son tour.</t>
+		<t id="timeline_end_round">Fin de round</t>
+		<t id="morale">Tuez les unités ennemies pour faire grimper votre jauge de moral et obtenir la victoire plus rapidement.</t>
+
+		<t id="cancelPendingSkill">Cliquer pour lancer "::skill::" et commencer le tour de cette unité</t>
+		<t id="cancelReactionSkill">Cliquer pour mettre fin à "::skill::" et commencer le tour de cette unité</t>
+		<t id="bonus_ap_desc">Vous avez <apt>::count::</apt> <b>points de bravoure bonus</b> à dépenser uniquement pendant ce combat.</t>
+
+		<t id="pending_skill_delay">Cette unité a préparé une compétence qui se lancera au début de son tour.</t>
+		<t id="pending_skill_reaction">Cette unité a une compétence qui agit lors du tour des autres unités.</t>
+
+		<t id="notify_enemy_renfort">Des renforts ennemis arrivent !</t>
+		<t id="notify_ally_renfort">Des renforts alliés arrivent !</t>
+		<t id="no_retreat"><bad>Vous ne pouvez pas battre en retraite.</bad></t>
+		<t id="no_retreat_extreme"><bad>Vous ne pouvez pas battre en retraite en difficulté de combat extrême.</bad></t>
+
+		<g id="notify">
+			<t id="bionn_transformation">L'infection de Bionn prend le dessus et elle perd le contrôle !</t>
+			<t id="eokeld_barrels">Eokeld a placé des barils explosifs dans le gréement qui tomberont dans les prochains tours !</t>
+		</g>
+
+		<g id="renforts">
+			<t id="title">Gestion des renforts</t>
+			<t id="call_deploy">[LMB] Choisir une unité en renfort</t>
+			<t id="renfort_action">[LMB] Replier</t>
+			<t id="deploy_action">[LMB] Déployer</t>
+			<t id="manage_deploy">[LMB] Gérer les renforts</t>
+			<t id="view_deploy">[LMB] Voir les renforts</t>
+		</g>
+
+		<g id="sport">
+			<t id="game_start">La partie commence !</t>
+			<t id="half_time">Mi-temps</t>
+			<t id="end_game">Fin du match !</t>
+			<t id="no_ball">Vous devez vous débarrasser du ballon.</t>
+			<t id="captain_engage">Le porteur de ballon doit engager la partie.</t>
+		</g>
+	</g>
+
+	<g id="battlemode">
+		<g id="common">
+			<t id="unit_madness">::name:: a été atteint par la folie.</t>
+		</g>
+		<g id="arena">
+			<t id="arenaRule">Règle spéciale de l'arène</t>
+			<t id="arenaRules">Règles spéciales de l'arène</t>
+			<t id="choosePlayerTeam">Choisissez vos combattants</t>
+			<t id="playerTeam">Votre équipe</t>
+
+			<t id="hardMode">Difficile</t>
+
+			<t id="demand">Exigence</t>
+			<t id="reward">Récompense :</t>
+			<t id="unitTargetWarning">::name:: sera mis hors-combat si l'exigence n'est pas remplie.</t>
+
+			<t id="voxPopuliDesc">Suite à votre victoire, le public vous adore : choisissez une amélioration pour le reste de la compétition.</t>
+			<t id="voxPopuliTitle">Choisissez un don</t>
+			<t id="newRule">Nouvelle règle d'arène :<br /><b>::rule::</b></t>
+
+			<t id="confirmStartFight">Inscrire cette équipe ?</t>
+			<t id="confirmStartNextFight">Débuter le prochain combat ?</t>
+			<t id="confirmStartChampion">Affronter le Champion ?</t>
+			<t id="confirmActionEmpty"><bad>Certaines unités n'ont aucun bonus de sélectionné.</bad></t>
+
+			<t id="confirmLeaveArena">Abandonner toute votre progression dans cette arène ?</t>
+
+			<t id="cantFight">Vous devez inscrire quatre compagnons pour participer à la compétition.</t>
+			<t id="unitAlreadyRegister">Cette unité est déjà inscrite.</t>
+
+			<t id="arenaFightSelectorTitle">Choix de l'épreuve</t>
+			<g id="arenaLegendsNames">
+				<t>Terrain Impraticable</t>
+				<t>Exigences Critiques</t>
+				<t>Bêtes Ardentes</t>
+				<t>Rats Cauchemardesques</t>
+				<t>Commando Mortel</t>
+			</g>
+
+			<t id="arenaLegendsEmptyName">Votre réputation n'est pas suffisante</t>
+
+			<t id="progressNormal"><img src="/icon/Arena_Medal_Empty"/>Epreuve non réussie en normale</t>
+			<t id="progressNormalWin"><img src="/icon/Arena_Medal"/>Epreuve réussie en normale</t>
+			<t id="progressHard"><img src="/icon/Arena_Medal_Empty"/>Epreuve non réussie en difficile</t>
+			<t id="progressHardWin"><img src="/icon/Arena_Medal_Hard"/>Epreuve réussie en difficile</t>
+
+			<t id="legendsNoReward">Récompenses déjà obtenues</t>
+
+			<t id="notifyRenfortChampion">::name:: arrive en renfort!</t>
+			<t id="notifyRenfortChampions">::name1:: et ::name2:: arrivent en renfort!</t>
+
+			<t id="finalChampionsWakeUp">Les apprentis encouragés par leur maître se relèvent pour combattre avec leurs dernières forces !</t>
+			<t id="hiltrerdEntry1">Des bruits métalliques se font entendre du fond de l'arène !</t>
+			<t id="hiltrerdEntry2">Hiltrerd fait sont entrée pour venger ses apprentis et affirmer sa puissance !</t>
+			<t id="hiltrerdP2">Hiltrerd reprend ses esprits et utilise une relique des Anciens !</t>
+		</g>
+		<g id="ratinvasion">
+			<t id="description">La mort de la matriarche déclenche la fin du combat.
+			Essayez de détruire le plus d'excroissances pestiférées possibles pour obtenir des réactifs alchimiques !</t>
+			<t id="NestDeath">Un nid a été détruit !</t>
+			<t id="MatriarchDeath">La matriarche est morte. Les rats, pris de panique, s'enfuient !</t>
+			<t id="RatSpawn">Des rats sortent des trous !</t>
+
+			<t id="DayNotification">L'aube se lève. Les rats se calment.</t>
+			<t id="NightNotification">La nuit tombe. Les rats enragent !</t>
+
+			<t id="debrief">Vos compagnons ont tué ::rat:: rats et ont réussi à détruire ::nest:: excroissances pestiférées.</t>
+		</g>
+		<g id="ghostpack">
+			<t id="notify_nightmare_renfort">Un Cauchemar vient d'apparaître !</t>
+			<t id="unit_terror">::name:: fuit de peur et abandonne lâchement votre troupe !</t>
+			<t id="enemy_terror">::name:: est mort de peur !</t>
+		</g>
+		<g id="reach">
+			<t id="notify_plagueridden_renfort">De nouveaux pestiférés approchent !</t>
+			<t id="reach_objective">Atteignez la zone de fuite puis faites fuir vos compagnons.</t>
+		</g>
+		<g id="forsakenvillage">
+			<t id="new_wave">Des pestiférés tentent de pénétrer dans le bâtiment !</t>
+			<t id="search_desc">Utilisez votre compétence Trouver une issue pour faire augmenter la jauge et fuir !</t>
+			<t id="forsaken_objective">Tenez bon et trouvez une issue.</t>
+		</g>
+		<g id="celestium">
+			<t id="search_desc">Protégez les érudits le temps qu'ils examinent la relique.</t>
+			<t id="celestium_relic_name">Relique du Célestium</t>
+			<t id="destroy_desc">Détruisez la relique.</t>
+		</g>
+		<g id="survival">
+			<t id="remaining_rounds">Survivez encore ::count:: Rounds</t>
+		</g>
+		<g id="escape">
+			<t id="escaped">S'est enfui !</t>
+		</g>
+		<g id="sport">
+			<t id="regionRules">Règles de Région</t>
+			<t id="noRules">Aucune règle locale</t>
+			<t id="choosePlayerTeam">Constituez votre équipe</t>
+			<t id="playerTeam">Votre équipe</t>
+			<t id="cantFight">Vous devez inscrire 6 compagnons pour participer au match.</t>
+			<t id="noRole">Vous devez attribuer un poste à tous vos compagnons.</t>
+			<t id="noTeamLeader">Vous devez désigner un Capitaine d'équipe.</t>
+			<t id="rounds">Round ::current::/::total::</t>
+			<g id="sport_objective">
+				<t>- Portez un ballon dans la zone d'embut adverse pour marquer 2 points.</t>
+				<t>- Possédez le 2eme ballon lors de la marque pour 1 point additionel.</t>
+				<t>- L'équipe qui possède le plus de points à la fin du 8eme round remporte la partie.</t>
+			</g>
+			<t id="sport_objective_hard">
+				- Vous DEVEZ marquer au moins 5 points pour valider la victoire.
+			</t>
+
+			<t id="unitTip">
+				::name::
+
+				::status::
+
+				::action::
+				::action2::
+			</t>
+		</g>
+		<g id="boat">
+			<t id="duel_objective">
+				Chaque phrase du capitaine adverse est associée à une des 3 actions suivantes : Attaque, Parade, Insulte.
+				Répondez correctement en choisissant la bonne action :
+
+				- Si vous utilisez Attaque et que l'ennemi utilise Insulte, vous le touchez.
+				- Si vous utilisez Parade et que l’ennemi utilise Attaque, vous évitez le coup.
+				- Si vous utilisez Insulte et que l'ennemi utilise Parade, vous prenez l’Avantage.
+
+				Si les deux duellistes frappent en même temps, celui qui a l'avantage remporte le point.
+				Si un duelliste réussit une parade et qu'il a l'avantage, il contre-attaque.
+
+				Il est impossible d'utiliser deux fois d'affilée la même action.
+			</t>
+			<t id="specialRules">Atouts cumulés</t>
+			<t id="newRule">Atout supplémentaire</t>
+			<t id="duel_wait">Attendre</t>
+			<t id="dialog_upset">...</t>
+			<t id="action_used_last_turn">Vous avez déjà utilisé cette action au dernier tour.</t>
+			<t id="captain_engaged">Le capitaine est déjà engagé avec une autre unité.</t>
+		</g>
+		<g id="seasnake">
+			<t id="Reload1">Pour projeter la Lance de Bélérion, il faut serrer la baliste au maximum. Charger le tir va prendre plus de temps que prévu.</t>
+			<t id="Reload2">::name:: a presque fini de charger la baliste.</t>
+			<t id="Reload3">La baliste est prête à tirer !</t>
+			<t id="ShotMissed">Vos compagnons ont hélas gaspillé leur unique chance d'abattre le Serpent de Mer...</t>
+			<t id="BeatSnake">Le Serpent de mer est vulnérable, abattez-le !</t>
+			<t id="SeaCrawlerSpawn">Le Serpent de mer appelle des renforts !</t>
+		</g>
+	</g>
+
+	<g id="skills">
+		<t id="range">Portée: ::range::m</t>
+		<t id="stack_bonus">Actuel: ::value::%</t>
+		<t id="right_click_preview_on">[RMB] Verrouiller la prévisualisation</t>
+		<t id="right_click_preview_off">[RMB] Déverrouiller la prévisualisation</t>
+		<t id="change_behavior">[LMB] Changer le comportement</t>
+		<t id="drag_skill">[LMB] Déplacer <small>(maintenir)</small></t>
+		<t id="pad_drag_skill"><img src="icon/Pad_L3"/> Modifier l'ordre</t>
+		<g id="mode">
+			<t id="melee">Mêlée</t>
+			<t id="meleeWithRange">Mêlée - Allonge ::range::m</t>
+			<t id="zone">Zone de ::radius::m</t>
+			<t id="shot">Tir ::range::m</t>
+			<t id="move">Mouvement ::distance::m</t>
+			<t id="passive">Passif</t>
+			<t id="injury">Blessure</t>
+			<t id="immediate">Immédiat</t>
+			<t id="str_attrib">( force )</t>
+			<t id="dex_attrib">( dext. )</t>
+		</g>
+		<g id="modeName">
+			<t id="TargetUnit">Mêlée</t>
+			<t id="Precision">Tir</t>
+			<t id="Passive">Passif</t>
+			<t id="Move">Mouvement</t>
+			<t id="Immediate">Immédiat</t>
+			<t id="Zone">Zone</t>
+		</g>
+		<g id="attr">
+			<t id="default_action">Action de base</t>
+			<t id="need_item">Nécessite</t>
+		</g>
+		<g id="warn">
+			<t id="cant_use_if_engaged">Vous ne pouvez pas utiliser cette compétence si le compagnon est engagé.</t>
+			<t id="cant_use_if_disengaged">Vous ne pouvez utiliser cette compétence que si le compagnon est engagé.</t>
+			<t id="cant_use_if_disarmed">Vous ne pouvez pas utiliser cette compétence si le compagnon est désarmé.</t>
+			<t id="cant_use_dying">Vous ne pouvez pas utiliser cette compétence si le compagnon est mourant.</t>
+			<t id="cant_end_turn">Vous devez débuter le tour d'une de vos unités pour pouvoir mettre fin au tour.</t>
+			<t id="already_used">Cette compétence a déjà été utilisée pendant ce combat.</t>
+			<t id="ultimate_used_this_round">Vous avez déjà effectué un Coup d'éclat à ce round.</t>
+			<t id="utimate_too_soon">Le Coup d'éclat n'est pas disponible avant le round ::round::.</t>
+			<t id="beltAccBaseActionOnly">Vous ne pouvez pas utiliser cette compétence en étant équipé du Petit gantelet</t>
+			<t id="oil_already_applied_same">Cette huile est déjà appliquée à cette arme. Cette compétence n'aura aucun effet.</t>
+			<t id="oil_already_applied">Vous avez déjà appliqué une huile à cette arme durant ce combat, celle-ci remplacera la précédente.</t>
+		</g>
+	</g>
+
+	<g id="gameover">
+		<t id="no_unit">Votre dernier compagnon a quitté votre troupe.</t>
+		<t id="battle_lose">Aucun de vos compagnons n'est ressorti vivant de cette bataille.</t>
+		<t id="accompany_die">::name:: est mort.</t>
+		<t id="accompany_die_woman">::name:: est morte.</t>
+		<t id="ruin_no_light">Vous n'avez plus de <img src="icon/RuinsLight"/><b>Lumière</b>.</t>
+
+		<t id="ironmen">L'aventure de votre troupe s'arrête ici.</t>
+
+		<t id="sea_snake">Le Serpent de Mer a détruit le bateau de vos compagnons.</t>
+	</g>
+
+	<g id="multiplayer">
+		<t id="creationTroop">Ces compagnons forment votre troupe de départ. De nouvelles recrues pourront vous rejoindre plus tard.</t>
+		<t id="waitingPlayers">En attente de : ::names::</t>
+		<t id="holdToSkip">[LMB] Forcer <small>(maintenir)</small></t>
+		<t id="waitCancel">[RMB] Annuler</t>
+		<t id="wait_players">En attente de joueurs</t>
+		<t id="notOwnedUnit">Ce compagnon appartient à ::name::.</t>
+		<t id="notOwnedUnitWithUnitName">::unitName:: appartient à ::name::.</t>
+		<t id="chooseOwnedUnit">Vous devez choisir l'un de vos compagnons.</t>
+		<t id="needOneOwnedUnit">Chaque joueur doit assigner au moins un de ses compagnons : <bad>::names::</bad></t>
+		<t id="players">Joueurs</t>
+		<t id="unassigned">Aucun joueur</t>
+		<t id="multi_tag">Coop</t>
+		<t id="load_multi_game">Charger une partie Coop</t>
+		<t id="click_to_release">Vous avez le contrôle de ce compagnon.<br/><br/><b>[LMB] Personnaliser</b><br/><b>[RMB] Libérer le contrôle</b></t>
+		<t id="confirm_release">Êtes-vous sûr de vouloir libérer le contrôle de ::name:: ?</t>
+		<t id="click_to_assign"><b>[RMB] Prendre le contrôle de ce compagnon</b></t>
+		<t id="not_your_unit">::name:: a le contrôle de ce compagnon.<br/><br/><b>[LMB] Inspecter</b></t>
+		<t id="not_your_unit_name">::unitName:: a le contrôle de ::name::.</t>
+		<t id="not_all_players_assigned">Certains joueurs ne contrôlent aucun compagnon : <bad>::names::</bad></t>
+		<t id="not_all_units_assigned">Certains compagnons ne sont contrôlés par aucun joueur.</t>
+		<t id="invite">Inviter</t>
+		<t id="confirm_leave_lobby">Êtes-vous sûr de vouloir quitter ?</t>
+		<t id="join_error">Impossible de rejoindre la partie</t>
+		<t id="join_version_error">Impossible de rejoindre la partie car elle utilise une version différente du jeu.</t>
+		<t id="disconnected">Déconnexion<br />Une erreur de communication avec l'hôte est survenue.</t>
+		<g id="playersArrow">
+			<t>J1</t>
+			<t>J2</t>
+			<t>J3</t>
+			<t>J4</t>
+		</g>
+		<t id="hold_action"><small>(maintenir)</small></t>
+		<t id="player_too_far">Les compagnons de ::playerName:: sont trop éloignés pour pouvoir entrer dans ce bâtiment.</t>
+		<t id="player_too_far_camp">Les compagnons de ::playerName:: sont trop éloignés pour pouvoir poser le campement.</t>
+		<t id="connection">En attente de l'hôte...</t>
+		<t id="waiting_players">En attente des joueurs...</t>
+		<t id="host_only">Seul l'hôte de la partie peut faire cette action.</t>
+		<t id="cant_create_lobby">Impossible de créer une session de jeu.<br />Veuillez réessayer ultérieurement.</t>
+
+		<t id="room_code">Code d'invitation</t>
+		<t id="show_hide_code">Afficher/Masquer le code d'invitation</t>
+		<t id="copy_code">Copier</t>
+		<t id="code_copied">Code copié</t>
+
+		<g id="errors">
+			<t id="LobbyFull">Impossible de rejoindre le salon<br />La session de jeu est pleine.</t>
+			<t id="InvalidPlayer">Impossible de rejoindre cette sauvegarde.<br />Aucun slot disponible.</t>
+			<t id="Fail">Impossible de rejoindre le salon.<br />Veuillez réessayer ultérieurement.</t>
+			<t id="InvalidCode">Aucune session de jeu liée à ce code d'invitation a été trouvée.</t>
+		</g>
+
+		<t id="add_user">Ajouter un nouveau joueur</t>
+		<t id="remove_user">Supprimer ::playerName::</t>
+		<t id="transfer_unit">Transférer des unités</t>
+		<t id="disconnection_idle">Votre partie va être déconnectée aprés une longue période d'inactivité.</t>
+		<t id="remaining_time">Temps restant :</t>
+		<t id="keep_connection">Rester connecté</t>
+	</g>
+
+	<g id="tips">
+		<t id="craft_by_troup">Fabriqué par la troupe</t>
+		<t id="seal_name">Estampille : ::skillName::</t>
+		<t id="tiredness">Fatigue</t>
+
+
+		<t id="tiredness_info">
+			La <b>Fatigue</b> de votre troupe indique quand il est nécessaire de poser votre camp et de vous reposer.
+			Utilisez le feu de camp pour prendre un bon repas et quelques heures de sommeil.
+		</t>
+		<t id="rest_not_tired">Votre troupe est suffisamment reposée pour le moment.</t>
+
+		<t id="gold_info">
+			Les <b>Krowns</b> constituent la monnaie de base. Vous devez payer le solde de vos compagnons tous les ::nbRest:: repos.
+
+			Repos avant le prochain solde : <b>::nextDueDate::</b>
+
+			Total actuel : <gold>::gold::</gold>
+			Soldes : <gold>::salaries::</gold>
+			Soldes dus : <gold>::dueSalaries::</gold>
+		</t>
+		<t id="gold_info_coop">Soldes totaux dus : <gold>::dueSalaries::</gold></t>
+
+		<t id="mission_gold">Contrats remplis : <gold>::gold::</gold></t>
+
+		<t id="food_info">
+			Vous devez nourrir vos compagnons avant chaque Repos : veillez à avoir suffisamment de <b>Nourriture</b> en stock.
+
+			Stock : <food>::food::</food>
+			Consommation : <food>::conso::</food>
+		</t>
+
+		<t id="happy_info_new">
+			Le <b>Bonheur</b> de votre troupe évolue au cours du temps.
+
+			Tâchez de maintenir un bonheur positif afin d'éviter tout départ d'un compagnon.
+
+			Votre bonheur actuel : <happy>::happy::</happy>
+
+			<::color0::><happy>::min::</happy> un compagnon voudra quitter votre troupe !</::color0::>
+			<::color1::><happy>::bonus::</happy> ::bonus1Text::</::color1::>
+			<::color2::><happy>::max::</happy> ::bonus2Text::</::color2::>
+
+			<::color2::>Pour tout gain au-delà de <happy>::max::</happy>, vous obtenez <influence><b>::infl::</b></influence> par point de bonheur.</::color2::>
+		</t>
+
+		<t id="repair_all">Tout réparer pour <img src="/item/RawMaterials"/>::count::</t>
+		<t id="repair_one">Réparer <img src="/icon/Guard"/>::amount:: pour <img src="/item/RawMaterials"/>1</t>
+		<t id="repair_ctrl_all"><comment>(Ctrl - Tout réparer)</comment></t>
+
+		<t id="pick_found_item">[RMB] Prendre</t>
+		<t id="drop_found_item">[RMB] Déposer</t>
+		<t id="buy_shop_item">[RMB] Acheter pour <gold>::price::</gold></t>
+		<t id="cant_buy_shop_item">[RMB] Acheter pour <gold><bad>::price::</bad></gold></t>
+
+		<t id="buy_shop_item_with">[RMB] Acheter pour <font color="#ffffff"><img src="item/::currency::"/>::price::</font></t>
+		<t id="cant_buy_shop_item_with">[RMB] Acheter pour <bad><img src="item/::currency::"/>::price::</bad></t>
+
+		<t id="sell_shop_item">[RMB] Vendre pour <gold>::price::</gold></t>
+		<t id="sell_shop_item_stolen">[RMB] Vendre pour <gold>::price::</gold> <bad><img src="icon/Suspicion"/> +::danger::</bad></t>
+
+		<t id="shop_ctrl_all"><comment>([CTRL] - Tout)</comment></t>
+
+		<t id="buy_shop_item_all">[RMB] Tout acheter pour <gold>::price::</gold></t>
+		<t id="cant_buy_shop_item_all">[RMB] Tout acheter pour <gold><bad>::price::</bad></gold></t>
+
+		<t id="buy_shop_item_with_all">[RMB] Tout acheter pour <font color="#ffffff"><img src="item/::currency::"/>::price::</font></t>
+		<t id="cant_buy_shop_item_with_all">[RMB] Tout acheter pour <bad><img src="item/::currency::"/>::price::</bad></t>
+
+		<t id="sell_shop_item_all">[RMB] Tout vendre pour <gold>::price::</gold></t>
+		<t id="sell_shop_item_stolen_all">[RMB] Tout vendre pour <gold>::price::</gold> <bad><img src="icon/Suspicion"/> +::danger::</bad></t>
+
+		<t id="steal_item">[RMB] Voler <bad><img src="icon/Suspicion"/> +::danger::</bad></t>
+		<t id="item_discounted_price"><good>(prix réduit temporairement)</good></t>
+		<t id="unit_equip_item">[RMB] Équiper</t>
+		<t id="unit_heal_injury">[RMB] Soigner une blessure</t>
+
+		<t id="item_require_level">Requiert niveau ::level::</t>
+		<t id="layer_require_level">Requiert une armure de niveau ::level::</t>
+		<t id="upgrade_weapon_need_unit">Requiert un compagnion de niveau ::level:: pouvant utiliser cette arme</t>
+		<t id="stolen_item_label">(objet volé)</t>
+
+		<t id="item_bonus">::name:: <img src="icon/::icon::"/><good>::value::</good></t>
+		<t id="item_convert">::name:: <img src="item/::item::"/><good>+::count::</good></t>
+		<t id="item_skill">Compétence <::color::>::name::</::color::></t>
+		<t id="item_diet_info">Régime associé :</t>
+
+		<t id="skill_item_usage">Utilisation restante : <b>::count::</b><img src="::icon::"/></t>
+		<t id="skill_item_usage_global_item">En possession : <b>::count::</b><img src="::icon::"/></t>
+
+		<t id="cant_equip_this_item">Cet objet ne peut pas être équipé</t>
+		<t id="cant_equip_no_armor_slot">Vous n'avez pas d'emplacement disponible sur l'armure</t>
+		<t id="cant_equip_no_helmet">Vous n'avez pas de casque équipé</t>
+		<t id="cant_equip_no_helmet_seal">L'estampille est déjà équipée sur ce casque</t>
+		<t id="cant_equip_no_weapon">Vous n'avez pas d'arme équipée</t>
+		<t id="cant_equip_no_weapon_oil">L'huile est déjà appliquée sur cette arme</t>
+		<t id="cant_equip_shield">::name:: ne peut pas équiper de bouclier</t>
+		<t id="cant_equip_this_weapon">::name:: ne peut pas équiper ce type d'arme</t>
+		<t id="cant_equip_armor">::name:: ne peut pas équiper "::armorType::"</t>
+		<t id="cant_equip_req_level">Votre niveau est insuffisant</t>
+		<t id="cant_equip_req_attribute">::name:: insuffisant</t>
+		<t id="can_equip_armor">Peut équiper les ::name::</t>
+		<t id="cant_equip_left_hand">La main gauche de ::name:: est déjà utilisée.</t>
+		<t id="cant_equip_madness">La folie empêche ::name:: d'équiper cet objet.</t>
+		<t id="cant_equip_not_prisoner">::name:: n'est pas prisonnier.</t>
+		<t id="item_already_equipped">Cet objet est déjà équipé.</t>
+
+		<t id="clear_armor_slots">[RMBSHIFT] Enlever les renforts (<img src="item/::item::"/> ::count::)</t>
+		<t id="clear_helmet_seal">[RMBSHIFT] Enlever l'estampille</t>
+
+		<t id="skill_replace_seal">Cette compétence est remplacée par celle de l'estampille</t>
+
+		<t id="cant_choose_specialization"><bad>Cette spécialisation nécessite la compétence </bad> <img src="skill/::skill::"/>::name::</t>
+
+		<t id="unit_salary">
+			Solde versée à ::name:: <gold>::daily::</gold>.
+			Vous lui devez <gold>::due::</gold> de solde.
+		</t>
+
+		<t id="unit_food">La consommation quotidienne de nourriture</t>
+		<t id="unit_food_trait">Nourriture favorite :</t>
+		<t id="unit_badDiet_days"><bad>::count:: jours de régime alimentaire non satisfait</bad></t>
+		<t id="unit_noDrinking_days">::count:: jours sans consommation d'alcool</t>
+
+		<t id="unit_recruitSalary">
+			Solde de ::name:: si recruté <gold>::daily::</gold>.
+		</t>
+
+		<t id="knockout_unit">
+			Ce combattant a été assommé pendant le combat et a été fait prisonnier.
+
+			[LMB] Actions
+			[RMB] Inspecter
+		</t>
+
+		<t id="knockout_unit_cannot">
+			Ce combattant a été assommé pendant le combat et ne peut pas être fait prisonnier (demande <img src="item/Chains"/><bad>1 chaînes</bad>).
+
+			[LMB] Actions
+			[RMB] Inspecter
+		</t>
+
+		<t id="knockout_unit_locked">
+			Ce combattant a été assommé pendant le combat.
+
+			[RMB] Inspecter
+		</t>
+
+		<t id="capture_animal">
+			Cet animal a été capturé pendant le combat et a été ajouté à votre troupe.
+
+			[LMB] Actions
+			[RMB] Inspecter
+		</t>
+
+		<t id="bury_unit">
+			Ce combattant a perdu la vie pendant le combat. Votre troupe aimerait lui rendre hommage.
+
+			[LMB] Enterrer
+		</t>
+
+		<t id="action_name_default">Inspecter</t>
+		<t id="action_name_talk">Parler</t>
+		<t id="element_action">[LMB] ::action::</t>
+		<t id="element_action_right">[RMB] ::action::</t>
+		<t id="element_action_npc">
+			::name::
+
+			[LMB] ::action::
+			[RMB] Inspecter
+		</t>
+		<t id="chest_locked">
+			<bad>Verrouillé</bad>
+
+			[RMB] Utiliser ::item::
+		</t>
+
+		<t id="ruins_light_cost">[LMB] ::action:: <img src="icon/RuinsLight"/><::color::>::value::</::color::></t>
+		<g id="ruins">
+			<t id="action_unexplored">Explorer</t>
+			<t id="action_explored">Emprunter</t>
+		</g>
+
+		<t id="gather_item">
+			::name::
+			::infos::
+			::button:: ::action::
+		</t>
+
+		<t id="gather_def_action">Ramasser</t>
+
+		<t id="recruit_action">Recruter</t>
+		<t id="recruit_cost">Recruter pour ::cost::</t>
+		<t id="dialog_requires">Requiert ::cost::</t>
+		<t id="dialog_wanted">Recherché <bad><img src="icon/Suspicion"/> +::range::</bad></t>
+		<t id="dialog_wanted_gains">Recherché <good><img src="icon/Suspicion"/> ::range::</good></t>
+		<t id="dialog_gains">Obtient ::gains::</t>
+		<t id="dialog_gains_mission">Récompense promise</t>
+
+		<t id="craft_requires_ingredients">Composants :</t>
+
+		<t id="cancel_action">Annuler</t>
+
+		<t id="cancel_daily_rest">Repos restants : ::count::</t>
+
+		<t id="rank_rest">Grade déjà attribué aujourd'hui</t>
+
+		<g id="choose_unit">
+
+			<t id="action_tip_no_job">
+				::name::
+
+				[LMB] ::action::
+			</t>
+
+			<t id="action_tip_ok">
+				::name::
+
+				[LMB] ::action::
+				[RMB] Choisir un Métier
+			</t>
+
+			<t id="action_tip_disabled">
+				::name::
+
+				::reasons::
+				[RMB] ::action::
+			</t>
+
+			<t id="action_assign_job">
+				[LMB] ::action::
+			</t>
+
+			<t id="action_assign_sport">
+				::name::
+
+				::status::
+
+				[LMB] ::action::
+			</t>
+
+			<t id="action">
+				::name::
+
+				[LMB] ::action::
+				[RMB] ::right_action::
+			</t>
+
+			<t id="validation_tip_disabled">
+				::reasons::
+			</t>
+
+			<t id="inspect_action">Inspecter</t>
+			<t id="choose_job_action">Choisir un Métier</t>
+			<t id="default_action">Sélectionner</t>
+
+			<t id="title_multiple">Sélectionner vos <font color="#FFF">Compagnons</font></t>
+			<t id="title_tent">Gestion de la Tente</t>
+			<t id="title">Sélectionner un <font color="#FFF">::traitName::</font></t>
+			<t id="name_unit">Compagnon</t>
+			<t id="not_allowed">Vous ne pouvez pas utiliser cette unité ici</t>
+			<t id="not_available">Cette unité n'est pas disponible</t>
+			<t id="injured">Compagnon blessé</t>
+			<t id="req_trait_level">Nécessite ::trait:: ::level::</t>
+			<t id="need_prisoner">Doit être prisonnier</t>
+			<t id="need_no_prisoner">Ne doit pas être prisonnier</t>
+			<t id="should_be_type">Doit être un ::name::</t>
+			<t id="job_required">Doit être ::name::</t>
+			<t id="level_required">Doit être niveau ::value::</t>
+			<t id="item_required">Doit être équipé de ::name::</t>
+			<t id="no_job">Sans métier</t>
+			<t id="select_count_require">Nécessite ::count:: unités</t>
+			<t id="no_available_unit">Aucun compagnon disponible</t>
+			<t id="already_assigned">Cette unité est déjà assignée à ::trait::</t>
+
+			<t id="types_separator"> ou </t>
+		</g>
+
+		<t id="inventory_weight">
+			Capacité de transport : <img src="icon/Weight"/><good>::transport::</good>
+			Poids de votre inventaire : <img src="icon/Weight"/><bad>::inv::</bad>
+			Poids de votre camp : <img src="icon/Weight"/><bad>::camp::</bad>
+		</t>
+
+		<t id="inventory_weight_over">
+			<bad>Vous transportez trop de poids !</bad>
+			Améliorez votre attelage ou déchargez des objets lourds.
+		</t>
+
+		<t id="inventory_full">Inventaire plein</t>
+
+		<g id="inventory_sort">
+			<t>Type</t>
+			<t>Prix</t>
+			<t>Poids</t>
+			<t>Rareté</t>
+		</g>
+
+		<t id="camp_place_tool">Placer dans le camp</t>
+		<t id="camp_cant_place_tool"><bad>Déjà dans le camp</bad></t>
+		<t id="camp_no_more_place"><bad>Aucun emplacement disponible.</bad></t>
+		<t id="hideout_reveal">Révéler l'emplacement</t>
+
+		<t id="camp_use_tool">[RMB] Utiliser</t>
+		<t id="camp_remove_tool">[RMBSHIFT] Ranger dans l'inventaire</t>
+		<t id="camp_move">[LMB] Déplacer <small>(maintenir)</small></t>
+		<t id="camp_move_no_hold">[LMB] Déplacer</t>
+		<t id="select_unit">[LMB] Choisir un compagnon</t>
+		<t id="inspect">[RMB] Inspecter</t>
+		<t id="shift_inspect">[RMBSHIFT] Inspecter</t>
+		<t id="leave_companion">[LMB] Laisser en garnison</t>
+		<t id="add_companion">[LMB] Intégrer à la troupe</t>
+
+		<t id="use_heal_remedy">[RMB] Soigner la blessure</t>
+
+		<t id="action_assign_armor_layer">[RMB] Ajouter le renfort à l'armure</t>
+		<t id="action_assign_helmet_seal">[RMB] Ajouter l'estampille au casque</t>
+
+		<t id="trade_log_buy"><small>::when::</small> <good>Acheté</good> <img src="item/::icon::"/><b>::name::</b><small>::qty::</small> à ::where:: pour <gold>::price::</gold></t>
+		<t id="trade_log_sell"><small>::when::</small> <bad>Vendu</bad> <img src="item/::icon::"/><b>::name::</b><small>::qty::</small> à ::where:: pour <gold>::price::</gold></t>
+
+		<t id="wanted_title">Recherché</t>
+		<t id="wanted_status_progress">Niveau de recherche actuel : <b>::current::/::max::</b></t>
+		<t id="wanted_status_active"><bad>Vous êtes recherché pour les raisons suivantes :</bad></t>
+		<t id="wanted_status_desc"><good>Vous n'êtes pas recherché par la garde actuellement.</good></t>
+		<t id="wanted_stolen_fine">Objets volés possédés</t>
+		<t id="wanted_stolen_used_fine">Objets volés disparus</t>
+		<t id="wanted_reason_fine"> - ::reason:: <gold>::fine::</gold></t>
+
+		<t id="item_level_short">Niv.::level::</t>
+
+		<g id="item_rarity">
+			<t>Commun</t>
+			<t>Inhabituel</t>
+			<t>Rare</t>
+			<t>Légendaire</t>
+		</g>
+		<t id="item_upgradable">- Améliorable</t>
+		<t id="item_unique">- Unique</t>
+
+		<t id="camp_assigned_count"><img src="icon/::icon::"/>::cur::/::max::</t>
+
+		<t id="battle_deploy_slot">Vous pouvez déplacer un de vos compagnons ici avant de commencer le combat.</t>
+
+		<t id="unit_set_job">::name:: deviendra ::job::.</t>
+		<t id="unit_switch_job">Ce compagnon perdra l'expérience acquise en tant que ::job:: ::level::.</t>
+		<t id="unit_no_job">Ce compagnon n'a pas encore de métier.</t>
+		<t id="unit_job">
+			<b>Métier:</b> ::name::
+		</t>
+		<t id="unit_job_choose">[LMB] Choisir un métier</t>
+		<t id="unit_job_change">[LMB] Changer de métier</t>
+
+		<t id="item_global_bonus"><b>Bonus de troupe:</b> ::desc::</t>
+		<t id="item_local_bonus"><b>Bonus :</b> ::desc::</t>
+		<t id="item_food_bonus"><disable> (dure jusqu'au prochain repos)</disable></t>
+
+		<t id="mission_board_cant_accept_quest">Vous devez terminer les contrats que vous avez déjà acceptés avant de pouvoir en accepter de nouveaux.</t>
+
+		<t id="gameinfo_toggle_units">Afficher/Masquer la liste des compagnons</t>
+
+		<t id="action_skill_upgrade">[RMB] Améliorer la compétence <img src="item/::item::"/></t>
+		<t id="skill_upgrade_no_unit">Inspectez un <idesc>Companion</idesc> et choisissez la compétence à améliorer.</t>
+		<t id="skill_upgradable">Choisissez la compétence à améliorer.</t>
+		<t id="skill_no_skill_upgradable"><bad>Votre <idesc>Companion</idesc> n'a aucune compétence améliorable.</bad></t>
+		<t id="unlock_class">Apprendre la spécialité <b>::name::</b></t>
+		<t id="preview_unlock_class">Prévisualiser la spécialité</t>
+
+		<t id="codex_need_restored">Ce codex des Anciens est détérioré. Vous pouvez le restaurer au <img src="item/Lectern"/><b>Lutrin</b>.</t>
+		<t id="codex_locked_desc">Le contenu de ce codex des Anciens peut être déchiffré seulement si les <b>runes</b> suivantes sont apprises :</t>
+		<t id="codex_can_be_unlocked">Le contenu de ce codex des Anciens peut être déchiffré au <img src="item/Lectern"/><b>Lutrin</b>.</t>
+		<t id="codex_unlocked_desc">Ce codex des Anciens a été déchiffré et le fragment de texte suivant obtenu :</t>
+		<t id="page_need_restored">Ce journal est détérioré. Vous pouvez le restaurer au <img src="item/Lectern"/><b>Lutrin</b>.</t>
+		<t id="page_locked_desc">Le contenu de ce journal peut être déchiffré seulement si les <b>runes</b> suivantes sont apprises :</t>
+		<t id="page_can_be_unlocked">Le contenu de ce journal peut être déchiffré au <img src="item/Lectern"/><b>Lutrin</b>.</t>
+		<t id="page_unlocked_desc">Ce journal a été déchiffré et le fragment de texte suivant obtenu :</t>
+		<t id="rune_desc">Vous avez progressé dans la connaissance des runes des Anciens. Cette rune représente le mot "<b>::word::</b>"</t>
+
+		<t id="recipe_food">Recette : ::name::</t>
+		<t id="recipe_food_desc">Vous apprend comment cuisiner : ::name::.</t>
+		<t id="recipe_alchemist">Recette : ::name::</t>
+		<t id="recipe_alchemist_desc">Vous apprend comment préparer : ::name::.</t>
+		<t id="recipe_forge_desc">Vous apprend comment forger : ::name::.</t>
+		<t id="recipe_other">Plan : ::name::</t>
+		<t id="recipe_other_desc">Vous apprend comment bricoler : ::name::.</t>
+
+		<t id="manual_name">Manuel : ::skillName::</t>
+		<t id="manual_desc">Renferme un savoir permettant à un de vos compagnons d'apprendre une nouvelle compétence.</t>
+		<t id="manual_requires_unit">Inspectez un <idesc>Companion</idesc> pour apprendre cette compétence.</t>
+		<t id="manual_already_learnt">Votre <idesc>Companion</idesc> connaît déjà cette compétence.</t>
+		<t id="strategy_name">Stratégie : ::strategyName::</t>
+		<t id="strategy_desc">Lire pour apprendre une nouvelle stratégie pour votre Table de Stratégie.</t>
+
+		<t id="job_assigned"><b><img src="/trait/::icon::"/> ::kind:: assigné: </b></t>
+		<t id="rank_assigned"><b>::kind:: assigné: </b></t>
+		<t id="ranked_assigned"><b>Compagnon gradé assigné: </b></t>
+
+		<t id="map_defended_by">Défendu par: <b>::name::</b></t>
+
+		<t id="probabilitySuccess">Chance de réussite : ::value::%</t>
+
+		<g id="bonuses">
+			<t id="title">Troupe et bonus</t>
+			<t id="gameTitle">::troopName::</t>
+			<t id="count">Vous avez <img src="icon/Companions"/><b>::count::</b> compagnons dans votre troupe.</t>
+			<t id="bonus_global">Bonus globaux</t>
+			<t id="bonus_equip">Bonus d'équipement</t>
+			<t id="bonus_path">Bonus de voies</t>
+			<t id="bonus_untilrest">Bonus jusqu'au prochain repos</t>
+			<t id="skill_untilrest">Passifs jusqu'au prochain repos</t>
+		</g>
+
+		<t id="dialog_rest">
+			Reposez-vous pour que votre troupe récupère sa fatigue ainsi que <ap>::ap::</ap>
+		</t>
+
+		<t id="dialog_sing">Laissez éclore vos talents de Barde en interprétant une chanson.</t>
+
+		<t id="recruit_announce">Passer une annonce pour engager une recrue.</t>
+
+		<t id="dialog_heal_injuries">
+			Soignez toutes les blessures communes de vos compagnons.
+		</t>
+		<t id="dialog_heal_prisoners_injuries">
+			Soignez toutes les blessures communes de vos prisonniers.
+		</t>
+
+		<t id="orient_map">[RMB] Placer un marqueur d'orientation</t>
+		<t id="stickers_map">[LMB] Placer un sticker</t>
+
+		<t id="map_goal_default">Rendez-vous à ce lieu pour en apprendre plus.</t>
+		<t id="map_goal_need_mission">Acceptez la mission de ::name::</t>
+		<t id="map_goal_need_mission_nonpc">Acceptez une mission à cet endroit</t>
+		<t id="map_goal_unknown">Parlez à quelqu'un ou cherchez dans ce lieu pour en apprendre plus.</t>
+		<t id="map_goal_done"><good>Accompli !</good></t>
+
+		<t id="open_gold_purse">Ouvrir</t>
+		<t id="use_hidden_item">Utiliser</t>
+
+		<g id="escape">
+			<t id="other_prisoners">Prisonnier dans la troupe</t>
+			<t id="ally_around">Compagnons à proximité</t>
+			<t id="watchstool_assign">Camp gardé</t>
+		</g>
+
+		<g id="relation">
+			<t id="gain_with">::value:: Relation avec ::name::.</t>
+			<t id="gain_group">::value:: Relation avec le groupe.</t>
+			<t id="gain_group_percent">::value:: Relation avec les compagnons proches.</t>
+			<t id="gain_group_best">::value:: Relation avec les compagnons appréciés.</t>
+			<t id="gain_companion">::value:: Relation avec un compagnon.</t>
+			<t id="gain_random_with">Affectera votre relation avec ::name::.</t>
+			<t id="gain_random_group">Affectera votre relation avec le groupe.</t>
+			<t id="gain_random_group_percent">Affectera votre relation avec les compagnons proches.</t>
+			<t id="gain_random_group_best">Affectera votre relation avec les compagnons appréciés.</t>
+			<t id="gain_random_companion">Affectera votre relation avec un compagnon.</t>
+		</g>
+
+		<g id="xp">
+			<t id="gain_self">::value:: xp</t>
+			<t id="gain_target">::value:: xp pour ::name::</t>
+			<t id="gain_group_percent">::value:: xp avec les compagnons proches.</t>
+		</g>
+
+		<t id="gain_injury">Risque de blessure</t>
+		<t id="gain_status">::name:: gagnera le Statut <b>::status::</b></t>
+		<t id="desc_status"><comment><b>::status::</b> : ::desc::</comment></t>
+		<t id="gain_trait">::name:: gagnera le Trait <b>::trait::</b></t>
+		<t id="gain_job">::name:: deviendra <b>::job:: ::level::</b></t>
+		<t id="rest_die">::name:: mourra au prochain repos.</t>
+
+
+		<g id="job_xp">
+			<t id="gain">::value:: xp en tant que ::job::</t>
+		</g>
+
+		<g id="confession">
+			<t id="suggested_by">Suggéré par ::name::.</t>
+			<t id="leaver">::name:: quittera la troupe.</t>
+			<t id="kill">::name:: mourra.</t>
+			<t id="surrender">::name:: ira en Prison.</t>
+			<t id="notify_relation_improve_list"><b>::name::</b> a amélioré sa relation avec: <b>::names::</b></t>
+			<t id="notify_relation_deteriorate_list"><b>::name::</b> a déterioré sa relation avec: <b>::names::</b></t>
+		</g>
+
+		<t id="attribute_point">Point(s) d'attribut</t>
+
+		<t id="item_required">Nécessite <img src="item/::item::"/><bad>::itemName::</bad></t>
+		<t id="food_delicious">Délicieux</t>
+
+
+		<g id="boat">
+			<t id="durability">Durabilité</t>
+			<t id="action_embark">Embarquer</t>
+			<t id="action_dock">Accoster</t>
+			<t id="crew_position">Poste d'équipage</t>
+			<t id="job_require">Nécessite ::jobName::</t>
+			<t id="job_action_require">Seul le compagnon assigné au poste ::jobName:: peut executer cette action.</t>
+			<t id="assign_job">[LMB] Assigner un compagnon</t>
+			<t id="unassign_job">[RMB] Retirer le compagnon</t>
+			<t id="replace_job">[LMB] Remplacer le compagnon</t>
+			<t id="boat_repatriate">Rapatrier le bateau à ce quai pour ::cost:: ?</t>
+			<t id="boat_repatriate_small">Rapatrier ::cost::</t>
+
+			<t id="action_install_equipment">[LMB] Installer l'équipement</t>
+			<t id="action_build_equipment">[LMB] Construire l'équipement</t>
+			<t id="action_upgrade_equipment">[RMB] Améliorer l'équipement</t>
+			<t id="action_repair_equipment">[RMB] Réparer l'équipement</t>
+
+			<t id="select_ammo">[LMB] Sélectionner</t>
+
+			<t id="need_dock_equipment"><bad>Le navire doit être à quai dans un Dock pour modifier l'équipement</bad></t>
+			<t id="need_dock_repair"><bad>Le navire doit être à quai dans un Dock pour subir des réparations</bad></t>
+			<t id="build_equipment_confirm">Construire ::item:: ?</t>
+			<t id="repair_confirm">Effectuer les réparations ?</t>
+			<t id="no_ballista">Le navire n'est pas équipé de baliste</t>
+			<t id="damaged_equipment"><bad>Cette partie du bateau est endommagée et ne fonctionne plus. Réparez-la dans un Dock.</bad></t>
+			<t id="repair">Réparation</t>
+			<t id="ballista_damaged"><bad>La balliste est endommagée</bad></t>
+
+			<t id="equipment_unknown">Vous n'avez pas encore trouvé le plan pour construire cet équipement.</t>
+		</g>
+
+		<g id="watchman">
+			<t id="animal_try_telling_something">**(Sons étranges provenant du poste de Vigie)**</t>
+
+			<g id="insight">
+				<t>::name:: regarde à l'Ouest.</t>
+				<t>::name:: regarde au Nord-Ouest.</t>
+				<t>::name:: regarde au Nord.</t>
+				<t>::name:: regarde au Nord-Est.</t>
+				<t>::name:: regarde à l'Est.</t>
+				<t>::name:: regarde au Sud-Est.</t>
+				<t>::name:: regarde au Sud.</t>
+				<t>::name:: regarde au Sud-Ouest.</t>
+			</g>
+
+			<t id="guard">"La Garde !"</t>
+			<t id="pirates">"Des pirates !"</t>
+			<t id="new_land">"Nouvelle Terre !"</t>
+			<t id="floatable">"Quelque chose qui flotte !"</t>
+
+			<t id="animal_worried">** grognements inquiets ! **</t>
+			<t id="animal_excited">** grognements enthousiastes ! **</t>
+			<t id="animal_intrigued">** grognements curieux ! **</t>
+		</g>
+	</g>
+
+	<g id="items" >
+		<t id="hideoutmap_defender_killed_desc">::name:: est détruit. Cette carte ne vous est d'aucune utilité.</t>
+		<t id="raw_materials">Points d'armure réparés : <b>::qty::</b></t>
+	</g>
+
+	<g id="confirm">
+		<t id="unit_dismiss">Voulez-vous vraiment renvoyer <b>::name::</b> ?</t>
+		<t id="unit_dismiss_no_more_unit">Vous ne pouvez pas renvoyer votre dernier compagnon.</t>
+
+		<t id="transfer_title">Transférer une unité</t>
+		<t id="choose_player">Choisissez un joueur</t>
+		<t id="unit_transfer">Transférer <b>::unit::</b> à <b>::player::</b></t>
+
+		<t id="unit_kill">Voulez-vous vraiment exécuter <b>::name::</b> ?</t>
+		<t id="unit_kill_no_more_unit">Vous ne pouvez pas exécuter votre dernier compagnon.</t>
+		<t id="unit_kill_title">::name:: a été exécuté.</t>
+
+		<t id="drop_item">Voulez-vous abandonner <b>::name::</b> x::count:: ?</t>
+		<t id="retreat_fight">Voulez-vous sonner la retraite et abandonner le combat ?</t>
+		<t id="repair_action">Réparer tout <img src="/item/RawMaterials"/>::count::</t>
+		<t id="repair_armor">Utiliser ::qty:: pour réparer l'armure ?</t>
+		<t id="repair_all_armors">Réparer toutes les armures pour ::qty:: ?</t>
+		<t id="cure_all_injuries">Soigner toutes les blessures pour ::qty:: ?</t>
+		<t id="unit_unchain">Libérer <b>::name::</b> ?</t>
+		<t id="unit_chain">
+			Faire <b>::name::</b> prisonnier ?
+			<small>(aura certainement l'impression d'avoir été trahi...)</small>
+		</t>
+		<t id="heal_action">Soigner tout <img src="/item/Remedy"/>::count::</t>
+		<t id="heal_title">Soigner une blessure</t>
+		<t id="heal_injury">Utiliser <b><img src="/item/::icon::"/>::remedy::</b> pour soigner <b>::name::</b> ?</t>
+		<t id="heal_remedy_none">Vous n'avez aucun remède pour soigner cette blessure. Rendez-vous chez un apothicaire pour en acheter ou en concevoir.</t>
+		<t id="choose_remedy">Choisissez un remède</t>
+		<t id="choose_injury">Choisissez une blessure</t>
+
+		<t id="skill_up">Améliorer <b>::name::</b> ?</t>
+		<t id="attribute_up">Améliorer <b>::name::</b> ?</t>
+		<t id="nothing_found_here">Vous n'avez rien trouvé ici.</t>
+		<t id="recruit_unit">Recruter ::name:: pour ::cost:: ?</t>
+		<t id="recruit_unit_free">Voulez-vous recruter <b>::name::</b> ?</t>
+		<t id="element_empty">Vous n'avez rien trouvé ici.</t>
+		<t id="npc_no_dialog">::name:: vous ignore.</t>
+
+		<t id="salary_cost">Vous allez verser <gold>::v::</gold> à votre troupe lors de ce repos.</t>
+		<t id="salary_partially_paid_cost">Vous allez payer partiellement le solde de votre troupe : <gold>::v::</gold>/::total:: lors de ce repos.
+
+Certains compagnons seront insatisfaits de pas avoir été payés à temps.</t>
+		<t id="salary_will_be_paid_good">En versant le solde aujourd'hui, vos compagnons seront heureux.</t>
+		<t id="salary_will_be_paid_bad">En versant le solde aujourd'hui, vos compagnons cesseront d'être insatisfaits.</t>
+		<t id="salary_will_be_not_paid">En ne versant pas le solde aujourd'hui, vos compagnons seront insatisfaits de ne pas être payés à temps.</t>
+
+		<t id="salary_paid">Vous avez versé <gold>::v::</gold> à votre troupe.</t>
+		<t id="salary_paid_perfect">Les soldes ont été versés le jour des soldes.</t>
+		<t id="salary_paid_good">Les soldes ont été versés avec un peu de retard.</t>
+		<t id="salary_paid_bad">Les soldes ont été versés avec beaucoup de retard.</t>
+		<t id="salary_paid_partially">Les soldes ont été versés partiellement.</t>
+
+		<t id="mission_accept">Accepter le contrat "<b>::name::</b>" ?</t>
+		<t id="mission_cancel">Annuler le contrat "<b>::name::</b>" ?</t>
+
+		<t id="upgrade_to_class">Voulez-vous que <b>::name::</b> devienne un <b>::cl::</b> ?</t>
+		<t id="add_skill">Voulez-vous apprendre <b>::name::</b> ?</t>
+
+		<t id="craft_done">Vous avez produit :</t>
+		<t id="craft_bonus">Bonus première fabrication :</t>
+		<t id="craft_bonuses">Production additionnelle :</t>
+		<t id="craft_saved">Ressources récupérées :</t>
+
+		<t id="missing_cost">Vous manquez de ressources pour cette action.</t>
+
+		<t id="add_armor_slot">Ajouter le renfort à cette armure ?</t>
+		<t id="add_helmet_seal">Ajouter l'estampille à ce casque ?</t>
+		<t id="retrieve_helmet_seal">Vous allez récupérer <good>::seal_name::</good></t>
+		<t id="clear_armor_slots">Enlever les renforts de cette armure ?</t>
+		<t id="clear_helmet_seal">Enlever l'estampille de ce casque ?</t>
+		<t id="destroy_armor_slots_warning">Ils seront détruits dans l'opération.</t>
+
+		<t id="item_cost">Utiliser <img src="item/::item::"/><font color="#ffffff">::cost::</font> ?</t>
+		<t id="dialog_cost">Utiliser ::cost:: ?</t>
+		<t id="dialog_action">Confirmer <img src="icon/::act::"/>::text:: ?</t>
+
+		<t id="exit_ruin_no_light">Vous n'avez pas de <img src="icon/RuinsLight"/><b>Lumière</b>. Vous aurez besoin de lumière pour poursuivre votre exploration !</t>
+
+		<t id="ruins_tired_warning">
+			<bad>Vos compagnons sont fatigués !</bad>
+			Il faudrait se reposer avant de poursuivre l'exploration.
+		</t>
+
+
+		<t id="ratmare"><b>::name::</b> a la phobie des rats et partira de la troupe si vous engagez ce combat. </t>
+
+		<t id="battle_let_runaway">
+			Vos adversaires sont démoralisés et s'enfuient !
+			Voulez-vous les laisser partir et remporter l'affrontement ?
+		</t>
+
+		<t id="battle_end_turn_without_playing">Êtes-vous sûr de vouloir terminer le tour de <b>::name::</b> sans avoir effectué aucune action ?</t>
+		<t id="battle_end_turn_cancel_skill">Cela mettra fin à <b>::skillName::</b>.</t>
+
+		<t id="battle_dying_unit_retreat">
+			<b>::name::</b> est mourant. Sa mort causera votre <bad>défaite</bad> !
+			Souhaitez-vous <b>battre en retraite immediatemment</b> ?
+		</t>
+
+		<t id="item_convert_action">::action:: ::item:: ?</t>
+
+		<t id="rename_unit">Quel surnom voulez-vous donner à ::unitName:: ?</t>
+		<t id="rename_troop">Quel nom voulez-vous donner à votre troupe ?</t>
+		<t id="rename_boat">Quel nom voulez-vous donner à votre bateau ?</t>
+		<t id="rename_tavern">Quel nom voulez-vous donner à votre taverne ?</t>
+
+		<t id="message_accompany"><b>::name::</b> accompagne désormais votre troupe.</t>
+		<t id="message_accompany_left"><b>::name::</b> n'accompagne plus votre troupe.</t>
+
+		<t id="message_follow"><b>::name::</b> suit désormais votre troupe.</t>
+		<t id="message_follow_left"><b>::name::</b> ne suit plus votre troupe.</t>
+
+		<t id="message_recruit"><b>::name::</b> a rejoint votre troupe !</t>
+		<t id="message_leave"><b>::name::</b> a quitté votre troupe.</t>
+
+		<g id="message_recruit_add">
+			<t>Vos compagnons sont satisfaits.</t>
+			<t>Vos compagnons le trouvent sympatique.</t>
+			<t>Vos compagnons doutent qu'il fasse l'affaire.</t>
+			<t>Vos compagnons l'accueillent avec joie.</t>
+		</g>
+		<g id="message_recruit_add_fem">
+			<t>Vos compagnons sont satisfaits.</t>
+			<t>Vos compagnons la trouvent sympatique.</t>
+			<t>Vos compagnons doutent qu'elle fasse l'affaire.</t>
+			<t>Vos compagnons l'accueillent avec joie.</t>
+		</g>
+		<g id="message_recruit_add_animal">
+			<t>Vos compagnons se demandent juste... pourquoi ?</t>
+			<t>Vos compagnons trouvent que c'est une excellente idée.</t>
+			<t>Vos compagnons approuvent.</t>
+			<t>Vos compagnons n'ont aucun avis sur ce choix.</t>
+		</g>
+
+		<t id="place_piton_here">Placer un <b>Piton</b> ici ?</t>
+
+		<t id="place_tomb_here">Placer la <b>Tombe</b> ici ?</t>
+
+		<t id="upgrade_skill">Utiliser ::item:: pour améliorer la compétence de votre compagnon ?</t>
+		<t id="skill_upgraded">La compétence <good>::name::</good> a été améliorée !</t>
+		<t id="unlocked_class">Vous avez appris la spécialité <good>::name::</good> !</t>
+
+		<t id="use_oil">Voulez-vous appliquer cet effet sur l'arme <good>::weapon::</good> ?</t>
+		<t id="replace_prev_oil">L'effet actuellement appliqué sera <bad>perdu</bad>.</t>
+		<t id="oil_choose_replace">Choisissez l'effet à remplacer sur l'arme <good>::weapon::</good> :</t>
+
+		<t id="use_rat_bait">Voulez-vous placer <img src="item/::item::"/> ?</t>
+
+		<t id="use_respecialization_manual">Voulez-vous utiliser <img src="item/::item::"/><b>::name::</b> pour <b>::unit::</b> ?</t>
+
+		<t id="name_to_rank">Voulez-vous nommer ::name:: en tant que <b>::rank::</b> ?</t>
+		<t id="loosing_rank"><bad>::name:: perdra son rang de <b>::rank::</b></bad></t>
+		<t id="was_named_to_rank">::name:: a été choisi par la troupe en tant que <b>::rank::</b>.</t>
+		<t id="was_named_to_rank_fem">::name:: a été choisie par la troupe en tant que <b>::rank::</b>.</t>
+
+		<t id="cannot_drop_unique_item">
+			Vous ne pouvez pas vous débarrasser de cet objet unique.
+			Il vous suivra jusqu'à la toute fin ou jusqu'à ce que vous trouviez comment l'utiliser.
+		</t>
+
+		<t id="travel_to">Voyager vers ::place:: ?</t>
+
+		<t id="epitaph">Quel épitaphe voulez vous écrire ?</t>
+		<t id="debug_confirm">::cmd::</t>
+	</g>
+
+	<g id="ui">
+		<t id="defaultsave">Sauvegarde</t>
+		<t id="autosave">Sauvegarde automatique</t>
+		<t id="quicksave">Sauvegarde rapide</t>
+		<t id="inventory_title">Inventaire</t>
+		<t id="choose_sell_quantity">Combien voulez-vous vendre de <b>::name::</b> ?</t>
+		<t id="choose_buy_quantity">Combien voulez-vous acheter de <b>::name::</b> ?</t>
+		<t id="choose_pick_quantity">Combien voulez-vous prendre de <b>::name::</b> ?</t>
+		<t id="choose_craft_quantity">Combien voulez-vous produire de <b>::name::</b>  ?</t>
+		<t id="choose_drop_quantity">Combien voulez-vous abandonner de <b>::name::</b> ?</t>
+		<t id="buy_sell_quantity_label">Quantité:</t>
+		<t id="choose_amount_total">(<gold>::gold::</gold>)</t>
+		<t id="choose_amount_item">(<img src="item/::currency::"/>::count::)</t>
+		<t id="inventory_price_label"><gold>::price::</gold></t>
+		<t id="drop_item_label">Abandonner</t>
+		<t id="heal_remedy_label">Soigner avec <img src="/item/::icon::"/>::name::</t>
+
+		<t id="gain_place_discovery">+::number:: <img src="/item/::icon::"/> ::name::</t>
+
+		<t id="activity_xp_gain">+::value:: xp</t>
+		<t id="activity_item_gain">+::value:: <img src="/item/::icon::"/> ::name::</t>
+
+		<t id="board_puzzle_instruction">[LMB] Activer (Maintenir)</t>
+
+		<t id="fishing_counter">::number:: <img src="/item/::icon::"/>poissons à pêcher</t>
+		<t id="fishing_start">Appâtez un poisson</t>
+		<t id="fishing_instruction">[LMB] Ne laissez pas le poisson s'échapper</t>
+		<t id="fishing_fail">Le poisson s'est enfui</t>
+		<t id="fishing_leave">Partir</t>
+
+		<t id="gather_production">Produire ::name:: (+::count::/j)</t>
+		<t id="gather_resource">Obtenir ::name:: (::count::/::max::)</t>
+
+		<t id="lockpick_quantity">x::number:: <img src="/item/::icon::"/>::name:: restants</t>
+		<t id="lockpick_no_more_lockpicks">Plus aucun <img src="/item/::icon::"/>::name:: restants</t>
+		<t id="lockpick_leave">Partir</t>
+
+		<t id="nine_puzzle_leave">Partir</t>
+		<t id="cylinder_puzzle_leave">Partir</t>
+		<t id="board_puzzle_leave">Partir</t>
+		<t id="sing_leave">Partir</t>
+
+		<t id="archery_shots_remaining">::number:: tirs restant</t>
+		<t id="archery_no_shots_remaining">Fin de l'entraînement</t>
+
+		<t id="recipe_equipement_type">Type d'équipement</t>
+		<t id="recipe_type_dish">Type de plat</t>
+		<t id="recipe_ingredients">Ingrédients</t>
+		<t id="recipe_all_recipes">Tous</t>
+		<t id="recipe_level_required">Niveau requis</t>
+		<t id="recipe_lore_unknown">Origine inconnue</t>
+		<t id="recipe_possessed_item">en possession : </t>
+		<t id="recipe_ingredient_stock_needed">en stock / requis</t>
+
+		<t id="recipe_unique_item">Vous ne pouvez posséder cet objet qu'une seule fois.</t>
+		<t id="recipe_not_enough_materials">Ressources insuffisantes pour créer cette quantité</t>
+		<t id="recipe_confirm_forge">Voulez-vous créer <img src="/item/::icon::"/> ::name:: x::number:: ?</t>
+		<t id="recipe_not_has_job_level">Vous ne possédez pas le niveau de métier requis.</t>
+		<t id="recipe_no_more_upgrade">Cet objet ne peut plus être amélioré.</t>
+		<t id="activity_forge_bonus_title">Bonus de qualité</t>
+		<t id="activity_forge_bonus_info">Martelez le métal chauffé à blanc ::number:: fois d'affilée</t>
+		<t id="activity_forge_success_bonus_info">Objet de qualité supérieure obtenu : </t>
+		<t id="activity_forge_fail_bonus_info">Objet de qualité normale obtenu : </t>
+		<t id="activity_cook_delicious_bonus_info">Plat de qualité supérieure <img src="/icon/QualityStar"/> obtenu : </t>
+		<t id="activity_cook_normal_bonus_info">Plat de qualité normale obtenu : </t>
+		<t id="activity_food_delicious"> (Délicieux) <img src="/icon/QualityStar"/></t>
+		<t id="activity_regular_item">Objet obtenu : </t>
+
+		<t id="camp_rotate">Appuyer sur [KEY_CampRotation] ou faire défiler la molette pour tourner</t>
+		<t id="camp_rotate_pad">Appuyer sur <img src="icon/Pad_LB" /> ou <img src="icon/Pad_RB" /> pour tourner</t>
+		<t id="camp_reserve">Réserve</t>
+
+		<t id="reserve_info">
+			<b>La Réserve</b> contient les compagnons que vous ne souhaitez pas voir apparaître dans le camp.
+			Les compagnons dans la Réserve ne peuvent pas être assignés à des tâches, mais doivent être nourris et payés normalement.
+
+			<b>[RMBSHIFT] sur un compagnon dans le camp pour l'assigner à la Réserve.</b>
+		</t>
+
+		<t id="mission_name">Contrats</t>
+		<t id="mission_board_quest_list">Contrats acceptés : ::value::/::max::</t>
+		<t id="mission_next_in">Contrat disponible dans ::time::.</t>
+		<t id="mission_expire_in">Contrat expire dans ::time::.</t>
+		<g id="mission_difficulty">
+			<t>Facile</t>
+			<t>Normal</t>
+			<t>Moyen</t>
+			<t>Difficile</t>
+		</g>
+		<g id="mission_negociate">
+			<t id="desc">Ajustez la jauge de négociation pour tenter d'obtenir un meilleur prix du Contrat en échange d'Influence.</t>
+			<t id="contract">Contrat : ::name::</t>
+			<t id="inital_offer">Offre initiale : ::value::</t>
+			<t id="current_offer">Offre actuelle : ::value::</t>
+			<t id="asked_offer">Récompense demandée : ::value::</t>
+			<t id="cost">Coût de la négociation : ::value::</t>
+			<t id="accept_offer">Accepter l'offre</t>
+		</g>
+
+		<g id="sea_lords">
+			<t id="tutorial">Pour en apprendre plus sur les seigneurs des mers, parlez à l'Admirateur dans la taverne de Per-Bast.</t>
+			<t id="title">Seigneurs des mers</t>
+			<t id="leaderboard">Classement</t>
+			<t id="territory">Territoire :</t>
+			<t id="status">Statut :</t>
+			<t id="rewards">Récompenses :</t>
+			<g id="status_list">
+				<t><good>Actif</good></t>
+				<t><warn>Rival</warn></t>
+				<t><warn>À vos trousses</warn></t>
+				<t><bad>Vaincu</bad></t>
+			</g>
+			<t id="marker_tooltip">Trouvez et combattez ::name::.</t>
+		</g>
+
+		<t id="difficulty">Difficulté :</t>
+		<t id="reward">Récompense :</t>
+		<t id="cost">Coût :</t>
+		<t id="bounty_group_name">Bande de ::name::</t>
+
+		<t id="grimoire_empty">Le ::name:: est vide.</t>
+		<t id="grimoire_name">Compendium</t>
+		<t id="grimoire_learn_action">Apprendre pour ::item::</t>
+		<t id="grimoire_unknown_name">? ? ? ?</t>
+		<t id="grimoire_level_required">::trait:: ::level:: requis</t>
+		<t id="grimoire_learn_recipe">Apprendre dans le Compendium</t>
+		<t id="grimoire_can_not_learn_recipe">Vous ne connaissez pas encore de métier associé à cette recette.</t>
+		<t id="grimoire_recipe_already_learnt">Vous connaissez déjà cette recette.</t>
+		<t id="grimoire_xp_suffix"><img src="/item/::icon::"/></t>
+		<t id="grimoire_craft_to_gain_discovery">Fabriquez une fois pour faire progresser votre <img src="item/Knowledge"/><b>connaissance</b></t>
+		<t id="grimoire_craft_to_reveal_item">Fabriquez une fois pour révéler <b>une recette</b> dans le Compendium</t>
+		<t id="grimoire_craft_to_reveal_items">Fabriquez une fois pour révéler <b>::number:: recettes</b> dans le Compendium</t>
+		<t id="grimoire_craft_to_reveal_bundle">Fabriquez l'un de ces éléments pour révéler <b>le set supérieur</b> dans le Compendium</t>
+		<t id="grimoire_craft_to_reveal_bundle_one_item">Fabriquez une fois pour révéler <b>le set supérieur</b> dans le Compendium</t>
+		<t id="grimoire_learn_to_gain_discovery">Apprenez pour faire progresser votre <img src="item/Knowledge"/><b>connaissance</b></t>
+		<t id="grimoire_learn_to_reveal_item">Apprenez pour débloquer une nouvelle capacité dans le Compendium</t>
+		<t id="grimoire_need_to_unlock">Nécessite <img src="item/::item::"/></t>
+		<t id="grimoire_need_recipe">Nécessite une recette.</t>
+		<t id="grimoire_need_knowledge">Nécessite un point de connaissance.</t>
+		<t id="grimoire_need_setting">Disponible une fois le scénario de région terminé.</t>
+		<t id="grimoire_need_city_forge">Disponible dans la forge du bourg.</t>
+
+		<t id="grimoire_unlock_recipe">Nouvelle recette dans le Compendium : </t>
+
+		<t id="grimoire_confirm_learn">Voulez-vous apprendre <img src="/item/::icon::"/> ::name:: ?</t>
+		<t id="grimoire_page_number">Page ::current::/::max::</t>
+
+		<t id="grimoire_craft_learnt">::player_name:: a appris ::recipe_name::</t>
+
+		<t id="grimoire_toggle_undiscovered">Masquer non connus</t>
+
+		<g id="grimoire_knowkedge">
+			<t id="group3_unlock_info"><img src="item/Knowledge"/> ::count::/::total::</t>
+			<t id="group3_unlock_tip">Remportez un total de ::count:: <img src="item/Knowledge"/> pour débloquer</t>
+		</g>
+
+		<t id="craft_done">::unit_name:: (::player_name::) a fabriqué ::count:: ::craft_name::</t>
+		<g id="rest">
+			<t id="camp_report">Rapport de Camp</t>
+			<t id="production_detail">Le camp a produit des ressources.</t>
+			<t id="food_inventory">Repas</t>
+			<t id="action_points">Vous avez récupéré <img src="/icon/ActionPoint"/><b>::count::</b></t>
+			<t id="troop_was_feed">La troupe a été nourrie.</t>
+			<t id="rested">La troupe est reposée.</t>
+			<t id="confirm_no_feed">Vous n'avez pas nourri votre troupe ! Vous reposer quand même ?</t>
+			<t id="confirm_no_salary">Vous n'avez pas versé leur solde à vos compagnons !  Vous reposer quand même ?</t>
+			<t id="confirm_leaver">::name:: va quitter la troupe ! Vous reposer quand même ?</t>
+			<t id="confirm_leavers">::count:: compagnons vont quitter la troupe ! Vous reposer quand même ?</t>
+			<t id="not_paid"><bad>Vos compagnons sont mécontents du retard dans le versement de leur solde !</bad></t>
+			<t id="unit_left"><bad>::name::</bad> était mécontent des conditions et a quitté la troupe !</t>
+			<t id="unit_left_woman"><bad>::name::</bad> était mécontente des conditions et a quitté la troupe !</t>
+			<t id="eat_action">Ajouter au repas</t>
+			<t id="remove_action">Supprimer du repas</t>
+			<t id="feed_action">Modifier le repas</t>
+			<t id="unit_plagued">Certains compagnons sont devenus Pestiférés car leur blessure pestiférée n'a pas été soignée : <bad>::names::</bad>.</t>
+			<t id="unit_plagued_starved">Vos compagnons Pestiférés sont <bad>affamés</bad> car le dernier repas ne proposait pas de viande. Ils pourraient perdre le contrôle à tout moment.</t>
+			<t id="unit_plagued_madness">Certains compagnons Pestiférés sont devenus fous durant le repos : <bad>::names::</bad>.</t>
+			<t id="unit_healed_doctor">::name:: a consommé des plantes pour soigner ::injury:: de ::healedname::.</t>
+			<t id="unit_crunched_fail"><warn>::plagued::</warn> a essayé de mordre <warn>::victim::</warn>.</t>
+			<t id="unit_crunched_success"><bad>::plagued::</bad> a mordu <bad>::victim::</bad> durant le repos et lui a laissé une <bad>blessure pestiférée</bad>.</t>
+			<t id="become_alcoholic">::name:: a abusé de la boisson et est devenu <bad>alcoolique</bad> !</t>
+			<t id="heal_injury">::name:: a récupéré d'une blessure.</t>
+			<t id="training_xp_gain">::name:: a gagné <img src="/icon/FightXP"/>::xp:: points d'expérience à l'entraînement.</t>
+			<t id="bad_diet">Des compagnons n'ont pas pu satisfaire leurs <bad>exigences alimentaires.</bad></t>
+			<t id="alcohol_withdrawal">::name:: s'est sevré de l'alcool !</t>
+			<t id="become_sick">::name:: n'a pas supporté le repas de la veille et est tombé <bad>malade</bad>.</t>
+			<t id="happy_log_zero">Le bonheur de votre troupe n'a pas évolué.</t>
+			<t id="happy_log_gain">Le bonheur de votre troupe a progressé de <happy>+::count::</happy></t>
+			<t id="happy_log_lose">Le bonheur de votre troupe a diminué de <happy>::count::</happy></t>
+			<t id="happy_current">Le bonheur de votre troupe est de <happy>::count::</happy>.</t>
+			<t id="happy_min"><bad>Vos compagnons sont mécontents !</bad></t>
+			<t id="happy_neg">Vos compagnons sont <bad>malheureux</bad>.</t>
+			<t id="happy_normal">Vos compagnons sont satisfaits.</t>
+			<t id="happy_max">Vos compagnons sont <good>heureux</good>.</t>
+			<t id="happy_infl_won">Vous avez <good>gagné</good> <img src="/icon/Influence"/><inf>::count::</inf></t>
+			<t id="happy_infl_lost">Vous avez <bad>perdu</bad> <img src="/icon/Influence"/><inf>::count::</inf></t>
+			<t id="happy_bonus_won">Vous avez obtenu le bonus suivant :</t>
+			<t id="influence_generated">Le camp a généré <img src="/icon/Influence"/><b>::count::</b></t>
+			<t id="bee_sting">::name:: a dormi trop près de la ruche et a subi des <bad>piqûres d'abeille.</bad></t>
+			<t id="reproduction">::parent1:: et ::parent2:: se sont reproduits. ::child:: rejoint votre troupe.</t>
+			<t id="reproduction_solo">::parent:: a mis au monde un bébé. ::child:: rejoint votre troupe.</t>
+			<t id="blood_collection">::unit:: a piqué ::target:: pendant le Repos et n'aura pas besoin de nourriture pour les ::value:: prochains repas.</t>
+			<t id="doping_transfusion">Certains compagnons se sont fait piquer cette nuit et ont gagné <stb>Fury</stb> : ::names::.</t>
+			<t id="browser">Des fleurs ont été trouvées pendant le Repos.</t>
+			<t id="bear_eat_honey">::name:: a dévoré votre <bad>production de miel !</bad></t>
+			<g id="escape">
+				<g id="success">
+					<t>Le prisonnier <bad>::name::</bad> s'est enfui pendant que tout le monde dormait...</t>
+					<t>Alors qu'il n'était pas surveillé, le prisonnier <bad>::name::</bad> s'est enfui pendant le repos.</t>
+				</g>
+				<g id="fail">
+					<t>Le prisonnier <b>::name::</b> a essayé de s'enfuir mais <b>::allyName::</b> qui dormait à côté l'en a empêché.</t>
+					<t><b>::allyName::</b> a empêché le prisonnier <b>::name::</b> de s'enfuir.</t>
+				</g>
+				<g id="success_with_ally">
+					<t>Après plusieurs tentatives de fuite, le prisonnier <bad>::name::</bad> est parvenu à s'enfuir...</t>
+					<t>Le prisonnier <bad>::name::</bad> s'est enfui malgré la surveillance de <b>::allyName::</b>.</t>
+				</g>
+				<g id="success_with_injury">
+					<t>Après avoir assommé <b>::allyName::</b>, le prisonnier <bad>::name::</bad> a réussi à s'enfuir.
+<b>::allyName::</b> a subi une blessure : <status>::injury::</status></t>
+					<t>Le prisonnier <bad>::name::</bad> a assommé <b>::allyName::</b> pour s'échapper.
+<b>::allyName::</b> a subi une blessure : <status>::injury::</status></t>
+				</g>
+				<t id="suicide"><bad>Le prisonnier <b>::name::</b> a préféré mettre fin à ses jours que subir les maltraitances de la troupe.</bad></t>
+			</g>
+
+			<t id="happiness_malus">Pénalité de repos :</t>
+			<t id="happiness_malus_desc">Si vous vous reposez maintenant, votre troupe sera <bad>malheureuse</bad> :</t>
+			<t id="happiness_starvation">Manque de nourriture</t>
+			<t id="happiness_salary">Solde impayé à vos compagnons</t>
+			<t id="knowledge_increase">Votre connaissance du monde a augmenté.</t>
+			<t id="money_laundering">Un objet volé du Coffre a été blanchi.</t>
+			<t id="deadly_poisoned"><b>::name::</b> a succombé à un <bad>poison mortel.</bad></t>
+			<t id="item_status_adj_rest">La proximité de l'objet <b>::item::</b> a rendu certains compagnons <status>::status::</status>.</t>
+		</g>
+
+		<g id="sleep_danger">
+			<t id="title">Niveau de danger:</t>
+			<t id="none"><good>Aucun</good></t>
+			<t id="medium"><warn>Moyen</warn> ::p::%</t>
+			<t id="high"><bad>Danger !</bad> ::p::%</t>
+			<t id="tip">La proximité de certains dangers peut entraîner une attaque pendant le Repos.</t>
+			<t id="fight_msg">Vous avez été attaqué pendant votre Repos !</t>
+		</g>
+
+		<g id="converter_tool">
+			<t id="title">Production</t>
+			<t id="action">Ajouter une ressource</t>
+			<t id="remove_action">Retirer une ressource</t>
+			<t id="rest_consumption">::count:: <img src="item/::item::"/> produira ::outCount:: <img src="item/::outItem::"/> lors du repos.</t>
+			<t id="rest_required">Nécessite <img src="item/::item::"/>::name:: x::count::</t>
+			<t id="influence_gain">Ajoutera <b>::count::</b> <img src="/icon/Influence"/> après chaque repos.</t>
+		</g>
+
+		<g id="upgrade_converter">
+			<t id="name">Amélioration d'armes</t>
+			<t id="desc">Permet d'augmenter le niveau d'une arme, améliorant ainsi ses attributs.<br/>Seules certaines armes précieuses peuvent être améliorées. </t>
+			<t id="title">Amélioration</t>
+			<t id="action">Choisir une arme</t>
+			<t id="remove_action">Retirer l'arme</t>
+		</g>
+
+		<g id="lectern">
+			<t id="title">Étude</t>
+			<t id="action">Placer un objet à l'étude</t>
+			<t id="remove_action">Retirer l'objet de l'étude</t>
+			<t id="assign_remaining_time">[JOBASSIGN] L'étude en cours se terminera dans ::count:: Repos.</t>
+			<t id="unassign_remaining_time"><bad><b>Aucun compagnon assigné.</b></bad> L'étude ne progressera pas lors du prochain Repos.</t>
+			<t id="confirm_cancel">
+				Voulez vous interrompre l'étude en cours ?
+				Vous perdrez le travail effectué sur cet objet.
+			</t>
+		</g>
+
+		<g id="codex">
+			<t id="need_assigned_codex">Vous devez assigner un <img src="/trait/::icon::"/>::kind::.</t>
+			<t id="restoreAction">Restauration</t>
+			<t id="restoreNotif">Vous avez réussi la restauration du codex. Vous pourrez le dechiffrer une fois les runes associées apprises.</t>
+			<t id="restoreNotifPage">Vous avez réussi la restauration du journal.</t>
+			<t id="need_runes_restore">Vous devez placer ::nb:: runes pour tenter une restauration.</t>
+			<t id="decipherAction">Déchiffrage</t>
+			<t id="decipherNotif">Vous avez réussi le déchiffrage du codex. Vous pourrez comprendre l'indice une fois l'ensemble des codex de la collection déchiffré.</t>
+			<t id="decipherNotifPage">Vous avez réussi le déchiffrage du journal.</t>
+			<t id="need_runes_decipher">Vous devez trouver les ::nb:: runes associées au Codex pour le déchiffrer.</t>
+			<t id="zero_good">C'est incompréhensible. Aucune de ces runes ne correspond.</t>
+			<t id="one_good">Une première piste apparaît. Une rune est la bonne.</t>
+			<t id="one_left">On approche, mais une rune manque...</t>
+			<t id="all_good">C’est limpide! Les 3 runes sont les bonnes!</t>
+			<t id="help">Restaurer les codex détériorés permet de déterminer quelles runes ils contiennent.<br/><br/>Une fois restaurés, ils restent illisibles tant que les runes correspondantes n’ont pas été apprises.</t>
+			<t id="symbolFound">Indice trouvé</t>
+		</g>
+
+		<g id="workshop">
+			<t id="upgrade_require">Nécessite un Atelier amélioré</t>
+			<t id="workshop_quality_require">Nécessite un Atelier de meilleure qualité.</t>
+			<t id="min_qty_dismantle">Nécessite au moins ::qty:: objets.</t>
+			<t id="min_qty_dismantle_bad">Nécessite au moins <bad>::qty:: objets</bad>.</t>
+			<t id="confirm_dismantle">Voulez-vous démanteler les objets sélectionnés ?</t>
+			<t id="dismantle_action">Ajouter un équipement</t>
+			<t id="upgrade_bonus_new"><b>Nouveau Bonus :</b> ::desc::</t>
+			<t id="upgrade_bonus_up"><b>Bonus amélioré :</b> ::desc::</t>
+		</g>
+
+		<g id="alter">
+			<t id="job_level_required">Niveau de <img src="/trait/::icon::"/><b>::kind::</b> insuffisant</t>
+			<t id="no_item_selected">Vous devez sélectionner un équipement</t>
+			<t id="no_resources_recipe">Vous n'avez pas les ingrédients nécessaires à la retouche de <img src="/item/::kind::"/><b>::name::</b></t>
+			<t id="selected_item">Retoucher <img src="/item/::kind::"/><b>::name::</b></t>
+			<t id="action">[RMB] Retoucher</t>
+			<t id="confirm">Voulez-vous retoucher <img src="/item/::kind::"/><b>::name::</b> ?</t>
+			<t id="craft_confirm">Qualité obtenue :</t>
+			<t id="done">::unit_name:: (::player_name::) a retouché ::item_name::</t>
+			<t id="desc">Permet d'augmenter la qualité d'un équipement, améliorant ainsi ses attributs.</t>
+		</g>
+
+		<g id="brewBarrel">
+			<t id="alcohol_list_title">Liste des alcools</t>
+			<t id="alcohol_aging_title">Vieillissement</t>
+			<t id="alcohol_aging_no_alcohol">Aucun alcool sélectionné</t>
+			<t id="alcohol_aging_tip">Faire vieillir <img src="/item/::kind::"/><b>::name::</b></t>
+			<g id="noValidBarrel">
+				<t id ="noRecipe">Aucune recette n'a été sélectionnée.</t>
+				<t id ="alreadyDone">Cette recette est déjà réalisée sur un autre tonneau.</t>
+				<t id ="noUnitAssigned">Aucune unité n'est assignée.</t>
+				<t id ="noLevel">L'unité assignée n'a pas le niveau suffisant pour faire cette recette.</t>
+				<t id ="noResources">Ressources insuffisantes.</t>
+				<t id ="noBonus">L'unité assignée n'est pas capable d'effectuer cette recette.</t>
+			</g>
+			<t id="restBrewProd">::name:: a produit ::list::</t>
+			<t id="restAgedProd">::name:: a fait vieillir ::list::</t>
+			<t id="alcohol_aging_max">Ce tonneau a atteint son degré maximal de vieillissement.</t>
+		</g>
+
+		<g id="campChest">
+			<t id="moveTo_chest">Placer l'objet dans le coffre</t>
+			<t id="moveTo_inventory">Placer l'objet dans l'inventaire</t>
+		</g>
+
+		<g id="stake">
+			<t id="title">Pieu</t>
+			<t id="action">Placer un corps sur le pieu</t>
+			<t id="remove_action">Retirer le corps</t>
+			<t id="drop_action">Jeter le corps</t>
+			<t id="confirm_drop">
+				Ce corps est dans un état de décomposition avancé et ne peut être conservé.
+				Détruire le corps ?
+			</t>
+			<t id="days_count">Exposé depuis ::count:: jour(s)</t>
+			<t id="smelly_odour_warning">Les compagnons sont indisposés par l'odeur pestilentielle dans le camp.</t>
+		</g>
+
+		<g id="strategy_table">
+			<t id="captain_require"><bad>Vous devez nommer un Capitaine pour définir une stratégie.</bad></t>
+			<t id="already_learnt"><bad>Vous connaîssez déjà cette stratégie.</bad></t>
+			<t id="tool_needed"><bad>Vous devez posséder une Table de Stratégie.</bad></t>
+			<t id="unknown">????</t>
+			<t id="tier_title">Compétence Niv.::value:: </t>
+		</g>
+
+		<g id="sing">
+			<t id="repertoire">Répertoire</t>
+			<t id="play">Jouer</t>
+			<t id="already_learnt"><bad>Vous connaissez déjà cette chanson.</bad></t>
+			<t id="can_not_learn_song"><bad>Vous ne connaissez pas encore de métier permettant d'apprendre cette partition.</bad></t>
+		</g>
+
+		<g id="whip">
+			<t id="tool_desc">Fouetter vos compagnons permet de les motiver à produire plus de ressources lorsqu'ils sont assignés à un matériel de camp de production.</t>
+			<t id="tool_confirm_already_whipped">Certaines unités ont déjà été fouettées.<br />Êtes-vous sûr de vouloir les fouetter de nouveau ?</t>
+			<t id="action">Fouetter</t>
+			<t id="prisoner">Prisonnier</t>
+			<t id="need_tool_prod">Cette unité n'est pas assignée à un matériel de camp de production.</t>
+		</g>
+
+		<g id="pendulum">
+			<t id="miss">Le pendule n’indique rien à cet endroit.</t>
+		</g>
+
+		<g id="banner">
+			<t id="preview">Aperçu</t>
+			<t id="background_title">Partition</t>
+			<t id="logo_title">Figure</t>
+			<t id="border_title">Border</t>
+			<t id="titles_title">Titres</t>
+			<t id="resolution_desc" >Les <b>Résolutions</b> permettent de motiver votre troupe jusqu'au prochain repos.
+			Plusieurs résolutions différentes peuvent être déclenchées durant la même journée.
+			Chaque utilisation d'une résolution augmente son coût.
+			Chaque repos diminue le coût de toutes les résolutions non utilisées.</t>
+			<t id="resolution_tip" >[LMB] Motiver pour ::value::</t>
+			<t id="resolution_confirm">Voulez-vous réaliser <b>::name::</b> pour <influence>::value::</influence> ?</t>
+			<t id="resolution_confirm_warning">Attention, votre troupe commence à être fatiguée, les résolutions durent jusqu'au prochain repos.</t>
+			<t id="resolution_already_activated">Cette résolution est déjà active.</t>
+			<g id="random_troop_names">
+				<g id="STroopAdventurers">
+					<t>La Compagnie Sauvage</t>
+					<t>La Légende Inconnue</t>
+					<t>Les Cadets Vagabonds</t>
+					<t>La Sarabande Sylvestre</t>
+					<t>Les Paladins de l’Infortune</t>
+				</g>
+				<g id="STroopMerchants">
+					<t>La Brigade des Sous-bois</t>
+					<t>Le Âmes Perdues</t>
+					<t>Les Tire-au-flanc</t>
+					<t>Les Sentinelles Errantes</t>
+					<t>Les Claque-Marauds</t>
+				</g>
+				<g id="STroopDeserters">
+					<t>La Horde Fugitive</t>
+					<t>Le Bataillon Anonyme</t>
+					<t>La Dernière Compagnie</t>
+					<t>La Meute Renégate</t>
+					<t>Les Affranchis de la Lande</t>
+				</g>
+				<g id="STroopFarmers">
+					<t>Les Besogneux des Plaines</t>
+					<t>La Ligue du Navet</t>
+					<t>Le Sel de la Terre</t>
+					<t>Le Clan des Artisans</t>
+					<t>Les Damnés de la Terre</t>
+				</g>
+				<g id="STroopBandits">
+					<t>La Bande Scélérate</t>
+					<t>Les Boucaniers de la Misère</t>
+					<t>Les Mauvaises Fréquentations</t>
+					<t>La Bohème Sanglante</t>
+					<t>La Bourrasque Funèbre</t>
+				</g>
+				<g id="STroopTavern">
+					<t>Le Clan de la Dive Bouteille</t>
+					<t>Les Boit-sans-soif</t>
+					<t>Les Forçats de la Faim</t>
+					<t>Les Jongleurs Manchots</t>
+					<t>La Compagnie des Gâte-sauce</t>
+				</g>
+				<g id="STroopPugilist">
+					<t>Les Loups de Mer</t>
+					<t>Les Sans-Esquif</t>
+					<t>Les Marins Errants</t>
+					<t>Les Âmes Sangunaires</t>
+					<t>Les Pirates des Chemins</t>
+				</g>
+				<g id="DefaultTroop">
+					<t>Nom de troupe</t>
+				</g>
+			</g>
+		</g>
+
+		<g id="weaponDisplay">
+			<t id="action">Exposer</t>
+		</g>
+
+		<t id="unit_level_short">niv <b>::level::</b></t>
+		<t id="unit_class_title">Spécialisation</t>
+		<t id="unit_level_title">Niv. ::number::</t>
+		<t id="unit_chose_class">Choisir</t>
+		<t id="unit_spe_changes_title">Attributs</t>
+		<t id="unit_armor_equip_title">Équipements</t>
+
+		<g id="relationship">
+			<t id="relationActionConfirm">Voulez-vous réaliser <b>::name::</b> pour <influence>::value::</influence> ?</t>
+			<t id="drinkAction">Offrir un verre</t>
+			<t id="insultAction">Injurier</t>
+			<t id="drinkRequire">Requiert <img src="itemtype/Alcohol"/><::hasAlcohol::>2</::hasAlcohol::> <influence><::hasCost::>::cost::</::hasCost::></influence></t>
+			<t id="insultRequire">Requiert <influence><::hasCost::>::cost::</::hasCost::></influence></t>
+			<t id="drinkDesc">::name1:: et ::name2:: perdront chacun un trait négatif.</t>
+			<t id="insultDesc">La relation de ::name1:: et ::name2:: se déteriorera. Ils gagneront tous deux le trait <trait>::trait::</trait>.</t>
+			<t id="noNegTrait">Vous n'avez aucun mauvais trait de personnalité</t>
+			<t id="alreadySociopathe">Vous êtes déjà <trait>::trait::</trait></t>
+			<t id="no_relation">Ce compagnon n'a pas encore de relation avec d'autres compagnons.</t>
+			<g id="states">
+				<t>Adore</t>
+				<t>Aime</t>
+				<t>Apprécie</t>
+				<t>Neutre</t>
+				<t>Tolère</t>
+				<t>Déteste</t>
+				<t>Hait</t>
+			</g>
+		</g>
+		<g id="prisonerTrust">
+			<g id="states">
+				<t>Satisfait</t>
+				<t>Neutre</t>
+				<t>Méfiant</t>
+			</g>
+		</g>
+
+		<t id="next_attrib_point">Prochain point:</t>
+
+		<t id="hideout_group_desc">Ce repaire est trop puissant, il faudrait certainement l'affaiblir avant de l'attaquer ! Ses occupants doivent rôder dans la région.</t>
+		<t id="hideout_groups_still_alive">Il subsiste encore plusieurs groupes de bandits dans la région. Trouvez-les et éliminez-les pour affaiblir ce repaire !</t>
+		<t id="hideout_done_group_desc">Ce repaire est prêt à tomber. Donnons le dernier assaut !</t>
+
+		<t id="ambush_roaming">Embuscade !</t>
+		<t id="ambush_roaming_desc">Cette troupe vient d'être prise en embuscade par vos compagnons qui bénéficieront d'un avantage au combat.</t>
+		<t id="attack_surprise_roaming">Attaque surprise !</t>
+		<t id="attack_surprise_roaming_desc">Vos compagnons viennent d'attaquer par surprise et bénéficieront d'un avantage au combat.</t>
+
+		<t id="merchant_trade">Commercer</t>
+
+		<t id="due_salary_label">Solde à verser :</t>
+
+		<g id="city">
+			<t id="population">Population</t>
+			<t id="production">Production</t>
+		</g>
+
+		<g id="forsaken_village">
+			<t id="troop">Troupe de reconnaissance</t>
+			<t id="noise_score">Bruit total de la troupe</t>
+			<t id="manage_troop">Gérer</t>
+			<t id="explore_building">Explorer</t>
+			<t id="troop_not_enough_willpower">Le moral de votre troupe de reconnaissance est trop bas pour explorer ce bâtiment.</t>
+			<t id="troop_missing_willpower">Le moral de votre troupe de reconnaissance est trop bas pour continuer à avancer.</t>
+			<t id="troop_force_leave">Vos compagnons ont fui le bâtiment.</t>
+			<t id="troop_dead">Votre troupe de reconnaissance n'a pas survécu.</t>
+			<t id="unit_noisy">Bruyante</t>
+			<t id="unit_silent">Silencieuse</t>
+			<t id="battle_triggered">Pestiférés en approche !</t>
+			<t id="troop_too_noisy">Votre troupe de reconnaissance est trop bruyante pour explorer ce bâtiment.</t>
+			<t id="forsaken_skill_limit">Vous ne pouvez plus chercher une issue jusqu'au prochain round.</t>
+		</g>
+
+		<g id="crime_cave">
+			<t id="confirm_leave">En quittant ce lieu, vous perdrez votre progression. Êtes-vous sûr de vouloir partir ?</t>
+		</g>
+
+		<g id="recruit_announce">
+			<t id="no_criteria">Aucun critère sélectionné</t>
+			<t id="pending_announce">Une annonce de recrutement est en cours.</t>
+			<t id="title">Annonce de recrutement</t>
+			<t id="confirm">Passer l'annonce</t>
+			<t id="weapon">Arme</t>
+			<t id="gender">Genre</t>
+			<t id="personality">Personnalité</t>
+			<t id="traitPositive">Trait positif</t>
+			<t id="traitNegativeBan">Trait négatif exclu</t>
+			<t id="no_choice">Indifférent</t>
+			<t id="cost">Coût de l'annonce : <gold>::value::</gold></t>
+		</g>
+
+		<t id="not_enough_item">Vous n'avez pas assez de <img src="item/::item::"/>::name::.</t>
+		<t id="tip_missing_raw_materials">Rendez-vous dans une forge en ville pour en acheter.</t>
+
+		<t id="no_salary_due">Vous n'avez pas de solde à payer à vos compagnons.</t>
+		<t id="salary_due">Solde à payer à vos compagnons.</t>
+
+		<t id="no_leader">Aucun Leader</t>
+		<t id="label_attr_baseval">Valeur de base</t>
+		<t id="label_equip_bonus">Équipement</t>
+		<t id="label_global_bonus">Avantage de la troupe</t>
+		<t id="label_global_malus">Inconvénient de la troupe</t>
+		<t id="label_attr_cantBeUpgraded">Ne peut plus être augmentée</t>
+
+		<t id="place_piton">Placer</t>
+		<t id="place_piton_desc">Placer le <img src="item/Piton"/><b>Piton</b> à proximité d'une falaise.</t>
+		<t id="piton_place_collide">Le terrain n'est pas stable.</t>
+		<t id="piton_place_too_far">Le piton est trop loin de la troupe.</t>
+		<t id="piton_no_hill">Le piton doit être placé en haut d'une falaise.</t>
+		<t id="piton_place_end_collide">L'arrivée est obstruée.</t>
+		<t id="piton_too_long">La corde est trop longue !</t>
+
+		<t id="rotate_tomb">Tourner</t>
+		<t id="place_tomb">Enterrer</t>
+		<t id="place_tomb_desc">Placer la <b>Tombe</b>.</t>
+		<t id="tomb_place_too_far">La tombe est trop loin de la troupe.</t>
+		<t id="chose_epitaph_desc">Epitaphe.</t>
+
+		<t id="use_rat_bait_action">Appliquer l'appât à rat</t>
+		<t id="cannot_use_rat_bait">Aucun nid de rat détruit à proximité</t>
+
+		<t id="show_map_item">Afficher la carte</t>
+		<t id="setting_complete">Terminé</t>
+		<t id="setting_progress_desc"><good>Pour faire progresser le scénario, explorez la région ou achetez des renseignements à l'Informateur.</good></t>
+		<t id="setting_complete_desc">Félicitations ! Vous avez <good>terminé</good> le scénario de cette région.</t>
+
+		<t id="progress">Progression</t>
+
+		<g id="paths">
+			<t id="show_credits">Voir les crédits</t>
+			<t id="path_completed">Voie terminée</t>
+			<t id="path_might_end">En cheminant sur la Voie de la Gloire et de la Puissance, vous avez triomphé de nombreux périls et vaincu les plus redoutables guerriers des Cinq Royaumes. Votre compagnie a mérité sa place au panthéon des combattants de ce monde.</t>
+			<t id="path_trade_end">Votre ambition et votre soif de richesse vous ont donné le pouvoir de transformer le monde qui vous entourait. Vous n'êtes plus de simples mercenaires : votre compagnie détient la toute puissance de l'argent.</t>
+			<t id="path_crime_end">Aucune serrure ne vous résiste, personne ne peut vous arrêter. Qu’ils soient seigneurs ou bandits, tous vous craignent. Votre astuce et votre manque de remords ont fait de vos mercenaires, les princes des brigands.</t>
+			<t id="path_mystery_end">Vous avez su mettre votre compagnie au service de la Connaissance et vous avez résolu au mépris du danger des mystères enfouis. Vos noms figurent désormais dans les livres d’Histoires aux côtés des plus grands érudits.</t>
+		</g>
+
+		<t id="path_not_started">Vous n'avez pas encore débuté dans cette voie.</t>
+		<t id="path_xp">PP</t>
+		<t id="path_challenge">Défis</t>
+		<t id="path_knowledge">Connaissances</t>
+		<t id="path_troop">Défi spécial de troupe :<br/><b>::troop::</b></t>
+		<t id="path_lvl">niv</t>
+		<t id="path_counter_gain">Obtenir ::value:: PP</t>
+		<t id="path_levelup">Niveau supérieur débloqué !</t>
+		<t id="path_levelup_tip">Passer au niveau supérieur et gagner 1<img src="item/::icon::"/></t>
+		<t id="path_levelup_need"><bad>Nécessite 1<img src="item/Knowledge"/></bad></t>
+		<t id="path_reward">Récompense : ::count:: PP</t>
+		<t id="path_unknown">???</t>
+		<t id="path_counter_total">Réalisé ::value:: fois.</t>
+		<t id="path_require_grimoire">Nécessite d'apprendre <img src="/item/::item::"/> ::itemName:: dans le Compendium.</t>
+		<t id="path_require_path">Nécessite <img src="/item/::item::"/> ::itemName::.</t>
+		<t id="path_counter_need_progress">Progresser dans la Voie pour découvrir ce défi.</t>
+
+		<t id="use_oil_action">Appliquer sur l'arme</t>
+
+		<g id="travel">
+			<t id="choose_destination">Choisir une destination</t>
+			<t id="provisions">Provisions</t>
+			<t id="travel_time">Le voyage durera ::time::</t>
+			<t id="cant_travel_help">
+				<bad>Aucune destination possible.</bad>
+				<bad>Vous devez construite un autre comptoir pour pouvoir vous y rendre.</bad>
+			</t>
+			<t id="no_travel_post">Vous devez construire un comptoir dans cette région pour pouvoir vous y rendre.</t>
+			<t id="current_region">Région actuelle</t>
+			<t id="travelWithTradeGoods">Taxe sur les marchandises :</t>
+			<t id="travelWithTradeGoods_tooltip">Vous désirez voyager avec des marchandises commerciales. Vous devez payer une taxe supplémentaire en fonction de la valeur de revente de ces marchandises.</t>
+			<t id="travelBackTradingGoods_tooltip">Attention ! Le prix pour rapatrier des marchandises subit une taxe supplémentaire en fonction de la valeur de revente de ces marchandises.</t>
+			<t id="destination_require"><bad>Vous devez choisir une destination</bad></t>
+			<t id="food_require"><bad>Vous devez nourrir la troupe pour le voyage</bad></t>
+			<t id="tax_require"><bad>Vous ne possedez pas assez de <b>Krowns</b> pour payer la taxe sur la marchandise</bad></t>
+		</g>
+
+		<g id="trade_route">
+			<t id="build_title">Construire une route commerciale</t>
+			<t id="bonuses_title">Avantages</t>
+			<t id="no_counter">Vous devez construire un comptoir dans ces deux régions.</t>
+			<t id="free_repatriate">Le rapatriement de ressources non-marchandes depuis ce comptoir est gratuit car ils sont reliés par une route commerciale.</t>
+			<t id="free_unit_repatriate">Le rapatriement des compagnons depuis ce comptoir est gratuit car ils sont reliés par une route commerciale.</t>
+			<g id="status">
+				<t>Déjà construite</t>
+				<t>Constructible</t>
+				<t>Indisponible</t>
+			</g>
+		</g>
+
+
+		<g id="counter_chest">
+			<t id="title">Coffre de Comptoir</t>
+			<t id="local">Local</t>
+			<t id="repatriate_item_confirm">Rapatrier cet objet ?</t>
+			<t id="region_title">Région</t>
+		</g>
+
+		<g id="counter_garnison">
+			<t id="title">Garnison</t>
+			<t id="free_slot">Emplacement libre</t>
+			<t id="repatriate_unit_confirm">Rapatrier <b>::name::</b> ?</t>
+			<t id="leave_companion">Déposer un Compagnon</t>
+			<t id="add_companion">Intégrer dans la troupe</t>
+			<t id="manage_garnison">Gérer la Garnison</t>
+		</g>
+
+		<g id="boat">
+			<t id="title_equipement">Equipement</t>
+			<t id="title_crew">Equipage</t>
+			<t id="title_skills">Compétences</t>
+			<g id="random_boat_names">
+				<t>Le Morse</t>
+				<t>L'Ether</t>
+				<t>Le Sinraz</t>
+				<t>La Bourrasque</t>
+			</g>
+		</g>
+
+		<g id="tavern">
+			<t id="menuTitle">Gestion de taverne</t>
+			<t id="inventory">Inventaire de taverne</t>
+			<g id="resume">
+				<t id="title">Rapport de service</t>
+				<g id="revenue">
+					<t id="title">Personnel</t>
+					<t id="salaries">Salaires</t>
+					<t id="gains">Gains</t>
+					<t id="total">Total</t>
+					<t id="sat_clients">Clients : <good>+::value::</good></t>
+					<t id="sat_saleChances">Chances de vente : <good>+::value::%</good></t>
+					<t id="satisfaction">Moyenne des derniers services: </t>
+					<t id="precision">(la sécurité compte triple) </t>
+					<t id="xp_tip">Montant gagné : ::xpWon::
+					Montant actuel : ::xp::
+					Montant du prochain niveau : ::xpNext::</t>
+				</g>
+				<g id="production">
+					<t id="title">Menus</t>
+					<t id="gains">Recettes</t>
+					<t id="sell">Ventes</t>
+					<t id="cooksTitle">Four</t>
+					<t id="capacity">Capacité</t>
+					<t id="production">Production</t>
+					<t id="barrelStock">Stock</t>
+					<t id="barrelAge">Étoiles</t>
+					<t id="barrelAging">Vieillissement</t>
+					<t id="barrelInSale">Tonneaux<img src="/icon/ForSale"/></t>
+					<t id="barrelInStock">Tonneaux<img src="/icon/InCellar"/></t>
+					<t id="empty">Vide</t>
+					<t id="noBrewer">Sans brasseur</t>
+				</g>
+				<t id="events">Événements</t>
+				<t id="connoisseur"><b>::name::</b> a volé <img src="/item/::item::"/>::itemName::. La vente de l'objet vous rapporte <img src="/icon/TavernSilver"/><good>+::count::.</good></t>
+				<t id="gain_speciality"><b>::name::</b> a débloqué la spécialité <trait>::trait::</trait>.</t>
+			</g>
+			<g id="customers">
+				<t id="neutral">Mixte</t>
+				<t id="fancy">Huppée</t>
+				<t id="rustic">Populaire</t>
+				<t id="universal">Universelle</t>
+			</g>
+			<g id="tips">
+				<t id="service">Service ::value::</t>
+				<t id="place_tool">Installer dans la taverne</t>
+				<t id="place_barrel">Installer dans la cave</t>
+				<t id="upgrade_tool">[RMBCTRL] Améliorer l'équipement</t>
+				<t id="require_tavernMode"><bad>Utilisable uniquement dans la taverne.</bad></t>
+				<t id="gain_bonus_one_day">::amount:: ::name::</t>
+				<t id="gain_bonus_n_days">::amount:: ::name:: pendant ::days:: services</t>
+				<t id="require_tool">Nécessite ::toolName::</t>
+				<t id="wolf_cat_warning"><bad>Les loups et les chats ne peuvent pas cohabiter</bad></t>
+				<t id="manage">Gérer</t>
+				<t id="changeTavernJob">Changer de rôle</t>
+				<g id="customers">
+					<t id="favorite_food">Plat préféré</t>
+					<t id="favorite_song">Musique préférée</t>
+					<t id="favorite_customerBase">Ambiance préférée</t>
+				</g>
+				<t id="shift_details">[SHIFT] - Afficher détails</t>
+				<t id="specialities"><b>Spécialités</b></t>
+				<t id="specialities_learnt">Acquise</t>
+				<t id="factor_details"><b>Détail</b></t>
+				<t id="satisfaction_details"><b>Détail des scores</b></t>
+				<t id="factor_effects"><b>Effets</b></t>
+				<t id="factor_gains"><b>Gains</b></t>
+				<t id="factor_loses"><b>Pertes</b></t>
+				<t id="factor_events">Événements : ::value::</t>
+				<t id="warning_noPlace_clients">Certains clients ont été refusés, faute de place.</t>
+				<t id="warning_prestige_tavern"><bad>Vous ne pouvez accumuler plus de prestige tant que vous n’avez pas déménagé dans une plus grande taverne.</bad></t>
+				<t id="no_valid_faction"><bad>Aucune des factions n'est présente dans la taverne.</bad></t>
+				<t id="sell_failed">Ventes manquées : <bad>::value::</bad></t>
+				<t id="reward_faction_require">Accueillez ::nb_reward:: ::faction_name:: dans votre taverne pour obtenir une récompense.
+				::faction_name:: accueillis : ::value::</t>
+				<t id="reward_faction_valid">Les conditions pour obtenir la récompense de cette faction sont remplies.</t>
+				<t id="reward_faction_noReward">Cette faction n'offre pas de récompense.</t>
+				<t id="tavernBonus">Aménagement : +::value::</t>
+				<t id="unitsBonus">Personnel : +::value::</t>
+				<t id="otherBonus">Autre : +::value::</t>
+				<t id="confirmNewService">Voulez-vous réaliser un nouveau service pour ::cost:: ?</t>
+				<t id="serviceLockPrestige">Atteignez ::value:: Prestige <img src="icon/TavernPrestige"/> pour débloquer les services supplémentaires.</t>
+			</g>
+			<g id="menu">
+				<t id="title">Composer le menu</t>
+				<t id="price_promotion">Promotion</t>
+				<t id="price_shortage">Pénurie</t>
+				<t id="tavern_production">Production</t>
+				<t id="kitchen">Cuisine</t>
+				<t id="cave">Cave</t>
+				<t id="slot_insufficient">Emplacements insuffisants</t>
+				<t id="already_produced">Déjà à la carte</t>
+				<t id="slot_required">Emplacements requis : ::value::</t>
+				<t id="sold_item">Ventes de la veille : ::value::</t>
+				<t id="change_menu">[LMB] Modifier le menu<br/>
+				Les options disponibles dépendent du niveau du marmiton et des recettes déjà connues par la troupe.</t>
+				<t id="change_drink">[LMB] Choisir la boisson<br/>
+				Les options disponibles dépendent du niveau du brasseur et des recettes déjà connues par la troupe.</t>
+				<t id="food_locked_tip">Le nombre d’emplacements disponibles dépend du niveau du marmiton et de ses traits.</t>
+				<t id="add_dish">[RMB] Ajouter le plat</t>
+				<t id="remove_dish">[RMB] Retirer le plat</t>
+				<t id="reset_price"><img src="icon/Pad_Y"/> Prix par défaut</t>
+				<t id="change_price"><img src="icon/Pad_DpadLeft"/>/<img src="icon/Pad_DpadRight"/> Changer le prix</t>
+				<t id="choose_alcohol">Voulez-vous produire <b>::item::</b> ?</t>
+				<t id="need_unit">Assignez un brasseur pour fabriquer de l'alcool.</t>
+				<t id="replace_alcohol">Voulez-vous remplacer <b>::previous::</b> par <b>::next::</b> ?
+				<bad>Votre stock actuel sera perdu.</bad></t>
+				<t id="promo_updated">Les articles en promotion ont changé (votre carte peut être mise à jour).</t>
+				<t id="promo_updated_notif">Les articles en promotion ont changé.</t>
+				<t id="food_production">À chaque service, ::name:: pourra fabriquer un maximum de ::value:: exemplaires de chaque plat. Tous les plats sont réalisés sur commande. La production dépend donc des chances de vente.</t>
+				<t id="reset_default">Retour au prix de base</t>
+				<g id="item_price">
+					<t id="low">Évaluation du prix : <good>Bon marché</good></t>
+					<t id="normal">Évaluation du prix : Correct</t>
+					<t id="high">Évaluation du prix : <warn>Excessif</warn></t>
+					<t id="desc">Plus le prix est supérieur au prix de base, plus les chances de vente seront faibles. Une clientèle huppée tolère plus facilement des prix élevés.</t>
+					<t id="default_price">Prix de base : <font color="#ffffff">::value::</font></t>
+					<t id="actual">Prix de vente actuel : ::value::</t>
+					<t id="ingredients_price">Prix des ingrédients : <bad>-::value::</bad></t>
+					<t id="profit">Profit : ::value::</t>
+				</g>
+				<t id="item_cost">Coût des ingrédients<br/>
+				Pour chaque vente réalisée, ce montant sera soustrait aux bénéfices.</t>
+				<t id="item_cost_alcohol">Coût des ingrédients<br/>
+				Pour chaque dose produite, ce montant sera soustrait aux bénéfices. Attention: une forte production peut coûter cher.</t>
+				<t id="aging_not_sold">Un alcool en réserve ne peut être vendu.</t>
+				<t id="tip_filling">Remplissage du tonneau<br/>
+				Si un brasseur est assigné et que le tonneau n'est pas plein, de l'alcool sera produit à chaque service. La production d'alcool consomme des ingrédients, et coûte donc de l'argent.</t>
+				<t id="tip_aging">Vieillissement du tonneau<br/>
+				Chaque fois que cette jauge est remplie, le contenu du tonneau gagne un degré de vieillissement <img src="icon/QualityStar"/> qui augmente sa valeur. <br/>
+				Il reste possible de produire de l’alcool dans un tonneau vieilli, mais chaque <img src="icon/QualityStar"/> diminue la productivité en fonction du type d’alcool. <br/>
+				Un alcool ne peut excéder deux <img src="icon/QualityStar"/>.</t>
+				<t id="tip_state_selection">Lorsqu’un tonneau est mis en vente, le brasseur qui y est assigné produira de l’alcool pour compenser les ventes. Lorsqu’un tonneau est mis en réserve, il se remplira plus rapidement et pourra ensuite être vieilli.<br/>
+				Chaque degré de vieillissement <img src="icon/QualityStar"/> augmente le prix de vente de l’alcool. Le vieillissement ne coûte pas de ressources.</t>
+				<t id="upgrade_tavern">Améliorez votre taverne pour pouvoir assigner un marmiton supplémentaire.</t>
+				<t id="buy_barrel">Achetez un tonneau pour pouvoir assigner un brasseur supplémentaire.</t>
+				<t id="upgrade_cave">Améliorez votre taverne pour pouvoir acheter des tonneaux supplémentaires.</t>
+				<t id="upgrade_barrels">Rendez-vous dans votre cave pour améliorer l'un de vos tonneaux.</t>
+
+				<t id="alcohol_speed">Vitesse de production :</t>
+				<g id="alcoholTypes">
+					<t id="slow">Lente</t>
+					<t id="normal">Moyenne</t>
+					<t id="fast">Rapide</t>
+				</g>
+
+				<t id="sale_chance">Chance de vente :</t>
+				<g id="saleFactor">
+					<t id="price">Prix</t>
+					<t id="clients">Préférence de la clientèle</t>
+					<t id="confort">Confort</t>
+					<t id="satisfaction">Satisfaction</t>
+					<t id="complexity">Malus de complexité</t>
+					<t id="effect">Evénements</t>
+					<t id="sale_bonus_areas">Zones de bonus</t>
+				</g>
+
+				<t id="attracted_region">Region attiré :</t>
+				<t id="attracted_factions">Factions attirées :</t>
+				<t id="attracted_clientele">Clientèle attirée :</t>
+
+				<g id="supplier">
+					<t id="title">Fournisseur</t>
+					<t id="desc">Fournit automatiquement les ingrédients pour la cuisine et le brassage.</t>
+					<t id="promotion_title">Promotions</t>
+					<t id="promotion_desc">Chaque semaine, ::nbPromo:: articles sont proposés à des prix plus bas. Les recettes contenant ces ingrédients coûteront donc moins cher à produire.</t>
+					<t id="shortage_title">Pénuries</t>
+					<t id="shortage_desc">Chaque semaine, ::min:: à ::max:: articles sont en pénurie. Les recettes contenant ces ingrédients coûteront donc plus cher à produire.</t>
+				</g>
+				<t id="warning_cant_produce_food"><bad>Pour préparer ce plat, vous devez d'abord avoir ::toProduce:: au menu.</bad></t>
+				<t id="warning_cant_produce_drink"><bad>Pour préparer cette boisson, vous devez d'abord avoir ::toProduce:: au menu.</bad></t>
+				<t id="used_by">Ingrédient pour :</t>
+				<t id="setBarrelInCellar">Arrêter la vente</t>
+				<t id="setBarrelForSale">Mettre en vente</t>
+				<t id="speciality_one">Une seule spécialité peut être servie</t>
+			</g>
+
+			<g id="command">
+				<t id="title">Achat d'équipements</t>
+				<t id="equipment">Type d'équipement</t>
+				<t id="confirm">Voulez-vous commander ::names:: pour <img src="icon/TavernSilver" /> ::cost:: ?</t>
+				<t id="command">Acheter pour <img src="icon/TavernSilver" />::value::</t>
+				<t id="upgrade_action">Améliorer pour <img src="icon/TavernSilver" />::value::</t>
+				<t id="sell">Vendre pour <img src="icon/TavernSilver" />::value::</t>
+				<t id="nextUnlock">Prochain équipement :</t>
+				<t id="nextUnlockValue">Nécessite <img src="icon/TavernPrestige" />::value:: </t>
+				<t id="upgrade">Voulez-vous améliorer <img src="item/::icon::"/> ::name:: pour <img src="icon/TavernSilver" /> ::cost:: ?</t>
+				<t id="warning_sell">Voulez-vous vraiment vendre toutes vos tables ?</t>
+				<t id="qtyInTavern">Installé dans la taverne : <b>::value::</b></t>
+				<t id="qtyInCave">Barils installés dans la cave : <b>::value::</b></t>
+				<t id="barrelCapacity">La cave peut contenir <b>::value::</b> barils.</t>
+				<t id="itemInInventory">Équipement dans l'inventaire : <b>::value::</b></t>
+				<t id="upgradeCost">Coût d'amélioration : <img src="icon/TavernSilver" />::value::</t>
+			</g>
+
+			<g id="ranking">
+				<t id="tavernRanking">Classement des tavernes</t>
+				<t id="customersFactions">Clientèle</t>
+				<t id="recipe">Recette volée</t>
+				<t id="spying">::name:: reviendra dans ::count:: services.</t>
+				<t id="found_recipe">::count::/::total:: recette(s) volée(s)</t>
+				<t id="send_spy">[LMB] Envoyer un infiltré</t>
+				<t id="spy_title">Infiltrer</t>
+				<t id="cancel_mission">Annuler la mission</t>
+				<g id="spy">
+					<t id="return_fail">::name:: vient de rentrer bredouille de sa mission d'infiltration.</t>
+					<t id="return_success">::name:: a réussi sa mission d'infiltration. (::reward::)</t>
+
+					<t id="confirm">Souhaitez-vous envoyer ::name:: en espionnage pendant ::days:: services ?</t>
+					<t id="cancel_confirm">Souhaitez-vous annuler cette mission d'infiltration ?</t>
+					<t id="update_confirm">Souhaitez-vous modifier la durée de votre mission ?</t>
+					<t id="warning_job">Cet employé ne remplira plus son rôle de ::job:: pendant la durée de sa mission.</t>
+				</g>
+				<t id="spy_rest_time">Envoyé pendant ::count:: services</t>
+				<t id="spy_possible_reward">Gains possibles :</t>
+				<t id="spy_rival_malus">Retire <bad>::value:: ::bonus::</bad> à votre rival</t>
+				<t id="spy_secret_recipe"><good>Recette secrète</good></t>
+				<t id="spy_client_reward"><img src="icon/TavernFactions"/><good>::value::</good> clients</t>
+				<t id="spy_chances_details">Prestige de la taverne visée: ::prestige::
+				Niveau de métier: ::job::
+				Nombre de services: ::days::</t>
+				<t id="no_unit">Aucune unité assignée</t>
+				<t id="not_available">Atteignez ::value:: Prestige <img src="icon/TavernPrestige"/> pour débloquer cette fenêtre.</t>
+			</g>
+			<g id="staff">
+				<t id="employees">Employés</t>
+				<t id="unassigned">Non-assignés</t>
+				<t id="recruit">Recruter des civils</t>
+				<t id="nextRecruits">Nouvelles candidatures dans <b>::remainingDays::</b> services</t>
+				<t id="fireUnit">Renvoyer (<img src="icon/TavernSilver" /> -::cost::)</t>
+				<t id="transfer">Transférer</t>
+				<t id="unit_transfer_no_more_unit">Vous ne pouvez pas transférer votre dernier compagnon.</t>
+				<t id="unit_transfer_warning_transport">Attention: si vous transférez cette unité, votre troupe n’aura plus la capacité de transport nécessaire pour se déplacer.</t>
+				<t id="transferFromTroop">Transférer des compagnons</t>
+				<t id="transferToTroop">Transférer vers la troupe</t>
+				<t id="recruitConfirm">Voulez-vous recruter <b>::unitName::</b> ?</t>
+				<t id="transferConfirm">Voulez-vous transférer <b>::unitName::</b> à la taverne ?</t>
+				<t id="fireConfirm">Voulez-vous renvoyer <b>::unitName::</b> (<img src="icon/TavernSilver" /> -::cost::) ?
+				<bad>Cette décision est définitive.</bad></t>
+				<t id="transferBackConfirm">Voulez-vous transférer <b>::unitName::</b> vers votre troupe ?</t>
+				<t id="recruitDelay">Ce compagnon arrivera au prochain service.</t>
+				<t id="needInkeeper">La taverne ne peut fonctionner sans tavernier.</t>
+				<t id="assign">Assigner</t>
+				<t id="unassign">Désassigner</t>
+				<t id="assign_barrel">Assigner au tonneau</t>
+				<t id="assign_furnace">Assigner au four</t>
+				<t id="unit_cook_no_recipe">Cet employé ne pourra travailler que si une recette lui est assignée.</t>
+
+				<t id="salary">Salaire : <img src="icon/TavernSilver" /><b>::value::</b></t>
+				<t id="salary_notWorking">Salaire (unité non assignée) : <img src="icon/TavernSilver" /><b>::value::</b></t>
+				<t id="salary_animal">Nourriture : <img src="icon/TavernSilver" /><b>::value::</b></t>
+
+				<g id="resume">
+					<t id="nbEmployees">Nombre d'employés : ::nb::</t>
+					<t id="nbTransfers">(::nb:: en cours de transfert)</t>
+					<t id="salaries">Salaires : <img src="icon/TavernSilver" />::value::</t>
+				</g>
+
+				<t id="employees_cant_work">Au moins un employé ne peut pas travailler.</t>
+			</g>
+			<g id="management">
+				<t id="title">Gestion de Taverne</t>
+				<t id="clientele">Clientèle</t>
+				<t id="view">Vue d'ensemble</t>
+				<t id="evolution">Evolution</t>
+
+				<t id="faction_col_name">Faction</t>
+				<t id="count_col_name">Clients accueillis</t>
+				<t id="percent_col_name">Affinité</t>
+				<t id="faction_requirement">Remplissez la condition d’accueil de la faction pour pouvoir l’attirer dans votre taverne.</t>
+				<t id="apparition_factor">Facteur d'apparitions :</t>
+				<t id="unknown">???</t>
+
+				<g id="factors">
+					<t id="menu">Menu : ::value:: plats ou boissons favorables</t>
+					<t id="decoration">Décoration : ::value:: objets favorables</t>
+					<t id="music">Musique : </t>
+					<t id="clientele">Clientèle : </t>
+				</g>
+
+				<g id="opinion">
+					<t id="positive">Favorable</t>
+					<t id="neutral">Neutre</t>
+					<t id="negative">Défavorable</t>
+				</g>
+
+				<t id="statistics_title">Statistiques</t>
+				<t id="client_count">Nombre de clients (dernier service)</t>
+				<t id="faction_count">Nombre de factions (dernier service)</t>
+				<t id="employee_count">Nombre d'employés</t>
+				<t id="furniture_count">Nombre de meubles</t>
+				<t id="secret_recipe">Recettes secrètes obtenues</t>
+
+				<t id="identity_title">Identité</t>
+				<t id="name">Nom</t>
+				<t id="color">Couleur</t>
+				<t id="music">Musique</t>
+
+				<t id="treasury_title">Trésorerie</t>
+				<t id="withdraw_money">Retirer <img src="/icon/TavernSilver"/> ::amount::</t>
+				<t id="deposit_money">Renflouer</t>
+				<t id="liquidation">Liquidation de la taverne</t>
+				<t id="liquidation_confirm">Voulez-vous liquider la taverne ? <br/>
+					<bad>Attention: Cette action annulera toute votre progression dans la taverne. Vous perdrez vos équipements, votre prestige et les civils que vous avez recrutés. Les compagnons assignés à la taverne reviendront dans la troupe. Vous pourrez recommencer de zéro le développement de votre taverne en vous rendant à Tiltren.</bad></t>
+				<t id="deposit_warning">Vous ne pouvez renflouer la taverne que si sa trésorerie est négative.</t>
+				<t id="deposit_gold_warning">Vous n'avez pas assez de Krowns pour renflouer la taverne.</t>
+				<t id="conversion_fee">Frais de conversion :</t>
+
+				<t id="see_resume">Afficher le rapport de service</t>
+				<t id="not_available">Reposez-vous pour passer votre premier service et débloquer cette fenêtre.</t>
+			</g>
+			<g id="events">
+				<t id="unknown_consequences">Qui pourrait prévoir les conséquences d'un tel choix ?</t>
+				<t id="no_events">Il ne s'est rien passé de particulier aujourd'hui.</t>
+			</g>
+		</g>
+	</g>
+
+	<g id="debrief">
+		<t id="resources_won">Gains</t>
+		<t id="fighters">Combattants</t>
+		<t id="ignore_loot">Voulez-vous abandonner les objets gagnés en combat ?</t>
+		<t id="repair_all">Réparez les armures et boucliers endommagés avec vos ::item::</t>
+		<t id="cure_all">Soignez vos compagnons avec vos remèdes</t>
+		<t id="msg_release_hostage">Vous avez libéré <b><good>::name::</good></b>!</t>
+		<t id="msg_flee_extreme">En quittant le champ de bataille, vous avez retrouvé le cadavre de <b><bad>::name::</bad></b>.</t>
+		<t id="msg_hostage_taken"><bad><b>::name::</b> a été fait prisonnier lors de la fuite !</bad></t>
+		<t id="merchants_saved"> Les marchands vous remercient de leur avoir prêté main-forte.<br/>Vous recevez <gold>::gold::</gold>.</t>
+	</g>
+
+	<g id="notify">
+		<t id="newJob">Nouveau métier : ::name::.</t>
+		<t id="gain">Vous avez obtenu ::gain::.</t>
+		<t id="perfect">Parfait !</t>
+		<t id="path_title_unlock">Vous avez débloqué le titre "<default>::name::</default>".</t>
+		<t id="path_reach_level">Vous avez atteint</t>
+        <t id="path_gain">Vous avez obtenu</t>
+		<t id="path_bonus"><small>Avantage: <font color="#9c988a">::bonus::</font></small></t>
+		<t id="barberkit_prisoner_trust">Vous avez pris soin de ::name::. La confiance entre vous grandit.</t>
+        <t id="heal_prisoner_trust">Vous avez soigné ::name::. La confiance entre vous grandit.</t>
+		<t id="toothpaste_prisoner_trust">La fraîcheur envahit ::name::. La confiance entre vous grandit.</t>
+	</g>
+
+	<g id="prisoners_trust">
+		<t id="barberkit_prisoner_trust">Son récent soin du visage a augmenté sa confiance envers la troupe.</t>
+		<t id="heal_prisoner_trust">Se sent bien dans une troupe qui prend soin de ses blessures.</t>
+		<t id="toothpaste_prisoner_trust">Enchanté d'avoir découvert la pâte à dents.</t>
+		<t id="toolprod_prisoner_trust">Oublie un peu sa condition en travaillant.</t>
+		<t id="pillory_prisoner_trust">Enchaîné, il scrute les compagnons d'un regard noir.</t>
+		<t id="ally_prisoner_trust">Apprécie la proximité des compagnons malgré tout.</t>
+		<t id="starvation_prisoner_trust">Meurt de faim.</t>
+		<t id="well_fed_prisoner_trust">Bien nourri.</t>
+		<t id="belt_acc_prisoner_trust">Fort belle ceinture équipée.</t>
+		<t id="livestock_prisoner_trust">Mécontent d'être surveillé par des animaux comme du bétail.</t>
+		<t id="whip_prisoner_trust">Hait la troupe.</t>
+		<t id="barberkit_prisoner_trust_W">Son récent soin du visage a augmenté sa confiance envers la troupe.</t>
+		<t id="heal_prisoner_trust_W">Se sent bien dans une troupe qui prend soin de ses blessures.</t>
+		<t id="toolprod_prisoner_trust_W">Oublie un peu sa condition en travaillant.</t>
+		<t id="pillory_prisoner_trust_W">Enchaînée, elle scrute les compagnons d'un regard noir.</t>
+		<t id="ally_prisoner_trust_W">Apprécie la proximité des compagnons malgré tout.</t>
+		<t id="starvation_prisoner_trust_W">Meurt de faim.</t>
+		<t id="well_fed_prisoner_trust_W">Bien nourrie.</t>
+		<t id="belt_acc_prisoner_trust_W">Fort belle ceinture équipée.</t>
+		<t id="livestock_prisoner_trust_W">Mécontente d'être surveillée par des animaux comme du bétail.</t>
+		<t id="whip_prisoner_trust_W">Hait la troupe.</t>
+	</g>
+
+	<g id="npc_recruit_talk">
+		<t>Si vous payez bien, je pars avec vous !</t>
+		<t>L'aventure m'appelle !</t>
+		<t>J'aimerais voir du pays, parcourir le monde.</t>
+		<t>Moyennant une solde bien grasse, je suis à votre disposition.</t>
+		<t>J'ai déjà gagné plusieurs bagarres à la taverne, vous pouvez avoir confiance en moi.</t>
+		<t>Si je m'engage avec vous, je ne serai plus un poids pour ma famille.</t>
+		<t>Je voudrais parcourir le monde avant de m'établir.</t>
+		<t>Je n'ai peur de rien et j'apprends vite, vous ne pouvez espérer meilleur compagnon.</t>
+		<t>Je faisais partie d'une autre compagnie de mercenaires, mais un matin, ils sont partis sans moi...</t>
+		<t>Tant que j'ai le ventre plein, je suis un excellent compagnon.</t>
+	</g>
+
+	<g id="npc_recruit_talk_localized">
+		<g id="Alazar">
+			<g id="Generic">
+				<t>Les brigands m'ont tout pris, je n'ai plus rien à perdre.</t>
+				<t>Je préfère encore me faire mercenaire que mendier sur la place du marché.</t>
+				<t>Ces querelles de voisinages sont devenues insupportables, emmenez-moi loin d'ici.</t>
+			</g>
+			<g id="Man">
+				<t>Ne vous fiez pas à mes haillons, avant d'être réfugié, j'étais soldat.</t>
+			</g>
+			<g id="Woman">
+				<t>Ne vous fiez pas à mes haillons, avant d'être réfugiée, j'étais soldate.</t>
+			</g>
+		</g>
+		<g id="Edoran">
+			<g id="Generic">
+				<t>Ce n'est pas parce que la Légion n'a pas voulu de moi que je ne vaux rien.</t>
+				<t>Ces guerres de nobles ne m'intéressent pas. Ce que je veux, c'est l'aventure.</t>
+				<t>Je voudrais voir du pays avant de rejoindre une abbeye.</t>
+			</g>
+			<g id="Man">
+				<t>J'ai toujours su que la vie de paysan n'était pas pour moi.</t>
+			</g>
+			<g id="Woman">
+				<t>J'ai toujours su que la vie de paysanne n'était pas pour moi.</t>
+			</g>
+		</g>
+		<g id="Gosenberg">
+			<g id="Generic">
+				<t>La vie à Gosenberg est bien trop tranquille pour moi.</t>
+				<t>Autrefois, ma famille siégeait au Conseil du Négoce. Aujourd'hui, je dois vendre mes bras pour éponger nos dettes.</t>
+				<t>Mes services ne sont pas gratuits mais vous en serez satisfaits.</t>
+				<t>J'ai besoin de constituer une dote pour mon fils.</t>
+			</g>
+			<g id="Man">
+				<t>Rejoindre une compagnie de mercenaires me fait envie depuis tout petit.</t>
+			</g>
+			<g id="Woman">
+				<t>Rejoindre une compagnie de mercenaires me fait envie depuis toute petite.</t>
+			</g>
+		</g>
+		<g id="Harag">
+			<g id="Generic">
+				<t>Les Teuls m'ont prédit un grand avenir comme mercenaire.</t>
+				<t>Tuer des animaux c'est bon pour les Traqueurs ! J'ai besoin d'affronter des adversaires à ma mesure.</t>
+				<t>Je ne réclame rien qu'un salaire honnête et une vie loin des marais.</t>
+				<t>Si vous promettez de m'emmener voir les Tombeaux des Anciens, je viens avec vous.</t>
+				<t>Dormir à la belle étoile ne me pose pas de problème.</t>
+			</g>
+		</g>
+	</g>
+
+	<g id="npc_talk_prison">
+		<t>Libérez-moi ! C'est promis, je ne volerai plus !</t>
+		<t>Je ne veux pas mourir ici...</t>
+		<t>Tant que je pourrai manger à ma fin, je vous suivrai partout où vous irez !</t>
+		<t>C'est une erreur judicaire ! J'exige un jugement par combat !</t>
+		<t>Payez ma liberté et je serai vôtre.</t>
+	</g>
+
+	<g id="animal_recruit_desc">
+		<t>L'oeil vif et le poil soyeux, un compagnon de tous les jours.</t>
+		<t>Il semble vous supplier de l'emmener avec vous.</t>
+		<t>Patient, l'animal mâche des feuilles de chou.</t>
+	</g>
+
+	<g id="animal_prison_desc">
+		<t>Comment a-t-il fait pour se retrouver là ?</t>
+	</g>
+
+	<g id="animal_prison_desc_mine">
+		<t>::name:: est certain que vous êtes revenus le chercher.</t>
+		<t>Vous savez que ::name:: vous a reconnus. Il lève vers vous des yeux pleins d’espoir.</t>
+	</g>
+
+	<g id="animal_prison_desc_mine_extreme">
+		<t>Votre trahison a laissé ::name:: totalement apathique.</t>
+		<t>::name:: a déjà accepté son funeste destin.</t>
+	</g>
+
+	<g id="npc_talk_prison_mine">
+		<t>Vous êtes revenus me libérer ?! Oh merci !</t>
+		<t>Vite, libérez-moi ! Il me tarde de retrouver les autres !</t>
+		<t>Enfin ! Vous savez depuis combien de temps je croupis ici ?</t>
+	</g>
+
+	<g id="fight">
+		<t id="defender_default_desc">Ce groupe occupe le lieu et vous menace.</t>
+	</g>
+
+    <g id="songs">
+		<t id="none">Aucune</t>
+        <t id="jean_bon_name">Jean-Bon</t>
+    </g>
+
+	<g id="steal">
+		<t id="wanted_level">Niveau de recherche :</t>
+		<t id="wanted_level_desc">Plus votre <bad>niveau de recherche</bad> est élevé, plus la Garde renforcera ses patrouilles.</t>
+
+		<t id="reason_steal">Vol à ::where::</t>
+		<t id="looting_merchants">Pillage de marchands</t>
+		<t id="first_wanted">Ce vol vous vaudra d’être <bad>recherché</bad> par la Garde. Êtes-vous certains de poursuivre cette action ?</t>
+		<t id="sell_stolen">La vente d'objets volés augmentera votre <bad>niveau de recherche</bad> par la Garde. Êtes-vous certains de poursuivre cette action ?</t>
+		<t id="reason_sell_stolen">Revente d'objets volés</t>
+
+		<t id="cannot_because_wanted">
+			Tout le monde a eu vent de vos méfaits.
+			Il est désormais impossible de voler sans attirer l'attention.
+		</t>
+
+		<t id="sell_stolen_wanted">
+			La provenance douteuse de vos objects a attiré l'attention : vous ne pourrez pas vendre ces objets ici tant que vous êtes <bad>recherché</bad>.
+		</t>
+
+		<t id="sell_stolen_fail">
+			La provenance douteuse de vos objects a attiré l'attention et vous n'avez pas pu les vendre.
+			Vous êtes désormais <bad>recherché</bad>, vous feriez mieux de vous éloigner d'ici au plus vite !
+		</t>
+
+		<t id="unit_busted">
+			<b>::name::</b> s'est fait attraper lors de sa tentative de vol !
+			Le compagnon a été livré à la Garde et envoyé à "<b>::where::</b>".
+			Vous êtes désormais <bad>recherché</bad> et vous feriez mieux de vous éloigner d'ici au plus vite !
+		</t>
+
+		<t id="unit_busted_no_prison">
+			<b>::name::</b> s'est fait repérer lors de sa tentative de vol !
+			Vous êtes désormais <bad>recherché</bad> et vous feriez mieux de vous éloigner d'ici au plus vite !
+		</t>
+
+		<t id="unit_accused">
+			<b>::name::</b> a été livré à la Garde et envoyé à "<b>::where::</b>".
+		</t>
+		<t id="unit_accused_extreme"><b>::name::</b> a été livré à la Garde et envoyé à "<b>::where::</b>" pour le restant de ses jours.</t>
+
+		<t id="unit_accused_heretic">
+			<b>::name::</b> a été livré à l'Inquisition et envoyé à "<b>::where::</b>".
+		</t>
+
+		<t id="unit_surrender">
+			<b>::name::</b> s'est livré à la Garde et a été envoyé à "<b>::where::</b>".
+		</t>
+		<t id="unit_surrender_extreme"><b>::name::</b> s'est livré à la Garde et a été envoyé à "<b>::where::</b>" pour le restant de ses jours.</t>
+	</g>
+
+	<g id="customize_ui">
+		<t id="customization">Personnalisation</t>
+		<t id="poney_appearance">Apparence du poney</t>
+		<t id="name">Nom</t>
+		<t id="appearance">Apparence</t>
+		<t id="skills">Compétences</t>
+		<t id="traits">Traits</t>
+		<t id="skill">Utilitaire</t>
+		<t id="start_weapon">Arme de départ</t>
+
+		<t id="sex">Homme|Femme</t>
+		<t id="face">Visage</t>
+		<t id="skin">Teinte de la peau</t>
+		<t id="hairs">Cheveux</t>
+		<t id="hairs_color">Teinte des cheveux</t>
+		<t id="hairiness">Pilosité</t>
+		<t id="clothes_color">Couleur des vêtements</t>
+		<t id="tattoos">Tatouage</t>
+		<t id="warpaint">Peinture de guerre</t>
+		<t id="pattern_color">Couleur du motif</t>
+
+		<t id="none">Aucun</t>
+		<t id="random">Aléatoire</t>
+		<t id="add_positive_trait">Ajouter un trait <good>positif</good></t>
+		<t id="random_positive_trait">Trait <good>positif</good> aléatoire</t>
+		<t id="random_negative_trait">Trait <bad>négatif</bad> aléatoire</t>
+	</g>
+
+	<g id="title">
+		<t id="new_game">Nouvelle Partie</t>
+		<t id="continue_game">Continuer</t>
+		<t id="new_game_multi">Nouvelle Partie Coop</t>
+		<t id="multiplayer">Multijoueur</t>
+		<t id="load_game">Charger</t>
+		<t id="dlcs">Contenus additionnels</t>
+		<t id="options">Options</t>
+		<t id="credits">Crédits</t>
+		<t id="exit">Quitter</t>
+		<t id="game_over">Game Over</t>
+
+		<t id="local_coop">Multijoueur en local</t>
+		<t id="join_with_code">Rejoindre via un code d'invitation</t>
+		<t id="create_local_coop">Créer une partie en local</t>
+		<t id="no_lobbies_found">Aucune session de jeu trouvée</t>
+
+		<t id="join_local_coop">Jouer en local</t>
+		<t id="join_internet_coop">Jouer en ligne</t>
+
+		<t id="option_lang">Langue</t>
+		<t id="option_sound_vol">Sons</t>
+		<t id="option_ambient_vol">Ambiance</t>
+		<t id="option_music_vol">Musique</t>
+		<t id="option_voice_vol">Voix</t>
+		<t id="option_interface_vol">Interface</t>
+		<t id="option_global_vol">Volume Global</t>
+
+        <t id="featureupvote">Soumettre un bug</t>
+        <t id="giveFeedback">Feedback et Suggestions</t>
+
+		<t id="discord">Rejoins-nous sur Discord</t>
+		<t id="connectedAs">Connecté en tant que : ::name::</t>
+
+		<t id="invalid_files">Certains fichiers de jeu n'ont pas été installés correctement et pourraient engendrer des erreurs.</t>
+		<t id="invalid_files_repair_files">Vous pouvez vérifier l'intégrité des fichiers ou réinstaller le jeu.</t>
+
+		<g id="graphics">
+			<t id="general">Général</t>
+
+			<t id="monitors">Ecrans</t>
+
+			<t id="brightness">Luminosité</t>
+			<t id="brightness_tuto">Ajustez la luminosité</t>
+			<t id="displayMode">Affichage</t>
+			<t id="windowed">Fenêtré</t>
+			<t id="fullscreen">Plein Ecran</t>
+			<t id="borderless">Sans bordure</t>
+
+			<t id="terrain">Terrain</t>
+			<t id="vegetation">Végetation</t>
+			<t id="props">Détails du monde</t>
+			<t id="shadows">Ombres</t>
+			<t id="ssr">Réflexions</t>
+			<t id="sao">Ambient Occlusion</t>
+ 			<t id="resolution">Resolution</t>
+ 			<t id="framerate">Fréquence de rafraîchissement</t>
+ 			<t id="antialiasing">Antialiasing</t>
+ 			<t id="volumetric">Effets volumétriques</t>
+			<t id="meteo">Effets météorologiques</t>
+			<t id="population">Unités dans le monde</t>
+
+			<t id="vsync">Synchronisation verticale</t>
+
+			<t id="disabled">Désactivé</t>
+			<t id="enabled">Activé</t>
+			<t id="low">Faible</t>
+			<t id="medium">Moyen</t>
+			<t id="high">Haute</t>
+			<t id="default_params">Défaut</t>
+			<t id="custom">Personnalisée</t>
+		</g>
+
+		<g id="options_category">
+			<t id="general">Général</t>
+			<t id="graphics">Graphismes</t>
+			<t id="controls">Raccourcis</t>
+			<t id="pad">Manette</t>
+			<t id="audio">Audio</t>
+			<t id="accessibility">Accessibilité</t>
+		</g>
+
+		<g id="gameplay">
+			<t id="tuto">Afficher les didacticiels</t>
+			<t id="reset_tuto">Réinitialiser les didacticiels</t>
+			<t id="scale_text">Taille des textes</t>
+			<t id="escape_settings">[KEY_Settings] ouvre toujours le menu d'options</t>
+			<t id="run_with_mouse">Courir à la souris (double clic)</t>
+
+			<t id="screenshakes">Tremblements de la caméra</t>
+
+			<t id="blood">Tâches de sang et coups finaux</t>
+			<t id="camera_borderscroll">Activer le défilement sur les bords</t>
+			<t id="anim_speed">Vitesse des animations</t>
+
+			<t id="show_enemy_turn">Afficher l'ordre du tour des ennemis en combat</t>
+			<t id="show_hazard_outline">Afficher les contours des zones de danger en combat</t>
+			<t id="edit_skillbar">Permettre de modifier l'ordre des compétences en combat</t>
+			<t id="show_companions_list">Permettre de voir la liste des compagnons en combat</t>
+
+			<t id="always">Toujours</t>
+			<t id="oncePerGame">Une fois par sauvegarde</t>
+			<t id="once">Une seule fois</t>
+			<t id="never">Jamais</t>
+		</g>
+
+		<g id="gamepad">
+			<t id="sensibilityMove">Sensibilité du curseur</t>
+			<t id="sensibilityMoveOver">Sensibilité au survol</t>
+			<t id="sensibilityMoveBattle">Sensibilité en combat</t>
+			<t id="sensibilityCamX">Sensibilité horizontale de la caméra</t>
+			<t id="sensibilityCamY">Sensibilité verticale de la caméra</t>
+			<t id="DeadZone">Zone morte</t>
+			<t id="rumble">Vibrations</t>
+		</g>
+
+		<g id="options_categories">
+			<t id="Worldmap">Monde</t>
+			<t id="Battle">Combat</t>
+			<t id="Advanced">Avancées</t>
+			<t id="Camp">Campement</t>
+			<t id="Coop">Coop</t>
+			<t id="Outlines">Surbrillance des éléments</t>
+		</g>
+
+		<g id="inputs">
+			<t id="reset">Réinitialiser les contrôles</t>
+			<g id="keys">
+				<!-- For full list of possible overrides see https://github.com/HeapsIO/heaps/blob/master/hxd/Key.hx#L240 -->
+				<t id="MouseLeft">Mouse Left</t>
+				<t id="MouseRight">Mouse Right</t>
+				<t id="MouseMiddle">Mouse Middle</t>
+				<t id="Mouse3">Mouse Back</t>
+				<t id="Mouse4">Mouse Forward</t>
+			</g>
+		</g>
+
+		<g id="accessibility">
+			<t id="ui_scaling">Mise à l'échelle de l'interface</t>
+			<t id="colorblind_mode">Mode de correction du daltonisme</t>
+			<t id="colorblind_amount">Taux de correction du daltonisme</t>
+			<t id="magnifier_amount">Multiplicateur de zoom de la loupe</t>
+			<t id="restore_button">Réinitialiser</t>
+			<t id="outline_scale">Modifier la taille des contours</t>
+			<t id="outline_over_color">Modifier la couleur des contours survolés</t>
+			<t id="outline_highlight_color">Modifier la couleur des contours surlignés</t>
+			<t id="easy_navigation">Contrôle simplifié du navire</t>
+
+			<g id="colorblind">
+				<t>Protanopie</t>
+				<t>Deutéranopie</t>
+				<t>Tritanopie</t>
+			</g>
+		</g>
+
+		<t id="confirm_exit">Voulez-vous quitter le jeu ?</t>
+		<t id="loading">Chargement...</t>
+		<t id="load_game_title">Charger une partie</t>
+
+		<t id="pause_title">Pause</t>
+		<t id="pause_exit">Retourner au menu</t>
+
+		<t id="pause_save">Sauvegarder</t>
+		<t id="pause_save_override">Écraser</t>
+		<t id="pause_save_create_new">Créer une nouvelle sauvegarde</t>
+
+		<t id="pause_save_confirm">La partie a été sauvegardée.</t>
+
+		<t id="pause_exit_confirm">
+			Voulez-vous retourner au menu principal du jeu ?
+			<bad>Toute progression non sauvegardée sera perdue.</bad>
+		</t>
+
+		<t id="pause_load_confirm">
+			Voulez-vous charger cette sauvegarde ?
+			<bad>Toute progression depuis ce moment sera perdue.</bad>
+		</t>
+
+		<t id="pause_load_battlebegin">Redémarrer le combat</t>
+		<t id="pause_load_lastvillage">Retourner au dernier village</t>
+		<t id="pause_load_ruinsenter">Recommencer le tombeau</t>
+
+		<t id="pause_continue">Continuer</t>
+		<t id="ask_save_name">Nom de la sauvegarde ?</t>
+		<t id="playTime">Temps de jeu : ::time::</t>
+		<t id="hour_suffix">h</t>
+
+		<t id="delete_save_confirm">
+			Supprimer la sauvegarde <b>::name::</b> ?
+			<bad>Toutes les données seront supprimées et aucune récupération ne sera possible !</bad>
+		</t>
+
+		<t id="save_confirm_override">
+			Écraser la sauvegarde <b>::name::</b> ?
+			<bad>Aucune récupération ne sera possible !</bad>
+		</t>
+
+		<t id="save_file_corrupted">
+			Les données du fichier sont corrompues et ne peuvent pas être lues.
+			<small>::file::</small>
+		</t>
+
+		<t id="early_access_tag">Early Access</t>
+	</g>
+
+	<g id="dlcs">
+		<t id="list">Contenu additionnel :</t>
+		<t id="multi">Certains joueurs ne possèdent pas ce contenu additionel : ::names::</t>
+		<t id="unlock">Débloquer ::name::</t>
+		<t id="buyNow">Acheter</t>
+		<t id="owned">Possédé</t>
+		<t id="goShop">Plus d'informations</t>
+
+		<t id="belerion">Débloquer Bélérion</t>
+		<t id="tavern">Ouvrir la Taverne</t>
+	</g>
+
+	<g id="bounty_adjectives">
+		<t>l'Égorgeur</t>
+		<t>l'Écarteleur</t>
+		<t>le Violent</t>
+		<t>le Pleutre</t>
+		<t>le Rebelle</t>
+		<t>le Fléau</t>
+		<t>le Méchant</t>
+		<t>l'Idiot</t>
+		<t>le Parjure</t>
+		<t>le Déserteur</t>
+		<t>le Balafré</t>
+		<t>l'Épouvantail</t>
+		<t>le Rat</t>
+		<t>le Renard</t>
+		<t>le Loup</t>
+		<t>la Belette</t>
+		<t>la Vipère</t>
+		<t>la Buse</t>
+		<t>le Rouge</t>
+		<t>le Vert</t>
+		<t>le Sournois</t>
+		<t>le Glouton</t>
+		<t>le Tyran</t>
+		<t>le Bricoleur</t>
+		<t>le Costaud</t>
+		<t>le Coquin</t>
+		<t>le Rustique</t>
+		<t>le Petit</t>
+		<t>le Diplomate du Poing</t>
+		<t>le Terrible</t>
+		<t>le Perturbé</t>
+		<t>l'Impudique</t>
+		<t>la Brute</t>
+	</g>
+
+	<g id="bounty_adjectives_fem">
+		<t>l'Egorgeuse</t>
+		<t>l'Ecarteleuse</t>
+		<t>la Violente</t>
+		<t>la Pleutre</t>
+		<t>la Rebelle</t>
+		<t>le Fléau</t>
+		<t>la Méchante</t>
+		<t>l'Idiote</t>
+		<t>la Parjure</t>
+		<t>la Déserteuse</t>
+		<t>la Balafrée</t>
+		<t>l'Epouvantail</t>
+		<t>la Renarde</t>
+		<t>la Louve</t>
+		<t>la Belette</t>
+		<t>la Vipère</t>
+		<t>la Buse</t>
+		<t>la Rouge</t>
+		<t>la Verte</t>
+		<t>la Sournoise</t>
+		<t>la Gloutone</t>
+		<t>la Tyranique</t>
+		<t>la Bricoleuse</t>
+		<t>la Petite</t>
+		<t>la Diplomate du Poing</t>
+		<t>la Terrible</t>
+		<t>la Perturbée</t>
+		<t>l'Impudique</t>
+		<t>la Brute</t>
+	</g>
+
+	<g id="systemic_goals">
+		<t id="defender_killed">Lieu libéré</t>
+		<t id="defended_place">Lieu défendu</t>
+		<t id="rats">Nid détruit</t>
+		<t id="ruins">Ruines explorées</t>
+	</g>
+
+	<g id="start">
+		<t id="choose_troop">Vos compagnons sont...</t>
+		<t id="troop_tip">Avantages</t>
+		<t id="troop_tip_malus">Inconvénient</t>
+		<t id="tip_bonus">Commence avec : </t>
+		<t id="tip_units">Compagnons de départ : </t>
+		<t id="choose_bonus">Vos compagnons...</t>
+		<t id="choose_malus">S'ils devaient avoir un défaut, ce serait...</t>
+		<t id="start_option">Options de départ</t>
+		<t id="region">Région de départ</t>
+		<t id="region_help">Avancez dans le jeu pour débloquer de nouvelles régions de départ.</t>
+		<t id="troop">Troupe</t>
+		<t id="difficulty_fight">Difficulté de combat</t>
+		<t id="difficulty_sim">Difficulté de survie</t>
+		<t id="dif_sim_help">La difficulté de simulation affecte la fatigue, la faim et les soldes de vos compagnons.</t>
+		<t id="dif_fight_help">Wartales est un jeu exigeant, n'hésitez pas à baisser la difficulté du combat si elle ne vous convient pas.</t>
+		<t id="dif_change">Vous pouvez régler cette difficulté à n'importe quel moment.</t>
+		<g id="difficulties">
+			<t>Novice</t>
+			<t>Confirmé</t>
+			<t>Expert</t>
+			<t>Extrême</t>
+		</g>
+		<g id="fight_difficulties_desc">
+			<t>Vous souhaitez une expérience de combat plus légère.</t>
+			<t>Les combats tactiques et perdre vos compagnons ne vous effraient pas.</t>
+			<t>Un seul faux pas et c'est la mort assurée.</t>
+			<t>Vous êtes prêts à affronter l'enfer.<br/>
+				- La mort est immédiate.
+				- La retraite est plus punitive.
+				- Tout compagnon fuyard est perdu.
+				- Les groupes ennemis sont plus rapides.
+				- Les désengagements sont plus punitifs.
+				- La difficulté générale est à son maximum.</t>
+		</g>
+		<g id="sim_difficulties_desc">
+			<t>Une difficulté de gestion calibrée pour être souple et peu intrusive.</t>
+			<t>Au quotidien, vous devrez gérer la faim, la fatigue et les soldes de vos compagnons.</t>
+			<t>Survivre et faire des économies s'avéreront être des tâches douloureuses.</t>
+			<t>Vous devrez subsister dans des conditions impitoyables.<br/>
+				- Le bonheur baisse plus vite.
+				- Les peines de prison sont définitives.
+				- Certains métiers sont dangereux.
+				- Les marchands s'approvisionnent lentement.
+				- La difficulté générale est à son maximum.</t>
+		</g>
+
+		<t id="save_mode">Mode de Sauvegarde</t>
+		<g id="save_modes">
+			<t>Limité</t>
+			<t>Libre</t>
+			<t>Ironmen</t>
+		</g>
+		<g id="save_modes_desc">
+			<t>Une seule sauvegarde par partie, mais vous pouvez revenir à tout moment à certains points de retour tels que le dernier village visité, le début d’un combat, etc.</t>
+			<t>Sauvegardez à tout moment, avec plusieurs sauvegardes possibles pour la même partie.</t>
+			<t>Une seule sauvegarde, une seule chance ! Il est impossible de revenir en arrière et tout game over est définitif. Le mode de jeu le plus difficile et exigeant de Wartales !</t>
+		</g>
+
+		<t id="save_mode_help">
+			Vous pouvez choisir entre différents modes de sauvegarde :
+
+			- Mode <inf>Libre</inf> : Sauvegardez à tout moment, avec plusieurs sauvegardes possibles pour la même partie.
+
+			- Mode <inf>Normal</inf> : Une seule sauvegarde par partie, mais vous pouvez revenir à tout moment à certains points de retour tels que le dernier village visité, le début d’un combat, etc.
+
+			- Mode <inf>Ironmen</inf> : Une seule sauvegarde, une seule chance ! Il est impossible de revenir en arrière et tout game over est définitif. Le mode de jeu le plus difficile et exigeant de Wartales !
+		</t>
+
+
+		<t id="scale_mode">Mode d'Exploration</t>
+		<g id="scale_modes">
+			<t>Exploration Adaptative</t>
+			<t>Exploration Zonée</t>
+		</g>
+		<g id="scale_modes_desc">
+			<t>Les régions du monde ont une difficulté qui s'adapte dynamiquement à la taille de votre groupe et à la puissance de vos unités. Le jeu vous proposera en permanence un challenge adapté à votre équipe.</t>
+			<t>La difficulté des régions du monde est fixée dès le départ et n'évolue pas. Il vous faudra agrandir et améliorer votre troupe avant de pouvoir explorer les recoins les plus dangereux et affronter les ennemis les plus puissants.</t>
+		</g>
+
+		<t id="scale_mode_help">
+			Le monde de Wartales peut-être exploré de différentes façons :
+
+			- <inf>Libre</inf> : le monde est explorable de façon entièrement libre. Les ennemis adapteront progressivement leur puissance à la vôtre, garantissant une difficulté toujours adaptée à votre équipe.
+
+			- <inf>Zonée</inf> : les différentes régions du monde ont une difficulté fixée dès le départ. Il vous faudra agrandir et améliorer votre troupe avant de pouvoir explorer les recoins les plus dangereux et affronter les ennemis les plus puissants.
+		</t>
+
+		<g id="start_texts">
+			<t id="adventurers">
+				Vos compagnons sont partis à la recherche d'aventure !
+
+				Après quelques jours d'un voyage beaucoup trop calme où le seul exploit réalisé a été de trouver le Nord, ils sont arrivés à destination.
+
+				Ici - c'est certain - il va enfin se passer quelque chose d'important qui changera de l'ordinaire monotone et ennuyeux de la vie d'apprentis.
+
+				L'aventure est au bout de la route ! Encore faudra-t-il survivre au trajet...
+			</t>
+			<t id="merchants">
+				La vie est dure pour les mercenaires...
+
+				Aprés une attaque de bandits un peu trop dangeureuse, les plus opportunistes de vos compagnons ont pu s'échapper en abandonnant une paie généreuse et un employeur furieux.
+
+				Bien décidés à se refaire mais sans pour autant risquer leur peau au-delà du raisonable, il va falloir maintenant trouver une nouvelle tâche...
+
+				Les réparations d'armures et la boisson ne vont pas se payer toutes seules !
+			</t>
+			<t id="deserters">
+				Trop c'est trop !
+
+				Après avoir subis les abus de cet infect capitaine, vos compagnons peuvent enfin goûter à une liberté bien méritée !
+
+				Enfin, liberté relative...
+
+				Les déserteurs ne sont jamais très bien vus, à la fois par les anciens collègues jaloux et par la population qui y voit étrangement une forme de traîtrise.
+
+				Il va falloir se faire discret tout en assurant la subsistance de la troupe.
+			</t>
+			<t id="farmers">
+				Ah, la pureté de l'air du matin, légèrement parfumé par les effluves des étables à proximité...
+
+				Une bonne bagarre de taverne, où le moindre mobilier devient un projectile improvisé...
+
+				Nés et ayant grandit à la campagne, vos compagnons savent apprécier les choses simples de la vie.
+
+				Mais si on veut s'élever dans la société, il faut savoir prendre des risques et aller chercher fortune au loin !
+
+				Attention toutefois à ne pas y perdre ce qu'on a de plus précieux. En l'occurence ses chaussures.
+			</t>
+			<t id="bandits">
+				Jusqu'ici tout avait été simple...
+
+				Un larcin ici, une embuscade de marchands là, quelques piécettes à un ancien ami d'enfance à la Garde et vos compagnons étaient blanchis.
+
+				Le vie simple d'un honnête groupe de bandits.
+
+				Sauf qu'il y a toujours le crime de trop. Celui qui fait qu'on se retrouve à voler la mauvaise personne, celle qui ne pardonnera pas...
+
+				Une fuite plus ou moins bien organisée plus tard, la troupe se retrouve dans une nouvelle région.
+
+				Il y a de surement de belles occasions de s'enrichir dans le coin ! Le malheur des uns fait le bonheur des autres.
+			</t>
+			<t id="tavern">
+				Leur taverne sera la plus célèbre des Cinq Royaumes !
+
+				Vos compagnons en sont certains : avec leur talent inné pour la cuisine et leur amour de la boisson, ils ont tout pour ouvrir l’établissement de leurs rêves.
+
+				Qu’importe qu’ils ne sachent pas où se trouvent le village le plus proche ou qu’ils ne connaissent que deux ou trois recettes : être taverniers, c’est leur destinée !
+
+			</t>
+			<t id="pugilist">
+				Au moins, vos compagnons sont en vie !
+
+				C'est bien plus qu'ils ne l'espéraient quand la tempête a englouti leur navire et leurs rêves de piraterie.
+
+				Désormais coincés sur la terre ferme, ils ont tout le loisir d’en découvrir les joies telles que la marche à pied, les attaques de bêtes sauvages, les villageois hostiles...
+
+				Mais les marins ont de la ressource ! Nul doute qu’ils finiront par s’adapter !
+			</t>
+		</g>
+	</g>
+
+	<g id="padKeyInfo">
+		<t id="show_cursor">Curseur <small>(maintenir)</small></t>
+		<t id="run">Courir <small>(maintenir)</small></t>
+		<t id="drag_unit">Déplacer <small>(maintenir)</small></t>
+		<t id="select_unit">Sélectionner</t>
+		<t id="unselect_unit">Désélectionner</t>
+		<t id="renfort_unit">Replier</t>
+		<t id="show_preview">Afficher la prévisualisation</t>
+		<t id="save_edition">Sauvegarder la modification</t>
+		<t id="cancel_edition">Annuler la modification</t>
+	</g>
+
+</texts>

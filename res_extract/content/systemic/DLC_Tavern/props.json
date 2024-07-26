@@ -1,0 +1,8 @@
+{
+	"script.api" : {
+		"cdb.element.script" : {
+			"contexts" : ["script.DialogApi", "script.TavernApi"],
+			"events" : "script.TavernEvents"
+		}
+	}
+}

@@ -1,0 +1,109 @@
+{
+    "item": "WandUncoCraftT1",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 2,
+            "item": "Leather"
+        }
+    ],
+    "props": {
+        "bundle": "BundleOneHandedSwordAxeMaceT1"
+    },
+    "learnCost": [],
+    "itemCost": [],
+    "jobLevel": 2
+},
+{
+    "item": "WandUncoCraftT2",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 2,
+            "item": "WhiteLeather"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleOneHandedSwordAxeMaceT2"
+    },
+    "learnCost": [],
+    "itemCost": [],
+    "jobLevel": 3
+},
+{
+    "item": "WandUncoCraftT3",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 4,
+            "item": "Rimesteel"
+        },
+        {
+            "qty": 4,
+            "item": "Wood"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleOneHandedSwordAxeMaceT3"
+    },
+    "learnCost": [],
+    "itemCost": [],
+    "jobLevel": 4
+},
+{
+    "item": "WandUncoCraftT4",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 6,
+            "item": "GoldMineral"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleOneHandedSwordAxeMaceT4",
+        "feature": "Alazar1_Update"
+    },
+    "jobLevel": 5,
+    "learnCost": [],
+    "itemCost": []
+},

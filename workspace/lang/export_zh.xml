@@ -1,0 +1,165 @@
+    </Bow>
+    <Wand>
+      <name>지팡이</name>
+      <props.nameCraftCategory>지팡이</props.nameCraftCategory>
+    </Wand>
+
+    </BowLegendaryArenaH1>
+    <WandStart>
+      <name>투박한 지팡이</name>
+      <desc>볼품없는 지팡이입니다.</desc>
+    </WandStart>
+    <WandUncoCraftT1>
+		  <name>조잡한 지팡이</name>
+		  <desc>정교한 지팡이는 아니지만, 꽤 쓸만합니다.</desc>
+		</WandUncoCraftT1>
+		<WandUncoCraftT2>
+		  <name>유령 지팡이</name>
+		  <desc>이 작고 소박한 지팡이는 어두운 곳에서 빛을 발합니다.</desc>
+		</WandUncoCraftT2>
+		<WandUncoCraftT3>
+		  <name>림스틸 지팡이</name>
+		  <desc>이 지팡이에 맞으면 꽤나 아플 것 같습니다.</desc>
+		</WandUncoCraftT3>
+    <WandUncoCraftT4>
+      <name>아케드 강철 지팡이</name>
+      <desc>이 정교한 지팡이는 지혜를 상징합니다.</desc>
+    </WandUncoCraftT4>
+
+    </Brute>
+    <Mage>
+      <name>마법사</name>
+    </Mage>
+    <Priest>
+      <name>사제</name>
+    </Priest>
+    <Warlock>
+      <name>주술사</name>
+    </Warlock>
+    <Sorcerer>
+      <name>원소술사</name>
+    </Sorcerer>
+    
+    </InsectSmash>
+    <TargetHeal>
+      <name>원거리 치유</name>
+      <desc>아군 유닛의 [Health]를 회복시킵니다. 이 스킬은 시전자의 [Willpower]에 영향을 받습니다.</desc>
+      <levels>
+        <line0>
+          <desc>아군 유닛의 [Health]를 회복시킵니다. 이 스킬은 시전자의 [Willpower]에 영향을 받습니다.<br/>치유량이 증가하고, 해당 유닛의 [Armor]도 일부 고칩니다.</desc>
+        </line0>
+      </levels>
+    </TargetHeal>
+    <RangeHeal>
+      <name>치유 폭탄</name>
+      <desc>해당 지역의 모든 아군 유닛들의 [Health]를 회복시킵니다. 이 스킬은 시전자의 [Willpower]에 영향을 받습니다.</desc>
+      <levels>
+        <line0>
+          <desc>해당 지역의 모든 아군 유닛들의 [Health]를 회복시킵니다. 이 스킬은 시전자의 [Willpower]에 영향을 받습니다.<br/>치유량이 증가하고, 일정 확률로 해당 지역의 아군에게 ::value2:: 라운드 동안 [Protection]을 적용합니다.</desc>
+        </line0>
+      </levels>
+    </RangeHeal>
+    <GroupHeal>
+      <name>광역 치유</name>
+      <desc>전장의 모든 아군 유닛들의 [Health]를 회복시킵니다. 이 스킬은 시전자의 [Willpower]에 영향을 받습니다.</desc>
+      <levels>
+        <line0>
+          <desc>
+            전장의 모든 아군 유닛들의 [Health]를 회복시킵니다. 이 스킬은 시전자의 [Willpower]에 영향을 받습니다.<br/>치유량이 증가합니다.
+          </desc>
+        </line0>
+      </levels>
+    </GroupHeal>
+    <FearVoice>
+      <name>공포의 목소리</name>
+      <desc>목소리를 들은 적들에게 1 - 5 사이의 [Terror]를 줍니다. 시전자의 [Willpower]이 높을 수록 많은 [Terror]를 줄 수 있습니다.</desc>
+      <levels>
+        <line0>
+          <desc>목소리를 들은 적들에게 1 - 5 사이의 [Terror]를 줍니다. 시전자의 [Willpower]이 높을 수록 많은 [Terror]를 줄 수 있습니다.<br/>많은 [Terror]를 줄 수 있는 확률이 높아졌습니다. 적은 낮은 확률로 1턴 동안 [Immobile] 상태가 됩니다. </desc>
+        </line0>
+      </levels>
+    </FearVoice>
+    <DeathScent>
+      <name>죽음의 향기</name>
+      <desc>해당 범위의 적들은 [Fragility], [Fracture], [Weakening], [Bruise] 중 한가지 상태가 됩니다. 시전자의 [Willpower]이 낮으면 실패할 확률이 있습니다.</desc>
+      <levels>
+        <line0>
+          <desc>해당 범위의 적들은 [Fragility], [Fracture], [Weakening], [Bruise] 중 한가지 상태가 됩니다. 시전자의 [Willpower]이 낮으면 실패할 확률이 있습니다.<br/>적은 낮은 확률로 2턴 동안 [Stun] 상태가 됩니다.</desc>
+        </line0>
+      </levels>
+    </DeathScent>
+    <PainLess>
+      <name>무감각</name>
+      <desc>대상 아군은 [Enervate], [Berserk], [BrothersFury] 중 한가지 상태가 됩니다. 시전자의 [Willpower]이 낮으면 실패할 확률이 있습니다.</desc>
+      <levels>
+        <line0>
+          <desc>대상 아군은 [Enervate], [Berserk], [BrothersFury] 중 한가지 상태가 됩니다. 시전자의 [Willpower]이 낮으면 실패할 확률이 있습니다.<br/>아군은 낮은 확률로 2턴 동안 [Arena_Willforce] 상태가 됩니다.</desc>
+        </line0>
+      </levels>
+    </PainLess>
+    <Meditation>
+      <name>명상</name>
+      <desc>용맹 점수를 ::value1:: 만큼 회복합니다.</desc>
+    </Meditation>
+    <Enlightment>
+      <name>계몽</name>
+      <desc>이 유닛의 [Willpower]이 [ATTR]% 만큼 증가합니다.</desc>
+    </Enlightment>
+    <AutoSwapPosition>
+      <name>회피 기동</name>
+      <desc>이 유닛은 공격을 받으면 범위 내의 교전 중이지 않은 아군과 위치를 바꿉니다.<br/>아군은 [Dodge]를 얻고, 공격한 적은 1 턴간 [Confus]를 얻습니다.</desc>
+    </AutoSwapPosition>
+    <SwapPosition>
+      <name>교체</name>
+      <desc>이 유닛은 선택한 아군과 위치를 바꿉니다.<br/>자리를 바꾼 아군은 [Dodge]를 얻습니다.</desc>
+    </SwapPosition>
+    <MagicMissile>
+      <name>마법 투사체</name>
+      <desc>
+        대상에게 [DMG]를 줍니다.
+      </desc>
+    </MagicMissile>
+    <PriestPath>
+      <name>사제의 길</name>
+      <desc>
+        전투를 시작할 때, [ReinforcedRecovery]를 얻습니다.
+      </desc>
+    </PriestPath>
+    <WarlockPath>
+      <name>주술사의 길</name>
+      <desc>
+        전투를 시작할 때, [ReinforcedCurse]를 얻습니다.
+      </desc>
+    </WarlockPath>
+    <SorcererPath>
+      <name>원소술사의 길</name>
+      <desc>
+        전투를 시작할 때, [ReinforcedElement]를 얻습니다.
+      </desc>
+    </SorcererPath>
+
+    </Executer>
+    <ReinforcedRecovery>
+      <name>치유 강화</name>
+      <desc>
+        [Priest] 직업 기술의 효율을 향상시킵니다. [Willpower]이 [ATTR_0]% 만큼 증가합니다.
+      </desc>
+    </ReinforcedRecovery>
+    <ReinforcedCurse>
+      <name>저주 강화</name>
+      <desc>
+        [Warlock] 직업 기술의 효율을 향상시킵니다. [Willpower]이 [ATTR_0]% 만큼 증가합니다.
+      </desc>
+    </ReinforcedCurse>
+    <ReinforcedElement>
+      <name>마력 강화</name>
+      <desc>
+        [Sorcerer] 직업 기술의 효율을 향상시킵니다. [Willpower]이 [ATTR_0]% 만큼 증가합니다.
+      </desc>
+    </ReinforcedElement>
+
+
+    <Willpower>
+      <name>의지력</name>
+      <desc>전투 시 부대의 사기를 높이는 데 사용됩니다. 또한 [CritHitPercent]이 증가합니다.<br/>마법사 직업군의 경우엔 스킬 효율에 영향을 줍니다.</desc>
+    </Willpower>

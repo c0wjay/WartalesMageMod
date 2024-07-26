@@ -1,0 +1,38 @@
+// under "ValorousAxeThrow"
+
+{
+    "id": "MasterBall",
+    "name": "Master Ball",
+    "desc": "",
+    "mode": 0,
+    "range": {
+        "allowedTargets": 0,
+        "baseDistance": 4
+    },
+    "props": {
+        "vars": {
+            "allowed": false,
+            "value1": 50
+        },
+        "apCost": 0,
+        "specialAnim": "ThrowLeftGrenade",
+        "itemCost": {
+            "item": "MasterBall",
+            "qty": 1
+        },
+        "castFx": "prefabs/fx/fight/Explosion/SmokeBomb/SmokeBomb.fx",
+        "throwFx": "prefabs/fx/fight/Explosion/Grenade/FlameBallThrowTrail.fx",
+        "needDisengaged": true
+    },
+    "script": "function onBeginAction() {\n\tvars.allowed = false;\n\tfor( u in getFoes(skill.unit) )\n\t\tif( canCaptureTarget(u) ) {\n\t\t\tvars.allowed = true;\n\t\t\tbreak;\n\t\t}\n}\n\nfunction onEval(a) {\n\tif( !canCaptureTarget(a.target) ){\n\t\tdontAllow();\n\t}\n}\n\nfunction onSkill() {\n\tfor (t in skill.getTargets()){\n\t\tif ( randInt(0, 100) <= vars.value1 ) {\n\t\t\tcaptureTarget(t);\n\t\t}\n\t}\n}\n\nfunction canCaptureTarget(t){\n\treturn true;\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons/BattleIcons_02_96PX.png",
+        "size": 96,
+        "x": 9,
+        "y": 9
+    },
+    "iconeDone": true,
+    "group": 15,
+    "done": 2
+}

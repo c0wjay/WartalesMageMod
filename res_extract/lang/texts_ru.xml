@@ -1,0 +1,2469 @@
+<texts project="Wartales" version="91" lang="ru" date="2024-06-05 10:46:20" revision="34994" softwareVersion="2">
+    <t id="fmt_dmg"><b>::value::</b> урона</t>
+    <t id="list_name">::names:: <default>и</default> ::last::</t>
+    <t id="level">Уровень</t>
+    <g id="unit_ranks">
+        <t _id="aucun">Нет</t>
+        <t _id="lieutenant">Лейтенант</t>
+        <t _id="capitaine">Капитан</t>
+    </g>
+    <g id="time">
+        <t id="short_perday">/д.</t>
+        <t id="hours">::h:: ч.</t>
+        <t id="day">1 д. и ::h:: ч.</t>
+        <t id="days">::d:: д. и ::h:: ч.</t>
+        <t id="current_time">День ::day::, ::hour:: ч.</t>
+        <t id="current_time_month">Месяц ::month::, день ::day::, ::hour:: ч.</t>
+        <t id="current_day_month">Месяц ::month::, день ::day::</t>
+        <t id="current_day">День ::day::</t>
+        <t id="short_days_label">(::days:: д.)</t>
+        <t id="yesterday">Вчера</t>
+        <t id="today">Сегодня</t>
+        <t id="tomorrow">Завтра</t>
+        <t id="days_ago">::days:: д. назад</t>
+        <t id="days_future">Через ::days:: д.</t>
+    </g>
+    <g id="trait_levels">
+        <t _id="dbutant">Начинающий</t>
+        <t _id="novice">Новичок</t>
+        <t _id="apprenti">Подмастерье</t>
+        <t _id="confirm">Опытный</t>
+        <t _id="compagnon">Спутник</t>
+        <t _id="matre">Мастер</t>
+    </g>
+    <g id="unit_info">
+        <t id="defense">Защита</t>
+        <t id="stuff">Снаряжение</t>
+        <t id="skills">Навыки</t>
+        <t id="skill_action">[LMB] Выучить</t>
+        <t id="restore_skillbar">Сбросить порядок</t>
+        <t id="status">Ранения и состояние</t>
+        <t id="exp">Опыт</t>
+        <t id="attribs">Способности</t>
+        <t id="traits">Черты</t>
+        <t id="level">Уровень ::level::</t>
+        <t id="levelMaxed">Максимальный уровень</t>
+        <t id="xp">XP</t>
+        <t id="salary">Жалованье</t>
+        <t id="food">Питание</t>
+        <t id="crit_damages">Критический урон: <good>+::value::%</good></t>
+        <t id="escape">Шанс бежать</t>
+        <t id="willpower_resolve_bonus"><b>::value:: очк.:</b> если бойцу наносят смертельный урон, он его переживет (раз за бой).</t>
+        <t id="attribute_upgrade">Добавить 1 <img src="icon/UnitInfoLevelUp"/> к <influence>::value::</influence></t>
+        <t id="attribute_upgrade_action">[LMB] Улучшить</t>
+        <t id="attribute_upgrade_add">[LMB] Добавить 1 <img src="icon/UnitInfoLevelUp"/></t>
+        <t id="attribute_upgrade_remove">[RMB] Убрать 1 <img src="icon/UnitInfoLevelUp"/></t>
+    </g>
+    <g id="escape">
+        <t id="desc">Во время привала пленники могут бежать.</t>
+        <t id="escape_chance">Шанс бежать на следующем привале:</t>
+        <t id="none"><good>Нулевой</good></t>
+        <t id="low"><good>Низкий</good></t>
+        <t id="medium"><warn>Средний</warn></t>
+        <t id="high"><bad>Высокий</bad></t>
+    </g>
+    <g id="happy_bonus">
+        <t id="campfire">Спутники назначены следить за костром</t>
+        <t id="comfortable_fur">Союзники, рядом с которыми находится ::unit::</t>
+        <t id="starvation">Ваши спутники голодны!</t>
+        <t id="starvation2">Ваши спутники умирают от голода!</t>
+        <t id="salaries_late">Ваши спутники недовольны задержками жалованья!</t>
+        <t id="salaries_late2">Ваши спутники в ярости от задержек жалованья!</t>
+        <t id="bad_diet">Не выполнены требования к еде</t>
+        <t id="rest_forest">Привал в лесу</t>
+        <t id="food_bonus">Еда</t>
+        <t id="wood_bonus">Костер горит</t>
+        <t id="other_bonus">Другой положительный эффект</t>
+        <t id="other_malus">Другой отрицательный эффект</t>
+        <t id="smelly_odour">Дурной запах в лагере</t>
+        <t id="bestfriend_adjacent">Лучшие друзья спят друг рядом с другом</t>
+        <t id="bestfriend_tool">Лучшие друзья назначены за один инструмент в лагере</t>
+        <t id="enemy_adjacent">Враги спят друг рядом с другом</t>
+        <t id="enemy_tool">Враги назначены за один инструмент в лагере</t>
+        <t id="animal_friendship">Счастливый зверь</t>
+    </g>
+    <g id="compass">
+        <t _id="nord">Север</t>
+        <t _id="nordest">Северо-восток</t>
+        <t _id="est">Восток</t>
+        <t _id="sudest">Юго-восток</t>
+        <t _id="sud">Юг</t>
+        <t _id="sudouest">Юго-запад</t>
+        <t _id="ouest">Запад</t>
+        <t _id="nordouest">Северо-запад</t>
+    </g>
+    <g id="battle">
+        <t id="allies">Союзники</t>
+        <t id="newRound">Начинается новый раунд.</t>
+        <t id="end_turn">Конец хода: ::unit::</t>
+        <t id="unit_has_played">Этот спутник уже сделал свой ход.</t>
+        <t id="unit_can_play">Этот спутник еще не сделал свой ход.</t>
+        <t id="anotherUnitPlaying">Другой спутник начал свой ход.</t>
+        <t id="reinforcement">Подкрепления</t>
+        <t id="knockout_successful">Оглушение!</t>
+        <t id="capture_successful">Поимка!</t>
+        <t id="corrupt_successful">Подкуп!</t>
+        <t id="willpower_resolve_bonus">Воля!</t>
+        <t id="miss">Промах</t>
+        <t id="ouch">А-аргх!</t>
+        <t id="timeline_your_unit">Вы можете использовать любого бойца, который еще не участвовал в этом раунде.</t>
+        <t id="timeline_enemy_unit">Соперник использует любого бойца, который еще не участвовал в этом раунде.</t>
+        <t id="timeline_unit">::name:: сделает ход.</t>
+        <t id="timeline_end_round">Конец раунда</t>
+        <t id="morale">Убивайте вражеских бойцов, чтобы поднять свой боевой дух и победить быстрее.</t>
+        <t id="cancelPendingSkill">Нажмите, чтобы применить навык «::skill::» и начать ход этого бойца</t>
+        <t id="cancelReactionSkill">Нажмите, чтобы закончить эффект навыка «::skill::» и начать ход этого бойца</t>
+        <t id="bonus_ap_desc">У вас <apt>::count::</apt> <b>дополнительных очк. доблести</b>, которые вы можете потратить только в этой битве.</t>
+        <t id="pending_skill_delay">Боец подготовил навык и применит его в начале своего хода.</t>
+        <t id="pending_skill_reaction">У этого бойца есть навык, срабатывающий в ходы других бойцов.</t>
+        <t id="notify_enemy_renfort">Приближаются вражеские подкрепления!</t>
+        <t id="notify_ally_renfort">Приближаются дружеские подкрепления!</t>
+        <t id="no_retreat"><bad>Вы не можете отступить.</bad></t>
+        <t id="no_retreat_extreme"><bad>На уровне сложности боя «Предел» нельзя отступать.</bad></t>
+        <g id="notify">
+            <t id="bionn_transformation">Болезнь берет над ней верх, и Бионн теряет над собой контроль!</t>
+            <t id="eokeld_barrels">Эокельд спрятал среди снастей взрывоопасные бочки, которые начнут падать во время следующих ходов!</t>
+        </g>
+        <g id="renforts">
+            <t id="title">Управление подкреплением</t>
+            <t id="call_deploy">[LMB]Выбор бойца поддержки</t>
+            <t id="renfort_action">[LMB]Убрать</t>
+            <t id="deploy_action">[LMB]Разместить</t>
+            <t id="manage_deploy">[LMB]Управление подкреплением</t>
+            <t id="view_deploy">[LMB]Обзор подкрепления</t>
+        </g>
+        <g id="sport">
+            <t id="game_start">Матч начинается!</t>
+            <t id="half_time">Перерыв</t>
+            <t id="end_game">Матч завершился!</t>
+            <t id="no_ball">Вы должны избавиться от мяча.</t>
+            <t id="captain_engage">Тот, у кого сейчас мяч, должен начать матч.</t>
+        </g>
+    </g>
+    <g id="battlemode">
+        <g id="common">
+            <t id="unit_madness">::name:: теряет рассудок.</t>
+        </g>
+        <g id="arena">
+            <t id="arenaRule">Особое правило арены</t>
+            <t id="arenaRules">Особые правила арены</t>
+            <t id="choosePlayerTeam">Выберите своих бойцов</t>
+            <t id="playerTeam">Ваша команда</t>
+            <t id="hardMode">Тяжело</t>
+            <t id="demand">Требование</t>
+            <t id="reward">Награда:</t>
+            <t id="unitTargetWarning">::name:: выбывает из боя, если это требование не будет выполнено.</t>
+            <t id="voxPopuliDesc">Толпа ликует, глядя на вашу победу. Выберите улучшение на остаток состязания.</t>
+            <t id="voxPopuliTitle">Выберите подарок</t>
+            <t id="newRule">
+			Новое правило арены:
+			<b>::rule::</b>
+            </t>
+            <t id="confirmStartFight">Зарегистрировать эту команду?</t>
+            <t id="confirmStartNextFight">Начать следующую битву?</t>
+            <t id="confirmStartChampion">Сразиться с чемпионом?</t>
+            <t id="confirmActionEmpty"><bad>Не для всех бойцов выбран бонус.</bad></t>
+            <t id="confirmLeaveArena">Потерять весь прогресс этой арены?</t>
+            <t id="cantFight">Вам нужно зарегистрировать четырех бойцов для участия в этом состязании.</t>
+            <t id="unitAlreadyRegister">Этот боец уже зарегистрирован.</t>
+            <t id="arenaFightSelectorTitle">Выбор испытаний</t>
+            <g id="arenaLegendsNames">
+                <t _id="terrainimpraticable">Непроходимая местность</t>
+                <t _id="exigencescritiques">Критические требования</t>
+                <t _id="btesardentes">Горящие звери</t>
+                <t _id="ratscauchemardesques">Кошмарные крысы</t>
+                <t _id="commandomortel">Смертоносные воители</t>
+            </g>
+            <t id="arenaLegendsEmptyName">Недостаточно репутации</t>
+            <t id="progressNormal"><img src="/icon/Arena_Medal_Empty"/>Обычное испытание не пройдено</t>
+            <t id="progressNormalWin"><img src="/icon/Arena_Medal"/>Обычное испытание пройдено</t>
+            <t id="progressHard"><img src="/icon/Arena_Medal_Empty"/>Тяжелое испытание не пройдено</t>
+            <t id="progressHardWin"><img src="/icon/Arena_Medal_Hard"/>Тяжелое испытание пройдено</t>
+            <t id="legendsNoReward">Награды уже заслужены</t>
+            <t id="notifyRenfortChampion">::name:: в пути, чтобы поддержать вас!</t>
+            <t id="notifyRenfortChampions">::name1:: и ::name2:: в пути, чтобы поддержать вас!</t>
+            <t id="finalChampionsWakeUp">Ученики при поддержке своего мастера всегда готовы подняться и биться до конца!</t>
+            <t id="hiltrerdEntry1">Лязг металла доносится с другой стороны арены!</t>
+            <t id="hiltrerdEntry2">Гилтрерд намерена отомстить за своих учеников и доказать свое превосходство!</t>
+            <t id="hiltrerdP2">Гилтрерд восстанавливает силы и использует реликвию Древних!</t>
+        </g>
+        <g id="ratinvasion">
+            <t id="description">
+			Смерть королевы выводка заканчивает битву.
+			Постарайтесь уничтожить как можно больше чумных наростов, чтобы добыть алхимические реагенты!
+            </t>
+            <t id="NestDeath">Уничтожено логово!</t>
+            <t id="MatriarchDeath">Королева выводка мертва. Крысы в панике бегут!</t>
+            <t id="RatSpawn">Из щелей лезут крысы!</t>
+            <t id="DayNotification">Солнце восходит. Крысы успокаиваются.</t>
+            <t id="NightNotification">Солнце садится. Крысы дичают!</t>
+            <t id="debrief">Ваши спутники убили ::rat:: крыс уничтожили чумные наросты (::nest::).</t>
+        </g>
+        <g id="ghostpack">
+            <t id="notify_nightmare_renfort">Кошмар явился!</t>
+            <t id="unit_terror">::name:: бежит в страхе, трусливо покидая отряд!</t>
+            <t id="enemy_terror">::name:: пугается до смерти!</t>
+        </g>
+        <g id="reach">
+            <t id="notify_plagueridden_renfort">Приближаются еще чумные!</t>
+            <t id="reach_objective">Доберитесь до области отступления и дайте своим спутникам бежать.</t>
+        </g>
+        <g id="forsakenvillage">
+            <t id="new_wave">Чумные чудища пытаются ворваться в здание!</t>
+            <t id="search_desc">Используйте навык «Найти выход», чтобы заполнить шкалу и бежать!</t>
+            <t id="forsaken_objective">Держитесь и ищите выход.</t>
+        </g>
+        <g id="celestium">
+            <t id="search_desc">Защищайте ученых, пока они изучают реликвию.</t>
+            <t id="celestium_relic_name">Реликвия Поднебесья</t>
+            <t id="destroy_desc">Уничтожьте реликвию.</t>
+        </g>
+        <g id="survival">
+            <t id="remaining_rounds">Продержитесь еще ::count:: р.</t>
+        </g>
+        <g id="escape">
+            <t id="escaped">Сбегает с поля боя!</t>
+        </g>
+        <g id="sport">
+            <t id="regionRules">Региональные правила</t>
+            <t id="noRules">Без региональных правил</t>
+            <t id="choosePlayerTeam">Соберите свою команду</t>
+            <t id="playerTeam">Ваша команда</t>
+            <t id="cantFight">Вам нужно зарегистрировать 6 спутников для участия в этом матче.</t>
+            <t id="noRole">Каждый спутник должен быть назначен на позицию.</t>
+            <t id="noTeamLeader">Вы должны выбрать капитана команды.</t>
+            <t id="rounds">Раунд ::current:: из ::total::</t>
+            <g id="sport_objective">
+                <t _id="portezunballondanslazonedembutadversepourmarquer2points">— Доставьте мяч в зачетную зону соперника, чтобы получить 2 очка.</t>
+                <t _id="possdezle2emeballonlorsdelamarquepour1pointadditionel">— Если при доставке мяча в зачетную зону противника у вас будет второй мяч, вы получите еще очко.</t>
+                <t _id="lquipequipossdeleplusdepointslafindu8emeroundremportelapartie">— Выигрывает команда, набравшая больше очков к концу 8-го раунда.</t>
+            </g>
+            <t id="sport_objective_hard">— Вы ДОЛЖНЫ набрать не менее 5 очков для победы.</t>
+            <t id="unitTip">::name::
+
+ ::status::
+
+ ::action::
+ ::action2::</t>
+        </g>
+        <g id="boat">
+            <t id="duel_objective">Каждая из колкостей вражеского капитана связана с одним из трех действий: атака, парирование, насмешка.
+ Выбирайте с умом, чем ему ответить.
+
+ — Если вы атакуете, а враг использует насмешку, вы попадете по нему.
+ — Если вы парируете, а враг попытается атаковать, вы избежите удара.
+ — Если вы используете насмешку, а враг попытается парировать, вы получите преимущество.
+
+ Если оба дуэлянта одновременно нанесут удар, боец с преимуществом получит очко.
+ Если дуэлянт успешно парирует, пока у него есть преимущество, он контратакует.
+
+ Нельзя использовать одно действие два раза подряд.</t>
+            <t id="specialRules">Накопленные преимущества</t>
+            <t id="newRule">Дополнительное преимущество</t>
+            <t id="duel_wait">Подождать</t>
+            <t id="dialog_upset">...</t>
+            <t id="action_used_last_turn">Вы уже использовали это действие во время прошлого хода.</t>
+            <t id="captain_engaged">Капитан уже сражается с другим бойцом.</t>
+        </g>
+        <g id="seasnake">
+            <t id="Reload1">Чтобы запустить Копье Белериона, баллисту нужно натянуть до предела. Подготовка к выстрелу продлится дольше, чем обычно.</t>
+            <t id="Reload2">::name:: почти завершает заряжание баллисты.</t>
+            <t id="Reload3">Баллиста готова к стрельбе!</t>
+            <t id="ShotMissed">Увы, ваши спутники упустили единственный шанс убить морского змея.</t>
+            <t id="BeatSnake">Морской змей уязвим — убейте его!</t>
+            <t id="SeaCrawlerSpawn">Морской змей вызывает подкрепление!</t>
+        </g>
+    </g>
+    <g id="skills">
+        <t id="range">Дальность: ::range:: м</t>
+        <t id="stack_bonus">Текущий бонус: ::value::%</t>
+        <t id="right_click_preview_on">[RMB] Закрепить предпросмотр</t>
+        <t id="right_click_preview_off">[RMB] Открепить предпросмотр</t>
+        <t id="change_behavior">[LMB] — изменить поведение</t>
+        <t id="drag_skill">[LMB] Движение <small>(зажмите)</small></t>
+        <t id="pad_drag_skill"><img src="icon/Pad_L3"/> Изменить порядок</t>
+        <g id="mode">
+            <t id="melee">Ближний бой</t>
+            <t id="meleeWithRange">Ближний бой — дальность ::range:: м</t>
+            <t id="zone">Область ::radius:: м</t>
+            <t id="shot">Выстрел на ::range:: м</t>
+            <t id="move">Движение на ::distance:: м</t>
+            <t id="passive">Пассивный</t>
+            <t id="injury">Ранение</t>
+            <t id="immediate">Мгновенный</t>
+            <t id="str_attrib">(сила)</t>
+            <t id="dex_attrib">(ловкость)</t>
+        </g>
+        <g id="modeName">
+            <t id="TargetUnit">Ближний бой</t>
+            <t id="Precision">Стрельба</t>
+            <t id="Passive">Пассивный</t>
+            <t id="Move">Движение</t>
+            <t id="Immediate">Мгновенный</t>
+            <t id="Zone">Зона</t>
+        </g>
+        <g id="attr">
+            <t id="default_action">Базовое действие</t>
+            <t id="need_item">Требуется</t>
+        </g>
+        <g id="warn">
+            <t id="cant_use_if_engaged">Этот навык нельзя применить, пока спутник сражается.</t>
+            <t id="cant_use_if_disengaged">Этот навык можно применить, только пока спутник сражается.</t>
+            <t id="cant_use_if_disarmed">Этот навык нельзя применить, если спутник обезоружен.</t>
+            <t id="cant_use_dying">Этот навык нельзя применить, если спутник при смерти.</t>
+            <t id="cant_end_turn">Вам нужно начать ход кого-то из своих бойцов, чтобы завершить ход.</t>
+            <t id="already_used">Этот навык уже был использован в этом бою.</t>
+            <t id="ultimate_used_this_round">Вы уже применили подвиг в этом раунде.</t>
+            <t id="utimate_too_soon">Умения недоступны до начала раунда ::round::.</t>
+            <t id="beltAccBaseActionOnly">Этот навык нельзя применить, если надета маленькая рукавица.</t>
+            <t id="oil_already_applied_same">Это масло уже нанесено на это оружие. Навык не окажет никакого эффекта.</t>
+            <t id="oil_already_applied">Вы уже нанесли масло на это оружие в течение этого боя. Предыдущее масло будет заменено.</t>
+        </g>
+    </g>
+    <g id="gameover">
+        <t id="no_unit">Ваш отряд покинул последний спутник.</t>
+        <t id="battle_lose">Все ваши спутники погибли в этом бою.</t>
+        <t id="accompany_die">::name:: погибает.</t>
+        <t id="accompany_die_woman">::name:: погибает.</t>
+        <t id="ruin_no_light">У вас больше нет <img src="icon/RuinsLight"/><b>света</b>.</t>
+        <t id="ironmen">На этом завершаются приключения вашего отряда.</t>
+        <t id="sea_snake">Морской змей уничтожил корабль ваших спутников.</t>
+    </g>
+    <g id="multiplayer">
+        <t id="creationTroop">Эти спутники формируют ваш первичный отряд. Позднее вы сможете найти и других товарищей.</t>
+        <t id="waitingPlayers">Ожидание: ::names::</t>
+        <t id="holdToSkip">[LMB] Вынудить <small>(зажмите)</small></t>
+        <t id="waitCancel">[RMB] Отмена</t>
+        <t id="wait_players">Ожидание игроков</t>
+        <t id="notOwnedUnit">Принадлежность спутника: ::name::.</t>
+        <t id="notOwnedUnitWithUnitName">::unitName::: принадлежность — ::name::.</t>
+        <t id="chooseOwnedUnit">Вам нужно выбрать одного из своих спутников.</t>
+        <t id="needOneOwnedUnit">Каждый игрок должен выбрать как минимум одного из своих спутников: <bad>::names::</bad></t>
+        <t id="players">Игроки</t>
+        <t id="unassigned">Нет игроков</t>
+        <t id="multi_tag">Совместная игра</t>
+        <t id="load_multi_game">Загрузить совместную игру</t>
+        <t id="click_to_release">Вы уже управляете этим спутником.
+
+<b>[LMB] Настроить</b>
+<b>[RMB] Прекратить управление</b></t>
+        <t id="confirm_release">Точно прекратить управлять следующим спутником: ::name::?</t>
+        <t id="click_to_assign"><b>[RMB] Управлять спутником</b></t>
+        <t id="not_your_unit">::name:: уже управляет этим спутником.
+
+<b>[LMB] Изучить</b></t>
+        <t id="not_your_unit_name">Игрок, которому подчиняется ::name::: ::unitName::.</t>
+        <t id="not_all_players_assigned">У некоторых игроков нет спутника: <bad>::names::</bad></t>
+        <t id="not_all_units_assigned">Не все спутники находятся под контролем игроков.</t>
+        <t id="invite">Пригласить</t>
+        <t id="confirm_leave_lobby">Точно хотите выйти?</t>
+        <t id="join_error">Невозможно присоединиться к игре.</t>
+        <t id="join_version_error">Невозможно присоединиться к игре. Разные версии клиента.</t>
+        <t id="disconnected">Отключение.
+Возникла ошибка подключения к создателю сессии.</t>
+        <g id="playersArrow">
+            <t _id="j1">И1</t>
+            <t _id="j2">И2</t>
+            <t _id="j3">И3</t>
+            <t _id="j4">И4</t>
+        </g>
+        <t id="hold_action"><small>(зажать)</small></t>
+        <t id="player_too_far">Спутники игрока ::playerName:: слишком далеко и не могут войти в это здание.</t>
+        <t id="player_too_far_camp">Спутники игрока ::playerName:: слишком далеко и не могут разбить лагерь.</t>
+        <t id="connection">Ожидание создателя сессии...</t>
+        <t id="waiting_players">Ожидание игроков...</t>
+        <t id="host_only">Это может сделать только создатель сессии.</t>
+        <t id="cant_create_lobby">Не удалось создать сеанс игры.
+Повторите попытку позже.</t>
+        <t id="room_code">Код приглашения</t>
+        <t id="show_hide_code">Показать/скрыть код приглашения</t>
+        <t id="copy_code">Копировать</t>
+        <t id="code_copied">Код скопирован</t>
+        <g id="errors">
+            <t id="LobbyFull">Невозможно присоединиться к лобби.
+В сеансе игры нет места.</t>
+            <t id="InvalidPlayer">Невозможно присоединиться к сохраненной игре.
+Нет доступных ячеек.</t>
+            <t id="Fail">Невозможно присоединиться к лобби.
+Повторите попытку позже.</t>
+            <t id="InvalidCode">Не найден сеанс игры, связанный с этим кодом приглашения.</t>
+        </g>
+        <t id="add_user">Добавить нового игрока</t>
+        <t id="remove_user">Убрать игрока ::playerName::</t>
+        <t id="transfer_unit">Переместить бойцов</t>
+        <t id="disconnection_idle">Вы были отключены после долго периода неактивности.</t>
+        <t id="remaining_time">Оставшееся время:</t>
+        <t id="keep_connection">Поддерживайте подключение</t>
+    </g>
+    <g id="tips">
+        <t id="craft_by_troup">Создано отрядом</t>
+        <t id="seal_name">Клеймо: ::skillName::</t>
+        <t id="tiredness">Усталость</t>
+        <t id="tiredness_info">
+		Следите за <b>усталостью</b> своего отряда, чтобы понимать, когда стоит разбить лагерь и отдохнуть.
+		У костра вы сможете приготовить вкусный ужин и выспаться.
+        </t>
+        <t id="rest_not_tired">Ваш отряд уже чувствует себя отдохнувшим.</t>
+        <t id="gold_info"><b>Кроны</b> — основная валюта. Жалованье спутникам вам придется выплачивать на каждом ::nbRest::-м привале.
+
+ Привалов до следующего жалованья: <b>::nextDueDate::</b>
+
+Текущий запас: <gold>::gold::</gold>
+Жалованье: <gold>::salaries::</gold>
+Сумма жалованья: <gold>::dueSalaries::</gold></t>
+        <t id="gold_info_coop">Общая сумма жалованья: <gold>::dueSalaries::</gold></t>
+        <t id="mission_gold">Выполненные контракты: <gold>::gold::</gold></t>
+        <t id="food_info">
+		Спутников надо кормить на каждом привале — всегда запасайтесь достаточным количеством <b>еды</b>.
+
+		Запасы: <food>::food::</food>
+		Потребление: <food>::conso::</food>
+        </t>
+        <t id="happy_info_new">
+		<b>Счастье</b> вашего отряда со временем снижается.
+
+		Не давайте ему опуститься до нуля, чтобы спутники не покидали отряд.
+
+		Текущее счастье: <happy>::happy::</happy>
+
+		<::color0::><happy>::min::</happy>: спутник захочет покинуть отряд!</::color0::>
+		<::color1::><happy>::bonus::</happy> ::bonus1Text::</::color1::>
+		<::color2::><happy>::max::</happy> ::bonus2Text::</::color2::>
+
+		<::color2::>Все полученное сверх <happy>::max::</happy> счастье будет давать <influence><b>::infl::</b></influence> за каждую единицу счастья.</::color2::>
+        </t>
+        <t id="repair_all">Чинить все за <img src="/item/RawMaterials"/>::count::</t>
+        <t id="repair_one">Чинить: <img src="/icon/Guard"/>::amount::. Стоимость: <img src="/item/RawMaterials"/>1</t>
+        <t id="repair_ctrl_all"><comment>(Ctrl — чинить все)</comment></t>
+        <t id="pick_found_item">[RMB] Взять</t>
+        <t id="drop_found_item">[RMB] Положить</t>
+        <t id="buy_shop_item">[RMB] Купить за <gold>::price::</gold></t>
+        <t id="cant_buy_shop_item">[RMB] Купить за <gold><bad>::price::</bad></gold></t>
+        <t id="buy_shop_item_with">[RMB] Купить за <font color="#ffffff"><img src="item/::currency::"/>::price::</font></t>
+        <t id="cant_buy_shop_item_with">[RMB] Купить за <bad><img src="item/::currency::"/>::price::</bad></t>
+        <t id="sell_shop_item">[RMB] Продать за <gold>::price::</gold></t>
+        <t id="sell_shop_item_stolen">[RMB] Продать за <gold>::price::</gold> <bad><img src="icon/Suspicion"/> +::danger::</bad></t>
+        <t id="shop_ctrl_all"><comment>([CTRL] — все)</comment></t>
+        <t id="buy_shop_item_all">[RMB] Купить все за <gold>::price::</gold></t>
+        <t id="cant_buy_shop_item_all">[RMB] Купить все за <gold><bad>::price::</bad></gold></t>
+        <t id="buy_shop_item_with_all">[RMB] Купить все за <font color="#ffffff"><img src="item/::currency::"/>::price::</font></t>
+        <t id="cant_buy_shop_item_with_all">[RMB] Купить все за <bad><img src="item/::currency::"/>::price::</bad></t>
+        <t id="sell_shop_item_all">[RMB] Продать все за <gold>::price::</gold></t>
+        <t id="sell_shop_item_stolen_all">[RMB] Продать все за <gold>::price::</gold> <bad><img src="icon/Suspicion"/> +::danger::</bad></t>
+        <t id="steal_item">[RMB] Украсть <bad><img src="icon/Suspicion"/> +::danger::</bad></t>
+        <t id="item_discounted_price"><good>(цена временно снижена)</good></t>
+        <t id="unit_equip_item">[RMB] Экипировать</t>
+        <t id="unit_heal_injury">[RMB] Обработать травму</t>
+        <t id="item_require_level">Требуется уровень ::level::</t>
+        <t id="layer_require_level">Требуется броня уровня ::level::</t>
+        <t id="upgrade_weapon_need_unit">Необходим спутник ::level::-го уровня, способный использовать это оружие.</t>
+        <t id="stolen_item_label">(краденый предмет)</t>
+        <t id="item_bonus">::name:: <img src="icon/::icon::"/><good>::value::</good></t>
+        <t id="item_convert">::name:: <img src="item/::item::"/><good>+::count::</good></t>
+        <t id="item_skill">Навык <::color::>«::name::»</::color::></t>
+        <t id="item_diet_info">Соответствующая диета:</t>
+        <t id="skill_item_usage">Осталось применений: <b>::count::</b><img src="::icon::"/></t>
+        <t id="skill_item_usage_global_item">У вас: <b>::count::</b><img src="::icon::"/></t>
+        <t id="cant_equip_this_item">Этот предмет нельзя экипировать</t>
+        <t id="cant_equip_no_armor_slot">На вашей броне нет свободных ячеек</t>
+        <t id="cant_equip_no_helmet">Шлем не экипирован.</t>
+        <t id="cant_equip_no_helmet_seal">Клеймо уже поставлено на этот шлем.</t>
+        <t id="cant_equip_no_weapon">Оружие не экипировано.</t>
+        <t id="cant_equip_no_weapon_oil">Масло уже нанесено на это оружие.</t>
+        <t id="cant_equip_shield">::name:: не может экипировать щит</t>
+        <t id="cant_equip_this_weapon">::name:: не может экипировать этот тип оружия</t>
+        <t id="cant_equip_armor">::name:: не может экипировать такую броню, как ::armorType::</t>
+        <t id="cant_equip_req_level">Уровень недостаточен</t>
+        <t id="cant_equip_req_attribute">Недостаточно: ::name::</t>
+        <t id="can_equip_armor">Может экипировать такую броню, как ::name::</t>
+        <t id="cant_equip_left_hand">::name:: уже использует вторую руку.</t>
+        <t id="cant_equip_madness">Сойдя с ума, ::name:: не может экипировать этот предмет.</t>
+        <t id="cant_equip_not_prisoner">::name:: не находится в плену.</t>
+        <t id="item_already_equipped">Этот предмет уже экипирован.</t>
+        <t id="clear_armor_slots">[RMBSHIFT] Убрать слои (::count:: <img src="item/::item::"/>)</t>
+        <t id="clear_helmet_seal">[RMBSHIFT] Убрать клеймо</t>
+        <t id="skill_replace_seal">Этот навык заменен на навык клейма</t>
+        <t id="cant_choose_specialization"><bad>Специализация требует наличия <img src="skill/::skill::"/>навыка «::name::»</bad></t>
+        <t id="unit_salary">
+		::name:: получает жалованье в размере <gold>::daily::</gold>.
+		Вы все еще должны <gold>::due::</gold> жалованья.
+        </t>
+        <t id="unit_food">Ежедневное питание</t>
+        <t id="unit_food_trait">Любимая еда:</t>
+        <t id="unit_badDiet_days"><bad>Требования к еде не выполняются уже ::count:: д.</bad></t>
+        <t id="unit_noDrinking_days">::count:: д. без алкоголя</t>
+        <t id="unit_recruitSalary">::name::: жалованье при найме <gold>::daily::</gold>.</t>
+        <t id="knockout_unit">
+		Этого бойца оглушили в бою и взяли в плен.
+
+		[LMB] Взаимодействие
+		[RMB] Изучить
+        </t>
+        <t id="knockout_unit_cannot">
+		Этого бойца оглушили в бою, но его нельзя взять в плен (запросите <img src="item/Chains"/><bad>1 цепь</bad>).
+
+		[LMB] Взаимодействие
+		[RMB] Изучить
+        </t>
+        <t id="knockout_unit_locked">
+		Этого бойца оглушили во время боя.
+
+		[RMB] Изучить
+        </t>
+        <t id="capture_animal">
+		Это животное поймали в бою. Оно включено в ваш отряд.
+
+		[LMB] Взаимодействие
+		[RMB] Изучить
+        </t>
+        <t id="bury_unit">
+		Этот воин умер в бою. Ваш отряд хочет почтить его жертву.
+
+		[LMB] Похоронить
+        </t>
+        <t id="action_name_default">Изучить</t>
+        <t id="action_name_talk">Поговорить</t>
+        <t id="element_action">[LMB] ::action::</t>
+        <t id="element_action_right">[RMB] ::action::</t>
+        <t id="element_action_npc">
+		::name::
+
+		[LMB]::action::
+		[RMB] Изучить
+        </t>
+        <t id="chest_locked">
+		<bad>Заперто</bad>
+
+		[RMB] Использовать ::item::
+        </t>
+        <t id="ruins_light_cost">[LMB] ::action:: <img src="icon/RuinsLight"/><::color::>::value::</::color::></t>
+        <g id="ruins">
+            <t id="action_unexplored">Исследовать</t>
+            <t id="action_explored">Пойти</t>
+        </g>
+        <t id="gather_item">::name::
+ ::infos::
+ ::button:: ::action::</t>
+        <t id="gather_def_action">Подобрать</t>
+        <t id="recruit_action">Завербовать</t>
+        <t id="recruit_cost">Завербовать за ::cost::</t>
+        <t id="dialog_requires">Требуется ::cost::</t>
+        <t id="dialog_wanted">Розыск <bad><img src="icon/Suspicion"/> +::range::</bad></t>
+        <t id="dialog_wanted_gains">Розыск <good><img src="icon/Suspicion"/> ::range::</good></t>
+        <t id="dialog_gains">Получает: ::gains::</t>
+        <t id="dialog_gains_mission">Обещана награда</t>
+        <t id="craft_requires_ingredients">Компоненты:</t>
+        <t id="cancel_action">Отменить</t>
+        <t id="cancel_daily_rest">Осталось привалов: ::count::</t>
+        <t id="rank_rest">Сегодня уже присвоен ранг</t>
+        <g id="choose_unit">
+            <t id="action_tip_no_job">
+				::name::
+
+				[LMB] ::action::
+            </t>
+            <t id="action_tip_ok">
+			::name::
+
+			[LMB] ::action::
+			[RMB] Выбрать профессию
+            </t>
+            <t id="action_tip_disabled">
+			::name::
+
+			::reasons::
+			[RMB] ::action::
+            </t>
+            <t id="action_assign_job">[LMB] ::action::</t>
+            <t id="action_assign_sport">::name::
+
+ ::status::
+
+ [LMB] — ::action::</t>
+            <t id="action">::name::
+
+ [LMB] ::action::
+ [RMB] ::right_action::</t>
+            <t id="validation_tip_disabled">::reasons::</t>
+            <t id="inspect_action">Изучить</t>
+            <t id="choose_job_action">Выбрать профессию</t>
+            <t id="default_action">Выбрать</t>
+            <t id="title_multiple">Выберите <font color="#FFF">спутников</font></t>
+            <t id="title_tent">Управление палаткой</t>
+            <t id="title">Выбрать: <font color="#FFF">::traitName::</font></t>
+            <t id="name_unit">Спутник</t>
+            <t id="not_allowed">Этого бойца нельзя здесь использовать</t>
+            <t id="not_available">Этот боец недоступен</t>
+            <t id="injured">Раненый спутник</t>
+            <t id="req_trait_level">Требуется ::trait:: ::level::</t>
+            <t id="need_prisoner">Нужно быть пленным</t>
+            <t id="need_no_prisoner">Нельзя быть пленным</t>
+            <t id="should_be_type">Это должен быть ::name::</t>
+            <t id="job_required">Требуется профессия «::name::»</t>
+            <t id="level_required">Нужно быть ::value::-го уровня</t>
+            <t id="item_required">Надо экипировать: ::name::</t>
+            <t id="no_job">Без профессии</t>
+            <t id="select_count_require">Требуется не менее ::count:: бойцов</t>
+            <t id="no_available_unit">Нет доступных спутников</t>
+            <t id="already_assigned">Этот боец уже назначен (::trait::)</t>
+            <t id="types_separator">или</t>
+        </g>
+        <t id="inventory_weight">Грузоподъемность: <img src="icon/Weight"/><good>::transport::</good>
+ Вес груза в инвентаре: <img src="icon/Weight"/><bad>::inv::</bad>
+ Вес лагерного снаряжения: <img src="icon/Weight"/><bad>::camp::</bad></t>
+        <t id="inventory_weight_over">
+		<bad>Вы слишком нагружены!</bad>
+		Улучшите свою повозку или разгрузите тяжелые предметы.
+        </t>
+        <t id="inventory_full">Инвентарь полон</t>
+        <g id="inventory_sort">
+            <t _id="type">Тип</t>
+            <t _id="prix">Цена</t>
+            <t _id="poids">Вес</t>
+            <t _id="raret">Редкость</t>
+        </g>
+        <t id="camp_place_tool">Разместить в лагере</t>
+        <t id="camp_cant_place_tool"><bad>Уже размещено в лагере</bad></t>
+        <t id="camp_no_more_place"><bad>Не осталось места.</bad></t>
+        <t id="hideout_reveal">Раскрыть место</t>
+        <t id="camp_use_tool">[RMB] Использовать</t>
+        <t id="camp_remove_tool">[RMBSHIFT] Поместить в инвентарь</t>
+        <t id="camp_move">[LMB] Двигать <small>(зажмите)</small></t>
+        <t id="camp_move_no_hold">[LMB] Движение</t>
+        <t id="select_unit">[LMB] Выбрать спутника</t>
+        <t id="inspect">[RMB] Изучить</t>
+        <t id="shift_inspect">[RMBSHIFT] Изучить</t>
+        <t id="leave_companion">[LMB] Гарнизон</t>
+        <t id="add_companion">[LMB] Добавить в отряд</t>
+        <t id="use_heal_remedy">[RMB] Обработать травму</t>
+        <t id="action_assign_armor_layer">[RMB] Добавить слой к броне</t>
+        <t id="action_assign_helmet_seal">[RMB] Поставить клеймо на шлем</t>
+        <t id="trade_log_buy"><small>::when:: </small> <good>Приобретено</good> <img src="item/::icon::"/><b> ::name:: </b><small>::qty::</small>, продавец: ::where::, за <gold>::price::</gold></t>
+        <t id="trade_log_sell"><small>::when:: </small> <bad>Продано</bad> <img src="item/::icon::"/><b> ::name:: </b><small>::qty::</small>, покупатель: ::where::, за <gold>::price::</gold></t>
+        <t id="wanted_title">Розыск</t>
+        <t id="wanted_status_progress">Текущий уровень розыска: <b>::current::/::max::</b></t>
+        <t id="wanted_status_active"><bad>Вас разыскивают за следующие преступления:</bad></t>
+        <t id="wanted_status_desc"><good>Сейчас Стража вас не разыскивает.</good></t>
+        <t id="wanted_stolen_fine">Краденые предметы на руках</t>
+        <t id="wanted_stolen_used_fine">Сбытое краденое</t>
+        <t id="wanted_reason_fine">- ::reason:: <gold>::fine::</gold></t>
+        <t id="item_level_short">Ур.::level::</t>
+        <g id="item_rarity">
+            <t _id="commun">Обычный</t>
+            <t _id="inhabituel">Необычный</t>
+            <t _id="rare">Редкий</t>
+            <t _id="lgendaire">Легендарный</t>
+        </g>
+        <t id="item_upgradable">- Можно улучшить</t>
+        <t id="item_unique">— Уникальное</t>
+        <t id="camp_assigned_count"><img src="icon/::icon::"/>::cur::/::max::</t>
+        <t id="battle_deploy_slot">Здесь можно разместить спутника перед началом битвы.</t>
+        <t id="unit_set_job">::name:: получит профессию «::job::»</t>
+        <t id="unit_switch_job">Спутник потеряет весь опыт, полученный в профессии «::job::» уровня ::level::.</t>
+        <t id="unit_no_job">У этого спутника еще нет профессии.</t>
+        <t id="unit_job"><b>Профессия:</b> ::name::</t>
+        <t id="unit_job_choose">[LMB] Выбрать профессию</t>
+        <t id="unit_job_change">[LMB] Сменить профессию</t>
+        <t id="item_global_bonus"><b>Бонус отряда:</b> ::desc::</t>
+        <t id="item_local_bonus"><b>Бонус:</b> ::desc::</t>
+        <t id="item_food_bonus"><disable> (до следующего привала)</disable></t>
+        <t id="mission_board_cant_accept_quest">Вы должны выполнить текущие контракты, прежде чем браться за новые.</t>
+        <t id="gameinfo_toggle_units">Показать/спрятать список спутников</t>
+        <t id="action_skill_upgrade">[RMB] Улучшить навык <img src="item/::item::"/></t>
+        <t id="skill_upgrade_no_unit">Выбрать навыки <idesc>спутника</idesc> для улучшения.</t>
+        <t id="skill_upgradable">Выберите улучшаемый навык.</t>
+        <t id="skill_no_skill_upgradable"><bad>У вашего <idesc>спутника</idesc> нет навыков, которые можно улучшить.</bad></t>
+        <t id="unlock_class">Выучить специализацию <b>«::name::»</b></t>
+        <t id="preview_unlock_class">Предпросмотр специализации</t>
+        <t id="codex_need_restored">Этот кодекс Древних поврежден. Можно использовать <img src="item/Lectern"/><b>лекторий</b>, чтобы восстановить его.</t>
+        <t id="codex_locked_desc">Этот кодекс Древних можно расшифровать только после изучения следующих <b>рун</b>:</t>
+        <t id="codex_can_be_unlocked">Этот кодекс Древних можно расшифровать в <img src="item/Lectern"/><b>лектории</b>.</t>
+        <t id="codex_unlocked_desc">Вы расшифровали следующий отрывок из кодекса Древних:</t>
+        <t id="page_need_restored">Этот журнал поврежден. Можно использовать <img src="item/Lectern"/><b>лекторий</b>, чтобы восстановить его.</t>
+        <t id="page_locked_desc">Этот журнал можно расшифровать только после изучения следующих <b>рун</b>:</t>
+        <t id="page_can_be_unlocked">Этот журнал можно расшифровать в <img src="item/Lectern"/><b>лектории</b>.</t>
+        <t id="page_unlocked_desc">Вы расшифровали следующий отрывок из журнала:</t>
+        <t id="rune_desc">Вы углубили свои познания в рунах Древних. Эта руна символизирует слово <b>«::word::»</b></t>
+        <t id="recipe_food">Рецепт: ::name::</t>
+        <t id="recipe_food_desc">Учит вас готовить: ::name::</t>
+        <t id="recipe_alchemist">Рецепт: ::name::</t>
+        <t id="recipe_alchemist_desc">Учит вас варить: ::name::</t>
+        <t id="recipe_forge_desc">Учит вас ковать: ::name::</t>
+        <t id="recipe_other">Чертеж: ::name::</t>
+        <t id="recipe_other_desc">Учит вас создавать: ::name::</t>
+        <t id="manual_name">Руководство: ::skillName::</t>
+        <t id="manual_desc">Содержит знания, которые позволят одному из вашему спутников выучить новый навык.</t>
+        <t id="manual_requires_unit">Перейдите к <idesc>спутнику</idesc>, чтобы изучить этот навык.</t>
+        <t id="manual_already_learnt">Ваш <idesc>спутник</idesc> уже изучил этот навык.</t>
+        <t id="strategy_name">Стратегия: ::strategyName::</t>
+        <t id="strategy_desc">Прочитайте это, чтобы изучить новую стратегию для стола для планирования.</t>
+        <t id="job_assigned"><b><img src="/trait/::icon::"/>Назначено ::kind::: </b></t>
+        <t id="rank_assigned"><b> Назначено ::kind::: </b></t>
+        <t id="ranked_assigned"><b>Назначен спутник высокого ранга: </b></t>
+        <t id="map_defended_by">Защищается: <b>::name::</b></t>
+        <t id="probabilitySuccess">Шанс успеха: ::value::%</t>
+        <g id="bonuses">
+            <t id="title">Отряд и бонусы</t>
+            <t id="gameTitle">::troopName::</t>
+            <t id="count">У вас <img src="icon/Companions"/><b>::count::</b> спутников в отряде.</t>
+            <t id="bonus_global">Общие бонусы</t>
+            <t id="bonus_equip">Бонусы от экипировки</t>
+            <t id="bonus_path">Бонусы от пути</t>
+            <t id="bonus_untilrest">Бонус до следующего привала</t>
+            <t id="skill_untilrest">Пассивные навыки до следующего привала</t>
+        </g>
+        <t id="dialog_rest">Отдохните, чтобы ваш отряд мог оправиться. <ap>::ap::</ap> восстановится.</t>
+        <t id="dialog_sing">Спойте песню, дайте волю внутреннему барду.</t>
+        <t id="recruit_announce">Разместите объявление о вербовке новобранцев.</t>
+        <t id="dialog_heal_injuries">Исцелить все малые травмы ваших спутников.</t>
+        <t id="dialog_heal_prisoners_injuries">Исцелить все малые травмы ваших пленных.</t>
+        <t id="orient_map">[RMB] Разместить метку</t>
+        <t id="stickers_map">[LMB] Разместить заметку</t>
+        <t id="map_goal_default">Отправьтесь туда, чтобы выяснить подробности.</t>
+        <t id="map_goal_need_mission">Возьмитесь за задание, которое предлагает ::name::</t>
+        <t id="map_goal_need_mission_nonpc">Возьмитесь там за задание</t>
+        <t id="map_goal_unknown">Поговорите с кем-нибудь или осмотрите область, чтобы выяснить подробности.</t>
+        <t id="map_goal_done"><good>Выполнено!</good></t>
+        <t id="open_gold_purse">Открыть</t>
+        <t id="use_hidden_item">Использовать</t>
+        <g id="escape">
+            <t id="other_prisoners">Пленник в отряде</t>
+            <t id="ally_around">Спутники поблизости</t>
+            <t id="watchstool_assign">Лагерь под охраной</t>
+        </g>
+        <g id="relation">
+            <t id="gain_with">::value:: отношения с: ::name::.</t>
+            <t id="gain_group">::value:: отношения с отрядом.</t>
+            <t id="gain_group_percent">::value:: отношения с близкими спутниками.</t>
+            <t id="gain_group_best">::value:: отношения с ценимыми спутниками.</t>
+            <t id="gain_companion">::value:: отношения со спутником.</t>
+            <t id="gain_random_with">Повлияет на ваши отношения с персонажем (::name::).</t>
+            <t id="gain_random_group">Повлияет на ваши отношения с отрядом.</t>
+            <t id="gain_random_group_percent">Повлияет на ваши отношения со спутниками поблизости.</t>
+            <t id="gain_random_group_best">Повлияет на ваши отношения с любимыми спутниками.</t>
+            <t id="gain_random_companion">Повлияет на ваши отношения со спутником.</t>
+        </g>
+        <g id="xp">
+            <t id="gain_self">::value:: оо</t>
+            <t id="gain_target">::value:: оо для: ::name::</t>
+            <t id="gain_group_percent">::value:: оо близким спутникам.</t>
+        </g>
+        <t id="gain_injury">Риск ранения</t>
+        <t id="gain_status">::name:: получит статус <b>«::status::»</b></t>
+        <t id="desc_status"><comment><b>::status::</b>: ::desc::</comment></t>
+        <t id="gain_trait">::name:: получит черту <b>«::trait::»</b></t>
+        <t id="gain_job">::name:: станет: <b>::job:: ::level::</b></t>
+        <t id="rest_die">::name:: умрет на следующем привале</t>
+        <g id="job_xp">
+            <t id="gain">::value:: оо при профессии «::job::»</t>
+        </g>
+        <g id="confession">
+            <t id="suggested_by">Предложено: ::name::.</t>
+            <t id="leaver">::name:: покинет отряд.</t>
+            <t id="kill">::name:: умрет.</t>
+            <t id="surrender">::name:: отправится в тюрьму.</t>
+            <t id="notify_relation_improve_list"><b>::name::</b> улучшает отношения со следующими спутниками: <b>::names::</b></t>
+            <t id="notify_relation_deteriorate_list"><b>::name::</b> ухудшает отношения со следующими спутниками: <b>::names::</b></t>
+        </g>
+        <t id="attribute_point">Очки навыков</t>
+        <t id="item_required">Требуется <img src="item/::item::"/><bad>::itemName::</bad></t>
+        <t id="food_delicious">Вкуснотища</t>
+        <g id="boat">
+            <t id="durability">Прочность</t>
+            <t id="action_embark">На борт</t>
+            <t id="action_dock">Пришвартоваться</t>
+            <t id="crew_position">Позиция команды</t>
+            <t id="job_require">Требуется ::jobName::</t>
+            <t id="job_action_require">Это действие может совершить только спутник, назначенный на позицию: ::jobName::.</t>
+            <t id="assign_job">[LMB] Назначить спутника</t>
+            <t id="unassign_job">[RMB] Убрать спутника</t>
+            <t id="replace_job">[LMB] Заменить спутника</t>
+            <t id="boat_repatriate">Отправить корабль в этот док за ::cost::?</t>
+            <t id="boat_repatriate_small">Вернуть за ::cost::</t>
+            <t id="action_install_equipment">[LMB] Установить снаряжение</t>
+            <t id="action_build_equipment">[LMB] Создать снаряжение</t>
+            <t id="action_upgrade_equipment">[RMB] Улучшить снаряжение</t>
+            <t id="action_repair_equipment">[RMB] Починить снаряжение</t>
+            <t id="select_ammo">[LMB] Выбрать</t>
+            <t id="need_dock_equipment"><bad>Корабль должен быть поставлен в док для изменения снаряжения</bad></t>
+            <t id="need_dock_repair"><bad>Корабль должен быть поставлен в док для проведения ремонта</bad></t>
+            <t id="build_equipment_confirm">Создать: ::item::?</t>
+            <t id="repair_confirm">Провести ремонт?</t>
+            <t id="no_ballista">На корабле не установлена баллиста</t>
+            <t id="damaged_equipment"><bad>Эта часть судна повреждена и вышла из строя. Почините ее в доке.</bad></t>
+            <t id="repair">Ремонт</t>
+            <t id="ballista_damaged"><bad>Баллиста повреждена</bad></t>
+            <t id="equipment_unknown">Вы еще не нашли чертежи этого снаряжения.</t>
+        </g>
+        <g id="watchman">
+            <t id="animal_try_telling_something">** (С поста дозорного доносится странный шум) **</t>
+            <g id="insight">
+                <t _id="nameregardelouest">::name:: смотрит на запад.</t>
+                <t _id="nameregardeaunordouest">::name:: смотрит на северо-запад.</t>
+                <t _id="nameregardeaunord">::name:: смотрит на север.</t>
+                <t _id="nameregardeaunordest">::name:: смотрит на северо-восток.</t>
+                <t _id="nameregardelest">::name:: смотрит на восток.</t>
+                <t _id="nameregardeausudest">::name:: смотрит на юго-восток.</t>
+                <t _id="nameregardeausud">::name:: смотрит на юг.</t>
+                <t _id="nameregardeausudouest">::name:: смотрит на юго-запад.</t>
+            </g>
+            <t id="guard">«Стража!»</t>
+            <t id="pirates">«Пираты!</t>
+            <t id="new_land">«Вижу новые земли!»</t>
+            <t id="floatable">«В воде что-то есть!»</t>
+            <t id="animal_worried">** Беспокойное ворчание! **</t>
+            <t id="animal_excited">** Энергичное ворчание! **</t>
+            <t id="animal_intrigued">** Любопытное ворчание! **</t>
+        </g>
+    </g>
+    <g id="items">
+        <t id="hideoutmap_defender_killed_desc">::name:: уничтожается. Эта карта вам бесполезна.</t>
+        <t id="raw_materials">Восстановленные очки брони: <b>::qty::</b></t>
+    </g>
+    <g id="confirm">
+        <t id="unit_dismiss">Вы действительно хотите уволить следующего спутника: <b>::name::</b>?</t>
+        <t id="unit_dismiss_no_more_unit">Вы не можете уволить своего последнего спутника.</t>
+        <t id="transfer_title">Переместить спутника</t>
+        <t id="choose_player">Выбрать игрока</t>
+        <t id="unit_transfer">Переместить спутника: <b>::unit::</b> перейдет игроку <b>::player::</b></t>
+        <t id="unit_kill">Вы действительно хотите казнить следующего спутника: <b>::name::</b>?</t>
+        <t id="unit_kill_no_more_unit">Вы не можете казнить своего последнего спутника.</t>
+        <t id="unit_kill_title">Казнь проведена. ::name:: умирает.</t>
+        <t id="drop_item">Вы хотите выбросить следующие вещи: <b>::name::</b> x::count::?</t>
+        <t id="retreat_fight">Вы хотите сдаться и отступить?</t>
+        <t id="repair_action">Чинить все: <img src="/item/RawMaterials"/>::count::</t>
+        <t id="repair_armor">Использовать предмет «::qty::» для починки брони?</t>
+        <t id="repair_all_armors">Починить всю броню за ::qty::?</t>
+        <t id="cure_all_injuries">Исцелить все травмы за ::qty:: ?</t>
+        <t id="unit_unchain">Освободить: <b>::name::</b>?</t>
+        <t id="unit_chain">
+		Взять в плен: <b>::name::</b>?
+		<small>(это будет подло в глазах пленника...)</small>
+        </t>
+        <t id="heal_action">Исцелить всех <img src="/item/Remedy"/>::count::</t>
+        <t id="heal_title">Обработать травму</t>
+        <t id="heal_injury">Использовать предмет «<img src="/item/::icon::"/><b>::remedy::</b>», чтобы исцелить спутника (<b>::name::</b>)?</t>
+        <t id="heal_remedy_none">У вас нет лекарств для этой травмы. Купите их у аптекаря или создайте сами.</t>
+        <t id="choose_remedy">Выбрать лекарство</t>
+        <t id="choose_injury">Выбрать травму</t>
+        <t id="skill_up">Улучшить: <b>::name::</b>?</t>
+        <t id="attribute_up">Улучшить: <b>::name::</b>?</t>
+        <t id="nothing_found_here">Вы ничего не нашли.</t>
+        <t id="recruit_unit">Завербовать? ::name:: потребует ::cost::</t>
+        <t id="recruit_unit_free">Вы хотите завербовать следующего спутника: <b>::name::</b>?</t>
+        <t id="element_empty">Вы ничего не нашли.</t>
+        <t id="npc_no_dialog">::name:: игнорирует вас.</t>
+        <t id="salary_cost">Вы заплатите отряду <gold>::v::</gold> во время этого привала.</t>
+        <t id="salary_partially_paid_cost">Вы заплатите отряду часть жалованья: <gold>::v::</gold>/::total:: во время этого привала.
+
+Некоторые спутники будут недовольны тем, что им не заплатили вовремя.</t>
+        <t id="salary_will_be_paid_good">Спутники будут довольны тем, что им заплатили жалованье сегодня.</t>
+        <t id="salary_will_be_paid_bad">Спутники перестанут быть недовольны, если им заплатят жалованье сегодня.</t>
+        <t id="salary_will_be_not_paid">Спутники будут недовольны тем, что им не заплатили жалованье сегодня.</t>
+        <t id="salary_paid">Вы заплатили отряду <gold>::v::</gold>.</t>
+        <t id="salary_paid_perfect">Жалованье было выплачено вовремя.</t>
+        <t id="salary_paid_good">Жалованье было выплачено с опозданием.</t>
+        <t id="salary_paid_bad">Жалованье было выплачено с большим опозданием.</t>
+        <t id="salary_paid_partially">Жалованье частично выплачено.</t>
+        <t id="mission_accept">Взяться за контракт «<b>::name::</b>»?</t>
+        <t id="mission_cancel">Отменить контракт «<b>::name::</b>»?</t>
+        <t id="upgrade_to_class">Вы хотите, чтобы <b>::name::</b> получил(а) класс <b>::cl::?</b></t>
+        <t id="add_skill">Вы хотите выучить следующий навык: <b>::name::?</b></t>
+        <t id="craft_done">Вы создали:</t>
+        <t id="craft_bonus">Бонус за первое создание:</t>
+        <t id="craft_bonuses">Дополнительное производство:</t>
+        <t id="craft_saved">Возвращенные ресурсы:</t>
+        <t id="missing_cost">У вас не хватает ресурсов для этого действия.</t>
+        <t id="add_armor_slot">Добавить слой к этой броне?</t>
+        <t id="add_helmet_seal">Поставить клеймо на этот шлем?</t>
+        <t id="retrieve_helmet_seal">Вам достанется: <good>::seal_name::</good></t>
+        <t id="clear_armor_slots">Снять слои с этой брони?</t>
+        <t id="clear_helmet_seal">Убрать клеймо с этого шлема?</t>
+        <t id="destroy_armor_slots_warning">Они будут уничтожены в процессе.</t>
+        <t id="item_cost">Использовать предмет: <img src="item/::item::"/><font color="#ffffff">::cost::</font>?</t>
+        <t id="dialog_cost">Использовать предмет: ::cost::?</t>
+        <t id="dialog_action">Подтвердить действие (<img src="icon/::act::"/>::text::)?</t>
+        <t id="exit_ruin_no_light">У вас нет <img src="icon/RuinsLight"/><b>света</b>. Вам нужен свет, чтобы исследовать развалины дальше!</t>
+        <t id="ruins_tired_warning">
+		<bad>Ваши спутники устали!</bad>
+		Стоит отдохнуть прежде, чем двигаться дальше.
+        </t>
+        <t id="ratmare"><b>::name::</b> боится крыс и покинет отряд, если вы возьметесь за это задание.</t>
+        <t id="battle_let_runaway">
+		Ваши соперники пали духом и бегут!
+		Хотите отпустить их и победить в бою?
+        </t>
+        <t id="battle_end_turn_without_playing"><b>::name::</b> завершит ход, не совершив действий. Вы точно этого хотите?</t>
+        <t id="battle_end_turn_cancel_skill"><b>::skillName::</b> завершит действие.</t>
+        <t id="battle_dying_unit_retreat"><b>::name::</b> при смерти. Вы <bad>проиграете</bad>, если этот боец умрет!
+ Вы хотите <b>немедленно отступить</b>?</t>
+        <t id="item_convert_action">::action:: ::item::?</t>
+        <t id="rename_unit">Выберите новое прозвище, которое получит ::unitName::</t>
+        <t id="rename_troop">Как хотите назвать свой отряд?</t>
+        <t id="rename_boat">Как хотите назвать свой корабль?</t>
+        <t id="rename_tavern">Как хотите назвать свою таверну?</t>
+        <t id="message_accompany"><b>::name::</b> присоединяется к отряду.</t>
+        <t id="message_accompany_left"><b>::name::</b> покидает отряд.</t>
+        <t id="message_follow"><b>::name::</b> следует за отрядом.</t>
+        <t id="message_follow_left"><b>::name::</b> больше не следует за отрядом.</t>
+        <t id="message_recruit"><b>::name::</b> присоединяется к отряду!</t>
+        <t id="message_leave"><b>::name::</b> покидает отряд.</t>
+        <g id="message_recruit_add">
+            <t _id="voscompagnonssontsatisfaits">Ваши спутники счастливы.</t>
+            <t _id="voscompagnonsletrouventsympatique">Ваши спутники легко сдружились с ним.</t>
+            <t _id="voscompagnonsdoutentquilfasselaffaire">Ваши спутники сомневаются, что он справится.</t>
+            <t _id="voscompagnonslaccueillentavecjoie">Ваши спутники с радостью привечают его.</t>
+        </g>
+        <g id="message_recruit_add_fem">
+            <t _id="voscompagnonssontsatisfaits">Ваши спутники счастливы.</t>
+            <t _id="voscompagnonslatrouventsympatique">Ваши спутники легко сдружились с ней.</t>
+            <t _id="voscompagnonsdoutentquellefasselaffaire">Ваши спутники сомневаются, что она справится.</t>
+            <t _id="voscompagnonslaccueillentavecjoie">Ваши спутники с радостью привечают ее.</t>
+        </g>
+        <g id="message_recruit_add_animal">
+            <t _id="voscompagnonssedemandentjustepourquoi">Ваши спутники задаются вопросом... зачем?</t>
+            <t _id="voscompagnonstrouventquecestuneexcellenteide">Ваши спутники считают, что это хорошая идея.</t>
+            <t _id="voscompagnonsapprouvent">Ваши спутники поддерживают ваш выбор.</t>
+            <t _id="voscompagnonsnontaucunavissurcechoix">Ваши спутники не высказывают мнения об этом выборе.</t>
+        </g>
+        <t id="place_piton_here">Вбить здесь <b>крюк</b>?</t>
+        <t id="place_tomb_here">Разместить <b>гробницу</b> здесь?</t>
+        <t id="upgrade_skill">Использовать предмет «::item::» для улучшения навыка спутника?</t>
+        <t id="skill_upgraded">Навык <good>::name::</good> улучшен!</t>
+        <t id="unlocked_class">Вы выучили специализацию: <good>::name::</good>!</t>
+        <t id="use_oil">Применить этот эффект к оружию (<good>::weapon::</good>)?</t>
+        <t id="replace_prev_oil">Текущий эффект будет <bad>утрачен</bad>.</t>
+        <t id="oil_choose_replace">Выберите эффект для замены (<good>::weapon::</good>):</t>
+        <t id="use_rat_bait">Хотите разместить: <img src="item/::item::"/>?</t>
+        <t id="use_respecialization_manual"><img src="item/::item::"/><b>::name::</b>: использовать на бойца (<b>::unit::</b>)?</t>
+        <t id="name_to_rank">Назначить спутника ::name:: на должность <b>«::rank::»</b>?</t>
+        <t id="loosing_rank"><bad>::name:: потеряет свой ранг: <b>::rank::</b></bad></t>
+        <t id="was_named_to_rank">::name:: назначается на должность <b>«::rank::»</b> в отряде.</t>
+        <t id="was_named_to_rank_fem">::name:: назначается на должность <b>«::rank::»</b> в отряде.</t>
+        <t id="cannot_drop_unique_item">
+		Вы не можете выбросить этот уникальный предмет.
+		Он останется у вас до самого конца или пока вы не найдете ему применение.
+        </t>
+        <t id="travel_to">::place::: отправиться в это место?</t>
+        <t id="epitaph">Хотите оставить надпись?</t>
+        <t id="debug_confirm">::cmd::</t>
+    </g>
+    <g id="ui">
+        <t id="defaultsave">Сохранение</t>
+        <t id="autosave">Автосохранение</t>
+        <t id="quicksave">Быстрое сохранение</t>
+        <t id="inventory_title">Инвентарь</t>
+        <t id="choose_sell_quantity">Сколько вы хотите продать: <b>::name::</b>?</t>
+        <t id="choose_buy_quantity">Сколько вы хотите купить: <b>::name::</b>?</t>
+        <t id="choose_pick_quantity">Сколько вы хотите взять: <b>::name::</b>?</t>
+        <t id="choose_craft_quantity">Сколько вы хотите создать: <b>::name::</b>?</t>
+        <t id="choose_drop_quantity"><b>::name::</b>: сколько вы хотите выбросить?</t>
+        <t id="buy_sell_quantity_label">Количество:</t>
+        <t id="choose_amount_total">(<gold>::gold::</gold>)</t>
+        <t id="choose_amount_item">(<img src="item/::currency::"/>::count::)</t>
+        <t id="inventory_price_label"><gold>::price::</gold></t>
+        <t id="drop_item_label">Выбросить</t>
+        <t id="heal_remedy_label">Исцелить с помощью: <img src="/item/::icon::"/>::name::</t>
+        <t id="gain_place_discovery">+::number:: <img src="/item/::icon::"/> ::name::</t>
+        <t id="activity_xp_gain">+::value:: оо</t>
+        <t id="activity_item_gain">+::value:: <img src="/item/::icon::"/> ::name::</t>
+        <t id="board_puzzle_instruction">[LMB] Активировать (зажмите)</t>
+        <t id="fishing_counter">Осталось поймать рыб: ::number:: <img src="/item/::icon::"/></t>
+        <t id="fishing_start">Использовать наживку для рыбы</t>
+        <t id="fishing_instruction">[LMB] Не дайте рыбе сорваться с крючка</t>
+        <t id="fishing_fail">Рыба сорвалась с крючка</t>
+        <t id="fishing_leave">Уйти</t>
+        <t id="gather_production">Изготовить ::name:: (+::count::/j)</t>
+        <t id="gather_resource">Собрать ::name:: (::count::/::max::)</t>
+        <t id="lockpick_quantity">Осталось: <img src="/item/::icon::"/>::name:: x::number::</t>
+        <t id="lockpick_no_more_lockpicks">Больше нет: <img src="/item/::icon::"/>::name::</t>
+        <t id="lockpick_leave">Уйти</t>
+        <t id="nine_puzzle_leave">Уйти</t>
+        <t id="cylinder_puzzle_leave">Уйти</t>
+        <t id="board_puzzle_leave">Выйти</t>
+        <t id="sing_leave">Уйти</t>
+        <t id="archery_shots_remaining">Осталось выстрелов: ::number::</t>
+        <t id="archery_no_shots_remaining">Конец тренировки</t>
+        <t id="recipe_equipement_type">Тип снаряжения</t>
+        <t id="recipe_type_dish">Тип блюда</t>
+        <t id="recipe_ingredients">Ингредиенты</t>
+        <t id="recipe_all_recipes">Все</t>
+        <t id="recipe_level_required">Требуемый уровень</t>
+        <t id="recipe_lore_unknown">Неизвестное происхождение</t>
+        <t id="recipe_possessed_item">у вас:</t>
+        <t id="recipe_ingredient_stock_needed">в наличии / требуется</t>
+        <t id="recipe_unique_item">Этот предмет вы можете создать лишь один раз.</t>
+        <t id="recipe_not_enough_materials">Не хватает ресурсов, чтобы создать в таком количестве</t>
+        <t id="recipe_confirm_forge">Вы хотите создать: <img src="/item/::icon::"/> ::name:: x::number::?</t>
+        <t id="recipe_not_has_job_level">Ваш уровень в этой профессии недостаточно высок.</t>
+        <t id="recipe_no_more_upgrade">Этот предмет нельзя улучшить.</t>
+        <t id="activity_forge_bonus_title">Бонус за качество</t>
+        <t id="activity_forge_bonus_info">Попадите по раскаленному добела металлу ::number:: р. подряд</t>
+        <t id="activity_forge_success_bonus_info">Получен предмет превосходного качества:</t>
+        <t id="activity_forge_fail_bonus_info">Получен предмет обычного качества:</t>
+        <t id="activity_cook_delicious_bonus_info">Получено блюдо превосходного качества <img src="/icon/QualityStar"/>:</t>
+        <t id="activity_cook_normal_bonus_info">Получено блюдо обычного качества:</t>
+        <t id="activity_food_delicious">(Вкуснотища) <img src="/icon/QualityStar"/></t>
+        <t id="activity_regular_item">Получен предмет:</t>
+        <t id="camp_rotate">Нажмите [KEY_CampRotation] или используйте колесо мыши для поворота</t>
+        <t id="camp_rotate_pad">Нажмите <img src="icon/Pad_LB"/> или <img src="icon/Pad_RB"/>, чтобы вращать</t>
+        <t id="camp_reserve">Резерв</t>
+        <t id="reserve_info">В вашем <b>резерве</b> находятся спутники, которых вы не хотите держать в лагере.
+ Им нельзя выдавать поручения, но они нуждаются в еде и жалованьи.
+
+ Нажмите <b>[RMBSHIFT] на спутнике в лагере, чтобы отправить его в резерв.</b></t>
+        <t id="mission_name">Контракты</t>
+        <t id="mission_board_quest_list">Принято контрактов: ::value::/::max::</t>
+        <t id="mission_next_in">Следующий контракт через ::time::.</t>
+        <t id="mission_expire_in">Контракт истекает через ::time::.</t>
+        <g id="mission_difficulty">
+            <t _id="facile">Легкий</t>
+            <t _id="normal">Обычный</t>
+            <t _id="moyen">Средний</t>
+            <t _id="difficile">Тяжелый</t>
+        </g>
+        <g id="mission_negociate">
+            <t id="desc">Задайте значение на шкале торговли, чтобы получить лучшую цену за контракт в обмен на влияние.</t>
+            <t id="contract">Контракт: ::name::</t>
+            <t id="inital_offer">Изначальное предложение: ::value::</t>
+            <t id="current_offer">Текущее предложение: ::value::</t>
+            <t id="asked_offer">Запрошенная награда: ::value::</t>
+            <t id="cost">Стоимость торговли: ::value::</t>
+            <t id="accept_offer">Принять предложение</t>
+        </g>
+        <g id="sea_lords">
+            <t id="tutorial">Чтобы узнать больше о Властелинах морей, поговорите с поклонником в таверне Бубастиса.</t>
+            <t id="title">Властелины морей</t>
+            <t id="leaderboard">Список лидеров</t>
+            <t id="territory">Территория:</t>
+            <t id="status">Статус:</t>
+            <t id="rewards">Награды:</t>
+            <g id="status_list">
+                <t _id="actif"><good>Активный</good></t>
+                <t _id="rival"><warn>Соперник</warn></t>
+                <t _id="vostrousses"><warn>По горячим следам</warn></t>
+                <t _id="vaincu"><bad>Побежденный</bad></t>
+            </g>
+            <t id="marker_tooltip">::name::: найти и победить.</t>
+        </g>
+        <t id="difficulty">Сложность:</t>
+        <t id="reward">Награда:</t>
+        <t id="cost">Стоимость:</t>
+        <t id="bounty_group_name">Банда: ::name::</t>
+        <t id="grimoire_empty">::name:: пуст.</t>
+        <t id="grimoire_name">Справочник</t>
+        <t id="grimoire_learn_action">Изучить за ::item::</t>
+        <t id="grimoire_unknown_name">? ? ? ?</t>
+        <t id="grimoire_level_required">Требуется ::trait:: ::level::</t>
+        <t id="grimoire_learn_recipe">Выучить в справочнике</t>
+        <t id="grimoire_can_not_learn_recipe">Вы еще не знаете профессию, связанную с этим рецептом.</t>
+        <t id="grimoire_recipe_already_learnt">Вы уже знаете этот рецепт.</t>
+        <t id="grimoire_xp_suffix"><img src="/item/::icon::"/></t>
+        <t id="grimoire_craft_to_gain_discovery">Создайте в первый раз, чтобы получить <img src="item/Knowledge"/><b>знания</b></t>
+        <t id="grimoire_craft_to_reveal_item">Создайте в первый раз, чтобы раскрыть новый рецепт в справочнике</t>
+        <t id="grimoire_craft_to_reveal_items">Изготовьте, чтобы открыть <b>::number:: рец.</b> в справочнике</t>
+        <t id="grimoire_craft_to_reveal_bundle">Создайте один из таких предметов, чтобы раскрыть <b>превосходный набор</b> в справочнике.</t>
+        <t id="grimoire_craft_to_reveal_bundle_one_item">Создайте в первый раз, чтобы раскрыть <b>превосходный набор</b> в справочнике.</t>
+        <t id="grimoire_learn_to_gain_discovery">Выучите, чтобы получить <img src="item/Knowledge"/><b>знания</b></t>
+        <t id="grimoire_learn_to_reveal_item">Выучите, чтобы открыть новую способность в справочнике</t>
+        <t id="grimoire_need_to_unlock">Требуется <img src="item/::item::"/></t>
+        <t id="grimoire_need_recipe">Требуется рецепт.</t>
+        <t id="grimoire_need_knowledge">Требуется очко знаний.</t>
+        <t id="grimoire_need_setting">Доступно после завершения сценария региона.</t>
+        <t id="grimoire_need_city_forge">Доступно в городской кузне.</t>
+        <t id="grimoire_unlock_recipe">Новый рецепт в справочнике:</t>
+        <t id="grimoire_confirm_learn">Вы хотите выучить: <img src="/item/::icon::"/>::name::?</t>
+        <t id="grimoire_page_number">Стр. ::current::/::max::</t>
+        <t id="grimoire_craft_learnt">::player_name:: изучает: ::recipe_name::</t>
+        <t id="grimoire_toggle_undiscovered">Скрыть необнаруженные</t>
+        <g id="grimoire_knowkedge">
+            <t id="group3_unlock_info"><img src="item/Knowledge"/> ::count::/::total::</t>
+            <t id="group3_unlock_tip"><img src="item/Knowledge"/> (::count::): заработайте, чтобы открыть</t>
+        </g>
+        <t id="craft_done">::unit_name:: (::player_name::) создает: ::craft_name:: (::count::)</t>
+        <g id="rest">
+            <t id="camp_report">Лагерный отчет</t>
+            <t id="production_detail">В лагере изготовили ресурсы.</t>
+            <t id="food_inventory">Обед</t>
+            <t id="action_points">Вам достается <img src="/icon/ActionPoint"/><b>::count::</b></t>
+            <t id="troop_was_feed">Отряд накормлен.</t>
+            <t id="rested">Отряд хорошо отдохнул.</t>
+            <t id="confirm_no_feed">Вы не накормили отряд! Все равно хотите отдохнуть?</t>
+            <t id="confirm_no_salary">Вы не выплатили жалованье спутникам! Все равно хотите отдохнуть?</t>
+            <t id="confirm_leaver">::name:: вот-вот покинет отряд! Все равно устроить привал?</t>
+            <t id="confirm_leavers">Спутники (::count::) покинут ваш отряд! Все равно устроить привал?</t>
+            <t id="not_paid"><bad>Ваши спутники недовольны, что жалованье не выплачено!</bad></t>
+            <t id="unit_left"><bad>::name::</bad> покинул отряд, недовольный условиями в нем!</t>
+            <t id="unit_left_woman"><bad>::name::</bad> покинула отряд, недовольная условиями в нем!</t>
+            <t id="eat_action">Добавить в обед</t>
+            <t id="remove_action">Убрать из обеда</t>
+            <t id="feed_action">Изменить блюдо</t>
+            <t id="unit_plagued">Некоторые спутники теперь заражены чумой из-за того, что их чумные раны остались необработанными: <bad>::names::</bad>.</t>
+            <t id="unit_plagued_starved">Ваши чумные спутники <bad>голодают</bad>, потому что не ели мясо во время последнего обеда. Они в любой момент могут потерять контроль.</t>
+            <t id="unit_plagued_madness">Некоторые чумные спутники сошли с ума во время привала: <bad>::names::</bad>.</t>
+            <t id="unit_healed_doctor">::name:: использует растения, чтобы исцелить: ::healedname::: ::injury::.</t>
+            <t id="unit_crunched_fail"><warn>::plagued::</warn> попытался(ась) укусить соратника (<warn>::victim::</warn>).</t>
+            <t id="unit_crunched_success"><bad>::plagued::</bad> укусил(а) соратника (<bad>::victim::</bad>) посреди привала. Рана заражена чумой.</t>
+            <t id="become_alcoholic">::name:: пьет слишком много. Кажется, у нас завелся <bad>алкоголик</bad>!</t>
+            <t id="heal_injury">::name:: оправляется после травмы.</t>
+            <t id="training_xp_gain">::name:: получает <img src="/icon/FightXP"/>::xp:: очк. опыта за тренировку.</t>
+            <t id="bad_diet"><bad>Требования к еде</bad> некоторых ваших спутников не были учтены.</t>
+            <t id="alcohol_withdrawal">::name:: перестает пить алкоголь!</t>
+            <t id="become_sick">::name:: не справляется с предыдущим приемом пищи и зарабатывает <bad>несварение</bad>.</t>
+            <t id="happy_log_zero">Счастье вашего отряда не изменилось.</t>
+            <t id="happy_log_gain">Счастье вашего отряда увеличилось на <happy>+::count::</happy></t>
+            <t id="happy_log_lose">Счастье вашего отряда снизилось на <happy>::count::</happy></t>
+            <t id="happy_current">Счастье вашего отряда равно <happy>::count::</happy></t>
+            <t id="happy_min"><bad>Ваши спутники недовольны!</bad></t>
+            <t id="happy_neg">Ваши спутники <bad>несчастны</bad>.</t>
+            <t id="happy_normal">Ваши спутники удовлетворены.</t>
+            <t id="happy_max">Ваши спутники <good>счастливы</good>.</t>
+            <t id="happy_infl_won">Вы <good>получили</good> <img src="/icon/Influence"/><inf>::count::</inf></t>
+            <t id="happy_infl_lost">Вы <bad>потеряли</bad> <img src="/icon/Influence"/><inf>::count::</inf></t>
+            <t id="happy_bonus_won">Вы получили следующий бонус:</t>
+            <t id="influence_generated">Произведено лагерем: <img src="/icon/Influence"/><b>::count::</b></t>
+            <t id="bee_sting">Не стоит спать так близко к улью — ::name:: теперь в <bad>укусах пчел</bad>.</t>
+            <t id="reproduction">::parent1:: и ::parent2:: теперь родители. ::child:: присоединяется к отряду.</t>
+            <t id="reproduction_solo">::parent:: рожает дитя. ::child:: присоединяется к вашему отряду.</t>
+            <t id="blood_collection">::unit:: укусил спутника по имени ::target:: на привале. В ближайшие ::value:: прием. пищи он не нуждается в еде.</t>
+            <t id="doping_transfusion">Ночью спутников покусали, и они теперь в <stb>ярости</stb>: ::names::</t>
+            <t id="browser">Во время привала найдены цветы.</t>
+            <t id="bear_eat_honey">::name:: сожрал ваш <bad>мед</bad>!</t>
+            <g id="escape">
+                <g id="success">
+                    <t _id="leprisonniernamesestenfuipendantquetoutlemondedormait"><bad>::name::</bad> бежит, пока все спят...</t>
+                    <t _id="alorsquilntaitpassurveillleprisonniernamesestenfuipendantlerepos">Никто не нес вахту, и <bad>::name::</bad> бежит на привале.</t>
+                </g>
+                <g id="fail">
+                    <t _id="leprisonniernameaessaydesenfuirmaisallynamequidormaitctlenaempch"><bad>::name::</bad> пытается сбежать, но <b>::allyName::</b> вовремя просыпается и останавливает беглеца.</t>
+                    <t _id="allynameaempchleprisonniernamedesenfuir"><b>::name::</b> пытается сбежать, но <b>::allyName::</b> останавливает беглеца.</t>
+                </g>
+                <g id="success_with_ally">
+                    <t _id="aprsplusieurstentativesdefuiteleprisonniernameestparvenusenfuir"><bad>::name::</bad> наконец-то бежит, несмотря на неудачные предыдущие попытки...</t>
+                    <t _id="leprisonniernamesestenfuimalgrlasurveillancedeallyname"><bad>::name::</bad> бежит, несмотря на то, что <b>::allyName::</b> бдит.</t>
+                </g>
+                <g id="success_with_injury">
+                    <t _id="aprsavoirassommallynameleprisonniernamearussisenfuirallynameasubiuneblessureinjury"><bad>::name::</bad> бежит. <b>::allyName::</b> не может остановить побег, потому что пленник оглушил дозорного.
+<b>::allyName::</b> при этом получает травму: <status>::injury::</status></t>
+                    <t _id="leprisonniernameaassommallynamepourschapperallynameasubiuneblessureinjury"><b>::allyName::</b> бежит. <bad>::name::</bad> не может остановить побег, потому что пленник оглушил дозорного.
+<b>::allyName::</b> при этом получает травму: <status>::injury::</status></t>
+                </g>
+                <t id="suicide"><bad>Пленник <b>::name::</b> решил, что смерть лучше, чем издевательства отряда.</bad></t>
+            </g>
+            <t id="happiness_malus">Штраф за привал:</t>
+            <t id="happiness_malus_desc">Если сейчас отдохнете, отряд будет <bad>недоволен</bad>:</t>
+            <t id="happiness_starvation">Не хватает еды</t>
+            <t id="happiness_salary">Невыплаченное спутникам жалованье</t>
+            <t id="knowledge_increase">Вы больше узнали о мире.</t>
+            <t id="money_laundering">Был продан украденный предмет, хранившийся в сундуке.</t>
+            <t id="deadly_poisoned"><b>::name::</b> погибает от <bad>смертельного яда.</bad></t>
+            <t id="item_status_adj_rest"><b>::item::</b> близко, поэтому некоторые спутники приобрели статус: <status>::status::</status>.</t>
+        </g>
+        <g id="sleep_danger">
+            <t id="title">Уровень опасности:</t>
+            <t id="none"><good>Нет</good></t>
+            <t id="medium"><warn>Средняя</warn> ::p::%</t>
+            <t id="high"><bad>Опасность!</bad> ::p::%</t>
+            <t id="tip">Когда вокруг опасно, на ваш отряд могут напасть во время привала.</t>
+            <t id="fight_msg">На вас напали во время привала!</t>
+        </g>
+        <g id="converter_tool">
+            <t id="title">Создание</t>
+            <t id="action">Добавить ресурс</t>
+            <t id="remove_action">Убрать ресурс</t>
+            <t id="rest_consumption">::count:: <img src="item/::item::"/> создаст ::outCount:: <img src="item/::outItem::"/> за время привала.</t>
+            <t id="rest_required">Требуется: <img src="item/::item::"/>::name:: x::count::</t>
+            <t id="influence_gain">Добавляет <img src="/icon/Influence"/> +<b>::count::</b> после каждого привала.</t>
+        </g>
+        <g id="upgrade_converter">
+            <t id="name">Улучшение оружия</t>
+            <t id="desc">Может повысить уровень оружия и усилить его показатели.
+Улучшается только определенное особое оружие.</t>
+            <t id="title">Улучшение</t>
+            <t id="action">Выберите оружие</t>
+            <t id="remove_action">Уберите оружие</t>
+        </g>
+        <g id="lectern">
+            <t id="title">Исследование</t>
+            <t id="action">Выбрать предмет для исследования</t>
+            <t id="remove_action">Убрать предмет для исследования</t>
+            <t id="assign_remaining_time">[JOBASSIGN] Текущее исследование закончится через несколько привалов (а точнее, ::count::).</t>
+            <t id="unassign_remaining_time"><bad><b>Спутник не назначен.</b></bad> За следующий привал не будет никаких новых открытий.</t>
+            <t id="confirm_cancel">
+			Вы хотите прекратить текущее исследование?
+			Вы потеряете весь текущий прогресс изучения этого предмета.
+            </t>
+        </g>
+        <g id="codex">
+            <t id="need_assigned_codex">Вы должны назначить: <img src="/trait/::icon::"/>::kind::.</t>
+            <t id="restoreAction">Реставрация</t>
+            <t id="restoreNotif">Вы успешно восстановили кодекс. Вы сможете расшифровать его, когда изучите соответствующие руны.</t>
+            <t id="restoreNotifPage">Вы успешно восстановили журнал.</t>
+            <t id="need_runes_restore">Для реставрации нужно разместить до ::nb:: рун.</t>
+            <t id="decipherAction">Расшифровка</t>
+            <t id="decipherNotif">Вы успешно расшифровали кодекс. Вы сможете понять подсказку, когда расшифруете все кодексы в этой коллекции.</t>
+            <t id="decipherNotifPage">Вы успешно расшифровали журнал.</t>
+            <t id="need_runes_decipher">Для расшифровки нужно найти до ::nb:: рун, связанных с кодексом.</t>
+            <t id="zero_good">Не разобрать. Ни одна из рун не подходит.</t>
+            <t id="one_good">У нас есть зацепка. Одна из рун совпала.</t>
+            <t id="one_left">Почти у цели, но не хватает одной руны...</t>
+            <t id="all_good">Безупречно! Все 3 руны совпали!</t>
+            <t id="help">Восстановите поврежденные кодексы, чтобы узнать, какие руны в них есть.
+
+После реставрации их нельзя будет прочитать, пока вы не изучите соответствующие руны.</t>
+            <t id="symbolFound">Найдена подсказка</t>
+        </g>
+        <g id="workshop">
+            <t id="upgrade_require">Требуется улучшенная мастерская</t>
+            <t id="workshop_quality_require">Требуется мастерская более высокого уровня.</t>
+            <t id="min_qty_dismantle">Требуется не менее ::qty:: предметов.</t>
+            <t id="min_qty_dismantle_bad">Требуется не менее <bad>::qty:: предметов</bad>.</t>
+            <t id="confirm_dismantle">Вы хотите разобрать выбранные предметы?</t>
+            <t id="dismantle_action">Добавить снаряжение</t>
+            <t id="upgrade_bonus_new"><b>Новый бонус:</b> ::desc::</t>
+            <t id="upgrade_bonus_up"><b>Улучшенный бонус:</b> ::desc::</t>
+        </g>
+        <g id="alter">
+            <t id="job_level_required"><img src="/trait/::icon::"/><b>::kind::</b>: уровень недостаточен</t>
+            <t id="no_item_selected">Вы должны выбрать снаряжение</t>
+            <t id="no_resources_recipe"><img src="/item/::kind::"/><b>::name::</b>: у вас нет нужных ингредиентов для изменений.</t>
+            <t id="selected_item">Изменить: <img src="/item/::kind::"/><b>::name::</b></t>
+            <t id="action">[RMB] Изменить</t>
+            <t id="confirm">Хотите изменить: <img src="/item/::kind::"/><b>::name::</b>?</t>
+            <t id="craft_confirm">Полученное количество:</t>
+            <t id="done">::unit_name:: (::player_name::) изменяет: ::item_name::</t>
+            <t id="desc">Может улучшить качество предмета снаряжения, повысив его характеристики.</t>
+        </g>
+        <g id="brewBarrel">
+            <t id="alcohol_list_title">Список напитков</t>
+            <t id="alcohol_aging_title">Выдержка</t>
+            <t id="alcohol_aging_no_alcohol">Алкоголь не выбран</t>
+            <t id="alcohol_aging_tip">Выдержать: <img src="/item/::kind::"/><b>::name::</b></t>
+            <g id="noValidBarrel">
+                <t id="noRecipe">Рецепт не выбран.</t>
+                <t id="alreadyDone">Этот рецепт уже был использован для другой бочки.</t>
+                <t id="noUnitAssigned">Боец не назначен.</t>
+                <t id="noLevel">Уровень назначенного бойца недостаточно высок для работы с рецептом.</t>
+                <t id="noResources">Недостаточно ресурсов.</t>
+                <t id="noBonus">Назначенный боец не может работать с рецептом.</t>
+            </g>
+            <t id="restBrewProd">::name:: готовит блюдо: это ::list::</t>
+            <t id="restAgedProd">::name:: выдерживает напиток: это ::list::</t>
+            <t id="alcohol_aging_max">Алкоголь в этой бочке достиг максимальной выдержки.</t>
+        </g>
+        <g id="campChest">
+            <t id="moveTo_chest">Поместить предмет в сундук</t>
+            <t id="moveTo_inventory">Поместить предмет в инвентарь</t>
+        </g>
+        <g id="stake">
+            <t id="title">Кол</t>
+            <t id="action">Насадить тело на кол</t>
+            <t id="remove_action">Снять тело</t>
+            <t id="drop_action">Выбросить тело</t>
+            <t id="confirm_drop">Это тело уже нельзя хранить, оно сильно разложилось.
+ Уничтожить?</t>
+            <t id="days_count">На виду уже ::count:: д.</t>
+            <t id="smelly_odour_warning">Спутникам неприятен отвратительный запах, разносящийся по всему лагерю.</t>
+        </g>
+        <g id="strategy_table">
+            <t id="captain_require"><bad>Чтобы спланировать стратегию, надо назначить капитана.</bad></t>
+            <t id="already_learnt"><bad>Вы уже знаете эту стратегию.</bad></t>
+            <t id="tool_needed"><bad>Вам нужен стол для планирования.</bad></t>
+            <t id="unknown">????</t>
+            <t id="tier_title">Навык ур. ::value::</t>
+        </g>
+        <g id="sing">
+            <t id="repertoire">Песенник</t>
+            <t id="play">Играть</t>
+            <t id="already_learnt"><bad>Вы уже знаете эту песню.</bad></t>
+            <t id="can_not_learn_song"><bad>Вы еще не освоили профессию, позволяющую выучить эти ноты.</bad></t>
+        </g>
+        <g id="whip">
+            <t id="tool_desc">Бичевание спутников заставит их создавать больше ресурсов на производственном снаряжении в лагере.</t>
+            <t id="tool_confirm_already_whipped">Некоторых бойцов уже бичевали.
+Вы правда хотите снова их бичевать?</t>
+            <t id="action">Бичевать</t>
+            <t id="prisoner">Пленник</t>
+            <t id="need_tool_prod">Этот боец не приписан к производственному снаряжению в лагере.</t>
+        </g>
+        <g id="pendulum">
+            <t id="miss">Если верить маятнику, здесь ничего нет.</t>
+        </g>
+        <g id="banner">
+            <t id="preview">Предпросмотр</t>
+            <t id="background_title">Фон</t>
+            <t id="logo_title">Дизайн</t>
+            <t id="border_title">Рамка</t>
+            <t id="titles_title">Титулы</t>
+            <t id="resolution_desc">Используйте <b>меры</b>, чтобы мотивировать отряд до следующего привала.
+ В течение одного дня можно применить несколько мер.
+ При каждом применении меры повышается ее стоимость.
+ При каждом привале снижается стоимость всех неиспользованных мер.</t>
+            <t id="resolution_tip">[LMB] Мотивировать: ::value::</t>
+            <t id="resolution_confirm">Хотите применить меру «<b>::name::</b>» за <influence>::value::</influence>?</t>
+            <t id="resolution_confirm_warning">Внимание: ваш отряд устает. Меры действуют до следующего привала.</t>
+            <t id="resolution_already_activated">Эта мера уже активна.</t>
+            <g id="random_troop_names">
+                <g id="STroopAdventurers">
+                    <t _id="lacompagniesauvage">Дикая компания</t>
+                    <t _id="lalgendeinconnue">Неизвестная легенда</t>
+                    <t _id="lescadetsvagabonds">Бродячие ополченцы</t>
+                    <t _id="lasarabandesylvestre">Лесная сарабанда</t>
+                    <t _id="lespaladinsdelinfortune">Паладины неудачи</t>
+                </g>
+                <g id="STroopMerchants">
+                    <t _id="labrigadedessousbois">Бригада из рощи</t>
+                    <t _id="lemesperdues">Заблудшие души</t>
+                    <t _id="lestireauflanc">Бездельники</t>
+                    <t _id="lessentinelleserrantes">Странствующие часовые</t>
+                    <t _id="lesclaquemarauds">Гроза мародеров</t>
+                </g>
+                <g id="STroopDeserters">
+                    <t _id="lahordefugitive">Шайка беглецов</t>
+                    <t _id="lebataillonanonyme">Безымянный батальон</t>
+                    <t _id="ladernirecompagnie">Последняя компания</t>
+                    <t _id="lameuterengate">Горстка отступников</t>
+                    <t _id="lesaffranchisdelalande">Обитатели пустоши</t>
+                </g>
+                <g id="STroopFarmers">
+                    <t _id="lesbesogneuxdesplaines">Работяги с лугов</t>
+                    <t _id="laliguedunavet">Морковная лига</t>
+                    <t _id="leseldelaterre">Достойнейшие</t>
+                    <t _id="leclandesartisans">Клан ремесленников</t>
+                    <t _id="lesdamnsdelaterre">Проклятые</t>
+                </g>
+                <g id="STroopBandits">
+                    <t _id="labandesclrate">Злобные скитальцы</t>
+                    <t _id="lesboucaniersdelamisre">Лихие горемыки</t>
+                    <t _id="lesmauvaisesfrquentations">Нечестивцы</t>
+                    <t _id="labohmesanglante">Ужасные скитальцы</t>
+                    <t _id="labourrasquefunbre">Жуткий вопль</t>
+                </g>
+                <g id="STroopTavern">
+                    <t _id="leclandeladivebouteille">Клика пробок и попойки</t>
+                    <t _id="lesboitsanssoif">Веселые кутилы</t>
+                    <t _id="lesforatsdelafaim">Голодающие подлецы</t>
+                    <t _id="lesjongleursmanchots">Однорукие жонглеры</t>
+                    <t _id="lacompagniedesgtesauce">Баламуты</t>
+                </g>
+                <g id="STroopPugilist">
+                    <t _id="lesloupsdemer">Морские псы</t>
+                    <t _id="lessansesquif">Безлодочные</t>
+                    <t _id="lesmarinserrants">Странствующие матросы</t>
+                    <t _id="lesmessangunaires">Кровожадные души</t>
+                    <t _id="lespiratesdeschemins">Пираты с большой дороги</t>
+                </g>
+                <g id="DefaultTroop">
+                    <t _id="nomdetroupe">Название отряда</t>
+                </g>
+            </g>
+        </g>
+        <g id="weaponDisplay">
+            <t id="action">Витрина</t>
+        </g>
+        <t id="unit_level_short">ур. <b>::level::</b></t>
+        <t id="unit_class_title">Специализация</t>
+        <t id="unit_level_title">Ур. ::number::</t>
+        <t id="unit_chose_class">Выбрать</t>
+        <t id="unit_spe_changes_title">Способности</t>
+        <t id="unit_armor_equip_title">Снаряжение</t>
+        <g id="relationship">
+            <t id="relationActionConfirm"><b>::name::</b> за <influence>::value::</influence>?</t>
+            <t id="drinkAction">Купить выпивку</t>
+            <t id="insultAction">Оскорбить</t>
+            <t id="drinkRequire">Требуется: <img src="itemtype/Alcohol"/><::hasAlcohol::>2</::hasAlcohol::> <influence><::hasCost::>::cost::</::hasCost::></influence></t>
+            <t id="insultRequire">Требуется: <influence><::hasCost::>::cost::</::hasCost::></influence></t>
+            <t id="drinkDesc">::name1:: и ::name2:: потеряют отрицательную черту.</t>
+            <t id="insultDesc">::name1:: и ::name2:: поссорятся, и их отношения ухудшатся. Они получат черту <trait>«::trait::»</trait>.</t>
+            <t id="noNegTrait">У вас нет отрицательной черты.</t>
+            <t id="alreadySociopathe">У вас уже есть черта <trait>«::trait::»</trait>.</t>
+            <t id="no_relation">У этого спутника нет отношений в отряде.</t>
+            <g id="states">
+                <t _id="adore">Обожает</t>
+                <t _id="aime">Любит</t>
+                <t _id="apprcie">Ценит</t>
+                <t _id="neutre">Принимает</t>
+                <t _id="tolre">Терпит</t>
+                <t _id="dteste">Недолюбливает</t>
+                <t _id="hait">Ненавидит</t>
+            </g>
+        </g>
+        <g id="prisonerTrust">
+            <g id="states">
+                <t _id="satisfait">Удовлетворение</t>
+                <t _id="neutre">Нейтралитет</t>
+                <t _id="mfiant">Осторожность</t>
+            </g>
+        </g>
+        <t id="next_attrib_point">Следующее очко:</t>
+        <t id="hideout_group_desc">Это убежище хорошо защищено. Его стоит ослабить перед штурмом! Его жители, скорее всего, бродят по округе.</t>
+        <t id="hideout_groups_still_alive">В окрестностях еще остались бандиты. Нужно найти их и уничтожить, чтобы ослабить защиту этого логова!</t>
+        <t id="hideout_done_group_desc">Убежище вот-вот падет. Пора начинать последний штурм!</t>
+        <t id="ambush_roaming">Засада!</t>
+        <t id="ambush_roaming_desc">Ваши спутники устроили засаду на этот отряд — у них будет преимущество в бою.</t>
+        <t id="attack_surprise_roaming">Засада!</t>
+        <t id="attack_surprise_roaming_desc">Ваши спутники устроили засаду на цель и получат преимущество в бою.</t>
+        <t id="merchant_trade">Торговля</t>
+        <t id="due_salary_label">Жалованье к оплате:</t>
+        <g id="city">
+            <t id="population">Население</t>
+            <t id="production">Создание</t>
+        </g>
+        <g id="forsaken_village">
+            <t id="troop">Разведчики</t>
+            <t id="noise_score">Общий шум отряда</t>
+            <t id="manage_troop">Управлять</t>
+            <t id="explore_building">Исследовать</t>
+            <t id="troop_not_enough_willpower">Боевой дух ваших разведчиков слишком низок, вы не можете исследовать это здание.</t>
+            <t id="troop_missing_willpower">Боевой дух ваших разведчиков слишком низок, вы не можете продолжать.</t>
+            <t id="troop_force_leave">Ваши спутники бежали из здания.</t>
+            <t id="troop_dead">Ваши разведчики не выжили.</t>
+            <t id="unit_noisy">Шумный</t>
+            <t id="unit_silent">Тихий</t>
+            <t id="battle_triggered">Чумные идут!</t>
+            <t id="troop_too_noisy">Ваши разведчики слишком шумны, чтобы исследовать это здание.</t>
+            <t id="forsaken_skill_limit">Больше нельзя искать выход в этом раунде.</t>
+        </g>
+        <g id="crime_cave">
+            <t id="confirm_leave">Если вы покинете это место, то потеряете свой прогресс. Точно хотите уйти?</t>
+        </g>
+        <g id="recruit_announce">
+            <t id="no_criteria">Категория не выбрана</t>
+            <t id="pending_announce">Объявление о вербовке размещено.</t>
+            <t id="title">Объявление о вербовке</t>
+            <t id="confirm">Разместить объявление о вербовке</t>
+            <t id="weapon">Оружие</t>
+            <t id="gender">Пол</t>
+            <t id="personality">Личность</t>
+            <t id="traitPositive">Положительная черта</t>
+            <t id="traitNegativeBan">Без отрицательной черты</t>
+            <t id="no_choice">Нет разницы</t>
+            <t id="cost">Стоимость объявления: <gold>::value::</gold></t>
+        </g>
+        <t id="not_enough_item">У вас не хватает следующих предметов: <img src="item/::item::"/>::name::.</t>
+        <t id="tip_missing_raw_materials">Купите их в кузне в городе.</t>
+        <t id="no_salary_due">Вам не нужно платить жалованье спутникам в данный момент.</t>
+        <t id="salary_due">Долг спутникам.</t>
+        <t id="no_leader">Нет предводителя</t>
+        <t id="label_attr_baseval">Базовое значение</t>
+        <t id="label_equip_bonus">Снаряжение</t>
+        <t id="label_global_bonus">Бонус отряда</t>
+        <t id="label_global_malus">Штраф отряда</t>
+        <t id="label_attr_cantBeUpgraded">Больше нельзя улучшить</t>
+        <t id="place_piton">Разместить</t>
+        <t id="place_piton_desc">Расположить <img src="item/Piton"/><b>крюк</b> рядом со скалой.</t>
+        <t id="piton_place_collide">Земля здесь неустойчива.</t>
+        <t id="piton_place_too_far">Крюк слишком далеко от отряда.</t>
+        <t id="piton_no_hill">Крюк надо размещать на краю обрыва.</t>
+        <t id="piton_place_end_collide">Конечная точка недоступна.</t>
+        <t id="piton_too_long">Веревка слишком длинна!</t>
+        <t id="rotate_tomb">Повернуть</t>
+        <t id="place_tomb">Похоронить</t>
+        <t id="place_tomb_desc">Разместите <b>гробницу</b>.</t>
+        <t id="tomb_place_too_far">Гробница слишком далеко от отряда.</t>
+        <t id="chose_epitaph_desc">Надпись.</t>
+        <t id="use_rat_bait_action">Применить приманку для крыс</t>
+        <t id="cannot_use_rat_bait">Рядом нет уничтоженного логова крыс</t>
+        <t id="show_map_item">Показать карту</t>
+        <t id="setting_complete">Пройдено</t>
+        <t id="setting_progress_desc"><good>Чтобы продолжить проходить сценарий, исследуйте регион или заплатите информатору за сведения.</good></t>
+        <t id="setting_complete_desc">Отлично! Вы <good>прошли</good> сценарий этого региона.</t>
+        <t id="progress">Прогресс</t>
+        <g id="paths">
+            <t id="show_credits">Показать титры</t>
+            <t id="path_completed">Путь завершен</t>
+            <t id="path_might_end">Следуя по пути силы и славы, вы преодолели множество опасностей и победили самых могучих воинов Пяти Королевств. Ваша компания заслужила место среди сильнейших.</t>
+            <t id="path_trade_end">Ваши ненасытные амбиции и жажда обогащения позволили вам покорить мир. Теперь вы не простые наемники: ваша компания овладела абсолютным могуществом, имя которому — деньги.</t>
+            <t id="path_crime_end">Никто и ничто не может остановить вас. И лорды, и бандиты до смерти вас боятся. Коварные и не ведающие пощады, ваши наемники стали знатью среди воров.</t>
+            <t id="path_mystery_end">Ваша компания искала знаний и служила науке. Вы сумели раскрыть древние тайны, невзирая на огромную опасность. Вы стали частью истории, и теперь ваши имена встречаются в книгах, рассказывающих о великих ученых.</t>
+        </g>
+        <t id="path_not_started">Вы еще не начали идти по этому пути.</t>
+        <t id="path_xp">ОП</t>
+        <t id="path_challenge">Испытания</t>
+        <t id="path_knowledge">Знание</t>
+        <t id="path_troop">Особое испытание отряда:
+<b>::troop::</b></t>
+        <t id="path_lvl">ур.</t>
+        <t id="path_counter_gain">Получить ::value:: ОП</t>
+        <t id="path_levelup">Открыт новый уровень!</t>
+        <t id="path_levelup_tip">Получите новый уровень и 1<img src="item/::icon::"/></t>
+        <t id="path_levelup_need"><bad>Требуется 1<img src="item/Knowledge"/></bad></t>
+        <t id="path_reward">Награда: ::count:: ОП</t>
+        <t id="path_unknown">???</t>
+        <t id="path_counter_total">Завершено ::value:: р.</t>
+        <t id="path_require_grimoire">Требуется выучить в справочнике: <img src="/item/::item::"/> ::itemName::</t>
+        <t id="path_require_path">Требуется: <img src="/item/::item::"/> ::itemName::.</t>
+        <t id="path_counter_need_progress">Продолжайте идти по пути, чтобы открыть это испытание.</t>
+        <t id="use_oil_action">Применить к оружию</t>
+        <g id="travel">
+            <t id="choose_destination">Выберите место назначения</t>
+            <t id="provisions">Припасы</t>
+            <t id="travel_time">Путешествие займет ::time::</t>
+            <t id="cant_travel_help"><bad>Нет доступного места назначения.</bad>
+<bad>Чтобы отправиться туда, возведите другой торговый пост.</bad></t>
+            <t id="no_travel_post">Чтобы отправиться туда, возведите торговый пост в этом регионе.</t>
+            <t id="current_region">Текущий регион</t>
+            <t id="travelWithTradeGoods">Налог на товары:</t>
+            <t id="travelWithTradeGoods_tooltip">Во время путешествия с товарами для торговли потребуется платить дополнительные налоги с учетом стоимости таких предметов.</t>
+            <t id="travelBackTradingGoods_tooltip">Внимание! Добавлен налог к стоимости возврата с учетом стоимости товаров.</t>
+            <t id="destination_require"><bad>Вы должны выбрать место назначения.</bad></t>
+            <t id="food_require"><bad>Вы должны кормить отряд во время путешествия.</bad></t>
+            <t id="tax_require"><bad>У вас недостаточно <b>крон</b>, чтобы заплатить налог на товары.</bad></t>
+        </g>
+        <g id="trade_route">
+            <t id="build_title">Создать торговый путь</t>
+            <t id="bonuses_title">Бонусы</t>
+            <t id="no_counter">Вы должны возвести торговые посты в обоих регионах.</t>
+            <t id="free_repatriate">Получение непродаваемых ресурсов с этого торгового поста бесплатна, так как они связаны с помощью торгового пути.</t>
+            <t id="free_unit_repatriate">Спутников можно бесплатно забрать с этого поста странствий, так как он связан с торговым путем.</t>
+            <g id="status">
+                <t _id="djconstruite">Уже построено</t>
+                <t _id="constructible">Можно строить</t>
+                <t _id="indisponible">Недоступно</t>
+            </g>
+        </g>
+        <g id="counter_chest">
+            <t id="title">Сундук торгового поста</t>
+            <t id="local">Местный</t>
+            <t id="repatriate_item_confirm">Забрать предмет?</t>
+            <t id="region_title">Регион</t>
+        </g>
+        <g id="counter_garnison">
+            <t id="title">Гарнизон</t>
+            <t id="free_slot">Свободное место</t>
+            <t id="repatriate_unit_confirm"><b>::name::</b> вернется. Продолжить?</t>
+            <t id="leave_companion">Оставить спутника</t>
+            <t id="add_companion">Добавить в отряд</t>
+            <t id="manage_garnison">Управление гарнизоном</t>
+        </g>
+        <g id="boat">
+            <t id="title_equipement">Снаряжение</t>
+            <t id="title_crew">Команда</t>
+            <t id="title_skills">Навыки</t>
+            <g id="random_boat_names">
+                <t _id="lemorse">Морж</t>
+                <t _id="lether">Эфир</t>
+                <t _id="lesinraz">Синраз</t>
+                <t _id="labourrasque">Шквал</t>
+            </g>
+        </g>
+        <g id="tavern">
+            <t id="menuTitle">Управление таверной</t>
+            <t id="inventory">Инвентарь таверны</t>
+            <g id="resume">
+                <t id="title">Отчет за смену</t>
+                <g id="revenue">
+                    <t id="title">Работники</t>
+                    <t id="salaries">Жалованье</t>
+                    <t id="gains">Доходы</t>
+                    <t id="total">Всего</t>
+                    <t id="sat_clients">Посетители: <good>+::value::</good></t>
+                    <t id="sat_saleChances">Шанс продаж: <good>+::value::%</good></t>
+                    <t id="satisfaction">В среднем за прошлые смены:</t>
+                    <t id="precision">(Эффект безопасности утроен)</t>
+                    <t id="xp_tip">Заработано: ::xpWon::
+ В наличии: ::xp::
+ До следующего уровня: ::xpNext::</t>
+                </g>
+                <g id="production">
+                    <t id="title">Меню</t>
+                    <t id="gains">Рецепты</t>
+                    <t id="sell">Продажи</t>
+                    <t id="cooksTitle">Печь</t>
+                    <t id="capacity">Вместимость</t>
+                    <t id="production">Производство</t>
+                    <t id="barrelStock">В наличии</t>
+                    <t id="barrelAge">Звезды</t>
+                    <t id="barrelAging">Выдерживается</t>
+                    <t id="barrelInSale">Бочки <img src="/icon/ForSale"/></t>
+                    <t id="barrelInStock">Бочки <img src="/icon/InCellar"/></t>
+                    <t id="empty">Пусто</t>
+                    <t id="noBrewer">Нет варщика</t>
+                </g>
+                <t id="events">События</t>
+                <t id="connoisseur"><b>::name::</b> крадет: улов похитителя — <img src="/item/::item::"/>::itemName::. За продажу предмета вы выручаете <img src="/icon/TavernSilver"/><good>+::count::.</good></t>
+                <t id="gain_speciality"><b>::name::</b> открывает специализацию <trait>«::trait::»</trait>.</t>
+            </g>
+            <g id="customers">
+                <t id="neutral">Смешанные</t>
+                <t id="fancy">Элита</t>
+                <t id="rustic">Работяги</t>
+                <t id="universal">Универсальные</t>
+            </g>
+            <g id="tips">
+                <t id="service">Смена ::value::</t>
+                <t id="place_tool">Установить в таверне</t>
+                <t id="place_barrel">Установить в подвале</t>
+                <t id="upgrade_tool">[RMBCTRL] Улучшить снаряжение</t>
+                <t id="require_tavernMode"><bad>Можно использовать только в таверне.</bad></t>
+                <t id="gain_bonus_one_day">::name:: (::amount:: шт.)</t>
+                <t id="gain_bonus_n_days">::name:: (::amount::) в течение ::days:: смен</t>
+                <t id="require_tool">Требуется ::toolName::</t>
+                <t id="wolf_cat_warning"><bad>Волки с кошками не уживутся</bad></t>
+                <t id="manage">Управлять</t>
+                <t id="changeTavernJob">Сменить работу</t>
+                <g id="customers">
+                    <t id="favorite_food">Любимая еда</t>
+                    <t id="favorite_song">Любимая музыка</t>
+                    <t id="favorite_customerBase">Любимая атмосфера</t>
+                </g>
+                <t id="shift_details">[SHIFT] — Подробности</t>
+                <t id="specialities"><b>Специализации</b></t>
+                <t id="specialities_learnt">Изучено</t>
+                <t id="factor_details"><b>Подробности</b></t>
+                <t id="satisfaction_details"><b>Подробный счет</b></t>
+                <t id="factor_effects"><b>Эффекты</b></t>
+                <t id="factor_gains"><b>Доходы</b></t>
+                <t id="factor_loses"><b>Убытки</b></t>
+                <t id="factor_events">События: ::value::</t>
+                <t id="warning_noPlace_clients">Некоторых посетителей не удалось принять из-за нехватки места.</t>
+                <t id="warning_prestige_tavern"><bad>Вы не сможете повысить престиж, пока не переберетесь в таверну покрупнее.</bad></t>
+                <t id="no_valid_faction"><bad>Ни одна из фракций не присутствует в таверне.</bad></t>
+                <t id="sell_failed">Упущено продаж: <bad>::value::</bad></t>
+                <t id="reward_faction_require">Чтобы получить награду, примите в своей таверне: ::faction_name:: (::nb_reward::).
+ ::faction_name:: в таверне: ::value::</t>
+                <t id="reward_faction_valid">Соблюдены требования для получения награды от этой фракции.</t>
+                <t id="reward_faction_noReward">Эта фракция не предлагает награды.</t>
+                <t id="tavernBonus">Планировка: +::value::</t>
+                <t id="unitsBonus">Работники: +::value::</t>
+                <t id="otherBonus">Другое: +::value::</t>
+                <t id="confirmNewService">Начать новую смену за ::cost::?</t>
+                <t id="serviceLockPrestige">Повысьте престиж <img src="icon/TavernPrestige"/> до ::value::, чтобы открыть дополнительные смены.</t>
+            </g>
+            <g id="menu">
+                <t id="title">Создать меню</t>
+                <t id="price_promotion">Акция</t>
+                <t id="price_shortage">Дефицит</t>
+                <t id="tavern_production">Производство</t>
+                <t id="kitchen">Кухня</t>
+                <t id="cave">Погреб</t>
+                <t id="slot_insufficient">Недостаточно ячеек</t>
+                <t id="already_produced">Уже есть в меню</t>
+                <t id="slot_required">Требуется мест: ::value::</t>
+                <t id="sold_item">Продано: ::value::</t>
+                <t id="change_menu">[LMB] Изменить меню 
+
+ Доступные варианты зависят от уровня повара и рецептов, изученных отрядом.</t>
+                <t id="change_drink">[LMB] Выбрать напиток
+
+ Доступные варианты зависят от уровня варщика и рецептов, изученных отрядом.</t>
+                <t id="food_locked_tip">Число доступных ячеек зависит от уровня повара и его черт.</t>
+                <t id="add_dish">[RMB] Добавить блюдо</t>
+                <t id="remove_dish">[RMB] Убрать блюдо</t>
+                <t id="reset_price"><img src="icon/Pad_Y"/> Цена по умолчанию</t>
+                <t id="change_price"><img src="icon/Pad_DpadLeft"/>/<img src="icon/Pad_DpadRight"/> Изменить цену</t>
+                <t id="choose_alcohol">Хотите приготовить: <b>::item::?</b></t>
+                <t id="need_unit">Назначьте варщика для приготовления алкоголя.</t>
+                <t id="replace_alcohol">Было: <b>::previous::</b>. Станет: <b>::next::</b>. Продолжить?
+ <bad>Текущие товары в наличии будут потеряны.</bad></t>
+                <t id="promo_updated">Товары по акции изменены (меню можно обновить).</t>
+                <t id="promo_updated_notif">Товары по акции изменены.</t>
+                <t id="food_production">::name:: может приготовить не более ::value:: порций каждого блюда за смену. Все блюда готовятся по заказу. Приготовление зависит от шанса продаж.</t>
+                <t id="reset_default">К цене по умолчанию</t>
+                <g id="item_price">
+                    <t id="low">Рейтинг цены: <good>сходная</good></t>
+                    <t id="normal">Рейтинг цены: умеренная</t>
+                    <t id="high">Рейтинг цены: <warn>непомерная</warn></t>
+                    <t id="desc">Чем выше цена относительно значения по умолчанию, тем ниже шанс продаж. Элитные клиенты охотнее соглашаются с высокими ценами.</t>
+                    <t id="default_price">Базовая цена: <font color="#ffffff">::value::</font></t>
+                    <t id="actual">Текущая цена продажи: ::value::</t>
+                    <t id="ingredients_price">Стоимость ингредиентов: <bad>-::value::</bad></t>
+                    <t id="profit">Выгода: ::value::</t>
+                </g>
+                <t id="item_cost">Стоимость ингредиентов
+
+ Эта сумма вычитается из стоимости продажи при каждой совершенной сделке.</t>
+                <t id="item_cost_alcohol">Стоимость ингредиентов
+
+ Эта сумма вычитается из стоимости продажи при производстве каждого товара. Учтите, производство в больших объемах может быть затратным.</t>
+                <t id="aging_not_sold">Алкоголь в запасах нельзя продавать.</t>
+                <t id="tip_filling">Наполнение бочки
+
+ Если варщик назначен и бочка еще не наполнена, алкоголь будет производиться во время каждой смены. Производство алкоголя требует ингредиентов и стоит денег.</t>
+                <t id="tip_aging">Выдерживание в бочке
+
+ При каждом заполнении этой шкалы значение выдержки <img src="icon/QualityStar"/> алкоголя в бочке повышается на одно очко, что делает алкоголь ценнее.
+
+ Можно производить алкоголь и в бочке, где идет выдержка, но продуктивность ухудшается с каждой <img src="icon/QualityStar"/>, в зависимости от типа алкоголя.
+
+ Максимум для алкогольных напитков: 2 <img src="icon/QualityStar"/>.</t>
+                <t id="tip_state_selection">Когда бочка выставлена на продажу, варщик, назначенный с ней работать, производит алкоголь, чтобы компенсировать проданное количество. Когда бочка убрана в запасы, она наполняется быстрее, а затем в ней может быть выдержан алкоголь.
+
+ С каждым очком выдержки <img src="icon/QualityStar"/> повышается цена продажи алкоголя. Выдержка не расходует ресурсы.</t>
+                <t id="upgrade_tavern">Улучшите таверну, чтобы назначить еще одного повара.</t>
+                <t id="buy_barrel">Улучшите таверну, чтобы назначить еще одного варщика.</t>
+                <t id="upgrade_cave">Улучшите таверну, чтобы купить еще бочки.</t>
+                <t id="upgrade_barrels">Спуститесь в погреб, чтобы улучшить одну из бочек.</t>
+                <t id="alcohol_speed">Скорость производства:</t>
+                <g id="alcoholTypes">
+                    <t id="slow">Медленное</t>
+                    <t id="normal">Обычный</t>
+                    <t id="fast">Быстрое</t>
+                </g>
+                <t id="sale_chance">Шанс продаж:</t>
+                <g id="saleFactor">
+                    <t id="price">Цена</t>
+                    <t id="clients">Предпочтения посетителей</t>
+                    <t id="confort">Комфорт</t>
+                    <t id="satisfaction">Удовлетворение</t>
+                    <t id="complexity">Штраф за сложность</t>
+                    <t id="effect">События</t>
+                    <t id="sale_bonus_areas">Бонусные области</t>
+                </g>
+                <t id="attracted_region">Привлеченный регион:</t>
+                <t id="attracted_factions">Привлеченные фракции:</t>
+                <t id="attracted_clientele">Привлеченные клиенты:</t>
+                <g id="supplier">
+                    <t id="title">Поставщик</t>
+                    <t id="desc">Автоматически поставляет ингредиенты для готовки и варки.</t>
+                    <t id="promotion_title">Акции</t>
+                    <t id="promotion_desc">Каждую неделю товары (всего ::nbPromo::) выставляются на продажу с особой скидкой. Готовка по рецептам с такими ингредиентами станет дешевле.</t>
+                    <t id="shortage_title">Дефицит</t>
+                    <t id="shortage_desc">Каждую неделю ощущается дефицит товаров (от ::min:: до ::max::). Готовка по рецептам с такими ингредиентами станет дороже.</t>
+                </g>
+                <t id="warning_cant_produce_food"><bad>Чтобы приготовить это блюдо, в меню требуется ::toProduce::.</bad></t>
+                <t id="warning_cant_produce_drink"><bad>Чтобы приготовить этот напиток, в меню требуется ::toProduce::.</bad></t>
+                <t id="used_by">Ингредиент для:</t>
+                <t id="setBarrelInCellar">Прекратить продажу</t>
+                <t id="setBarrelForSale">Начать продажу</t>
+                <t id="speciality_one">Можно подавать только одно фирменное блюдо</t>
+            </g>
+            <g id="command">
+                <t id="title">Покупка снаряжения</t>
+                <t id="equipment">Тип снаряжения</t>
+                <t id="confirm">Хотите заказать: ::names:: за ::cost:: <img src="icon/TavernSilver"/>?</t>
+                <t id="command">Купить за ::value:: <img src="icon/TavernSilver"/></t>
+                <t id="upgrade_action">Улучшить за ::value:: <img src="icon/TavernSilver"/></t>
+                <t id="sell">Продать за ::value:: <img src="icon/TavernSilver"/></t>
+                <t id="nextUnlock">Следующее снаряжение:</t>
+                <t id="nextUnlockValue">Требуется ::value:: <img src="icon/TavernPrestige"/></t>
+                <t id="upgrade">Хотите улучшить: <img src="item/::icon::"/> ::name:: за ::cost:: <img src="icon/TavernSilver"/>?</t>
+                <t id="warning_sell">Точно хотите продать все ваши столы?</t>
+                <t id="qtyInTavern">Размещено в таверне: <b>::value::</b></t>
+                <t id="qtyInCave">Размещенные в погребе бочки: <b>::value::</b></t>
+                <t id="barrelCapacity">Погреб вмещает до <b>::value::</b> бочек.</t>
+                <t id="itemInInventory">Снаряжение в инвентаре: <b>::value::</b></t>
+                <t id="upgradeCost">Стоимость улучшения: ::value:: <img src="icon/TavernSilver"/></t>
+            </g>
+            <g id="ranking">
+                <t id="tavernRanking">Рейтинг таверны</t>
+                <t id="customersFactions">Посетители</t>
+                <t id="recipe">Украденный рецепт</t>
+                <t id="spying">::name:: вернется после ::count:: смен.</t>
+                <t id="found_recipe">::count::/::total:: рецептов украдено</t>
+                <t id="send_spy">[LMB] Отправить лазутчика</t>
+                <t id="spy_title">Внедрение</t>
+                <t id="cancel_mission">Отмена задания</t>
+                <g id="spy">
+                    <t id="return_fail">::name:: возвращается с пустыми руками после задания по внедрению.</t>
+                    <t id="return_success">::name:: добивается успеха во время задания по внедрению. (::reward::)</t>
+                    <t id="confirm">Отправить шпиона: ::name::? Задание займет до ::days:: смен.</t>
+                    <t id="cancel_confirm">Хотите отменить это задание по внедрению?</t>
+                    <t id="update_confirm">Хотите изменить продолжительность вашего задания?</t>
+                    <t id="warning_job">Этот работник не будет выполнять свою работу (::job::) во время задания.</t>
+                </g>
+                <t id="spy_rest_time">Нет на месте в течение ::count:: смен</t>
+                <t id="spy_possible_reward">Потенциальные награды:</t>
+                <t id="spy_rival_malus">Потери конкурента: ::bonus:: (<bad>::value::</bad>)</t>
+                <t id="spy_secret_recipe"><good>Секретный рецепт</good></t>
+                <t id="spy_client_reward">До <img src="icon/TavernFactions"/><good>::value::</good> посетителей</t>
+                <t id="spy_chances_details">Престиж выбранной таверны: ::prestige::
+ Уровень профессии: ::job::
+ Число смен: ::days::</t>
+                <t id="no_unit">Боец не назначен</t>
+                <t id="not_available">Повысьте престиж <img src="icon/TavernPrestige"/> до ::value::, чтобы открыть это окно.</t>
+            </g>
+            <g id="staff">
+                <t id="employees">Работники</t>
+                <t id="unassigned">Не назначено</t>
+                <t id="recruit">Нанять гражданских</t>
+                <t id="nextRecruits">Новые желающие работать после <b>::remainingDays::</b> смен</t>
+                <t id="fireUnit">Уволить (<img src="icon/TavernSilver"/> -::cost::)</t>
+                <t id="transfer">Переместить</t>
+                <t id="unit_transfer_no_more_unit">Вы не можете переместить своего последнего спутника.</t>
+                <t id="unit_transfer_warning_transport">Внимание: если вы переместите этого бойца, у отряда будет недостаточно грузоподъемности для движения.</t>
+                <t id="transferFromTroop">Перемещение спутников</t>
+                <t id="transferToTroop">Переместить в отряд</t>
+                <t id="recruitConfirm">Хотите завербовать работника: <b>::unitName::</b>?</t>
+                <t id="transferConfirm">Хотите переместить в таверну работника: <b>::unitName::</b>?</t>
+                <t id="fireConfirm">Хотите уволить работника: <b>::unitName::</b> (<img src="icon/TavernSilver"/> -::cost::)?
+ <bad>Это решение нельзя отменить.</bad></t>
+                <t id="transferBackConfirm">Хотите переместить в отряд работника: <b>::unitName::</b>?</t>
+                <t id="recruitDelay">Спутник прибудет к следующей смене.</t>
+                <t id="needInkeeper">Таверна не может работать без управляющего.</t>
+                <t id="assign">Назначить</t>
+                <t id="unassign">Снять</t>
+                <t id="assign_barrel">Назначить к бочке</t>
+                <t id="assign_furnace">Назначить к печи</t>
+                <t id="unit_cook_no_recipe">Этому сотруднику для работы требуется рецепт.</t>
+                <t id="salary">Жалованье: <b>::value::</b><img src="icon/TavernSilver"/></t>
+                <t id="salary_notWorking">Жалованье (не назначенный боец): <b>::value::</b><img src="icon/TavernSilver"/></t>
+                <t id="salary_animal">Еда: <b>::value::</b><img src="icon/TavernSilver"/></t>
+                <g id="resume">
+                    <t id="nbEmployees">Число работников: ::nb::</t>
+                    <t id="nbTransfers">(::nb:: перемещаются)</t>
+                    <t id="salaries">Жалование: ::value:: <img src="icon/TavernSilver"/></t>
+                </g>
+                <t id="employees_cant_work">Как минимум один сотрудник не может работать.</t>
+            </g>
+            <g id="management">
+                <t id="title">Управление таверной</t>
+                <t id="clientele">Посетители</t>
+                <t id="view">Обзор</t>
+                <t id="evolution">Развитие</t>
+                <t id="faction_col_name">Фракция</t>
+                <t id="count_col_name">Принятые посетители</t>
+                <t id="percent_col_name">Отношение</t>
+                <t id="faction_requirement">Соблюдайте требования фракций, чтобы привлечь их в свою таверну.</t>
+                <t id="apparition_factor">Фактор посещения:</t>
+                <t id="unknown">???</t>
+                <g id="factors">
+                    <t id="menu">Меню: не менее ::value:: предпочитаемых блюд и напитков</t>
+                    <t id="decoration">Украшения: не менее ::value:: предпочитаемых элементов</t>
+                    <t id="music">Музыка:</t>
+                    <t id="clientele">Посетители:</t>
+                </g>
+                <g id="opinion">
+                    <t id="positive">Предпочитается</t>
+                    <t id="neutral">Безразлично</t>
+                    <t id="negative">Не предпочитается</t>
+                </g>
+                <t id="statistics_title">Статистика</t>
+                <t id="client_count">Посетители (за последнюю смену)</t>
+                <t id="faction_count">Фракции (за последнюю смену)</t>
+                <t id="employee_count">Работники</t>
+                <t id="furniture_count">Мебель</t>
+                <t id="secret_recipe">Полученные секретные рецепты</t>
+                <t id="identity_title">Стиль</t>
+                <t id="name">Название</t>
+                <t id="color">Цвет</t>
+                <t id="music">Музыка</t>
+                <t id="treasury_title">Средства</t>
+                <t id="withdraw_money">Забрать ::amount:: <img src="/icon/TavernSilver"/></t>
+                <t id="deposit_money">Восполнить</t>
+                <t id="liquidation">Закрыть таверну</t>
+                <t id="liquidation_confirm">Хотите закрыть таверну? 
+
+ <bad>Внимание: это действие удалит весь прогресс, достигнутый этой таверной. Вы потеряете снаряжение, престиж и нанятых гражданских. Спутники, назначенные работать в таверне, вернутся в отряд. Чтобы заново начать развивать таверну, отправляйтесь в Тилтрен.</bad></t>
+                <t id="deposit_warning">Средства таверны можно восполнить только при отрицательном балансе.</t>
+                <t id="deposit_gold_warning">У вас недостаточно крон, чтобы выкупить таверну.</t>
+                <t id="conversion_fee">Сбор за перевод:</t>
+                <t id="see_resume">Показать отчет за смену</t>
+                <t id="not_available">Отдохните, чтобы завершить свою первую смену и открыть это окно.</t>
+            </g>
+            <g id="events">
+                <t id="unknown_consequences">Кто знает, какие последствия может иметь этот выбор?</t>
+                <t id="no_events">Сегодня не произошло ничего особенного.</t>
+            </g>
+        </g>
+    </g>
+    <g id="debrief">
+        <t id="resources_won">Получено</t>
+        <t id="fighters">Бойцы</t>
+        <t id="ignore_loot">Вы хотите выкинуть полученные в бою предметы?</t>
+        <t id="repair_all">Починить поврежденную броню и щиты. Будет использовано: ::item::</t>
+        <t id="cure_all"></t>
+        <t id="msg_release_hostage">Вы освободили: <b><good>::name::</good></b>!</t>
+        <t id="msg_flee_extreme">Покидая поле боя, вы нашли труп. Это <b><bad>::name::</bad></b>.</t>
+        <t id="msg_hostage_taken">Поимка при попытке бегства: <bad><b>::name::</b>!</bad></t>
+        <t id="merchants_saved">Торговцы благодарны вам за помощь.
+Вы получаете: <gold>::gold::</gold>.</t>
+    </g>
+    <g id="notify">
+        <t id="newJob">Новая профессия: ::name::.</t>
+        <t id="gain">Вы получили: ::gain::.</t>
+        <t id="perfect">Превосходно!</t>
+        <t id="path_title_unlock">Вы получили титул «<default>::name::</default>».</t>
+        <t id="path_reach_level">Вы достигаете:</t>
+        <t id="path_gain">Вы получаете:</t>
+        <t id="path_bonus"><small>Бонус: <font color="#9c988a">::bonus::</font></small></t>
+        <t id="barberkit_prisoner_trust">Вы заботитесь о своем спутнике, и ::name:: начинает вам больше доверять.</t>
+        <t id="heal_prisoner_trust">Вы исцеляете пленного, и ::name:: начинает вам больше доверять.</t>
+        <t id="toothpaste_prisoner_trust">::name:: чувствует себя свежее. Это укрепляет доверие между вами.</t>
+    </g>
+    <g id="prisoners_trust">
+        <t id="barberkit_prisoner_trust">Побрившись, пленник теперь меньше боится отряда.</t>
+        <t id="heal_prisoner_trust">Рад отряду, который обрабатывает его раны.</t>
+        <t id="toothpaste_prisoner_trust">Приятно найти зубную пасту.</t>
+        <t id="toolprod_prisoner_trust">Работает, чтобы не думать о своем положении.</t>
+        <t id="pillory_prisoner_trust">Скалится на спутников и дергает свои цепи.</t>
+        <t id="ally_prisoner_trust">Несмотря на свое положение, рад компании спутников.</t>
+        <t id="starvation_prisoner_trust">Умирает от голода.</t>
+        <t id="well_fed_prisoner_trust">Сытость.</t>
+        <t id="belt_acc_prisoner_trust">Надет красивый ремень.</t>
+        <t id="livestock_prisoner_trust">Недоволен тем, что его охраняют животные. Разве он скот?</t>
+        <t id="whip_prisoner_trust">Ненавидит отряд.</t>
+        <t id="barberkit_prisoner_trust_W">Пройдя косметические процедуры, пленница теперь меньше боится отряда.</t>
+        <t id="heal_prisoner_trust_W">Рада отряду, который обрабатывает ее раны.</t>
+        <t id="toolprod_prisoner_trust_W">Работает, чтобы не думать о своем положении.</t>
+        <t id="pillory_prisoner_trust_W">Скалится на спутников и дергает свои цепи.</t>
+        <t id="ally_prisoner_trust_W">Несмотря на все, рада присутствию спутников.</t>
+        <t id="starvation_prisoner_trust_W">Умирает от голода.</t>
+        <t id="well_fed_prisoner_trust_W">Сытость.</t>
+        <t id="belt_acc_prisoner_trust_W">Надет красивый ремень.</t>
+        <t id="livestock_prisoner_trust_W">Недовольна тем, что ее охраняют животные. Разве она скот?</t>
+        <t id="whip_prisoner_trust_W">Ненавидит отряд.</t>
+    </g>
+    <g id="npc_recruit_talk">
+        <t _id="sivouspayezbienjeparsavecvous">Коли платите неплохо, я присоединюсь к вам!</t>
+        <t _id="laventuremappelle">Приключения зовут!</t>
+        <t _id="jaimeraisvoirdupaysparcourirlemonde">Я с радостью буду путешествовать по миру и посещать новые места.</t>
+        <t _id="moyennantunesoldebiengrassejesuisvotredisposition">Я к вашим услугам — если платите щедро.</t>
+        <t _id="jaidjgagnplusieursbagarreslatavernevouspouvezavoirconfianceenmoi">На моем счету немало побед в таверне. Положитесь на меня.</t>
+        <t _id="sijemengageavecvousjeneseraiplusunpoidspourmafamille">Если присоединюсь к вам, больше не буду обузой для семьи.</t>
+        <t _id="jevoudraisparcourirlemondeavantdemtablir">Хочу повидать мир прежде, чем остепениться.</t>
+        <t _id="jenaipeurderienetjapprendsvitevousnepouvezesprermeilleurcompagnon">Ничего не боюсь и все схватываю на лету. Спутника лучше вам не найти.</t>
+        <t _id="jefaisaispartieduneautrecompagniedemercenairesmaisunmatinilssontpartissansmoi">Как-то утром мой предыдущий отряд наемников снялся с лагеря и ушел без меня...</t>
+        <t _id="tantquejaileventrepleinjesuisunexcellentcompagnon">Главное, кормите меня нормально, и я буду хорошим спутником.</t>
+    </g>
+    <g id="npc_recruit_talk_localized">
+        <g id="Alazar">
+            <g id="Generic">
+                <t _id="lesbrigandsmonttoutprisjenaiplusrienperdre">Бандиты забрали у меня все. Мне нечего больше терять.</t>
+                <t _id="jeprfreencoremefairemercenairequemendiersurlaplacedumarch">Лучше стать наемником, чем попрошайничать на рынке.</t>
+                <t _id="cesquerellesdevoisinagessontdevenuesinsupportablesemmenezmoiloindici">С меня хватит моих ужасных соседей. Заберите меня отсюда! И подальше!</t>
+            </g>
+            <g id="Man">
+                <t _id="nevousfiezpasmeshaillonsavantdtrerfugijtaissoldat">Не смотрите на тряпье. Это сейчас я беженец, но я был солдатом.</t>
+            </g>
+            <g id="Woman">
+                <t _id="nevousfiezpasmeshaillonsavantdtrerfugiejtaissoldate">Не смотрите на тряпье. Это сейчас я беженка, но я была солдатом.</t>
+            </g>
+        </g>
+        <g id="Edoran">
+            <g id="Generic">
+                <t _id="cenestpasparcequelalgionnapasvouludemoiquejenevauxrien">Пусть Легион и не готов меня нанять, это не значит, что я не стою своего жалованья.</t>
+                <t _id="cesguerresdenoblesnemintressentpascequejeveuxcestlaventure">Меня не интересуют войны дворян. Мне хочется приключений.</t>
+                <t _id="jevoudraisvoirdupaysavantderejoindreuneabbeye">Хочется попутешествовать прежде, чем я уйду в аббатство.</t>
+            </g>
+            <g id="Man">
+                <t _id="jaitoujourssuquelaviedepaysanntaitpaspourmoi">Всегда знал, что фермерская жизнь — не про меня.</t>
+            </g>
+            <g id="Woman">
+                <t _id="jaitoujourssuquelaviedepaysannentaitpaspourmoi">Всегда знала, что фермерская жизнь — не про меня.</t>
+            </g>
+        </g>
+        <g id="Gosenberg">
+            <g id="Generic">
+                <t _id="laviegosenbergestbientroptranquillepourmoi">Жизнь в Гозенберге для меня слишком размеренна.</t>
+                <t _id="autrefoismafamillesigeaitauconseildungoceaujourdhuijedoisvendremesbraspourpongernosdettes">Когда-то моя семья входила в Совет Посредников, а сейчас мне приходится продавать свои услуги, возвращая долги.</t>
+                <t _id="messervicesnesontpasgratuitsmaisvousenserezsatisfaits">Мои услуги небесплатны, но будьте уверены, вас удовлетворит результат.</t>
+                <t _id="jaibesoindeconstituerunedotepourmonfils">Мне нужно накопить приданое сыну.</t>
+            </g>
+            <g id="Man">
+                <t _id="rejoindreunecompagniedemercenairesmefaitenviedepuistoutpetit">С детства мечтал стать наемником.</t>
+            </g>
+            <g id="Woman">
+                <t _id="rejoindreunecompagniedemercenairesmefaitenviedepuistoutepetite">С детства мечтала стать наемницей.</t>
+            </g>
+        </g>
+        <g id="Harag">
+            <g id="Generic">
+                <t _id="lesteulsmontprditungrandavenircommemercenaire">Тулии предрекли, что я пойду по пути наемника и не прогадаю.</t>
+                <t _id="tuerdesanimauxcestbonpourlestraqueursjaibesoindaffronterdesadversairesmamesure">Убивать зверей — это к Следопытам! Мне нужны противники, которые умеют сражаться!</t>
+                <t _id="jenerclamerienquunsalairehonnteetunevieloindesmarais">Мне нужно только честное жалованье и жизнь вдали от болот.</t>
+                <t _id="sivouspromettezdememmenervoirlestombeauxdesanciensjeviensavecvous">Обещайте, что приведете меня в гробницы Древних, и я к вам присоединюсь.</t>
+                <t _id="dormirlabelletoilenemeposepasdeproblme">Мне не привыкать спать под открытым небом.</t>
+            </g>
+        </g>
+    </g>
+    <g id="npc_talk_prison">
+        <t _id="librezmoicestpromisjenevoleraiplus">Освободите меня! Клянусь, я больше никогда не буду воровать!</t>
+        <t _id="jeneveuxpasmouririci">Я не хочу здесь умирать...</t>
+        <t _id="tantquejepourraimangermafinjevoussuivraipartoutovousirez">Вы, главное, кормите вовремя, и я буду с вами, куда бы вы ни пошли!</t>
+        <t _id="cestuneerreurjudicairejexigeunjugementparcombat">Это не правосудие! Я требую испытания боем!</t>
+        <t _id="payezmalibertetjeseraivtre">Заплатите за мою свободу, и я к вашим услугам.</t>
+    </g>
+    <g id="animal_recruit_desc">
+        <t _id="loeilvifetlepoilsoyeuxuncompagnondetouslesjours">Острый глаз, мягкая шерсть — это идеальный спутник по жизни.</t>
+        <t _id="ilsemblevoussupplierdelemmeneravecvous">Это создание, кажется, умоляет вас взять его с собой.</t>
+        <t _id="patientlanimalmchedesfeuillesdechou">Это животное невозмутимо жует капусту.</t>
+    </g>
+    <g id="animal_prison_desc">
+        <t _id="commentatilfaitpourseretrouverl">Как оно тут оказалось?</t>
+    </g>
+    <g id="animal_prison_desc_mine">
+        <t _id="nameestcertainquevoustesrevenuslechercher">::name:: считает, что вы вернулись за ним.</t>
+        <t _id="voussavezquenamevousareconnusillveversvousdesyeuxpleinsdespoir">Вы уверены, что ::name:: узнает вас. Существо смотрит на вас с надеждой.</t>
+    </g>
+    <g id="animal_prison_desc_mine_extreme">
+        <t _id="votretrahisonalaissnametotalementapathique">Из-за вашего предательства ::name:: никак на вас не реагирует.</t>
+        <t _id="nameadjacceptsonfunestedestin">::name:: решает смириться со своей участью.</t>
+    </g>
+    <g id="npc_talk_prison_mine">
+        <t _id="voustesrevenusmelibrerohmerci">Вы вернулись освободить меня? О, благодарю вас!</t>
+        <t _id="vitelibrezmoiilmetardederetrouverlesautres">Скорее, освободите меня! Не могу дождаться встречи с остальными!</t>
+        <t _id="enfinvoussavezdepuiscombiendetempsjecroupisici">Наконец-то! Вы знаете, сколько мне пришлось гнить в этом месте?</t>
+    </g>
+    <g id="fight">
+        <t id="defender_default_desc">Эта группа контролирует эту область и угрожает вам.</t>
+    </g>
+    <g id="songs">
+        <t id="none">Нет</t>
+        <t id="jean_bon_name">Пухлячок</t>
+    </g>
+    <g id="steal">
+        <t id="wanted_level">Уровень розыска:</t>
+        <t id="wanted_level_desc">Чем выше ваш <bad>уровень розыска</bad>, тем чаще будут ходить патрули Стражи.</t>
+        <t id="reason_steal">Воровство в области: ::where::</t>
+        <t id="looting_merchants">Налет на торговцев</t>
+        <t id="first_wanted">После этой кражи <bad>Стража</bad> назначит за вас награду. Уверены, что хотите ее совершить?</t>
+        <t id="sell_stolen">При продаже украденных предметов повысится ваш <bad>уровень розыска</bad> у Стражи. Точно хотите продолжить?</t>
+        <t id="reason_sell_stolen">Перепродажа краденого</t>
+        <t id="cannot_because_wanted">Слухи о ваших преступлениях распространились повсюду.
+ Вы не сможете что-либо украсть, не привлекая внимание.</t>
+        <t id="sell_stolen_wanted">Сомнительное происхождение ваших предметов вызывает подозрения. Вы не сможете продавать их, пока вы <bad>в розыске</bad>.</t>
+        <t id="sell_stolen_fail">
+		Сомнительное происхождение ваших предметов вызывает подозрения. Вы не смогли продать их.
+		Вы теперь <bad>в розыске</bad>. Вам стоит покинуть это место как можно скорее!
+        </t>
+        <t id="unit_busted">
+		<b>::name::</b> попадается с поличным при воровстве!
+		Спутника выдали Страже. Теперь его пристанище — <b>::where::</b>.
+		Вы теперь <bad>в розыске</bad>! Вам стоит покинуть это место как можно скорее!
+        </t>
+        <t id="unit_busted_no_prison">
+		<b>::name::</b> попадается на глаза при попытке воровства!
+		Вы теперь <bad>в розыске</bad>! Вам стоит покинуть это место как можно скорее!
+        </t>
+        <t id="unit_accused"><b>::name::</b> выдается Страже. Теперь пристанище этого спутника — <b>::where::</b>.</t>
+        <t id="unit_accused_extreme"><b>::name::</b> выдается Страже, и теперь его постоянное прибежище — <b>::where::</b>.</t>
+        <t id="unit_accused_heretic"><b>::name::</b> выдается Инквизиции. Теперь пристанище этого спутника — <b>::where::</b>.</t>
+        <t id="unit_surrender"><b>::name::</b> сдается Страже и теперь его прибежище — <b>::where::</b></t>
+        <t id="unit_surrender_extreme"><b>::name::</b> сдается Страже, и теперь его постоянное прибежище — <b>::where::</b>.</t>
+    </g>
+    <g id="customize_ui">
+        <t id="customization">Персонализация</t>
+        <t id="poney_appearance">Внешность пони</t>
+        <t id="name">Имя</t>
+        <t id="appearance">Внешность</t>
+        <t id="skills">Навыки</t>
+        <t id="traits">Черты</t>
+        <t id="skill">Вспомогательное</t>
+        <t id="start_weapon">Начальное оружие</t>
+        <t id="sex">Мужчина|Женщина</t>
+        <t id="face">Лицо</t>
+        <t id="skin">Цвет кожи</t>
+        <t id="hairs">Прическа</t>
+        <t id="hairs_color">Цвет волос</t>
+        <t id="hairiness">Растительность на лице</t>
+        <t id="clothes_color">Цвет одежды</t>
+        <t id="tattoos">Татуировка</t>
+        <t id="warpaint">Боевая раскраска</t>
+        <t id="pattern_color">Цвет узора</t>
+        <t id="none">Нет</t>
+        <t id="random">Случайно</t>
+        <t id="add_positive_trait">Добавить <good>положительную</good> черту</t>
+        <t id="random_positive_trait">Случайная <good>положительная</good> черта</t>
+        <t id="random_negative_trait">Случайная <bad>отрицательная</bad> черта</t>
+    </g>
+    <g id="title">
+        <t id="new_game">Новая игра</t>
+        <t id="continue_game">Продолжить</t>
+        <t id="new_game_multi">Новая совместная игра</t>
+        <t id="multiplayer">Сетевая игра</t>
+        <t id="load_game">Загрузка</t>
+        <t id="dlcs">Дополнительный контент</t>
+        <t id="options">Настройки</t>
+        <t id="credits">Разработчики</t>
+        <t id="exit">Выйти</t>
+        <t id="game_over">Игра окончена</t>
+        <t id="local_coop">Локальная сетевая игра</t>
+        <t id="join_with_code">Присоединиться по коду</t>
+        <t id="create_local_coop">Создать локальную игру</t>
+        <t id="no_lobbies_found">Сеанс игры не найден</t>
+        <t id="join_local_coop">Локальная игра</t>
+        <t id="join_internet_coop">Сетевая игра</t>
+        <t id="option_lang">Язык</t>
+        <t id="option_sound_vol">Звук</t>
+        <t id="option_ambient_vol">Окружение</t>
+        <t id="option_music_vol">Музыка</t>
+        <t id="option_voice_vol">Голос</t>
+        <t id="option_interface_vol">Интерфейс</t>
+        <t id="option_global_vol">Общая громкость</t>
+        <t id="featureupvote">Сообщения об ошибках</t>
+        <t id="giveFeedback">Обратная связь и предложения</t>
+        <t id="discord">Заходите к нам в Discord</t>
+        <t id="connectedAs">Подключен как: ::name::</t>
+        <t id="invalid_files">Некоторые файлы игры установлены неправильно и могут привести к ошибкам.</t>
+        <t id="invalid_files_repair_files">Проверьте целостность файлов или переустановите игру.</t>
+        <g id="graphics">
+            <t id="general">Общее</t>
+            <t id="monitors">Мониторы</t>
+            <t id="brightness">Яркость</t>
+            <t id="brightness_tuto">Настройки яркости</t>
+            <t id="displayMode">Режим отображения</t>
+            <t id="windowed">Оконный</t>
+            <t id="fullscreen">Полный экран</t>
+            <t id="borderless">В окне без границ</t>
+            <t id="terrain">Местность</t>
+            <t id="vegetation">Растительность</t>
+            <t id="props">Описание мира</t>
+            <t id="shadows">Тени</t>
+            <t id="ssr">Отражения</t>
+            <t id="sao">Объемный свет</t>
+            <t id="resolution">Разрешение</t>
+            <t id="framerate">Частота обновления</t>
+            <t id="antialiasing">Сглаживание</t>
+            <t id="volumetric">Объемные эффекты</t>
+            <t id="meteo">Погодные эффекты</t>
+            <t id="population">Бойцы в мире</t>
+            <t id="vsync">Вертикальная синхронизация</t>
+            <t id="disabled">Откл.</t>
+            <t id="enabled">Вкл.</t>
+            <t id="low">Низко</t>
+            <t id="medium">Средне</t>
+            <t id="high">Высоко</t>
+            <t id="default_params">По умолчанию</t>
+            <t id="custom">Свои настройки</t>
+        </g>
+        <g id="options_category">
+            <t id="general">Общее</t>
+            <t id="graphics">Графика</t>
+            <t id="controls">Управление</t>
+            <t id="pad">Контроллер</t>
+            <t id="audio">Звук</t>
+            <t id="accessibility">Доступность</t>
+        </g>
+        <g id="gameplay">
+            <t id="tuto">Показывать обучение</t>
+            <t id="reset_tuto">Сбросить обучение</t>
+            <t id="scale_text">Размер текста</t>
+            <t id="escape_settings">[KEY_Settings] всегда открывает меню настроек</t>
+            <t id="run_with_mouse">Бег с помощью мыши (двойное нажатие)</t>
+            <t id="screenshakes">Тряска камеры</t>
+            <t id="blood">Брызги крови и добивания</t>
+            <t id="camera_borderscroll">Включить прокрутку у края экрана</t>
+            <t id="anim_speed">Скорость анимации</t>
+            <t id="show_enemy_turn">Отображать порядок ходов врага в бою</t>
+            <t id="show_hazard_outline">Отображать контуры опасных зон в бою</t>
+            <t id="edit_skillbar">Разрешить изменение порядка навыков в бою</t>
+            <t id="show_companions_list">Показать список спутников во время боя</t>
+            <t id="always">Всегда</t>
+            <t id="oncePerGame">Раз за сохранение</t>
+            <t id="once">Только раз</t>
+            <t id="never">Никогда</t>
+        </g>
+        <g id="gamepad">
+            <t id="sensibilityMove">Чувствительность указателя</t>
+            <t id="sensibilityMoveOver">Чувствительность наведения</t>
+            <t id="sensibilityMoveBattle">Чувствительность в бою</t>
+            <t id="sensibilityCamX">Чувствительность камеры по горизонтали</t>
+            <t id="sensibilityCamY">Чувствительность камеры по вертикали</t>
+            <t id="DeadZone">Мертвая зона</t>
+            <t id="rumble">Вибрация</t>
+        </g>
+        <g id="options_categories">
+            <t id="Worldmap">Мир</t>
+            <t id="Battle">Бой</t>
+            <t id="Advanced">Продвинутые</t>
+            <t id="Camp">Лагерь</t>
+            <t id="Coop">Совместная игра</t>
+            <t id="Outlines">Подсвечивать элементы</t>
+        </g>
+        <g id="inputs">
+            <t id="reset">Сбросить настройки управления</t>
+            <g id="keys">
+                <t id="MouseLeft">ЛКМ</t>
+                <t id="MouseRight">ПКМ</t>
+                <t id="MouseMiddle">СКМ</t>
+                <t id="Mouse3">Мышь назад</t>
+                <t id="Mouse4">Мышь вперед</t>
+            </g>
+        </g>
+        <g id="accessibility">
+            <t id="ui_scaling">Масштабирование интерфейса</t>
+            <t id="colorblind_mode">Режим коррекции для дальтоников</t>
+            <t id="colorblind_amount">Частота коррекции для дальтоников</t>
+            <t id="magnifier_amount">Сила увеличительного стекла</t>
+            <t id="restore_button">Сброс</t>
+            <t id="outline_scale">Регулировать толщину контура</t>
+            <t id="outline_over_color">Изменять цвет контура при наведении</t>
+            <t id="outline_highlight_color">Изменять цвет контура при подсвечивании</t>
+            <t id="easy_navigation">Упрощенное управление кораблем</t>
+            <g id="colorblind">
+                <t _id="protanopie">Протанопия</t>
+                <t _id="deutranopie">Дейтеранопия</t>
+                <t _id="tritanopie">Тританопия</t>
+            </g>
+        </g>
+        <t id="confirm_exit">Хотите выйти из игры?</t>
+        <t id="loading">Загрузка...</t>
+        <t id="load_game_title">Загрузить сохраненную игру</t>
+        <t id="pause_title">Пауза</t>
+        <t id="pause_exit">Вернуться в меню</t>
+        <t id="pause_save">Сохранение</t>
+        <t id="pause_save_override">Перезаписать</t>
+        <t id="pause_save_create_new">Создать новое сохранение</t>
+        <t id="pause_save_confirm">Игра сохранена.</t>
+        <t id="pause_exit_confirm">
+		Вы хотите вернуться в главное меню?
+		<bad>Весь несохраненный прогресс будет утерян.</bad>
+        </t>
+        <t id="pause_load_confirm">
+		Вы хотите загрузить это сохранение?
+		<bad>Весь прогресс после него будет утерян.</bad>
+        </t>
+        <t id="pause_load_battlebegin">Перезапустить бой</t>
+        <t id="pause_load_lastvillage">Вернуться в последнюю деревню</t>
+        <t id="pause_load_ruinsenter">Заново зайти в гробницу</t>
+        <t id="pause_continue">Продолжить</t>
+        <t id="ask_save_name">Название сохранения?</t>
+        <t id="playTime">Время игры: ::time::</t>
+        <t id="hour_suffix">ч.</t>
+        <t id="delete_save_confirm">
+		Удалить сохранение <b>::name::</b>?
+		<bad>Все данные будут удалены, и вы не сможете их вернуть!</bad>
+        </t>
+        <t id="save_confirm_override">
+		Перезаписать сохранение <b>::name::</b>?
+		<bad>Весь прогресс будет утерян!</bad>
+        </t>
+        <t id="save_file_corrupted">Файл поврежден и не может быть прочитан.
+<small>::file::</small></t>
+        <t id="early_access_tag">Ранний доступ</t>
+    </g>
+    <g id="dlcs">
+        <t id="list">Дополнительный контент:</t>
+        <t id="multi">Некоторые игроки не приобрели следующий дополнительный контент: ::names::</t>
+        <t id="unlock">Отпереть: ::name::</t>
+        <t id="buyNow">Купить</t>
+        <t id="owned">В наличии</t>
+        <t id="goShop">Подробнее</t>
+        <t id="belerion">Открыть Белерион</t>
+        <t id="tavern">Открыть таверну</t>
+    </g>
+    <g id="bounty_adjectives">
+        <t _id="lgorgeur">Головорез</t>
+        <t _id="lcarteleur">Костолом</t>
+        <t _id="leviolent">Свирепый</t>
+        <t _id="lepleutre">Трус</t>
+        <t _id="lerebelle">Бунтарь</t>
+        <t _id="leflau">Гроза</t>
+        <t _id="lemchant">Вредина</t>
+        <t _id="lidiot">Придурок</t>
+        <t _id="leparjure">Клятвопреступник</t>
+        <t _id="ledserteur">Дезертир</t>
+        <t _id="lebalafr">Меченый</t>
+        <t _id="lpouvantail">Пугало</t>
+        <t _id="lerat">Крыса</t>
+        <t _id="lerenard">Лис</t>
+        <t _id="leloup">Волк</t>
+        <t _id="labelette">Хорек</t>
+        <t _id="lavipre">Змей</t>
+        <t _id="labuse">Стервятник</t>
+        <t _id="lerouge">Красный</t>
+        <t _id="levert">Зеленый</t>
+        <t _id="lesournois">Хитрец</t>
+        <t _id="leglouton">Обжора</t>
+        <t _id="letyran">Тиран</t>
+        <t _id="lebricoleur">Умелец</t>
+        <t _id="lecostaud">Крепыш</t>
+        <t _id="lecoquin">Наглец</t>
+        <t _id="lerustique">Деревенщина</t>
+        <t _id="lepetit">Мелкий</t>
+        <t _id="lediplomatedupoing">Колотильщик</t>
+        <t _id="leterrible">Ужасный</t>
+        <t _id="leperturb">Псих</t>
+        <t _id="limpudique">Блудник</t>
+        <t _id="labrute">Громила</t>
+    </g>
+    <g id="bounty_adjectives_fem">
+        <t _id="legorgeuse">Бритва</t>
+        <t _id="lecarteleuse">Костодробилка</t>
+        <t _id="laviolente">Свирепая</t>
+        <t _id="lapleutre">Трусиха</t>
+        <t _id="larebelle">Бунтарка</t>
+        <t _id="leflau">Гроза</t>
+        <t _id="lamchante">Вредина</t>
+        <t _id="lidiote">Дура</t>
+        <t _id="laparjure">Клятвопреступница</t>
+        <t _id="ladserteuse">Дезертирша</t>
+        <t _id="labalafre">Меченая</t>
+        <t _id="lepouvantail">Пугало</t>
+        <t _id="larenarde">Лисица</t>
+        <t _id="lalouve">Волчица</t>
+        <t _id="labelette">Ласка</t>
+        <t _id="lavipre">Гадюка</t>
+        <t _id="labuse">Ворона</t>
+        <t _id="larouge">Красная</t>
+        <t _id="laverte">Зеленая</t>
+        <t _id="lasournoise">Лукавая</t>
+        <t _id="lagloutone">Обжора</t>
+        <t _id="latyranique">Тиранша</t>
+        <t _id="labricoleuse">Умелица</t>
+        <t _id="lapetite">Малая</t>
+        <t _id="ladiplomatedupoing">Колотильщица</t>
+        <t _id="laterrible">Ужасная</t>
+        <t _id="laperturbe">Безумная</t>
+        <t _id="limpudique">Блудница</t>
+        <t _id="labrute">Громила</t>
+    </g>
+    <g id="systemic_goals">
+        <t id="defender_killed">Локация освобождена</t>
+        <t id="defended_place">Оборона места</t>
+        <t id="rats">Логово уничтожено</t>
+        <t id="ruins">Развалин исследовано</t>
+    </g>
+    <g id="start">
+        <t id="choose_troop">Ваши спутники —...</t>
+        <t id="troop_tip">Бонусы</t>
+        <t id="troop_tip_malus">Штраф</t>
+        <t id="tip_bonus">Начинает с:</t>
+        <t id="tip_units">Начальные спутники</t>
+        <t id="choose_bonus">Ваши спутники —...</t>
+        <t id="choose_malus">Если бы у них был недостаток, это был бы...</t>
+        <t id="start_option">Начальные параметры</t>
+        <t id="region">Стартовый регион</t>
+        <t id="region_help">Продвигайтесь по игре, чтобы открывать новые стартовые регионы.</t>
+        <t id="troop">Отряд</t>
+        <t id="difficulty_fight">Сложность боя</t>
+        <t id="difficulty_sim">Сложность выживания</t>
+        <t id="dif_sim_help">Сложность симуляции влияет на усталость, голод и жалованье ваших спутников.</t>
+        <t id="dif_fight_help">Wartales — трудная игра, так что не стесняйтесь понижать уровень сложности, если вам некомфортно играть</t>
+        <t id="dif_change">Сложность можно изменить в любое время.</t>
+        <g id="difficulties">
+            <t _id="novice">Новичок</t>
+            <t _id="confirm">Ветеран</t>
+            <t _id="expert">Эксперт</t>
+            <t _id="extrme">Предел</t>
+        </g>
+        <g id="fight_difficulties_desc">
+            <t _id="voussouhaitezuneexpriencedecombatpluslgre">Вам по душе упрощенные бои.</t>
+            <t _id="lescombatstactiquesetperdrevoscompagnonsnevouseffraientpas">Тактические бои и возможность лишиться спутников вас не пугают.</t>
+            <t _id="unseulfauxpasetcestlamortassure">Одна ошибка, и вы мертвы.</t>
+            <t _id="voustesprtsaffronterlenferlamortestimmdiatelaretraiteestpluspunitivetoutcompagnonfuyardestperdulesgroupesennemissontplusrapideslesdsengagementssontpluspunitifsladifficultgnraleestsonmaximum">Вы готовы шагнуть прямо в ад.
+
+— Мгновенная смерть.
+ — Отступление сопровождается более серьезным штрафом.
+ — Сбежавшие спутники пропадут.
+ — Вражеские группы быстрее.
+ — Выход из сражения сопровождается более серьезным штрафом.
+ — Общая сложность на максимуме.</t>
+        </g>
+        <g id="sim_difficulties_desc">
+            <t _id="unedifficultdegestioncalibrepourtresoupleetpeuintrusive">Управление отрядом настроено так, чтобы быть гибким и ненавязчивым.</t>
+            <t _id="auquotidienvousdevrezgrerlafaimlafatigueetlessoldesdevoscompagnons">Вам потребуется ежедневно следить за сытостью и усталостью спутников и вовремя платить им жалованье.</t>
+            <t _id="survivreetfairedesconomiessavreronttredestchesdouloureuses">Выживание и экономия денег станут для вас головной болью.</t>
+            <t _id="vousdevrezsubsisterdansdesconditionsimpitoyableslebonheurbaisseplusvitelespeinesdeprisonsontdfinitivescertainsmtierssontdangereuxlesmarchandssapprovisionnentlentementladifficultgnraleestsonmaximum">Вам предстоит выживать в жестоких условиях.
+
+— Счастье снижается намного быстрее.
+ — В тюрьмах только пожизненный срок, его нельзя отменить.
+ — Некоторые профессии станут опасны.
+ — Торговцы медленнее пополняют ассортимент.
+ — Общая сложность достигла максимума.</t>
+        </g>
+        <t id="save_mode">Режим сохранения</t>
+        <g id="save_modes">
+            <t _id="limit">Ограниченный</t>
+            <t _id="libre">Свободный</t>
+            <t _id="ironmen">Железные люди</t>
+        </g>
+        <g id="save_modes_desc">
+            <t _id="uneseulesauvegardeparpartiemaisvouspouvezrevenirtoutmomentcertainspointsderetourtelsquelederniervillagevisitledbutduncombatetc">У вас будет только один файл сохранения на игру, но в любой момент вы сможете возвратиться к определенным контрольным точкам — как, например, последняя посещенная деревня, начало битвы и т. д.</t>
+            <t _id="sauvegardeztoutmomentavecplusieurssauvegardespossiblespourlammepartie">Вы сможете сохраняться в любой момент и сохранять одну и ту же игру в несколько разных ячеек.</t>
+            <t _id="uneseulesauvegardeuneseulechanceilestimpossiblederevenirenarrireettoutgameoverestdfinitiflemodedejeuleplusdifficileetexigeantdewartales">Одно сохранение, один шанс! Вы не сможете вернуться, и конец игры будет необратим. Это самый сложный и требовательный режим игры в Wartales!</t>
+        </g>
+        <t id="save_mode_help">
+		Вы можете выбрать один из нескольких режимов сохранения:
+
+		- <inf>Свободный</inf> режим: Вы сможете сохраняться в любой момент и сохранять одну и ту же игру в несколько разных ячеек.
+
+		- <inf>Обычный</inf> режим: У вас будет только один файл сохранения на игру, но в любой момент вы сможете возвратиться к определенным контрольным точкам — как, например, последняя посещенная деревня, начало битвы и т. д.
+
+		- Режим <inf>железных людей</inf>: одно сохранение! Один шанс! Вы не сможете вернуться, и конец игры будет необратим. Это самый сложный и требовательный режим игры в Wartales!
+        </t>
+        <t id="scale_mode">Режим исследования</t>
+        <g id="scale_modes">
+            <t _id="explorationadaptative">Адаптивное исследование</t>
+            <t _id="explorationzone">Региональное исследование</t>
+        </g>
+        <g id="scale_modes_desc">
+            <t _id="lesrgionsdumondeontunedifficultquisadaptedynamiquementlatailledevotregroupeetlapuissancedevosunitslejeuvousproposeraenpermanenceunchallengeadaptvotrequipe">Сложность всех регионов динамически адаптируется к размеру группы и силе ваших бойцов. Игра всегда сможет бросить вызов вашему отряду.</t>
+            <t _id="ladifficultdesrgionsdumondeestfixedsledpartetnvoluepasilvousfaudraagrandiretamliorervotretroupeavantdepouvoirexplorerlesrecoinslesplusdangereuxetaffronterlesennemislespluspuissants">У каждого региона в мире своя заданная сложность. Вам придется расширять и усиливать отряд, прежде чем вы сможете исследовать более трудные области с сильными противниками.</t>
+        </g>
+        <t id="scale_mode_help">Исследовать мир Wartales можно двумя способами:
+
+ - <inf>Свободно</inf>: по миру можно путешествовать, как захочется. Враги будут подстраиваться под вас, обеспечивая сложность, соответствующую вашей команде.
+
+ - <inf>Регионально</inf>: у каждого региона в мире своя заданная сложность. Вам придется расширять и усиливать отряд, прежде чем вы сможете исследовать более трудные области с сильными противниками.</t>
+        <g id="start_texts">
+            <t id="adventurers">
+			Ваши спутники отправились на поиски приключений!
+
+			Их единственное достижение после нескольких тихих дней путешествия — то, что они не потерялись и достигли места назначения.
+
+			Несомненно, здесь их ждет новое увлекательное задание, которое внесет разнообразие в монотонную жизнь скучающих подмастерий!
+
+			В конце дороги ждут приключения! Тех, кто доберется до них живыми, по крайней мере...
+            </t>
+            <t id="merchants">
+			Жизнь наемника всегда сопряжена с трудностями...
+
+			После напряженной схватки с разбойниками самые ушлые среди ваших спутников бежали, оставив позади щедрое вознаграждение и разгневанного клиента...
+
+			Желая подзаработать крон, но не ценой собственных жизней, они теперь ищут себе новое занятие...
+
+			В конце концов, ремонт и выпивка сами себя не оплатят!
+            </t>
+            <t id="deserters">
+			Хватит!
+
+			Издевательства того ужасного капитана все же достали ваших спутников, и они теперь наконец-то могут насладиться честно заслуженной свободой.
+
+			Хотя...
+
+			Дезертирам никто не рад — ни бывшие коллеги, ни местные, почему-то считающие их предателями...
+
+			Придется не привлекать особо внимания, при этом продолжая зарабатывать на жизнь...
+            </t>
+            <t id="farmers">
+			О, свежий запах утреннего ветерка, наполненный утонченным ароматом соседней конюшни...
+
+			Старая добрая потасовка в таверне — мебель там идеально подходит в качестве оружия...
+
+			Родившись и прожив детство в деревне, ваши спутники умеют ценить простые радости жизни.
+
+			Но чтобы добиться чего-то в этом мире, придется рисковать и далеко путешествовать в поисках славы и богатств!
+
+			Только осторожнее — не потеряйте по пути самое ценное, что у вас есть... То есть свою обувь.
+            </t>
+            <t id="bandits">
+			Все было очень просто...
+
+			Мелкие кражи, грабеж на трактах, кошелек, переданный другу детства и сейчас служащему в Страже — и ваши спутники всегда избегали наказания.
+
+			Простая, честная жизнь веселой банды разбойников.
+
+			Но не на последнем деле... Там вы выбрали не ту цель... Жертва возжаждала мести...
+
+			После крайне сумбурного побега ваш отряд добрался до нового региона.
+
+			Несомненно, тут будет немало новых возможностей быстро разбогатеть! В конце концов, кто-то теряет, кто-то находит...
+            </t>
+            <t id="tavern">Их таверна станет самой известной в Пяти королевствах! 
+
+ Ваши спутники уверены, что благодаря их врожденным кулинарным талантам и любви к хорошим напиткам они смогут успешно начать свое дело, о котором всегда мечтали. 
+ 
+ Они даже не знают, где находится ближайшая деревня, и выучили всего пару рецептов? Подумаешь! Стать управляющими таверной — вот их настоящее призвание!</t>
+            <t id="pugilist">Как минимум один спутник еще жив!
+
+ Это больше, чем ожидалось, когда шторм потопил ваш корабль вместе с мечтами о пиратстве.
+
+ Теперь вы на суше, и у вас есть все время мира, чтобы познать прелесть многочасовых походов, нападений диких животных, враждебных селян и многое другое!
+
+ Но моряки — смекалистый народ. Со временем они приспособятся к жизни на суше и будут процветать!</t>
+        </g>
+    </g>
+    <g id="padKeyInfo">
+        <t id="show_cursor">Указатель <small>(зажать)</small></t>
+        <t id="run">Бежать <small>(зажать)</small></t>
+        <t id="drag_unit">Движение <small>(зажать)</small></t>
+        <t id="select_unit">Выбор</t>
+        <t id="unselect_unit">Отменить выбор</t>
+        <t id="renfort_unit">Убрать</t>
+        <t id="show_preview">Предпросмотр</t>
+        <t id="save_edition">Сохранить изменения</t>
+        <t id="cancel_edition">Отменить изменения</t>
+    </g>
+</texts>

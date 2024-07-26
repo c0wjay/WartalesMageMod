@@ -1,0 +1,139 @@
+{
+	"id": "TargetHeal",
+	"name": "Distance Heal",
+	"desc": "",
+	"mode": 0,
+	"range": {
+		"allowedTargets": 2,
+		"baseDistance": 8
+	},
+	"props": {
+		"isHeroic": true,
+		"apCost": 0,
+        "defaultAction": true,
+		"vars": {
+			"multiplier": 0.50,
+			"fixheal": 50
+		},
+		"needDisengaged": true,
+        "cursor": "CursorHeal",
+        "healPreview": 1,
+		"useWithoutWeapon": true
+	},
+	"script": "function onSkill() {\n\tplay();\n\tvar multiple = vars.multiplier;\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedRecovery ) {\n\t\t\tmultiple += ( multiple * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tskill.target.gainsHealth( calculateRecovery(skill.target, multiple) , null);\n\tif( skill.level == 2 ) {\n\t\tskill.target.addStatus(Status.Protection);\n\t}\n}\nfunction calculateRecovery(t, mul) {\n\tvar target_hp = t.stats.health;\n\tvar recovery = (target_hp * mul) + vars.fixheal;\n\trecovery = recovery * ( min(skill.unit.stats.willpower, 50)/50 * randInt(12,20)/16 );\n\treturn ceil(recovery);\n}",
+	"notes": "",
+	"levels": [
+		{
+			"props": {
+				"vars": {
+					"multiplier": 0.75,
+					"fixheal": 75
+				}
+			}
+		}
+	],
+	"icon": {
+		"file": "ui/Icons/BattleIcons96PX.png",
+		"size": 96,
+		"x": 19,
+		"y": 12
+	},
+	"iconeDone": true,
+	"group": 16,
+	"done": 2
+},
+{
+	"id": "RangeHeal",
+	"name": "Healing Bomb",
+	"desc": "",
+	"mode": 5,
+	"range": {
+		"type": 0,
+		"radius": 3,
+		"allowedTargets": 2,
+		"baseDistance": 6
+	},
+	"props": {
+		"isHeroic": true,
+		"specialAnim": "ThrowLeftGrenade",
+		"apCost": 1,
+		"vars": {
+			"multiplier": 0.25,
+			"fixheal": 40
+		},
+		"needDisengaged": true,
+        "cursor": "CursorHeal",
+        "healPreview": 1,
+		"useWithoutWeapon": true,
+		"castFx": "prefabs/fx/fight/Explosion/PoisonBomb/PoisonBomb.fx",
+		"throwModel": "chars/Weapons/LeftHand_IncendiaryFlask.fbx"
+	},
+	"script": "function onSkill() {\n\tplay();\n\tvar multiple = vars.multiplier;\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedRecovery ) {\n\t\t\tmultiple += ( multiple * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tfor( t in skill.getTargets() ) {\n\t\tt.target.gainsHealth( calculateRecovery(t.target, multiple) , null);\n\t\tif( skill.level == 2 && randomDice(skill.unit.stats.willpower) > 2 ) {\n\t\t\tfor( s in t.target.getAllStatus() ) {\n\t\t\t\tif( s.isMalus ) s.cancel();\n\t\t\t}\n\t\t}\n\t}\n}\nfunction calculateRecovery(t, mul) {\n\tvar target_hp = t.stats.health;\n\tvar recovery = (target_hp * mul) + vars.fixheal;\n\trecovery = recovery * ( min(skill.unit.stats.willpower, 50)/50 * randInt(12,20)/16 );\n\treturn ceil(recovery);\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+	"notes": "",
+	"levels": [
+		{
+			"props": {
+				"vars": {
+					"multiplier": 0.50,
+					"fixheal": 60
+				},
+				"tooltipStatus": [
+					{
+						"st": "Protection"
+					}
+				]
+			}
+		}
+	],
+	"icon": {
+		"file": "ui/Icons/BattleIcons96PX.png",
+		"size": 96,
+		"x": 9,
+		"y": 13
+	},
+	"iconeDone": true,
+	"group": 16,
+	"done": 2
+},
+{
+	"id": "GroupHeal",
+	"name": "Group Heal",
+	"desc": "",
+	"mode": 4,
+	"range": {},
+	"props": {
+		"isHeroic": true,
+		"specialAnim": "Taunt",
+		"apCost": 2,
+		"vars": {
+			"multiplier": 0.2,
+			"fixheal": 50
+		},
+		"needDisengaged": true,
+        "cursor": "CursorHeal",
+        "healPreview": 1,
+		"useWithoutWeapon": true,
+		"extraFx": "prefabs/fx/fight/BuffCry/BuffCryBlue.fx"
+	},
+	"script": "function onSkill() {\n\tplay();\n\tvar multiple = vars.multiplier;\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedRecovery ) {\n\t\t\tmultiple += ( multiple * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\t@sync for( u in getAllies(skill.unit) ) {\n\t\tvar recovery = (u.stats.health * multiple) + vars.fixheal;\n\t\trecovery = recovery * ( min(skill.unit.stats.willpower, 50)/50 );\n\t\tu.gainsHealth(ceil( recovery ), null);\n\t\tif( skill.level == 2 ) {\n\t\t\tvar armorRecovery = ceil ( u.stats.armor * skill.unit.stats.willpower/100 * multiple );\n\t\t\tu.armor = min(u.armor + armorRecovery, u.stats.armor);\n\t\t}\n\t}\n}",
+	"notes": "",
+	"levels": [
+		{
+			"props": {
+				"vars": {
+					"multiplier": 0.40,
+					"fixheal": 75
+				}
+			}
+		}
+	],
+	"icon": {
+		"file": "ui/Icons/BattleIcons96PX.png",
+		"size": 96,
+		"x": 0,
+		"y": 15
+	},
+	"iconeDone": true,
+	"group": 16,
+	"done": 2
+},

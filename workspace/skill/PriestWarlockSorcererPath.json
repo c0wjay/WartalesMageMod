@@ -1,0 +1,348 @@
+{
+    "id": "PriestSkillBook1",
+    "name": "Priest Skill Book I",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedRecovery"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 1
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedRecovery, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 11,
+        "y": 18
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "WarlockSkillBook1",
+    "name": "Warlock Skill Book I",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedCurse"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 1
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedCurse, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 11,
+        "y": 17
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "SorcererSkillBook1",
+    "name": "Sorcerer Skill Book I",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedElement"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 1
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedElement, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 10,
+        "y": 16
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "NecromancerSkillBook1",
+    "name": "Necromancer Skill Book I",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedNecromancy"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 1
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedNecromancy, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 7,
+        "y": 16
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "PriestSkillBook2",
+    "name": "Priest Skill Book II",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedRecovery"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 2
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedRecovery, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 12,
+        "y": 18
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "WarlockSkillBook2",
+    "name": "Warlock Skill Book II",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedCurse"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 2
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedCurse, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 12,
+        "y": 17
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "SorcererSkillBook2",
+    "name": "Sorcerer Skill Book II",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedElement"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 2
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedElement, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 11,
+        "y": 16
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "NecromancerSkillBook2",
+    "name": "Necromancer Skill Book II",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedNecromancy"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 2
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedNecromancy, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 8,
+        "y": 16
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "PriestPath",
+    "name": "Path of Priest",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedRecovery"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 5
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedRecovery, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 13,
+        "y": 18
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "WarlockPath",
+    "name": "Path of Warlock",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedCurse"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 5
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatusPersist(Status.Protection, skill);\n\t\tskill.unit.addStatus(Status.ReinforcedCurse, vars.value1);\n\t\tskill.unit.armor = skill.unit.stats.armor;\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 13,
+        "y": 17
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "SorcererPath",
+    "name": "Path of Sorcerer",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedElement"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 5
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedElement, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 12,
+        "y": 16
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "NecromancerPath",
+    "name": "Path of Necromancer",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "tooltipStatus": [
+            {
+                "st": "ReinforcedNecromancy"
+            }
+        ],
+        "vars": {
+            "start": false,
+            "value1": 5
+        }
+    },
+    "script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedNecromancy, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 9,
+        "y": 16
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},

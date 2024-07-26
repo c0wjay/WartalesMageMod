@@ -1,0 +1,2422 @@
+<texts project="Wartales" version="91" lang="zh" date="2024-06-05 11:03:21" revision="34994" softwareVersion="2">
+    <t id="fmt_dmg"><b>::value::</b>点伤害</t>
+    <t id="list_name">::names::<default>和</default>::last::</t>
+    <t id="level">级别</t>
+    <g id="unit_ranks">
+        <t _id="aucun">无</t>
+        <t _id="lieutenant">中尉</t>
+        <t _id="capitaine">上尉</t>
+    </g>
+    <g id="time">
+        <t id="short_perday">/天</t>
+        <t id="hours">::h::小时</t>
+        <t id="day">一天零::h::小时</t>
+        <t id="days">::d::天零::h::小时</t>
+        <t id="current_time">第::day::天，::hour::小时</t>
+        <t id="current_time_month">第::month::个月，第::day::天，::hour::小时</t>
+        <t id="current_day_month">第::month::个月，第::day::天</t>
+        <t id="current_day">第::day::天</t>
+        <t id="short_days_label">（::days::天）</t>
+        <t id="yesterday">昨天</t>
+        <t id="today">今天</t>
+        <t id="tomorrow">明天</t>
+        <t id="days_ago">::days::天前</t>
+        <t id="days_future">::days::天后</t>
+    </g>
+    <g id="trait_levels">
+        <t _id="dbutant">生手</t>
+        <t _id="novice">新手</t>
+        <t _id="apprenti">学徒</t>
+        <t _id="confirm">熟练</t>
+        <t _id="compagnon">出师</t>
+        <t _id="matre">大师</t>
+    </g>
+    <g id="unit_info">
+        <t id="defense">防御</t>
+        <t id="stuff">装备</t>
+        <t id="skills">技能</t>
+        <t id="skill_action">[LMB]学习</t>
+        <t id="restore_skillbar">重置命令</t>
+        <t id="status">伤势和状态</t>
+        <t id="exp">经验</t>
+        <t id="attribs">属性</t>
+        <t id="traits">特质</t>
+        <t id="level">第::level::级</t>
+        <t id="levelMaxed">已达到最高级别</t>
+        <t id="xp">经验值</t>
+        <t id="salary">工钱</t>
+        <t id="food">消耗</t>
+        <t id="crit_damages">暴击伤害：<good>+::value::%</good></t>
+        <t id="escape">逃跑能力</t>
+        <t id="willpower_resolve_bonus"><b>::value::点数：</b>该单位在战斗中第一次濒死时会存活下来（每次交战可使用一次）。</t>
+        <t id="attribute_upgrade">增加1点<img src="icon/UnitInfoLevelUp"/>到<influence>::value::</influence></t>
+        <t id="attribute_upgrade_action">[LMB]升级</t>
+        <t id="attribute_upgrade_add">[LMB]增加1个<img src="icon/UnitInfoLevelUp"/></t>
+        <t id="attribute_upgrade_remove">[RMB]移除1个<img src="icon/UnitInfoLevelUp"/></t>
+    </g>
+    <g id="escape">
+        <t id="desc">俘虏可能会在休息期间逃跑。</t>
+        <t id="escape_chance">下次休息期间的逃跑几率：</t>
+        <t id="none"><good>无</good></t>
+        <t id="low"><good>低</good></t>
+        <t id="medium"><warn>一般</warn></t>
+        <t id="high"><bad>高</bad></t>
+    </g>
+    <g id="happy_bonus">
+        <t id="campfire">同伴已分配到营火</t>
+        <t id="comfortable_fur">同伴与::unit::关系亲密</t>
+        <t id="starvation">你的同伴饿了！</t>
+        <t id="starvation2">你的同伴快饿死了！</t>
+        <t id="salaries_late">你的同伴对拖欠工钱的行为很不满！</t>
+        <t id="salaries_late2">你的同伴对拖欠工钱的行为很愤怒！</t>
+        <t id="bad_diet">未满足食物要求</t>
+        <t id="rest_forest">在森林中休息</t>
+        <t id="food_bonus">食物</t>
+        <t id="wood_bonus">篝火持续燃烧</t>
+        <t id="other_bonus">其他正面效果</t>
+        <t id="other_malus">其他负面效果</t>
+        <t id="smelly_odour">营地中有恶臭</t>
+        <t id="bestfriend_adjacent">睡在彼此身边的好友</t>
+        <t id="bestfriend_tool">在营地中被分配使用相同工具的好友</t>
+        <t id="enemy_adjacent">睡在彼此身边的敌人</t>
+        <t id="enemy_tool">在营地中被分配使用相同工具的敌人</t>
+        <t id="animal_friendship">愉快动物</t>
+    </g>
+    <g id="compass">
+        <t _id="nord">北</t>
+        <t _id="nordest">东北</t>
+        <t _id="est">东</t>
+        <t _id="sudest">东南</t>
+        <t _id="sud">南</t>
+        <t _id="sudouest">西南</t>
+        <t _id="ouest">西</t>
+        <t _id="nordouest">西北</t>
+    </g>
+    <g id="battle">
+        <t id="allies">盟友</t>
+        <t id="newRound">新回合开始。</t>
+        <t id="end_turn">结束::unit::的回合</t>
+        <t id="unit_has_played">此同伴已经完成了回合。</t>
+        <t id="unit_can_play">此同伴尚未完成回合。</t>
+        <t id="anotherUnitPlaying">另一同伴已开始其回合。</t>
+        <t id="reinforcement">增援</t>
+        <t id="knockout_successful">已击晕！</t>
+        <t id="capture_successful">已捕获！</t>
+        <t id="corrupt_successful">已贿赂！</t>
+        <t id="willpower_resolve_bonus">意志！</t>
+        <t id="miss">失手</t>
+        <t id="ouch">啊！</t>
+        <t id="timeline_your_unit">你可以使用尚未参与本回合的任意单位。</t>
+        <t id="timeline_enemy_unit">对手将使用尚未参与本回合的任意单位。</t>
+        <t id="timeline_unit">::name::将开始其回合。</t>
+        <t id="timeline_end_round">回合结束</t>
+        <t id="morale">击杀敌方单位可提升你的士气值并加快取得胜利。</t>
+        <t id="cancelPendingSkill">点击施放“::skill::”并开始该单位的回合</t>
+        <t id="cancelReactionSkill">点击结束“::skill::”并开始该单位的回合</t>
+        <t id="bonus_ap_desc">你有<apt>::count::</apt><b>点勇气点数加成</b>，只能在本场战斗中使用。</t>
+        <t id="pending_skill_delay">该单位已准备好一项技能，将在其回合开始时启用。</t>
+        <t id="pending_skill_reaction">该单位拥有一项会在其他单位的回合期间触发的技能。</t>
+        <t id="notify_enemy_renfort">敌方增援即将到达！</t>
+        <t id="notify_ally_renfort">我方增援即将到达！</t>
+        <t id="no_retreat"><bad>你不能撤退。</bad></t>
+        <t id="no_retreat_extreme"><bad>在“极限”战斗难度下，你无法撤退。</bad></t>
+        <g id="notify">
+            <t id="bionn_transformation">疾病夺走了她的生命，比恩为此濒临崩溃！</t>
+            <t id="eokeld_barrels">埃奥克尔德已在索具中放置了炸药桶，将在接下来的几个回合内开始掉落！</t>
+        </g>
+        <g id="renforts">
+            <t id="title">管理增援</t>
+            <t id="call_deploy">[LMB]选择支援单位</t>
+            <t id="renfort_action">[LMB]撤回</t>
+            <t id="deploy_action">[LMB]部署</t>
+            <t id="manage_deploy">[LMB]管理增援</t>
+            <t id="view_deploy">[LMB]查看增援</t>
+        </g>
+        <g id="sport">
+            <t id="game_start">比赛即将开始！</t>
+            <t id="half_time">中场休息</t>
+            <t id="end_game">比赛结束！</t>
+            <t id="no_ball">你必须扔掉球。</t>
+            <t id="captain_engage">持球者必须开启比赛。</t>
+        </g>
+    </g>
+    <g id="battlemode">
+        <g id="common">
+            <t id="unit_madness">::name::已陷入疯狂。</t>
+        </g>
+        <g id="arena">
+            <t id="arenaRule">竞技场特殊规则</t>
+            <t id="arenaRules">竞技场特殊规则</t>
+            <t id="choosePlayerTeam">选择你的战士</t>
+            <t id="playerTeam">你的队伍</t>
+            <t id="hardMode">困难</t>
+            <t id="demand">需求</t>
+            <t id="reward">奖励：</t>
+            <t id="unitTargetWarning">如果不满足这一需求，::name::将被带离战场。</t>
+            <t id="voxPopuliDesc">你获得胜利后，观众们对你钦佩不已：请为剩下的比赛选择一项升级。</t>
+            <t id="voxPopuliTitle">选择一份礼品</t>
+            <t id="newRule">新竞技场规则：
+<b>::rule::</b></t>
+            <t id="confirmStartFight">为该队伍报名？</t>
+            <t id="confirmStartNextFight">开始下一场比赛？</t>
+            <t id="confirmStartChampion">挑战冠军？</t>
+            <t id="confirmActionEmpty"><bad>部分单位没有选择加成。</bad></t>
+            <t id="confirmLeaveArena">失去在该竞技场的所有进度？</t>
+            <t id="cantFight">你必须为四位同伴报名才能参与这场比赛。</t>
+            <t id="unitAlreadyRegister">该单位已报名。</t>
+            <t id="arenaFightSelectorTitle">试炼选择</t>
+            <g id="arenaLegendsNames">
+                <t _id="terrainimpraticable">无法通行的地形</t>
+                <t _id="exigencescritiques">关键需求</t>
+                <t _id="btesardentes">灼烧野兽</t>
+                <t _id="ratscauchemardesques">梦魇恶鼠</t>
+                <t _id="commandomortel">致命尖兵</t>
+            </g>
+            <t id="arenaLegendsEmptyName">声望不足</t>
+            <t id="progressNormal"><img src="/icon/Arena_Medal_Empty"/>普通试炼未完成</t>
+            <t id="progressNormalWin"><img src="/icon/Arena_Medal"/>普通试炼已完成</t>
+            <t id="progressHard"><img src="/icon/Arena_Medal_Empty"/>困难试炼未完成</t>
+            <t id="progressHardWin"><img src="/icon/Arena_Medal_Hard"/>困难试炼已完成</t>
+            <t id="legendsNoReward">已赢取奖励</t>
+            <t id="notifyRenfortChampion">::name::正赶来支援！</t>
+            <t id="notifyRenfortChampions">::name1::和::name2::正赶来支援！</t>
+            <t id="finalChampionsWakeUp">在师傅的鼓励下，学徒们重整旗鼓，奋战到底！</t>
+            <t id="hiltrerdEntry1">竞技场另一侧传来了金属的敲击声！</t>
+            <t id="hiltrerdEntry2">希尔特雷德登场，不仅要为学徒们报仇，更要捍卫她的最强王座！</t>
+            <t id="hiltrerdP2">希尔特雷德恢复了，并使用了一件先民遗物！</t>
+        </g>
+        <g id="ratinvasion">
+            <t id="description">
+			鼠后之死将终结这场战斗。
+			尽可能摧毁更多的染疫增生体以获取炼金试剂！
+            </t>
+            <t id="NestDeath">已摧毁一个鼠巢！</t>
+            <t id="MatriarchDeath">鼠后已死。疫鼠们仓皇而逃！</t>
+            <t id="RatSpawn">疫鼠们正涌出洞口！</t>
+            <t id="DayNotification">太阳正冉冉升起。疫鼠们渐渐安静下来。</t>
+            <t id="NightNotification">太阳开始西沉。疫鼠们气势汹汹！</t>
+            <t id="debrief">你的同伴杀死了::rat::只疫鼠并摧毁了::nest::个染疫增生体。</t>
+        </g>
+        <g id="ghostpack">
+            <t id="notify_nightmare_renfort">刚刚出现了一只梦魇兽！</t>
+            <t id="unit_terror">::name::仓皇而逃，懦弱地抛下了你的部队！</t>
+            <t id="enemy_terror">::name::惊恐万分！</t>
+        </g>
+        <g id="reach">
+            <t id="notify_plagueridden_renfort">更多染疫者正在逼近！</t>
+            <t id="reach_objective">抵达逃离区，令你的同伴安全逃离。</t>
+        </g>
+        <g id="forsakenvillage">
+            <t id="new_wave">染疫怪兽正在企图侵入建筑！</t>
+            <t id="search_desc">使用找到出路技能填满进度表即可逃离！</t>
+            <t id="forsaken_objective">保持坚定，找到出路。</t>
+        </g>
+        <g id="celestium">
+            <t id="search_desc">在学者研究遗物时保护他们。</t>
+            <t id="celestium_relic_name">天厅遗物</t>
+            <t id="destroy_desc">摧毁遗物。</t>
+        </g>
+        <g id="survival">
+            <t id="remaining_rounds">再存活::count::回合</t>
+        </g>
+        <g id="escape">
+            <t id="escaped">逃离战场！</t>
+        </g>
+        <g id="sport">
+            <t id="regionRules">地区规则</t>
+            <t id="noRules">无地区规则</t>
+            <t id="choosePlayerTeam">集结你的队伍</t>
+            <t id="playerTeam">你的队伍</t>
+            <t id="cantFight">你必须为6位同伴报名才能参与这场比赛。</t>
+            <t id="noRole">必须将每名同伴分配至一个位置。</t>
+            <t id="noTeamLeader">必须选择一位队长。</t>
+            <t id="rounds">回合::current::/::total::</t>
+            <g id="sport_objective">
+                <t _id="portezunballondanslazonedembutadversepourmarquer2points">- 带球至对方端区即可得 2 分。</t>
+                <t _id="possdezle2emeballonlorsdelamarquepour1pointadditionel">- 队伍得分时，如还控制另一颗球，则再得 1 分。</t>
+                <t _id="lquipequipossdeleplusdepointslafindu8emeroundremportelapartie">- 在第 8 回合结束时，得分最高的队伍赢得比赛。</t>
+            </g>
+            <t id="sport_objective_hard">- 必须至少获得5分才能胜利。</t>
+            <t id="unitTip">::name::
+
+ ::status::
+
+ ::action::
+ ::action2::</t>
+        </g>
+        <g id="boat">
+            <t id="duel_objective">敌方船长每次出言嘲讽，都会向你发起行动。共以下 3 种行动：攻击、招架、嘲讽。
+ 选择适当的行动，做出正确反应：
+
+ - 如果使用攻击，而敌人使用嘲讽，则你将命中对方。
+ - 如果使用格挡，而敌人使用攻击，则你将闪避这次攻击。
+ - 如果使用嘲讽，而敌人使用格挡，则你将获得优势。
+
+ 如果两位决斗者同时攻击，则获得优势方赢得这一局。
+ 如果决斗者在获得优势时成功招架，将发动反击。
+
+ 不可以连续两次使用同一个行动。</t>
+            <t id="specialRules">累积优势</t>
+            <t id="newRule">额外优势</t>
+            <t id="duel_wait">等待</t>
+            <t id="dialog_upset">……</t>
+            <t id="action_used_last_turn">你已在上一回合使用了这个行动。</t>
+            <t id="captain_engaged">该船长正在与另一个单位交战。</t>
+        </g>
+        <g id="seasnake">
+            <t id="Reload1">发射贝勒里翁之矛必须完全拉满弩炮。射击准备时间会比预计的更长。</t>
+            <t id="Reload2">::name::即将完成装填这架弩炮。</t>
+            <t id="Reload3">这架弩炮已经准备就绪！</t>
+            <t id="ShotMissed">唉，你的同伴浪费了唯一可以干掉海蛇的机会。</t>
+            <t id="BeatSnake">海蛇处于虚弱状态，干掉它！</t>
+            <t id="SeaCrawlerSpawn">海蛇正在呼叫增援！</t>
+        </g>
+    </g>
+    <g id="skills">
+        <t id="range">范围：::range::米</t>
+        <t id="stack_bonus">当前：::value::%</t>
+        <t id="right_click_preview_on">[RMB]锁定预览</t>
+        <t id="right_click_preview_off">[RMB]解锁预览</t>
+        <t id="change_behavior">[LMB] 更改行动</t>
+        <t id="drag_skill">[LMB]移动<small>（长按）</small></t>
+        <t id="pad_drag_skill"><img src="icon/Pad_L3"/>更改命令</t>
+        <g id="mode">
+            <t id="melee">近战</t>
+            <t id="meleeWithRange">近战——范围::range::米</t>
+            <t id="zone">::radius::米区域</t>
+            <t id="shot">::range::米射程</t>
+            <t id="move">::distance::米移动距离</t>
+            <t id="passive">被动</t>
+            <t id="injury">受伤</t>
+            <t id="immediate">立刻</t>
+            <t id="str_attrib">（力量）</t>
+            <t id="dex_attrib">（敏捷）</t>
+        </g>
+        <g id="modeName">
+            <t id="TargetUnit">近战</t>
+            <t id="Precision">射击</t>
+            <t id="Passive">被动</t>
+            <t id="Move">移动</t>
+            <t id="Immediate">即时</t>
+            <t id="Zone">范围</t>
+        </g>
+        <g id="attr">
+            <t id="default_action">基础动作</t>
+            <t id="need_item">需求</t>
+        </g>
+        <g id="warn">
+            <t id="cant_use_if_engaged">你不能在同伴交战时使用该技能。</t>
+            <t id="cant_use_if_disengaged">你只能在同伴交战时使用该技能。</t>
+            <t id="cant_use_if_disarmed">你不能在同伴被缴械时使用该技能。</t>
+            <t id="cant_use_dying">你不能在同伴垂死时使用该技能。</t>
+            <t id="cant_end_turn">你必须开始一个单位的回合，才能结束本回合。</t>
+            <t id="already_used">该技能已在本次战斗中使用过。</t>
+            <t id="ultimate_used_this_round">在本回合中，你已经使用过一个技艺了。</t>
+            <t id="utimate_too_soon">到第::round::回合时才能使用技艺。</t>
+            <t id="beltAccBaseActionOnly">你不能在穿戴小型护手套时使用该技能。</t>
+            <t id="oil_already_applied_same">这种油已应用于此武器。此技能没有效果。</t>
+            <t id="oil_already_applied">本次战斗中你已经对此武器用过油。之前应用的油将被替换。</t>
+        </g>
+    </g>
+    <g id="gameover">
+        <t id="no_unit">你最后一位同伴离开了你的部队。</t>
+        <t id="battle_lose">你的所有同伴均已在这场战斗中牺牲。</t>
+        <t id="accompany_die">::name::阵亡。</t>
+        <t id="accompany_die_woman">::name::阵亡。</t>
+        <t id="ruin_no_light">你已没有<img src="icon/RuinsLight"/><b>光源</b>。</t>
+        <t id="ironmen">你们队伍的探险就此结束。</t>
+        <t id="sea_snake">海蛇摧毁了你同伴的船只。</t>
+    </g>
+    <g id="multiplayer">
+        <t id="creationTroop">这些同伴构成了你的核心部队。新人随后将加入你们。</t>
+        <t id="waitingPlayers">等待：::names::</t>
+        <t id="holdToSkip">[LMB]强迫<small>（长按）</small></t>
+        <t id="waitCancel">[RMB]取消</t>
+        <t id="wait_players">等待其他玩家</t>
+        <t id="notOwnedUnit">这名同伴属于::name::。</t>
+        <t id="notOwnedUnitWithUnitName">::unitName::属于::name::。</t>
+        <t id="chooseOwnedUnit">你必须从自己的同伴中选择一个。</t>
+        <t id="needOneOwnedUnit">每名玩家必须至少指定一个同伴：<bad>::names::</bad></t>
+        <t id="players">玩家</t>
+        <t id="unassigned">无玩家</t>
+        <t id="multi_tag">合作模式游戏</t>
+        <t id="load_multi_game">加载合作模式游戏</t>
+        <t id="click_to_release">你目前控制这名同伴。
+
+<b>[LMB]自定义</b>
+<b>[RMB]停止控制</b></t>
+        <t id="confirm_release">确认停止控制::name::？</t>
+        <t id="click_to_assign"><b>[RMB]控制该同伴</b></t>
+        <t id="not_your_unit">::name::目前控制这名同伴。
+
+<b>[LMB]检查</b></t>
+        <t id="not_your_unit_name">::unitName::已控制::name::。</t>
+        <t id="not_all_players_assigned">部分玩家尚未控制任何同伴：<bad>::names::</bad></t>
+        <t id="not_all_units_assigned">部分同伴尚未被任何玩家控制。</t>
+        <t id="invite">邀请</t>
+        <t id="confirm_leave_lobby">是否确定要退出？</t>
+        <t id="join_error">无法加入游戏。</t>
+        <t id="join_version_error">无法加入游戏。游戏版本不同。</t>
+        <t id="disconnected">已退出。
+连接主机时出错。</t>
+        <g id="playersArrow">
+            <t _id="j1">P1</t>
+            <t _id="j2">P2</t>
+            <t _id="j3">P3</t>
+            <t _id="j4">P4</t>
+        </g>
+        <t id="hold_action"><small>（长按）</small></t>
+        <t id="player_too_far">::playerName::的同伴距离太远，无法进入该建筑。</t>
+        <t id="player_too_far_camp">::playerName::的同伴距离太远，无法建立营地。</t>
+        <t id="connection">等待主机用户……</t>
+        <t id="waiting_players">等待其他玩家……</t>
+        <t id="host_only">只有游戏主机用户才能进行此操作。</t>
+        <t id="cant_create_lobby">无法创建联机会话。
+请稍后再试。</t>
+        <t id="room_code">邀请码</t>
+        <t id="show_hide_code">显示/隐藏邀请码</t>
+        <t id="copy_code">复制</t>
+        <t id="code_copied">邀请码已复制</t>
+        <g id="errors">
+            <t id="LobbyFull">无法加入大厅。
+该联机会话已满员。</t>
+            <t id="InvalidPlayer">无法加入此存档。
+无可用空位。</t>
+            <t id="Fail">无法加入大厅。
+请稍后再试。</t>
+            <t id="InvalidCode">无法找到与此邀请码关联的联机会话。</t>
+        </g>
+        <t id="add_user">新增玩家</t>
+        <t id="remove_user">移除::playerName::</t>
+        <t id="transfer_unit">转移单位</t>
+        <t id="disconnection_idle">长时间不活动将导致联机断开连接。</t>
+        <t id="remaining_time">剩余时间：</t>
+        <t id="keep_connection">保持连接</t>
+    </g>
+    <g id="tips">
+        <t id="craft_by_troup">部队制造</t>
+        <t id="seal_name">图印：::skillName::</t>
+        <t id="tiredness">疲劳度</t>
+        <t id="tiredness_info">检查部队的<b>疲劳度</b>，判断何时需要搭建营地并休息。
+使用营火烹调一顿美餐，然后睡一觉。</t>
+        <t id="rest_not_tired">现在你的部队已经得到了足够的休息。</t>
+        <t id="gold_info"><b>克朗</b>是基础货币。同伴的工钱必须每::nbRest::次休息就支付一次。
+
+ 距下次付工钱尚有：<b>::nextDueDate::</b>次休息
+
+当前总额：<gold>::gold::</gold>
+工钱：<gold>::salaries::</gold>
+应付工钱：<gold>::dueSalaries::</gold></t>
+        <t id="gold_info_coop">应付工钱总额：<gold>::dueSalaries::</gold></t>
+        <t id="mission_gold">已完成的契约：<gold>::gold::</gold></t>
+        <t id="food_info">休息前同伴必须进食：请确保你有充足的<b>食物</b>储备。
+
+储备：<food>::food::</food>
+消耗：<food>::conso::</food></t>
+        <t id="happy_info_new">
+		部队的<b>满意度</b>会随时间变化。
+
+		请确保满意度为正，以免同伴离开部队。
+
+		当前满意度：<happy>::happy::</happy>
+
+		<::color0::><happy>::min::</happy>一位同伴想离开你的部队！</::color0::>
+		<::color1::><happy>::bonus::</happy>::bonus1Text::</::color1::>
+		<::color2::><happy>::max::</happy>::bonus2Text::</::color2::>
+		<::color2::>超出<happy>::max::</happy>时，每超出一点，会为你增加<influence><b>::infl::</b></influence>。</::color2::>
+        </t>
+        <t id="repair_all">消耗<img src="/item/RawMaterials"/>::count::以修复全部</t>
+        <t id="repair_one">消耗 1 <img src="/item/RawMaterials"/>以修复<img src="/icon/Guard"/>::amount::</t>
+        <t id="repair_ctrl_all"><comment>(Ctrl - 修复全部)</comment></t>
+        <t id="pick_found_item">[RMB]拿走</t>
+        <t id="drop_found_item">[RMB]放下</t>
+        <t id="buy_shop_item">[RMB]购买价格：<gold>::price::</gold></t>
+        <t id="cant_buy_shop_item">[RMB]购买价格：<gold><bad>::price::</bad></gold></t>
+        <t id="buy_shop_item_with">[RMB]购买价格：<font color="#ffffff"><img src="item/::currency::"/>::price::</font></t>
+        <t id="cant_buy_shop_item_with">[RMB]购买价格：<bad><img src="item/::currency::"/>::price::</bad></t>
+        <t id="sell_shop_item">[RMB]出售价格：<gold>::price::</gold></t>
+        <t id="sell_shop_item_stolen">[RMB]出售价格：<gold>::price::</gold> <bad><img src="icon/Suspicion"/> +::danger::</bad></t>
+        <t id="shop_ctrl_all"><comment>（[CTRL] - 全选）</comment></t>
+        <t id="buy_shop_item_all">[RMB]购买全部价格：<gold>::price::</gold></t>
+        <t id="cant_buy_shop_item_all">[RMB]购买全部价格：<gold><bad>::price::</bad></gold></t>
+        <t id="buy_shop_item_with_all">[RMB]购买全部价格：<font color="#ffffff"><img src="item/::currency::"/>::price::</font></t>
+        <t id="cant_buy_shop_item_with_all">[RMB]购买全部价格：<bad><img src="item/::currency::"/>::price::</bad></t>
+        <t id="sell_shop_item_all">[RMB]出售全部价格：<gold>::price::</gold></t>
+        <t id="sell_shop_item_stolen_all">[RMB]出售全部价格：<gold>::price::</gold> <bad><img src="icon/Suspicion"/> +::danger::</bad></t>
+        <t id="steal_item">[RMB]偷盗<bad><img src="icon/Suspicion"/>+::danger::</bad></t>
+        <t id="item_discounted_price"><good>（暂时降价）</good></t>
+        <t id="unit_equip_item">[RMB]装备</t>
+        <t id="unit_heal_injury">[RMB]治疗伤处</t>
+        <t id="item_require_level">需要达到第::level::级</t>
+        <t id="layer_require_level">需要第::level::级盔甲</t>
+        <t id="upgrade_weapon_need_unit">需要达到第::level::级可以使用此武器的同伴</t>
+        <t id="stolen_item_label">（赃物）</t>
+        <t id="item_bonus">::name:: <img src="icon/::icon::"/><good>::value::</good></t>
+        <t id="item_convert">::name::<img src="item/::item::"/><good>+::count::</good></t>
+        <t id="item_skill"><::color::>::name::</::color::>技能</t>
+        <t id="item_diet_info">对应食谱：</t>
+        <t id="skill_item_usage">剩余使用次数：<b>::count::</b><img src="::icon::"/></t>
+        <t id="skill_item_usage_global_item">你拥有：<b>::count::</b><img src="::icon::"/></t>
+        <t id="cant_equip_this_item">不能装备该物品</t>
+        <t id="cant_equip_no_armor_slot">盔甲上没有空闲的插槽</t>
+        <t id="cant_equip_no_helmet">未装备头盔。</t>
+        <t id="cant_equip_no_helmet_seal">这种垫层已应用于此头盔。</t>
+        <t id="cant_equip_no_weapon">未装备武器。</t>
+        <t id="cant_equip_no_weapon_oil">这种油已应用于此武器。</t>
+        <t id="cant_equip_shield">::name::无法装备盾牌</t>
+        <t id="cant_equip_this_weapon">::name::无法装备这种武器</t>
+        <t id="cant_equip_armor">::name::无法装备“::armorType::”</t>
+        <t id="cant_equip_req_level">级别不足</t>
+        <t id="cant_equip_req_attribute">::name::不足</t>
+        <t id="can_equip_armor">可以装备::name::</t>
+        <t id="cant_equip_left_hand">::name::的非惯用手已在使用中。</t>
+        <t id="cant_equip_madness">::name::已陷入疯狂，无法装备该物品。</t>
+        <t id="cant_equip_not_prisoner">::name::不是囚犯。</t>
+        <t id="item_already_equipped">该物品已装备。</t>
+        <t id="clear_armor_slots">[RMBSHIFT]移除垫层 (<img src="item/::item::"/>::count::)</t>
+        <t id="clear_helmet_seal">[RMBSHIFT]移除图印</t>
+        <t id="skill_replace_seal">此技能将被图印的技能替代</t>
+        <t id="cant_choose_specialization"><bad>这项专精需要<img src="skill/::skill::"/>::name::技能</bad></t>
+        <t id="unit_salary">支付::name::的工钱<gold>::daily::</gold>。你还需向其支付<gold>::due::</gold>工钱。</t>
+        <t id="unit_food">每日食物消耗</t>
+        <t id="unit_food_trait">最喜欢的食物：</t>
+        <t id="unit_badDiet_days"><bad>已连续::count::天未满足食物需求</bad></t>
+        <t id="unit_noDrinking_days">::count::天未饮酒</t>
+        <t id="unit_recruitSalary">招募::name::的工钱<gold>::daily::</gold>。</t>
+        <t id="knockout_unit">该战士在战斗中被击晕并已被俘。
+
+[LMB]行动
+[RMB]检查</t>
+        <t id="knockout_unit_cannot">该战士在战斗中被击晕但无法被俘（要<img src="item/Chains"/><bad>1根锁链</bad>）。
+
+[LMB]行动
+[RMB]检查</t>
+        <t id="knockout_unit_locked">
+		该战士在战斗中被击倒。
+
+		[RMB]检查
+        </t>
+        <t id="capture_animal">该动物在战斗中被捕获并已加入你的部队。
+
+[LMB]行动
+[RMB]检查</t>
+        <t id="bury_unit">
+		该战士在战斗中阵亡。你的部队想对他的牺牲表示敬意。
+
+		[LMB]埋葬
+        </t>
+        <t id="action_name_default">检查</t>
+        <t id="action_name_talk">交谈</t>
+        <t id="element_action">[LMB] ::action::</t>
+        <t id="element_action_right">[RMB] ::action::</t>
+        <t id="element_action_npc">::name::
+
+[LMB]::action::
+[RMB]检查</t>
+        <t id="chest_locked"><bad>上锁</bad>
+
+[RMB]使用::item::</t>
+        <t id="ruins_light_cost">[LMB] ::action:: <img src="icon/RuinsLight"/><::color::>::value::</::color::></t>
+        <g id="ruins">
+            <t id="action_unexplored">探索</t>
+            <t id="action_explored">借用</t>
+        </g>
+        <t id="gather_item">::name::
+ ::infos::
+ ::button:: ::action::</t>
+        <t id="gather_def_action">拾取</t>
+        <t id="recruit_action">招募</t>
+        <t id="recruit_cost">花费::cost::招募</t>
+        <t id="dialog_requires">需要::cost::</t>
+        <t id="dialog_wanted">被通缉<bad><img src="icon/Suspicion"/>+::range::</bad></t>
+        <t id="dialog_wanted_gains">被通缉<good><img src="icon/Suspicion"/>::range::</good></t>
+        <t id="dialog_gains">获得::gains::</t>
+        <t id="dialog_gains_mission">承诺的奖励</t>
+        <t id="craft_requires_ingredients">材料：</t>
+        <t id="cancel_action">取消</t>
+        <t id="cancel_daily_rest">休息剩余：::count::次</t>
+        <t id="rank_rest">今日等级已分配</t>
+        <g id="choose_unit">
+            <t id="action_tip_no_job">
+				::name::
+
+				[LMB] ::action::
+            </t>
+            <t id="action_tip_ok">::name::
+
+[LMB] ::action::
+[RMB] 选择一个专业</t>
+            <t id="action_tip_disabled">::name::
+
+::reasons::
+[RMB] ::action::</t>
+            <t id="action_assign_job">[LMB] ::action::</t>
+            <t id="action_assign_sport">::name::
+
+ ::status::
+
+ [LMB] ::action::</t>
+            <t id="action">::name::
+
+ [LMB] ::action::
+ [RMB] ::right_action::</t>
+            <t id="validation_tip_disabled">::reasons::</t>
+            <t id="inspect_action">检查</t>
+            <t id="choose_job_action">选择一个专业</t>
+            <t id="default_action">选择</t>
+            <t id="title_multiple">选择你的<font color="#FFF">同伴</font></t>
+            <t id="title_tent">帐篷管理</t>
+            <t id="title">选择一个<font color="#FFF">::traitName::</font></t>
+            <t id="name_unit">同伴</t>
+            <t id="not_allowed">你不能在此使用该单位</t>
+            <t id="not_available">该单位不可用。</t>
+            <t id="injured">受伤的同伴</t>
+            <t id="req_trait_level">需要达到::trait::::level::</t>
+            <t id="need_prisoner">必须为俘虏</t>
+            <t id="need_no_prisoner">不得为俘虏</t>
+            <t id="should_be_type">应为::name::</t>
+            <t id="job_required">必须为::name::</t>
+            <t id="level_required">必须达到第::value::级</t>
+            <t id="item_required">必须装备::name::</t>
+            <t id="no_job">无专业</t>
+            <t id="select_count_require">需要::count::单位</t>
+            <t id="no_available_unit">无同伴可供选择</t>
+            <t id="already_assigned">该单位已被分配至::trait::。</t>
+            <t id="types_separator">或</t>
+        </g>
+        <t id="inventory_weight">运载能力：<img src="icon/Weight"/><good>::transport::</good>
+ 物品箱重量：<img src="icon/Weight"/><bad>::inv::</bad>
+ 营地重量：<img src="icon/Weight"/><bad>::camp::</bad></t>
+        <t id="inventory_weight_over"><bad>你运载的重量过重！</bad>
+升级你的马车或卸下沉重的物品。</t>
+        <t id="inventory_full">物品箱已满</t>
+        <g id="inventory_sort">
+            <t _id="type">类型</t>
+            <t _id="prix">价格</t>
+            <t _id="poids">重量</t>
+            <t _id="raret">稀有度</t>
+        </g>
+        <t id="camp_place_tool">放在营地</t>
+        <t id="camp_cant_place_tool"><bad>已放在营地</bad></t>
+        <t id="camp_no_more_place"><bad>无剩余空间。</bad></t>
+        <t id="hideout_reveal">显示地点</t>
+        <t id="camp_use_tool">[RMB]使用</t>
+        <t id="camp_remove_tool">[RMBSHIFT]放入物品栏</t>
+        <t id="camp_move">[LMB]移动<small>（长按）</small></t>
+        <t id="camp_move_no_hold">[LMB]移动</t>
+        <t id="select_unit">[LMB]选择一位同伴</t>
+        <t id="inspect">[RMB]检查</t>
+        <t id="shift_inspect">[RMBSHIFT]调查</t>
+        <t id="leave_companion">[LMB]驻防</t>
+        <t id="add_companion">[LMB]添加到部队</t>
+        <t id="use_heal_remedy">[RMB]治疗伤处</t>
+        <t id="action_assign_armor_layer">[RMB]为盔甲添加垫层</t>
+        <t id="action_assign_helmet_seal">[RMB]为头盔添加图印</t>
+        <t id="trade_log_buy"><small>::when::</small><good>从::where::以<gold>::price::</gold>的价格购买了</good><img src="item/::icon::"/><b>::name::</b><small>::qty::</small></t>
+        <t id="trade_log_sell"><small>::when::</small><bad>向::where::以<gold>::price::</gold>的价格出售了</bad><img src="item/::icon::"/><b>::name::</b><small>::qty::</small></t>
+        <t id="wanted_title">被通缉</t>
+        <t id="wanted_status_progress">当前通缉级别：<b>::current::/::max::</b></t>
+        <t id="wanted_status_active"><bad>你因以下原因遭到通缉：</bad></t>
+        <t id="wanted_status_desc"><good>目前你并未被守卫通缉。</good></t>
+        <t id="wanted_stolen_fine">拥有的赃物</t>
+        <t id="wanted_stolen_used_fine">已处理的赃物</t>
+        <t id="wanted_reason_fine">- ::reason::<gold>::fine::</gold></t>
+        <t id="item_level_short">第::level::级</t>
+        <g id="item_rarity">
+            <t _id="commun">普通</t>
+            <t _id="inhabituel">罕见</t>
+            <t _id="rare">稀有</t>
+            <t _id="lgendaire">传奇</t>
+        </g>
+        <t id="item_upgradable">- 可升级</t>
+        <t id="item_unique">- 独特</t>
+        <t id="camp_assigned_count"><img src="icon/::icon::"/>::cur::/::max::</t>
+        <t id="battle_deploy_slot">你可以在战斗开始前在此部署一位同伴。</t>
+        <t id="unit_set_job">::name::将成为一名::job::</t>
+        <t id="unit_switch_job">该同伴将失去作为::job:: ::level::获得的所有经验。</t>
+        <t id="unit_no_job">该同伴还没有专业。</t>
+        <t id="unit_job"><b>专业：</b>::name::</t>
+        <t id="unit_job_choose">[LMB] 选择一个专业</t>
+        <t id="unit_job_change">[LMB] 更改专业</t>
+        <t id="item_global_bonus"><b>部队加成：</b>::desc::</t>
+        <t id="item_local_bonus"><b>加成：</b>::desc::</t>
+        <t id="item_food_bonus"><disable>（持续到下次休息）</disable></t>
+        <t id="mission_board_cant_accept_quest">你必须完成正在进行中的契约才能接受新的契约。</t>
+        <t id="gameinfo_toggle_units">显示/隐藏同伴列表</t>
+        <t id="action_skill_upgrade">[RMB]提升技能<img src="item/::item::"/></t>
+        <t id="skill_upgrade_no_unit">查看一个<idesc>同伴</idesc>，选择要升级的技能。</t>
+        <t id="skill_upgradable">选择要升级的技能。</t>
+        <t id="skill_no_skill_upgradable"><bad>你的<idesc>同伴</idesc>没有可升级的技能。</bad></t>
+        <t id="unlock_class">学习<b>::name::</b>专精</t>
+        <t id="preview_unlock_class">预览专精</t>
+        <t id="codex_need_restored">这本先民古籍已受损。使用<img src="item/Lectern"/><b>诵经台</b>可以将其修复。</t>
+        <t id="codex_locked_desc">只有学会以下<b>符文</b>，才能破译这本先民古籍：</t>
+        <t id="codex_can_be_unlocked">这本先民古籍只有在<img src="item/Lectern"/><b>诵经台</b>才能破译。</t>
+        <t id="codex_unlocked_desc">你已破译这本先民古籍中的以下片段：</t>
+        <t id="page_need_restored">这本日志已受损。使用<img src="item/Lectern"/><b>诵经台</b>可以将其修复。</t>
+        <t id="page_locked_desc">只有学会以下<b>符文</b>，才能破译这本日志：</t>
+        <t id="page_can_be_unlocked">这本日志只有在<img src="item/Lectern"/><b>诵经台</b>才能破译。</t>
+        <t id="page_unlocked_desc">你已破译这本日志中的以下片段：</t>
+        <t id="rune_desc">你进一步精进了自己的先民符文知识。该符文代表<b>::word::</b>”</t>
+        <t id="recipe_food">配方：::name::</t>
+        <t id="recipe_food_desc">教你如何烹制：::name::</t>
+        <t id="recipe_alchemist">配方：::name::</t>
+        <t id="recipe_alchemist_desc">教你如何配制：::name::</t>
+        <t id="recipe_forge_desc">教你如何锻造：::name::</t>
+        <t id="recipe_other">蓝图：::name::</t>
+        <t id="recipe_other_desc">教你如何制作：::name::</t>
+        <t id="manual_name">手册：::skillName::</t>
+        <t id="manual_desc">上面记载的知识可以让你的一名同伴学习一项新技能。</t>
+        <t id="manual_requires_unit">查看一个<idesc>同伴</idesc>以学习该技能。</t>
+        <t id="manual_already_learnt">你的<idesc>同伴</idesc>已习得该技能。</t>
+        <t id="strategy_name">战略：::strategyName::</t>
+        <t id="strategy_desc">阅读之后可以在战略桌上获得一种新战略。</t>
+        <t id="job_assigned"><b><img src="/trait/::icon::"/>已分配::kind::：</b></t>
+        <t id="rank_assigned"><b>已分配::kind::：</b></t>
+        <t id="ranked_assigned"><b>高等级同伴已分配：</b></t>
+        <t id="map_defended_by">防御者：<b>::name::</b></t>
+        <t id="probabilitySuccess">成功率：::value::%</t>
+        <g id="bonuses">
+            <t id="title">部队与加成</t>
+            <t id="gameTitle">::troopName::</t>
+            <t id="count">你的部队中有<img src="icon/Companions"/><b>::count::</b>位同伴。</t>
+            <t id="bonus_global">一般加成</t>
+            <t id="bonus_equip">装备加成</t>
+            <t id="bonus_path">路径加成</t>
+            <t id="bonus_untilrest">加成到下次休息为止</t>
+            <t id="skill_untilrest">被动技能，持续到下次休息为止</t>
+        </g>
+        <t id="dialog_rest">通过休息让你的部队恢复<ap>::ap::</ap></t>
+        <t id="dialog_sing">唱首歌，展现你的吟游诗人天赋。</t>
+        <t id="recruit_announce">发布招募公告以招募新兵。</t>
+        <t id="dialog_heal_injuries">治愈所有同伴的轻伤。</t>
+        <t id="dialog_heal_prisoners_injuries">治愈所有俘虏的轻伤。</t>
+        <t id="orient_map">[RMB]放置地点标记</t>
+        <t id="stickers_map">[LMB]放置贴纸</t>
+        <t id="map_goal_default">前去深入探索。</t>
+        <t id="map_goal_need_mission">接受::name::的任务</t>
+        <t id="map_goal_need_mission_nonpc">接受该地的一项任务</t>
+        <t id="map_goal_unknown">与某人交谈或四处看看，了解更多情况。</t>
+        <t id="map_goal_done"><good>完成！</good></t>
+        <t id="open_gold_purse">打开</t>
+        <t id="use_hidden_item">使用</t>
+        <g id="escape">
+            <t id="other_prisoners">部队中的俘虏</t>
+            <t id="ally_around">附近的同伴</t>
+            <t id="watchstool_assign">营地有人看守</t>
+        </g>
+        <g id="relation">
+            <t id="gain_with">::value::和::name::的关系。</t>
+            <t id="gain_group">::value::和队伍的关系。</t>
+            <t id="gain_group_percent">::value::和亲密同伴的关系。</t>
+            <t id="gain_group_best">::value::和欣赏的同伴的关系。</t>
+            <t id="gain_companion">::value::和一个同伴的关系。</t>
+            <t id="gain_random_with">将会影响你和::name::的关系。</t>
+            <t id="gain_random_group">将会影响你和队伍的关系。</t>
+            <t id="gain_random_group_percent">将会影响你和附近同伴的关系。</t>
+            <t id="gain_random_group_best">将会影响你和最喜欢的同伴的关系。</t>
+            <t id="gain_random_companion">将会影响你和一个同伴的关系。</t>
+        </g>
+        <g id="xp">
+            <t id="gain_self">::value::点经验</t>
+            <t id="gain_target">::name::获得::value:: 点经验</t>
+            <t id="gain_group_percent">::value::点经验给亲密同伴。</t>
+        </g>
+        <t id="gain_injury">有可能受伤</t>
+        <t id="gain_status">::name::将获得<b>::status::</b>状态</t>
+        <t id="desc_status"><comment><b>::status::</b>: ::desc::</comment></t>
+        <t id="gain_trait">::name::将获得<b>::trait::</b>特质</t>
+        <t id="gain_job">::name::将成为一名<b>::job:: ::level::</b></t>
+        <t id="rest_die">::name::将会在下次休息期间死亡</t>
+        <g id="job_xp">
+            <t id="gain">作为::job::获得::value::点经验</t>
+        </g>
+        <g id="confession">
+            <t id="suggested_by">由::name::建议。</t>
+            <t id="leaver">::name::将会脱离部队。</t>
+            <t id="kill">::name::将会死亡。</t>
+            <t id="surrender">::name::将会前往监狱。</t>
+            <t id="notify_relation_improve_list"><b>::name::</b>和下列随行同伴的关系提升了：<b>::names::</b></t>
+            <t id="notify_relation_deteriorate_list"><b>::name::</b>和下列随行同伴的关系恶化了：<b>::names::</b></t>
+        </g>
+        <t id="attribute_point">天赋点数</t>
+        <t id="item_required">需要<img src="item/::item::"/><bad>::itemName::</bad></t>
+        <t id="food_delicious">美味</t>
+        <g id="boat">
+            <t id="durability">耐久</t>
+            <t id="action_embark">登船</t>
+            <t id="action_dock">停靠</t>
+            <t id="crew_position">船员位置</t>
+            <t id="job_require">需要::jobName::</t>
+            <t id="job_action_require">只有被分配至::jobName::岗位的同伴可以执行此操作。</t>
+            <t id="assign_job">[LMB]分配同伴</t>
+            <t id="unassign_job">[RMB]移除同伴</t>
+            <t id="replace_job">[LMB]更换同伴</t>
+            <t id="boat_repatriate">确定要花费 ::cost:: 将船送至这个码头？</t>
+            <t id="boat_repatriate_small">花费 ::cost:: 取回</t>
+            <t id="action_install_equipment">[LMB] 安装设备</t>
+            <t id="action_build_equipment">[LMB] 建造设备</t>
+            <t id="action_upgrade_equipment">[RMB] 升级设备</t>
+            <t id="action_repair_equipment">[RMB] 修理设备</t>
+            <t id="select_ammo">[LMB]选择</t>
+            <t id="need_dock_equipment"><bad>船只必须停泊在码头才能改装设备。</bad></t>
+            <t id="need_dock_repair"><bad>船只必须停泊在码头才能修理。</bad></t>
+            <t id="build_equipment_confirm">确认建造 ::item::？</t>
+            <t id="repair_confirm">确认修理？</t>
+            <t id="no_ballista">该船只未配备弩炮</t>
+            <t id="damaged_equipment"><bad>船体的这部分受到损伤，无法使用了。送至码头修理吧。</bad></t>
+            <t id="repair">修理</t>
+            <t id="ballista_damaged"><bad>这架弩炮已受损</bad></t>
+            <t id="equipment_unknown">你尚未找到制造这个设备的蓝图。</t>
+        </g>
+        <g id="watchman">
+            <t id="animal_try_telling_something">**（瞭望台传来怪声）**</t>
+            <g id="insight">
+                <t _id="nameregardelouest">::name:: 望向西方。</t>
+                <t _id="nameregardeaunordouest">::name:: 望向西北方。</t>
+                <t _id="nameregardeaunord">::name:: 望向北方。</t>
+                <t _id="nameregardeaunordest">::name:: 望向东北方。</t>
+                <t _id="nameregardelest">::name:: 望向东方。</t>
+                <t _id="nameregardeausudest">::name:: 望向东南方。</t>
+                <t _id="nameregardeausud">::name:: 望向南方。</t>
+                <t _id="nameregardeausudouest">::name:: 望向西南方。</t>
+            </g>
+            <t id="guard">“发现守卫！”</t>
+            <t id="pirates">“发现海盗！”</t>
+            <t id="new_land">“看到新陆地了！”</t>
+            <t id="floatable">“发现漂浮物！”</t>
+            <t id="animal_worried">**担心的咕哝声！**</t>
+            <t id="animal_excited">**热情的咕哝声！**</t>
+            <t id="animal_intrigued">**好奇的咕哝声！**</t>
+        </g>
+    </g>
+    <g id="items">
+        <t id="hideoutmap_defender_killed_desc">::name::已被摧毁。这张地图对你毫无用处。</t>
+        <t id="raw_materials">恢复的盔甲点数：<b>::qty::</b></t>
+    </g>
+    <g id="confirm">
+        <t id="unit_dismiss">确认解雇<b>::name::</b>？</t>
+        <t id="unit_dismiss_no_more_unit">已是最后一位同伴，无法解雇。</t>
+        <t id="transfer_title">转移一个单位</t>
+        <t id="choose_player">选择一名玩家</t>
+        <t id="unit_transfer">将<b>::unit::</b>转移至<b>::player::</b></t>
+        <t id="unit_kill">确认处决<b>::name::</b>？</t>
+        <t id="unit_kill_no_more_unit">已是最后一位同伴，无法处决。</t>
+        <t id="unit_kill_title">::name::已被处决。</t>
+        <t id="drop_item">确认丢弃::count::个<b>::name::</b>？</t>
+        <t id="retreat_fight">确认发出撤退信号，放弃战斗？</t>
+        <t id="repair_action">修复全部::count::个<img src="/item/RawMaterials"/></t>
+        <t id="repair_armor">使用::qty::修复盔甲？</t>
+        <t id="repair_all_armors">消耗::qty::修复所有盔甲？</t>
+        <t id="cure_all_injuries">消耗::qty::治愈所有伤口？</t>
+        <t id="unit_unchain">确认要释放<b>::name::</b>？</t>
+        <t id="unit_chain">俘虏<b>::name::</b>？
+<small>（必将感觉受到背叛……）</small></t>
+        <t id="heal_action">治疗全部<img src="/item/Remedy"/>::count::</t>
+        <t id="heal_title">治疗伤处</t>
+        <t id="heal_injury">使用<img src="/item/::icon::"/><b>::remedy::</b>治疗<b>::name::</b>？</t>
+        <t id="heal_remedy_none">你没有治疗这种伤的药物。前往药师铺购买或制作一些。</t>
+        <t id="choose_remedy">选择一种药</t>
+        <t id="choose_injury">选择一处伤口</t>
+        <t id="skill_up">升级<b>::name::</b>？</t>
+        <t id="attribute_up">升级<b>::name::</b>？</t>
+        <t id="nothing_found_here">你在这里什么都没有找到。</t>
+        <t id="recruit_unit">花费::cost::招募::name::？</t>
+        <t id="recruit_unit_free">确认招募<b>::name::</b>？</t>
+        <t id="element_empty">你在这里什么都没有找到。</t>
+        <t id="npc_no_dialog">::name::对你视若无物。</t>
+        <t id="salary_cost">此次休息期间你将支付部队<gold>::v::</gold>。</t>
+        <t id="salary_partially_paid_cost">在此次休息期间支付部队的部分工钱：<gold>::v::</gold>/::total::。
+
+一些同伴会因为没有按时收到工钱而不高兴。</t>
+        <t id="salary_will_be_paid_good">今天支付工钱会让你的同伴们高兴起来。</t>
+        <t id="salary_will_be_paid_bad">今天支付工钱后，你的同伴们就不会再不满意了。</t>
+        <t id="salary_will_be_not_paid">今天不支付工钱会让你的同伴们不高兴。</t>
+        <t id="salary_paid">你已向你的部队支付<gold>::v::</gold>。</t>
+        <t id="salary_paid_perfect">工钱按时支付了。</t>
+        <t id="salary_paid_good">工钱付得稍微有些晚。</t>
+        <t id="salary_paid_bad">工钱付得太晚了。</t>
+        <t id="salary_paid_partially">已支付部分工钱。</t>
+        <t id="mission_accept">接受契约“<b>::name::</b>”？</t>
+        <t id="mission_cancel">撤销契约“<b>::name::</b>”？</t>
+        <t id="upgrade_to_class">你想让<b>::name::</b>成为一名<b>::cl::吗？</b></t>
+        <t id="add_skill">你想学习<b>::name::吗？</b></t>
+        <t id="craft_done">你已制作出：</t>
+        <t id="craft_bonus">首次制作加成：</t>
+        <t id="craft_bonuses">额外生产：</t>
+        <t id="craft_saved">返还资源：</t>
+        <t id="missing_cost">你没有执行该行动所需的足够资源。</t>
+        <t id="add_armor_slot">为这件盔甲添加该垫层？</t>
+        <t id="add_helmet_seal">确定要在此头盔上添加此图印吗？</t>
+        <t id="retrieve_helmet_seal">你将取回<good>::seal_name::</good></t>
+        <t id="clear_armor_slots">移除这件盔甲的垫层？</t>
+        <t id="clear_helmet_seal">确定要从此头盔上移除图印吗？</t>
+        <t id="destroy_armor_slots_warning">它们会在此过程中被销毁。</t>
+        <t id="item_cost">支付<img src="item/::item::"/><font color="#ffffff">::cost::</font>？</t>
+        <t id="dialog_cost">支付::cost::？</t>
+        <t id="dialog_action">确认<img src="icon/::act::"/>::text::？</t>
+        <t id="exit_ruin_no_light">你没有<img src="icon/RuinsLight"/><b>光源</b>。你需要光源才能继续探索！</t>
+        <t id="ruins_tired_warning"><bad>你的同伴累了！</bad>
+建议休息一会儿再继续前进。</t>
+        <t id="ratmare">如果你接受这个任务，<b>::name::</b>会因为害怕老鼠而离开部队。</t>
+        <t id="battle_let_runaway">你的对手士气大减，仓皇而逃！
+是否让他们逃离并取得战斗胜利？</t>
+        <t id="battle_end_turn_without_playing">确认结束<b>::name::</b>的回合而不采取任何行动？</t>
+        <t id="battle_end_turn_cancel_skill">此操作将停用<b>::skillName::</b>。</t>
+        <t id="battle_dying_unit_retreat"><b>::name::</b>处于濒死状态。他们的死亡会导致你<bad>战败</bad>！
+ 是否确认<b>立即撤退</b>？</t>
+        <t id="item_convert_action">::action::::item::？</t>
+        <t id="rename_unit">你想为::unitName::起什么昵称？</t>
+        <t id="rename_troop">想给你的部队起什么名字？</t>
+        <t id="rename_boat">想给你的船只起什么名字？</t>
+        <t id="rename_tavern">想给你的酒馆起什么名字？</t>
+        <t id="message_accompany"><b>::name::</b>已加入你的部队。</t>
+        <t id="message_accompany_left"><b>::name::</b>已离开你的部队。</t>
+        <t id="message_follow"><b>::name::</b>正在跟随你的部队。</t>
+        <t id="message_follow_left"><b>::name::</b>已不再跟随你的部队。</t>
+        <t id="message_recruit"><b>::name::</b>已加入你的部队！</t>
+        <t id="message_leave"><b>::name::</b>已离开你的部队。</t>
+        <g id="message_recruit_add">
+            <t _id="voscompagnonssontsatisfaits">你的同伴兴致高昂。</t>
+            <t _id="voscompagnonsletrouventsympatique">你的同伴觉得他人很友善。</t>
+            <t _id="voscompagnonsdoutentquilfasselaffaire">你的同伴怀疑他不能胜任这项任务。</t>
+            <t _id="voscompagnonslaccueillentavecjoie">你的同伴非常欢迎他。</t>
+        </g>
+        <g id="message_recruit_add_fem">
+            <t _id="voscompagnonssontsatisfaits">你的同伴兴致高昂。</t>
+            <t _id="voscompagnonslatrouventsympatique">你的同伴觉得她人很友善。</t>
+            <t _id="voscompagnonsdoutentquellefasselaffaire">你的同伴怀疑她不能胜任这项任务。</t>
+            <t _id="voscompagnonslaccueillentavecjoie">你的同伴非常欢迎她。</t>
+        </g>
+        <g id="message_recruit_add_animal">
+            <t _id="voscompagnonssedemandentjustepourquoi">你的同伴在想……为什么？</t>
+            <t _id="voscompagnonstrouventquecestuneexcellenteide">你的同伴认为这个主意不错。</t>
+            <t _id="voscompagnonsapprouvent">你的同伴表示同意。</t>
+            <t _id="voscompagnonsnontaucunavissurcechoix">你的同伴对这个选择没有意见。</t>
+        </g>
+        <t id="place_piton_here">在此放置<b>岩钉</b>？</t>
+        <t id="place_tomb_here">将<b>坟墓</b>放置在这里？</t>
+        <t id="upgrade_skill">使用::item::升级同伴的技能？</t>
+        <t id="skill_upgraded"><good>::name::</good>技能已升级！</t>
+        <t id="unlocked_class">你学会了<good>::name::</good>专精！</t>
+        <t id="use_oil">对<good>::weapon::</good>武器施加该效果？</t>
+        <t id="replace_prev_oil">当前施加的效果将会<bad>失效</bad>。</t>
+        <t id="oil_choose_replace">选择要在<good>::weapon::</good>上替换的效果：</t>
+        <t id="use_rat_bait">确认放置<img src="item/::item::"/>？</t>
+        <t id="use_respecialization_manual">确认对<b>::unit::</b>使用<img src="item/::item::"/><b>::name::</b>？</t>
+        <t id="name_to_rank">向::name::授予<b>::rank::军衔？</b></t>
+        <t id="loosing_rank"><bad>::name::将失去其<b>::rank::</b>军衔</bad></t>
+        <t id="was_named_to_rank">::name::已被部队任命为<b>::rank::</b>。</t>
+        <t id="was_named_to_rank_fem">::name::已被部队任命为<b>::rank::</b>。</t>
+        <t id="cannot_drop_unique_item">
+		你不能丢弃这件特殊物品。
+		它将伴随你到最后，除非你学会如何使用它。
+        </t>
+        <t id="travel_to">前往::place::？</t>
+        <t id="epitaph">你想留下墓志铭吗？</t>
+        <t id="debug_confirm">::cmd::</t>
+    </g>
+    <g id="ui">
+        <t id="defaultsave">保存</t>
+        <t id="autosave">自动保存</t>
+        <t id="quicksave">快速保存</t>
+        <t id="inventory_title">物品栏</t>
+        <t id="choose_sell_quantity">你想出售多少<b>::name::</b>？</t>
+        <t id="choose_buy_quantity">你想购买多少<b>::name::</b>？</t>
+        <t id="choose_pick_quantity">你想拾取多少<b>::name::</b>？</t>
+        <t id="choose_craft_quantity">你想制作多少<b>::name::</b>？</t>
+        <t id="choose_drop_quantity">你想丢弃多少<b>::name::</b>？</t>
+        <t id="buy_sell_quantity_label">数量：</t>
+        <t id="choose_amount_total">（<gold>::gold::</gold>）</t>
+        <t id="choose_amount_item">（<img src="item/::currency::"/>::count::）</t>
+        <t id="inventory_price_label"><gold>::price::</gold></t>
+        <t id="drop_item_label">丢弃</t>
+        <t id="heal_remedy_label">使用<img src="/item/::icon::"/>::name::治疗</t>
+        <t id="gain_place_discovery">+::number::<img src="/item/::icon::"/>::name::</t>
+        <t id="activity_xp_gain">+::value::点经验</t>
+        <t id="activity_item_gain">+::value::<img src="/item/::icon::"/>::name::</t>
+        <t id="board_puzzle_instruction">[LMB]激活（长按）</t>
+        <t id="fishing_counter">捕捉::number::条<img src="/item/::icon::"/>鱼</t>
+        <t id="fishing_start">使用鱼饵</t>
+        <t id="fishing_instruction">[LMB]别让鱼溜走了！</t>
+        <t id="fishing_fail">鱼溜走了</t>
+        <t id="fishing_leave">离开</t>
+        <t id="gather_production">生产::name::（+::count::/j）</t>
+        <t id="gather_resource">收集::name::（::count::/::max::）</t>
+        <t id="lockpick_quantity">剩余::number::个<img src="/item/::icon::"/>::name::</t>
+        <t id="lockpick_no_more_lockpicks">没有<img src="/item/::icon::"/>::name::</t>
+        <t id="lockpick_leave">离开</t>
+        <t id="nine_puzzle_leave">离开</t>
+        <t id="cylinder_puzzle_leave">离开</t>
+        <t id="board_puzzle_leave">离开</t>
+        <t id="sing_leave">离开</t>
+        <t id="archery_shots_remaining">剩余::number::发</t>
+        <t id="archery_no_shots_remaining">练习结束</t>
+        <t id="recipe_equipement_type">装备类型</t>
+        <t id="recipe_type_dish">菜肴类型</t>
+        <t id="recipe_ingredients">原料</t>
+        <t id="recipe_all_recipes">全部</t>
+        <t id="recipe_level_required">所需级别</t>
+        <t id="recipe_lore_unknown">未知来源</t>
+        <t id="recipe_possessed_item">你拥有：</t>
+        <t id="recipe_ingredient_stock_needed">储备/所需</t>
+        <t id="recipe_unique_item">该物品只能获得一次。</t>
+        <t id="recipe_not_enough_materials">资源不足，无法制造该数量的物品</t>
+        <t id="recipe_confirm_forge">确认制造::number::个<img src="/item/::icon::"/>::name::？</t>
+        <t id="recipe_not_has_job_level">你没有达到该专业的所需级别。</t>
+        <t id="recipe_no_more_upgrade">该物品不可升级。</t>
+        <t id="activity_forge_bonus_title">品质加成</t>
+        <t id="activity_forge_bonus_info">连续击打炽热的金属::number::次</t>
+        <t id="activity_forge_success_bonus_info">获得高品质物品：</t>
+        <t id="activity_forge_fail_bonus_info">获得普通品质物品：</t>
+        <t id="activity_cook_delicious_bonus_info">已获得高品质<img src="/icon/QualityStar"/>菜肴：</t>
+        <t id="activity_cook_normal_bonus_info">已获得普通品质菜肴：</t>
+        <t id="activity_food_delicious">（美味）<img src="/icon/QualityStar"/></t>
+        <t id="activity_regular_item">已获得物品：</t>
+        <t id="camp_rotate">按[KEY_CampRotation]或滚动鼠标滚轮进行旋转</t>
+        <t id="camp_rotate_pad">按下<img src="icon/Pad_LB"/>或<img src="icon/Pad_RB"/>旋转</t>
+        <t id="camp_reserve">后备队</t>
+        <t id="reserve_info">你的<b>后备队</b>由那些你不希望他们留在营地里的同伴组成。
+ 无法为他们分配任务，但必须为其正常提供食物和工钱。
+
+ <b>[RMBSHIFT]营地里的同伴，即可将其分配至后备队。</b></t>
+        <t id="mission_name">契约</t>
+        <t id="mission_board_quest_list">已接受的契约：::value::/::max::</t>
+        <t id="mission_next_in">下一契约倒计时：::time::</t>
+        <t id="mission_expire_in">契约将在::time::后失效。</t>
+        <g id="mission_difficulty">
+            <t _id="facile">简单</t>
+            <t _id="normal">普通</t>
+            <t _id="moyen">中等</t>
+            <t _id="difficile">困难</t>
+        </g>
+        <g id="mission_negociate">
+            <t id="desc">调整谈判值，争取到更高的契约价格，获取影响力。</t>
+            <t id="contract">契约：::name::</t>
+            <t id="inital_offer">初始报价：::value::</t>
+            <t id="current_offer">当前报价：::value::</t>
+            <t id="asked_offer">要求的奖励：::value::</t>
+            <t id="cost">谈判成本：::value::</t>
+            <t id="accept_offer">接受报价</t>
+        </g>
+        <g id="sea_lords">
+            <t id="tutorial">可以在佩巴斯特酒馆与狂热分子交谈，了解更多关于海上领主的情况。</t>
+            <t id="title">海上领主</t>
+            <t id="leaderboard">排行榜</t>
+            <t id="territory">领地：</t>
+            <t id="status">状态：</t>
+            <t id="rewards">奖励：</t>
+            <g id="status_list">
+                <t _id="actif"><good>活跃</good></t>
+                <t _id="rival"><warn>敌对</warn></t>
+                <t _id="vostrousses"><warn>紧追不舍</warn></t>
+                <t _id="vaincu"><bad>落败</bad></t>
+            </g>
+            <t id="marker_tooltip">找到并与::name::对战。</t>
+        </g>
+        <t id="difficulty">难度：</t>
+        <t id="reward">奖励：</t>
+        <t id="cost">成本：</t>
+        <t id="bounty_group_name">::name::团伙</t>
+        <t id="grimoire_empty">::name::是空的。</t>
+        <t id="grimoire_name">百科</t>
+        <t id="grimoire_learn_action">学习：::item::</t>
+        <t id="grimoire_unknown_name">？？？？</t>
+        <t id="grimoire_level_required">需要达到::trait::::level::</t>
+        <t id="grimoire_learn_recipe">在百科中学习</t>
+        <t id="grimoire_can_not_learn_recipe">你还不知道与该配方相关的专业。</t>
+        <t id="grimoire_recipe_already_learnt">你已知晓该配方。</t>
+        <t id="grimoire_xp_suffix"><img src="/item/::icon::"/></t>
+        <t id="grimoire_craft_to_gain_discovery">制作一次可增进你的<img src="item/Knowledge"/><b>知识</b></t>
+        <t id="grimoire_craft_to_reveal_item">制作一次可解锁百科中的一个新配方</t>
+        <t id="grimoire_craft_to_reveal_items">制作一次可解锁百科中的<b>::number:: recipes</b></t>
+        <t id="grimoire_craft_to_reveal_bundle">制作一个此类物品可解锁百科中的<b>高品质系列</b></t>
+        <t id="grimoire_craft_to_reveal_bundle_one_item">制作一次可解锁百科中的<b>高品质系列</b></t>
+        <t id="grimoire_learn_to_gain_discovery">学习一下可增进你的<img src="item/Knowledge"/><b>知识</b></t>
+        <t id="grimoire_learn_to_reveal_item">学习一下可解锁百科中的一个新能力</t>
+        <t id="grimoire_need_to_unlock">需要<img src="item/::item::"/></t>
+        <t id="grimoire_need_recipe">需要一个配方。</t>
+        <t id="grimoire_need_knowledge">需要一个知识点。</t>
+        <t id="grimoire_need_setting">完成此区域剧情后可用。</t>
+        <t id="grimoire_need_city_forge">在镇上的铁匠铺可用。</t>
+        <t id="grimoire_unlock_recipe">百科中的新配方：</t>
+        <t id="grimoire_confirm_learn">确认学习<img src="/item/::icon::"/>::name::？</t>
+        <t id="grimoire_page_number">第::current::页/共::max::页</t>
+        <t id="grimoire_craft_learnt">::player_name::学会了::recipe_name::</t>
+        <t id="grimoire_toggle_undiscovered">隐藏未发现物</t>
+        <g id="grimoire_knowkedge">
+            <t id="group3_unlock_info"><img src="item/Knowledge"/> ::count::/::total::</t>
+            <t id="group3_unlock_tip">赚取总计::count::的<img src="item/Knowledge"/>后解锁</t>
+        </g>
+        <t id="craft_done">::unit_name::（::player_name::）制造了::count::件::craft_name::</t>
+        <g id="rest">
+            <t id="camp_report">营地报告</t>
+            <t id="production_detail">营地生产出了资源。</t>
+            <t id="food_inventory">口粮</t>
+            <t id="action_points">你获得了<img src="/icon/ActionPoint"/><b>::count::</b></t>
+            <t id="troop_was_feed">部队已进食。</t>
+            <t id="rested">部队已得到充分休息。</t>
+            <t id="confirm_no_feed">你的部队还没有进食！是否仍然休息？</t>
+            <t id="confirm_no_salary">你还没有支付同伴的工钱！是否仍然休息？</t>
+            <t id="confirm_leaver">::name::即将离开部队！仍然要休息？</t>
+            <t id="confirm_leavers">::count::位同伴将离开部队！仍然要休息？</t>
+            <t id="not_paid"><bad>你的同伴因没有得到工钱而不满！</bad></t>
+            <t id="unit_left"><bad>::name::</bad>因对当下的条件不满而离开了部队！</t>
+            <t id="unit_left_woman"><bad>::name::</bad>因对当下的条件不满而离开了部队！</t>
+            <t id="eat_action">添加到口粮</t>
+            <t id="remove_action">从口粮移除</t>
+            <t id="feed_action">修改餐食</t>
+            <t id="unit_plagued">部分同伴因染疫伤口未得到治疗，现已感染瘟疫：<bad>::names::</bad>。</t>
+            <t id="unit_plagued_starved">染疫同伴因上一顿伙食中没有肉而<bad>极度饥饿</bad>。他们随时可能失控。</t>
+            <t id="unit_plagued_madness">部分染疫同伴在休息时陷入了疯狂：<bad>::names::</bad>。</t>
+            <t id="unit_healed_doctor">::name::使用植物治好了::healedname::的::injury::。</t>
+            <t id="unit_crunched_fail"><warn>::plagued::</warn>试图撕咬<warn>::victim::</warn>。</t>
+            <t id="unit_crunched_success"><bad>::plagued::</bad>趁<bad>::victim::</bad>休息时咬了他，留下了<bad>染疫伤口</bad>。</t>
+            <t id="become_alcoholic">::name::饮酒过多，现已变成<bad>酗酒者</bad>！</t>
+            <t id="heal_injury">::name::的伤已好。</t>
+            <t id="training_xp_gain">::name::在训练中获得了<img src="/icon/FightXP"/>::xp::点经验。</t>
+            <t id="bad_diet">部分同伴的<bad>食物需求</bad>没有得到满足。</t>
+            <t id="alcohol_withdrawal">::name::已停止饮酒！</t>
+            <t id="become_sick">::name::无法消化昨夜吃的肉，现在<bad>生病了</bad>。</t>
+            <t id="happy_log_zero">你部队的满意度没有发生变化。</t>
+            <t id="happy_log_gain">你部队的满意度提高了<happy>+::count::</happy></t>
+            <t id="happy_log_lose">你部队的满意度降低了<happy>::count::</happy></t>
+            <t id="happy_current">你部队的当前满意度为<happy>::count::</happy></t>
+            <t id="happy_min"><bad>你的同伴很不满！</bad></t>
+            <t id="happy_neg">你的同伴很<bad>不满</bad>。</t>
+            <t id="happy_normal">你的同伴挺满意的。</t>
+            <t id="happy_max">你的同伴很<good>满意</good>。</t>
+            <t id="happy_infl_won">你<good>获得了</good><img src="/icon/Influence"/><inf>::count::</inf></t>
+            <t id="happy_infl_lost">你<bad>失去了</bad><img src="/icon/Influence"/><inf>::count::</inf></t>
+            <t id="happy_bonus_won">你获得了以下加成：</t>
+            <t id="influence_generated">营地产生的<img src="/icon/Influence"/><b>::count::</b></t>
+            <t id="bee_sting">::name::因睡觉时过于靠近蜂巢<bad>而被蜜蜂蜇伤了</bad>。</t>
+            <t id="reproduction">::parent1::和::parent2::育有子女。::child::加入你的部队。</t>
+            <t id="reproduction_solo">::parent::的孩子降生了。::child::加入了你的部队。</t>
+            <t id="blood_collection">::unit::在休息期间咬了::target::，在接下来的::value::餐中不需要消耗食物。</t>
+            <t id="doping_transfusion">一些同伴在夜间被咬，开始<stb>暴怒</stb>：::names::。</t>
+            <t id="browser">在休息期间找到了花。</t>
+            <t id="bear_eat_honey">::name::吞食了你的<bad>蜂蜜</bad>！</t>
+            <g id="escape">
+                <g id="success">
+                    <t _id="leprisonniernamesestenfuipendantquetoutlemondedormait">俘虏<bad>::name::</bad>趁所有人熟睡的时候逃跑了……</t>
+                    <t _id="alorsquilntaitpassurveillleprisonniernamesestenfuipendantlerepos">由于无人值守，俘虏<bad>::name::</bad>在休息期间逃跑了。</t>
+                </g>
+                <g id="fail">
+                    <t _id="leprisonniernameaessaydesenfuirmaisallynamequidormaitctlenaempch">俘虏<bad>::name::</bad>试图逃跑，但被睡在旁边的<b>::allyName::</b>阻止了。</t>
+                    <t _id="allynameaempchleprisonniernamedesenfuir"><b>::allyName::</b>阻止了俘虏<b>::name::</b>逃跑。</t>
+                </g>
+                <g id="success_with_ally">
+                    <t _id="aprsplusieurstentativesdefuiteleprisonniernameestparvenusenfuir">在图谋多次受挫之后，俘虏<bad>::name::</bad>最终成功地逃跑了……</t>
+                    <t _id="leprisonniernamesestenfuimalgrlasurveillancedeallyname">尽管<b>::allyName::</b>有所警惕，但俘虏<bad>::name::</bad>还是逃跑了。</t>
+                </g>
+                <g id="success_with_injury">
+                    <t _id="aprsavoirassommallynameleprisonniernamearussisenfuirallynameasubiuneblessureinjury">在打晕了<b>::allyName::</b>之后，俘虏<bad>::name::</bad>成功逃跑了。
+<b>::allyName::</b>在过程当中受伤：<status>::injury::</status></t>
+                    <t _id="leprisonniernameaassommallynamepourschapperallynameasubiuneblessureinjury">俘虏<bad>::name::</bad>打晕了<b>::allyName::</b>之后逃跑。
+<b>::allyName::</b>在过程当中受伤：<status>::injury::</status></t>
+                </g>
+                <t id="suicide"><bad>俘虏<b>::name::</b>不堪忍受部队中的虐待，选择死亡。</bad></t>
+            </g>
+            <t id="happiness_malus">休息惩罚：</t>
+            <t id="happiness_malus_desc">如果现在进行休息，部队会变得<bad>不满</bad>：</t>
+            <t id="happiness_starvation">食物不足</t>
+            <t id="happiness_salary">同伴工钱未支付</t>
+            <t id="knowledge_increase">你关于世界的知识增加了。</t>
+            <t id="money_laundering">箱子里的一件赃物已经洗白。</t>
+            <t id="deadly_poisoned"><b>::name::</b>因遭受<bad>致命毒药</bad>之害而死亡。</t>
+            <t id="item_status_adj_rest"><b>::item::</b>的接近让部分同伴变得<status>::status::</status>。</t>
+        </g>
+        <g id="sleep_danger">
+            <t id="title">危险级别：</t>
+            <t id="none"><good>无</good></t>
+            <t id="medium"><warn>平均</warn>::p::%</t>
+            <t id="high"><bad>危险！</bad>::p::%</t>
+            <t id="tip">当危险无处不在时，部队在休息时可能遭到袭击。</t>
+            <t id="fight_msg">你在休息时遭到了袭击！</t>
+        </g>
+        <g id="converter_tool">
+            <t id="title">生产</t>
+            <t id="action">添加资源</t>
+            <t id="remove_action">移除资源</t>
+            <t id="rest_consumption">休息时，::count::<img src="item/::item::"/>会生产::outCount::<img src="item/::outItem::"/>。</t>
+            <t id="rest_required">需要::count::个<img src="item/::item::"/>::name::</t>
+            <t id="influence_gain">每次休息后增加<b>::count::</b>点影响力<img src="/icon/Influence"/>。</t>
+        </g>
+        <g id="upgrade_converter">
+            <t id="name">武器升级</t>
+            <t id="desc">可提高武器等级并增强属性。
+只有某些特殊武器才能升级。</t>
+            <t id="title">升级</t>
+            <t id="action">选择一个武器</t>
+            <t id="remove_action">移除武器</t>
+        </g>
+        <g id="lectern">
+            <t id="title">研究</t>
+            <t id="action">放置一件物品供研究</t>
+            <t id="remove_action">移除一件供研究的物品</t>
+            <t id="assign_remaining_time">[JOBASSIGN]当前研究将于::count::次休息后结束。</t>
+            <t id="unassign_remaining_time"><bad><b>未分配同伴。</b></bad>下次休息期间不会有任何新发现。</t>
+            <t id="confirm_cancel">确认停止当前研究？
+ 你将失去对该物品的研究成果。</t>
+        </g>
+        <g id="codex">
+            <t id="need_assigned_codex">必须分配 <img src="/trait/::icon::"/>::kind::。</t>
+            <t id="restoreAction">修复术</t>
+            <t id="restoreNotif">古籍已成功修复。在学会对应的符文后，你就可以将其破译。</t>
+            <t id="restoreNotifPage">日志已成功修复。</t>
+            <t id="need_runes_restore">必须放置::nb::个符文才能尝试修复。</t>
+            <t id="decipherAction">破译</t>
+            <t id="decipherNotif">古籍已成功破译。破译该系列的所有古籍后，你就能理解其中的线索。</t>
+            <t id="decipherNotifPage">日志已成功破译。</t>
+            <t id="need_runes_decipher">必须找到::nb::个与此古籍相关的符文才能破译。</t>
+            <t id="zero_good">仍旧难以辨识。符文一个都不匹配。</t>
+            <t id="one_good">有线索了。有个符文对啦。</t>
+            <t id="one_left">快了，就差一个符文……</t>
+            <t id="all_good">一清二楚！3个符文全部正确！</t>
+            <t id="help">修复古籍的损伤，发现其中的符文。
+
+修复成功后，只有学会所有对应的符文后才能辨识其中的内容。</t>
+            <t id="symbolFound">已发现线索</t>
+        </g>
+        <g id="workshop">
+            <t id="upgrade_require">需要一间已升级的工坊</t>
+            <t id="workshop_quality_require">需要更高质量的工坊。</t>
+            <t id="min_qty_dismantle">需要至少::qty::件物品。</t>
+            <t id="min_qty_dismantle_bad">需要至少<bad>::qty::</bad>件物品。</t>
+            <t id="confirm_dismantle">确认拆解选中物品吗？</t>
+            <t id="dismantle_action">添加装备</t>
+            <t id="upgrade_bonus_new"><b>新的加成：</b>::desc::</t>
+            <t id="upgrade_bonus_up"><b>加成提升：</b>::desc::</t>
+        </g>
+        <g id="alter">
+            <t id="job_level_required"><img src="/trait/::icon::"/><b>::kind::</b>级别不足</t>
+            <t id="no_item_selected">你必须选择一件装备</t>
+            <t id="no_resources_recipe">你没有更改<img src="/item/::kind::"/><b>::name::</b>所需的原料</t>
+            <t id="selected_item">更改<img src="/item/::kind::"/><b>::name::</b></t>
+            <t id="action">[RMB]更改</t>
+            <t id="confirm">确认改造<img src="/item/::kind::"/><b>::name::</b>？</t>
+            <t id="craft_confirm">已获得数量：</t>
+            <t id="done">::unit_name::（::player_name::）已改造::item_name::</t>
+            <t id="desc">可以提高装备的品质，从而增加其属性。</t>
+        </g>
+        <g id="brewBarrel">
+            <t id="alcohol_list_title">酒水列表</t>
+            <t id="alcohol_aging_title">陈酿中</t>
+            <t id="alcohol_aging_no_alcohol">未选择酒水</t>
+            <t id="alcohol_aging_tip">陈酿<img src="/item/::kind::"/><b>::name::</b></t>
+            <g id="noValidBarrel">
+                <t id="noRecipe">尚未选择配方。</t>
+                <t id="alreadyDone">该配方已用于另一桶。</t>
+                <t id="noUnitAssigned">没有分配单位。</t>
+                <t id="noLevel">已分配单位的等级不足，无法制作该配方。</t>
+                <t id="noResources">资源不足。</t>
+                <t id="noBonus">已分配单位无法制作该配方。</t>
+            </g>
+            <t id="restBrewProd">::name::已制作::list::</t>
+            <t id="restAgedProd">::name::已陈酿::list::</t>
+            <t id="alcohol_aging_max">这桶酒已达到最高陈酿度。</t>
+        </g>
+        <g id="campChest">
+            <t id="moveTo_chest">将物品放入箱子</t>
+            <t id="moveTo_inventory">将物品放入物品箱</t>
+        </g>
+        <g id="stake">
+            <t id="title">木桩</t>
+            <t id="action">将尸体钉在木桩上</t>
+            <t id="remove_action">移走尸体</t>
+            <t id="drop_action">舍弃尸体</t>
+            <t id="confirm_drop">这具尸体已严重腐坏无法保留。
+ 将其毁掉？</t>
+            <t id="days_count">示众::count::天</t>
+            <t id="smelly_odour_warning">营地中弥漫的恶臭给同伴们带来诸多不便。</t>
+        </g>
+        <g id="strategy_table">
+            <t id="captain_require"><bad>你必须任命一名上尉来制定战略。</bad></t>
+            <t id="already_learnt"><bad>你已知晓该战略。</bad></t>
+            <t id="tool_needed"><bad>你必须拥有一张战略桌。</bad></t>
+            <t id="unknown">？？？？</t>
+            <t id="tier_title">等级：::value::技能</t>
+        </g>
+        <g id="sing">
+            <t id="repertoire">文件夹</t>
+            <t id="play">开始游戏</t>
+            <t id="already_learnt"><bad>你已掌握这首歌曲。</bad></t>
+            <t id="can_not_learn_song"><bad>你尚未拥有可以学习这份活页乐谱的专业。</bad></t>
+        </g>
+        <g id="whip">
+            <t id="tool_desc">你的同伴被分配到营地中的生产设备上时，鞭打同伴可以鼓励他们生产更多的资源。</t>
+            <t id="tool_confirm_already_whipped">部分单位已经受过鞭打。
+确认要再次鞭打他们吗？</t>
+            <t id="action">鞭打</t>
+            <t id="prisoner">俘虏</t>
+            <t id="need_tool_prod">该单位还未被分配到营地中的任何生产设备。</t>
+        </g>
+        <g id="pendulum">
+            <t id="miss">根据单摆判断，这里什么也没有。</t>
+        </g>
+        <g id="banner">
+            <t id="preview">预览</t>
+            <t id="background_title">背景</t>
+            <t id="logo_title">设计</t>
+            <t id="border_title">边境</t>
+            <t id="titles_title">头衔</t>
+            <t id="resolution_desc">直到下次休息，使用<b>誓愿</b>来激励你的部队。
+ 你可以在同一天启用不同的誓愿。
+ 每次使用誓愿都会增加其成本。
+ 每次休息会降低所有未使用誓愿的成本。</t>
+            <t id="resolution_tip">[LMB]激励获得::value::</t>
+            <t id="resolution_confirm">确认启用<b>::name::</b>以获得<influence>::value::</influence>？</t>
+            <t id="resolution_confirm_warning">警告：你的部队感到疲惫了。誓愿持续到下次休息。</t>
+            <t id="resolution_already_activated">该誓愿已启用。</t>
+            <g id="random_troop_names">
+                <g id="STroopAdventurers">
+                    <t _id="lacompagniesauvage">荒野小队</t>
+                    <t _id="lalgendeinconnue">无名传说</t>
+                    <t _id="lescadetsvagabonds">漂泊军队</t>
+                    <t _id="lasarabandesylvestre">林间预备队</t>
+                    <t _id="lespaladinsdelinfortune">厄运骑士团</t>
+                </g>
+                <g id="STroopMerchants">
+                    <t _id="labrigadedessousbois">丛林旅团</t>
+                    <t _id="lemesperdues">迷途众生</t>
+                    <t _id="lestireauflanc">无业游民</t>
+                    <t _id="lessentinelleserrantes">流浪哨兵团</t>
+                    <t _id="lesclaquemarauds">掠夺者之灾</t>
+                </g>
+                <g id="STroopDeserters">
+                    <t _id="lahordefugitive">逃亡团体</t>
+                    <t _id="lebataillonanonyme">乌合之众</t>
+                    <t _id="ladernirecompagnie">末路连队</t>
+                    <t _id="lameuterengate">叛徒集团</t>
+                    <t _id="lesaffranchisdelalande">绝地部落</t>
+                </g>
+                <g id="STroopFarmers">
+                    <t _id="lesbesogneuxdesplaines">草原苦役</t>
+                    <t _id="laliguedunavet">失意者联盟</t>
+                    <t _id="leseldelaterre">世间良民</t>
+                    <t _id="leclandesartisans">工匠部落</t>
+                    <t _id="lesdamnsdelaterre">地狱之子</t>
+                </g>
+                <g id="STroopBandits">
+                    <t _id="labandesclrate">漂泊恶军</t>
+                    <t _id="lesboucaniersdelamisre">苦难海盗</t>
+                    <t _id="lesmauvaisesfrquentations">不法之徒</t>
+                    <t _id="labohmesanglante">流浪恶人</t>
+                    <t _id="labourrasquefunbre">幽暗飓风</t>
+                </g>
+                <g id="STroopTavern">
+                    <t _id="leclandeladivebouteille">啤酒水饮同好会</t>
+                    <t _id="lesboitsanssoif">欢歌乐舞团</t>
+                    <t _id="lesforatsdelafaim">无礼饿棍</t>
+                    <t _id="lesjongleursmanchots">独臂卖艺人</t>
+                    <t _id="lacompagniedesgtesauce">捣乱帮</t>
+                </g>
+                <g id="STroopPugilist">
+                    <t _id="lesloupsdemer">海狗队</t>
+                    <t _id="lessansesquif">无船之贼</t>
+                    <t _id="lesmarinserrants">流浪水手团</t>
+                    <t _id="lesmessangunaires">嗜血之魂</t>
+                    <t _id="lespiratesdeschemins">大路海盗</t>
+                </g>
+                <g id="DefaultTroop">
+                    <t _id="nomdetroupe">部队名称</t>
+                </g>
+            </g>
+        </g>
+        <g id="weaponDisplay">
+            <t id="action">显示</t>
+        </g>
+        <t id="unit_level_short">第<b>::level::</b>级</t>
+        <t id="unit_class_title">专精</t>
+        <t id="unit_level_title">第::number::级</t>
+        <t id="unit_chose_class">选择</t>
+        <t id="unit_spe_changes_title">属性</t>
+        <t id="unit_armor_equip_title">装备</t>
+        <g id="relationship">
+            <t id="relationActionConfirm">确认启用<b>::name::</b>以获得<influence>::value::</influence>？</t>
+            <t id="drinkAction">买一杯酒</t>
+            <t id="insultAction">羞辱</t>
+            <t id="drinkRequire">需要<img src="itemtype/Alcohol"/><::hasAlcohol::>2</::hasAlcohol::><influence><::hasCost::>::cost::</::hasCost::></influence></t>
+            <t id="insultRequire">需要<influence><::hasCost::>::cost::</::hasCost::></influence></t>
+            <t id="drinkDesc">::name1::和::name2::将各自失去一项负面特质。</t>
+            <t id="insultDesc">::name1::和::name2::之间的关系将疏远。他们都将获得<trait>::trait::</trait>特质。</t>
+            <t id="noNegTrait">你没有负面的个人特质。</t>
+            <t id="alreadySociopathe">你已经拥有<trait>::trait::</trait></t>
+            <t id="no_relation">这名同伴在部队中没有任何关系。</t>
+            <g id="states">
+                <t _id="adore">崇拜</t>
+                <t _id="aime">爱慕</t>
+                <t _id="apprcie">喜欢</t>
+                <t _id="neutre">接受</t>
+                <t _id="tolre">容忍</t>
+                <t _id="dteste">反感</t>
+                <t _id="hait">憎恨</t>
+            </g>
+        </g>
+        <g id="prisonerTrust">
+            <g id="states">
+                <t _id="satisfait">满意</t>
+                <t _id="neutre">中立</t>
+                <t _id="mfiant">小心提防</t>
+            </g>
+        </g>
+        <t id="next_attrib_point">下一属性点：</t>
+        <t id="hideout_group_desc">该藏身之处守卫森严。发动突袭前，最好先弱化其防御！藏身之人或许正在这一带游荡。</t>
+        <t id="hideout_groups_still_alive">该地区仍有一些强盗团伙。找到他们并将其消灭，削弱该巢穴的实力！</t>
+        <t id="hideout_done_group_desc">该藏身之所已摇摇欲坠。发动最后的突袭！</t>
+        <t id="ambush_roaming">伏击！</t>
+        <t id="ambush_roaming_desc">你的同伴刚刚伏击了这支部队，在战斗中将占据上风。</t>
+        <t id="attack_surprise_roaming">伏击！</t>
+        <t id="attack_surprise_roaming_desc">你的同伴刚刚伏击了他们的目标，在战斗中将占据上风。</t>
+        <t id="merchant_trade">交易</t>
+        <t id="due_salary_label">应付工钱：</t>
+        <g id="city">
+            <t id="population">人口</t>
+            <t id="production">生产</t>
+        </g>
+        <g id="forsaken_village">
+            <t id="troop">侦察队</t>
+            <t id="noise_score">部队噪音总量</t>
+            <t id="manage_troop">管理</t>
+            <t id="explore_building">探索</t>
+            <t id="troop_not_enough_willpower">侦察队的士气过低，无法探索这座建筑。</t>
+            <t id="troop_missing_willpower">侦察队的士气过低，无法继续采取行动。</t>
+            <t id="troop_force_leave">你的同伴已逃离这座建筑。</t>
+            <t id="troop_dead">你的侦察队没能存活。</t>
+            <t id="unit_noisy">吵闹</t>
+            <t id="unit_silent">沉默</t>
+            <t id="battle_triggered">染疫者来了！</t>
+            <t id="troop_too_noisy">侦察队过于吵闹，无法探索这座建筑。</t>
+            <t id="forsaken_skill_limit">下一回合才能再次寻找出口。</t>
+        </g>
+        <g id="crime_cave">
+            <t id="confirm_leave">如果离开此处，你将丢失当前的进度。确定要离开吗？</t>
+        </g>
+        <g id="recruit_announce">
+            <t id="no_criteria">未选择条件</t>
+            <t id="pending_announce">已发布一则招募公告。</t>
+            <t id="title">招募公告</t>
+            <t id="confirm">发布招募公告</t>
+            <t id="weapon">武器</t>
+            <t id="gender">性别</t>
+            <t id="personality">性格</t>
+            <t id="traitPositive">正面特质</t>
+            <t id="traitNegativeBan">应排除的负面特质</t>
+            <t id="no_choice">随意</t>
+            <t id="cost">招募公告花费：<gold>::value::</gold></t>
+        </g>
+        <t id="not_enough_item">你没有足够的<img src="item/::item::"/>::name::。</t>
+        <t id="tip_missing_raw_materials">前往镇上的铁匠铺采购。</t>
+        <t id="no_salary_due">你无须向同伴支付工钱。</t>
+        <t id="salary_due">仍需要给你的同伴支付工钱。</t>
+        <t id="no_leader">无首领</t>
+        <t id="label_attr_baseval">基础值</t>
+        <t id="label_equip_bonus">装备</t>
+        <t id="label_global_bonus">部队加成</t>
+        <t id="label_global_malus">部队减益</t>
+        <t id="label_attr_cantBeUpgraded">无法再继续升级</t>
+        <t id="place_piton">放置</t>
+        <t id="place_piton_desc">在悬崖附近放置<img src="item/Piton"/><b>岩钉</b>。</t>
+        <t id="piton_place_collide">地形不够稳定。</t>
+        <t id="piton_place_too_far">该岩钉距离部队过远。</t>
+        <t id="piton_no_hill">该岩钉必须放置在悬崖边缘。</t>
+        <t id="piton_place_end_collide">着陆点存在障碍物。</t>
+        <t id="piton_too_long">绳索过长！</t>
+        <t id="rotate_tomb">转动</t>
+        <t id="place_tomb">掩埋</t>
+        <t id="place_tomb_desc">放置<b>坟墓</b>。</t>
+        <t id="tomb_place_too_far">该古墓距离部队过远。</t>
+        <t id="chose_epitaph_desc">墓志铭。</t>
+        <t id="use_rat_bait_action">使用老鼠诱饵</t>
+        <t id="cannot_use_rat_bait">附近没有被毁的老鼠巢穴</t>
+        <t id="show_map_item">显示地图</t>
+        <t id="setting_complete">已完成</t>
+        <t id="setting_progress_desc"><good>探索地区或向信使购买情报可推进剧情发展。</good></t>
+        <t id="setting_complete_desc">干得漂亮！你已<good>完成</good>该地区的剧情。</t>
+        <t id="progress">进度</t>
+        <g id="paths">
+            <t id="show_credits">显示制作组</t>
+            <t id="path_completed">路径完成</t>
+            <t id="path_might_end">沿着力量与荣光的路径，你们克服了千难万险，击败了五大王国的一众顶尖战士。你的部队跻身天下最强，实至名归，当之无愧。</t>
+            <t id="path_trade_end">因为无穷无尽的野心以及对财富的渴求，你们得以塑造周遭的世界。如今你们已不是平平无奇的雇佣兵，而是掌握了万能金钱之力的强力之师。</t>
+            <t id="path_crime_end">所向披靡，锐不可当。勋爵也好，强盗也罢，你们的名号令人闻风丧胆。狡猾奸诈、冷酷无情，众雇佣兵已成为盗贼之王。</t>
+            <t id="path_mystery_end">你的部队始终致力于探求知识与隐藏的未解之谜，即便身处巨大险境，也不忘寻找迷雾背后的真理。你们真正做到了青史留名，名字与最伟大的哲人先贤并列出现在史书之中。</t>
+        </g>
+        <t id="path_not_started">你还没有开始该路径。</t>
+        <t id="path_xp">路径经验</t>
+        <t id="path_challenge">挑战</t>
+        <t id="path_knowledge">知识</t>
+        <t id="path_troop">特殊部队挑战：
+<b>::troop::</b></t>
+        <t id="path_lvl">等级</t>
+        <t id="path_counter_gain">获得::value::路径经验</t>
+        <t id="path_levelup">下一级别已解锁！</t>
+        <t id="path_levelup_tip">升级并获得1<img src="item/::icon::"/></t>
+        <t id="path_levelup_need"><bad>需要1<img src="item/Knowledge"/></bad></t>
+        <t id="path_reward">奖励：::count::路径经验</t>
+        <t id="path_unknown">???</t>
+        <t id="path_counter_total">已完成::value::次。</t>
+        <t id="path_require_grimoire">需要在百科中学习<img src="/item/::item::"/>::itemName::。</t>
+        <t id="path_require_path">需要<img src="/item/::item::"/>::itemName::</t>
+        <t id="path_counter_need_progress">在这条路径上取得进展来了解这项挑战。</t>
+        <t id="use_oil_action">涂抹在武器上</t>
+        <g id="travel">
+            <t id="choose_destination">选择一个目的地</t>
+            <t id="provisions">补给</t>
+            <t id="travel_time">这次旅程将耗时::time::</t>
+            <t id="cant_travel_help"><bad>无目的地可供选择。</bad>
+<bad>你需要再建一座商栈才可前往那里。</bad></t>
+            <t id="no_travel_post">你需要在这片地区建造一座商栈才可前往那里。</t>
+            <t id="current_region">当前地区</t>
+            <t id="travelWithTradeGoods">商品税：</t>
+            <t id="travelWithTradeGoods_tooltip">携带商品出行需要根据这些物品的销售价值支付额外税款。</t>
+            <t id="travelBackTradingGoods_tooltip">警告！根据商品的销售价值，一项税款已添加至取回成本。</t>
+            <t id="destination_require"><bad>你必须选择一个目的地。</bad></t>
+            <t id="food_require"><bad>旅程中，你必须让部队吃饱。</bad></t>
+            <t id="tax_require"><bad>你没有足够的<b>克朗</b>来支付商品税。</bad></t>
+        </g>
+        <g id="trade_route">
+            <t id="build_title">建造一条贸易路线</t>
+            <t id="bonuses_title">加成</t>
+            <t id="no_counter">你必须在两个地区都建造商栈。</t>
+            <t id="free_repatriate">可免费从该商栈取回由贸易路线相连的非商业性资源。</t>
+            <t id="free_unit_repatriate">从与贸易路线相连的旅行商栈领回同伴完全免费。</t>
+            <g id="status">
+                <t _id="djconstruite">已建造</t>
+                <t _id="constructible">可建造</t>
+                <t _id="indisponible">不可用</t>
+            </g>
+        </g>
+        <g id="counter_chest">
+            <t id="title">商栈物品箱</t>
+            <t id="local">本地</t>
+            <t id="repatriate_item_confirm">要取回这件物品吗？</t>
+            <t id="region_title">地区</t>
+        </g>
+        <g id="counter_garnison">
+            <t id="title">驻防</t>
+            <t id="free_slot">空位</t>
+            <t id="repatriate_unit_confirm">召回<b>::name::</b>？</t>
+            <t id="leave_companion">留下一名同伴</t>
+            <t id="add_companion">添加到部队</t>
+            <t id="manage_garnison">管理驻防</t>
+        </g>
+        <g id="boat">
+            <t id="title_equipement">装备</t>
+            <t id="title_crew">船员</t>
+            <t id="title_skills">技能</t>
+            <g id="random_boat_names">
+                <t _id="lemorse">海象号</t>
+                <t _id="lether">苍穹号</t>
+                <t _id="lesinraz">辛拉兹号</t>
+                <t _id="labourrasque">骤风号</t>
+            </g>
+        </g>
+        <g id="tavern">
+            <t id="menuTitle">酒馆管理</t>
+            <t id="inventory">酒馆物品栏</t>
+            <g id="resume">
+                <t id="title">营业报告</t>
+                <g id="revenue">
+                    <t id="title">员工</t>
+                    <t id="salaries">工钱</t>
+                    <t id="gains">收入</t>
+                    <t id="total">总计</t>
+                    <t id="sat_clients">顾客：<good>+::value::</good></t>
+                    <t id="sat_saleChances">销售几率：<good>+::value::%</good></t>
+                    <t id="satisfaction">过去几次营业平均：</t>
+                    <t id="precision">（安全性影响作三倍计算）</t>
+                    <t id="xp_tip">入账数额：::xpWon::
+ 当前数额：::xp::
+ 下一等级所需数额：::xpNext::</t>
+                </g>
+                <g id="production">
+                    <t id="title">菜单</t>
+                    <t id="gains">配方</t>
+                    <t id="sell">销量</t>
+                    <t id="cooksTitle">火炉</t>
+                    <t id="capacity">产量</t>
+                    <t id="production">生产</t>
+                    <t id="barrelStock">存货</t>
+                    <t id="barrelAge">星级</t>
+                    <t id="barrelAging">陈酿</t>
+                    <t id="barrelInSale">酒桶<img src="/icon/ForSale"/></t>
+                    <t id="barrelInStock">酒桶<img src="/icon/InCellar"/></t>
+                    <t id="empty">空</t>
+                    <t id="noBrewer">无酿酒师</t>
+                </g>
+                <t id="events">事件</t>
+                <t id="connoisseur"><b>::name::</b>偷取了<img src="/item/::item::"/>::itemName::。出售该物品为你赚得<img src="/icon/TavernSilver"/><good>+::count::。</good></t>
+                <t id="gain_speciality"><b>::name::</b> 解锁了专长 <trait>::trait::</trait>。</t>
+            </g>
+            <g id="customers">
+                <t id="neutral">混合</t>
+                <t id="fancy">高端</t>
+                <t id="rustic">工薪阶层</t>
+                <t id="universal">普通</t>
+            </g>
+            <g id="tips">
+                <t id="service">营业::value::</t>
+                <t id="place_tool">安置在酒馆</t>
+                <t id="place_barrel">安置在酒窖</t>
+                <t id="upgrade_tool">[RMBCTRL] 升级设备</t>
+                <t id="require_tavernMode"><bad>只能在酒馆使用。</bad></t>
+                <t id="gain_bonus_one_day">::amount::::name::</t>
+                <t id="gain_bonus_n_days">::days::次营业期间获得 ::amount:: ::name::</t>
+                <t id="require_tool">需要::toolName::</t>
+                <t id="wolf_cat_warning"><bad>狼与猫不能生活在一起</bad></t>
+                <t id="manage">管理</t>
+                <t id="changeTavernJob">换工作</t>
+                <g id="customers">
+                    <t id="favorite_food">最喜欢的食物</t>
+                    <t id="favorite_song">最喜欢的音乐</t>
+                    <t id="favorite_customerBase">最喜欢的氛围</t>
+                </g>
+                <t id="shift_details">[SHIFT] - 显示详情</t>
+                <t id="specialities"><b>特长</b></t>
+                <t id="specialities_learnt">已学会</t>
+                <t id="factor_details"><b>详情</b></t>
+                <t id="satisfaction_details"><b>得分详情</b></t>
+                <t id="factor_effects"><b>效果</b></t>
+                <t id="factor_gains"><b>收入</b></t>
+                <t id="factor_loses"><b>支出</b></t>
+                <t id="factor_events">事件：::value::</t>
+                <t id="warning_noPlace_clients">由于地方不够，不得不婉拒一些顾客。</t>
+                <t id="warning_prestige_tavern"><bad>在你搬入更大的酒馆之前，你将无法提升威望。</bad></t>
+                <t id="no_valid_faction"><bad>目前没有对应阵营出现在酒馆。</bad></t>
+                <t id="sell_failed">未售出：<bad>::value::</bad></t>
+                <t id="reward_faction_require">恭迎::nb_reward::::faction_name::来到你的酒馆，即可获得奖励。
+ 已接待的::faction_name::：::value::</t>
+                <t id="reward_faction_valid">你已满足要求，可以获得该阵营的奖励。</t>
+                <t id="reward_faction_noReward">此阵营不提供奖励。</t>
+                <t id="tavernBonus">布置：+::value::</t>
+                <t id="unitsBonus">员工：+::value::</t>
+                <t id="otherBonus">其他：+::value::</t>
+                <t id="confirmNewService">确认花费::cost::开始新的营业？</t>
+                <t id="serviceLockPrestige">威望<img src="icon/TavernPrestige"/>达到 ::value:: 即可解锁额外营业次数。</t>
+            </g>
+            <g id="menu">
+                <t id="title">创建菜单</t>
+                <t id="price_promotion">促销</t>
+                <t id="price_shortage">短缺</t>
+                <t id="tavern_production">生产</t>
+                <t id="kitchen">厨房</t>
+                <t id="cave">酒窖</t>
+                <t id="slot_insufficient">栏位不足</t>
+                <t id="already_produced">已加入菜单</t>
+                <t id="slot_required">需要栏位：::value::</t>
+                <t id="sold_item">前一天销售额：::value::</t>
+                <t id="change_menu">使用[LMB]修改菜单
+
+ 帮厨的等级和部队已学会的配方决定了可用选项。</t>
+                <t id="change_drink">使用[LMB]选择饮料
+
+ 酿酒师的等级和部队已学会的配方决定了可用选项。</t>
+                <t id="food_locked_tip">帮厨的等级及其特质决定了可用栏位的数量。</t>
+                <t id="add_dish">使用[RMB]新增一道菜</t>
+                <t id="remove_dish">使用[RMB]移除一道菜</t>
+                <t id="reset_price"><img src="icon/Pad_Y"/>默认价格</t>
+                <t id="change_price"><img src="icon/Pad_DpadLeft"/>/<img src="icon/Pad_DpadRight"/>更改价格</t>
+                <t id="choose_alcohol">确认制作<b>::item::？</b></t>
+                <t id="need_unit">分配一名酿酒师制作酒水。</t>
+                <t id="replace_alcohol">确认用<b>::next::</b>替换<b>::previous::</b>？
+ <bad>你当前的存货将会丢失。</bad></t>
+                <t id="promo_updated">促销物品已变更（可以更新你的菜单）。</t>
+                <t id="promo_updated_notif">促销物品已变更。</t>
+                <t id="food_production">每次营业期间，每道菜::name::最多可以制作::value::份。所有菜肴都将按订单制作。因此，销售几率决定了生产。</t>
+                <t id="reset_default">重置为默认价格</t>
+                <g id="item_price">
+                    <t id="low">价格评级：<good>亏本</good></t>
+                    <t id="normal">价格评级：合理</t>
+                    <t id="high">价格评级：<warn>溢价</warn></t>
+                    <t id="desc">相对于默认价格，售价越高，销售几率越低。高端客户群更容易接受高价。</t>
+                    <t id="default_price">底价：<font color="#ffffff">::value::</font></t>
+                    <t id="actual">当前售价：::value::</t>
+                    <t id="ingredients_price">原料价格：<bad>-::value::</bad></t>
+                    <t id="profit">收益：::value::</t>
+                </g>
+                <t id="item_cost">原料成本
+
+ 每完成一笔销售，就会从销售价格中扣除该成本。</t>
+                <t id="item_cost_alcohol">原料成本
+
+ 每制作一份订单，就会从销售价格中扣除该成本。警告：产量高，花费也高。</t>
+                <t id="aging_not_sold">窖藏中的酒无法售卖。</t>
+                <t id="tip_filling">装满酒桶
+
+ 若已分配酿酒师且酒桶未满，每次营业期间将会生产酒。酿酒需要原料，因此会消耗金钱。</t>
+                <t id="tip_aging">酒桶陈酿
+
+ 每当此进度满格，酒桶里的酒的陈酿值<img src="icon/QualityStar"/>增加 1 星，其价值随即上涨。
+
+ 陈酿酒桶仍然有可能生产酒，但根据酒的类型，其产量会随<img src="icon/QualityStar"/>下降。
+
+ 酒精类饮品的<img src="icon/QualityStar"/>最多达 2 星。</t>
+                <t id="tip_state_selection">一桶酒准备出售时，为其分配的酿酒师会生产酒，补上已出售的部分。一桶酒进行窖藏时，填满的速度会更快，并且可以接着进行陈酿。
+
+ 陈酿值<img src="icon/QualityStar"/>每提升 1 星，酒的价格随即上涨。陈酿不消耗资源。</t>
+                <t id="upgrade_tavern">为你的酒馆升级来分配一名额外的帮厨。</t>
+                <t id="buy_barrel">为你的酒馆升级来分配一名额外的酿酒师。</t>
+                <t id="upgrade_cave">为你的酒馆升级来购买更多酒桶。</t>
+                <t id="upgrade_barrels">前往酒窖，升级一桶酒。</t>
+                <t id="alcohol_speed">生产速度：</t>
+                <g id="alcoholTypes">
+                    <t id="slow">慢</t>
+                    <t id="normal">中等</t>
+                    <t id="fast">快</t>
+                </g>
+                <t id="sale_chance">销售几率：</t>
+                <g id="saleFactor">
+                    <t id="price">价格</t>
+                    <t id="clients">顾客偏好</t>
+                    <t id="confort">舒适度</t>
+                    <t id="satisfaction">满意度</t>
+                    <t id="complexity">复杂度减益</t>
+                    <t id="effect">事件</t>
+                    <t id="sale_bonus_areas">加成范围</t>
+                </g>
+                <t id="attracted_region">吸引地区：</t>
+                <t id="attracted_factions">吸引阵营：</t>
+                <t id="attracted_clientele">吸引客户群：</t>
+                <g id="supplier">
+                    <t id="title">供应商</t>
+                    <t id="desc">自动供应烹饪与酿酒的原料。</t>
+                    <t id="promotion_title">促销</t>
+                    <t id="promotion_desc">每周推出促销优惠，::nbPromo::种物品会以促销价售卖。因此，用含有这些原料的配方进行生产将更便宜。</t>
+                    <t id="shortage_title">短缺</t>
+                    <t id="shortage_desc">每周将会有::min::到::max::种物品出现短缺。因此，用含有这些原料的配方进行生产将更昂贵。</t>
+                </g>
+                <t id="warning_cant_produce_food"><bad>若要预备此菜肴，你的菜单上必须有::toProduce::。</bad></t>
+                <t id="warning_cant_produce_drink"><bad>若要预备此酒饮，你的菜单上必须有::toProduce::。</bad></t>
+                <t id="used_by">用于制作：</t>
+                <t id="setBarrelInCellar">停止售卖</t>
+                <t id="setBarrelForSale">开始售卖</t>
+                <t id="speciality_one">只能供应一道特色菜</t>
+            </g>
+            <g id="command">
+                <t id="title">设备采购</t>
+                <t id="equipment">设备类型</t>
+                <t id="confirm">确认花费::cost::订购::names:: <img src="icon/TavernSilver"/>？</t>
+                <t id="command">以::value::<img src="icon/TavernSilver"/>购买</t>
+                <t id="upgrade_action">花费::value::来升级 <img src="icon/TavernSilver"/></t>
+                <t id="sell">以::value::<img src="icon/TavernSilver"/>出售</t>
+                <t id="nextUnlock">下一件设备：</t>
+                <t id="nextUnlockValue">需要::value::<img src="icon/TavernPrestige"/></t>
+                <t id="upgrade">确认花费::cost::<img src="icon/TavernSilver"/>升级<img src="item/::icon::"/>::name::？</t>
+                <t id="warning_sell">确认出售所有桌子？</t>
+                <t id="qtyInTavern">已安置在酒馆： <b>::value::</b></t>
+                <t id="qtyInCave">酒窖中的酒桶： <b>::value::</b></t>
+                <t id="barrelCapacity">酒窖最多储存 <b>::value::</b> 桶酒。</t>
+                <t id="itemInInventory">物品栏中的设备： <b>::value::</b></t>
+                <t id="upgradeCost">升级成本：::value:: <img src="icon/TavernSilver"/></t>
+            </g>
+            <g id="ranking">
+                <t id="tavernRanking">酒馆榜单</t>
+                <t id="customersFactions">客户群</t>
+                <t id="recipe">偷盗的配方</t>
+                <t id="spying">::name::将在 ::count:: 次营业后返回。</t>
+                <t id="found_recipe">已偷盗::count::/::total::个配方</t>
+                <t id="send_spy">使用[LMB]派遣卧底</t>
+                <t id="spy_title">卧底</t>
+                <t id="cancel_mission">取消任务</t>
+                <g id="spy">
+                    <t id="return_fail">::name::结束卧底任务，空手而归。</t>
+                    <t id="return_success">::name::成功完成卧底任务。（::reward::）</t>
+                    <t id="confirm">确认派遣::name::做卧底？（持续 ::days:: 次营业）</t>
+                    <t id="cancel_confirm">确认取消此卧底任务？</t>
+                    <t id="update_confirm">确认变更任务时长？</t>
+                    <t id="warning_job">该员工在任务期间将停止履行其::job::职责。</t>
+                </g>
+                <t id="spy_rest_time">在 ::count:: 次营业期间被派出</t>
+                <t id="spy_possible_reward">可能获得：</t>
+                <t id="spy_rival_malus">从你的对手那里移除<bad>::value::::bonus::</bad></t>
+                <t id="spy_secret_recipe"><good>秘方</good></t>
+                <t id="spy_client_reward"><img src="icon/TavernFactions"/><good>::value::</good> 名顾客</t>
+                <t id="spy_chances_details">目标酒馆威望：::prestige::
+ 专业等级：::job::
+ 营业次数：::days::</t>
+                <t id="no_unit">没有分配单位</t>
+                <t id="not_available">威望达到 ::value:: <img src="icon/TavernPrestige"/> 即可解锁此窗口。</t>
+            </g>
+            <g id="staff">
+                <t id="employees">员工</t>
+                <t id="unassigned">未分配</t>
+                <t id="recruit">招募平民</t>
+                <t id="nextRecruits"><b>::remainingDays::</b>次营业后将有新申请</t>
+                <t id="fireUnit">解雇（<img src="icon/TavernSilver"/>-::cost::）</t>
+                <t id="transfer">转移</t>
+                <t id="unit_transfer_no_more_unit">已是最后一位同伴，无法转移。</t>
+                <t id="unit_transfer_warning_transport">警告：若你转移了这个单位，你的部队运载能力将会不足，导致无法移动。</t>
+                <t id="transferFromTroop">转移同伴</t>
+                <t id="transferToTroop">转移至部队</t>
+                <t id="recruitConfirm">确认招募<b>::unitName::</b>？</t>
+                <t id="transferConfirm">确认将<b>::unitName::</b>转移至酒馆？</t>
+                <t id="fireConfirm">确认解雇<b>::unitName::</b>（<img src="icon/TavernSilver"/> -::cost::）？
+ <bad>此决定无法撤销。</bad></t>
+                <t id="transferBackConfirm">确认将<b>::unitName::</b>转移至部队？</t>
+                <t id="recruitDelay">此同伴将在下次营业时到达。</t>
+                <t id="needInkeeper">没有酒馆老板，酒馆无法运作。</t>
+                <t id="assign">分配</t>
+                <t id="unassign">解除分配</t>
+                <t id="assign_barrel">分配至酒桶</t>
+                <t id="assign_furnace">分配至火炉</t>
+                <t id="unit_cook_no_recipe">该员工只在被分配了配方时才会工作。</t>
+                <t id="salary">工钱：<b>::value::</b><img src="icon/TavernSilver"/></t>
+                <t id="salary_notWorking">工钱（未分配的单位）：<b>::value::</b><img src="icon/TavernSilver"/></t>
+                <t id="salary_animal">食物：<b>::value::</b><img src="icon/TavernSilver"/></t>
+                <g id="resume">
+                    <t id="nbEmployees">员工的数量：::nb::</t>
+                    <t id="nbTransfers">（正在转移::nb::）</t>
+                    <t id="salaries">工钱：::value::<img src="icon/TavernSilver"/></t>
+                </g>
+                <t id="employees_cant_work">至少一名员工无法工作。</t>
+            </g>
+            <g id="management">
+                <t id="title">酒馆管理</t>
+                <t id="clientele">客户群</t>
+                <t id="view">概述</t>
+                <t id="evolution">演变</t>
+                <t id="faction_col_name">阵营</t>
+                <t id="count_col_name">已接待的顾客</t>
+                <t id="percent_col_name">喜爱度</t>
+                <t id="faction_requirement">通过满足阵营的要求将其吸引到你的酒馆。</t>
+                <t id="apparition_factor">名单更新：</t>
+                <t id="unknown">？？？</t>
+                <g id="factors">
+                    <t id="menu">菜单：::value::种喜爱的菜肴或酒水</t>
+                    <t id="decoration">装潢：::value::种喜爱的装饰元素</t>
+                    <t id="music">音乐：</t>
+                    <t id="clientele">客户群：</t>
+                </g>
+                <g id="opinion">
+                    <t id="positive">喜爱</t>
+                    <t id="neutral">中立</t>
+                    <t id="negative">不喜</t>
+                </g>
+                <t id="statistics_title">数据</t>
+                <t id="client_count">顾客（上一次营业）</t>
+                <t id="faction_count">阵营（上一次营业）</t>
+                <t id="employee_count">员工</t>
+                <t id="furniture_count">家具</t>
+                <t id="secret_recipe">获得秘方</t>
+                <t id="identity_title">身份</t>
+                <t id="name">名称</t>
+                <t id="color">颜色</t>
+                <t id="music">音乐</t>
+                <t id="treasury_title">资金</t>
+                <t id="withdraw_money">提取::amount::<img src="/icon/TavernSilver"/></t>
+                <t id="deposit_money">补充</t>
+                <t id="liquidation">关闭酒馆</t>
+                <t id="liquidation_confirm">确认关闭此酒馆？
+
+ <bad>警告：此操作会抹去你在这间酒馆的所有进度。你将失去设备、威望，以及已招募的平民。已分配至此酒馆的同伴将会返回部队。你可以前往提尔特伦，从头开始建设你的酒馆。</bad></t>
+                <t id="deposit_warning">你只能在酒馆的资金余额为负时补充资金。</t>
+                <t id="deposit_gold_warning">你没有足够的克朗来救助酒馆。</t>
+                <t id="conversion_fee">手续费：</t>
+                <t id="see_resume">显示营业报告</t>
+                <t id="not_available">休息即可完成首次营业，并解锁此窗口。</t>
+            </g>
+            <g id="events">
+                <t id="unknown_consequences">谁知道这样的选择会带来什么结果？</t>
+                <t id="no_events">今天无事发生。</t>
+            </g>
+        </g>
+    </g>
+    <g id="debrief">
+        <t id="resources_won">所获</t>
+        <t id="fighters">战士</t>
+        <t id="ignore_loot">确认丢弃在战斗中获得的物品？</t>
+        <t id="repair_all">使用::item::修复损坏的盔甲和盾牌</t>
+        <t id="cure_all">使用药物治疗同伴</t>
+        <t id="msg_release_hostage">你释放了<b><good>::name::</good></b>！</t>
+        <t id="msg_flee_extreme">离开战场时，你发现了<b><bad>::name::</bad></b>的尸体。</t>
+        <t id="msg_hostage_taken"><bad><b>::name::</b>在逃离途中被俘！</bad></t>
+        <t id="merchants_saved">商人们对你们的帮助表示感谢。
+你们收到了<gold>::gold::</gold>。</t>
+    </g>
+    <g id="notify">
+        <t id="newJob">新专业：::name::。</t>
+        <t id="gain">你获得了::gain::。</t>
+        <t id="perfect">太好了！</t>
+        <t id="path_title_unlock">你已解锁了“<default>::name::</default>”头衔。</t>
+        <t id="path_reach_level">你已达到</t>
+        <t id="path_gain">你已获得</t>
+        <t id="path_bonus"><small>加成：<font color="#9c988a">::bonus::</font></small></t>
+        <t id="barberkit_prisoner_trust">你对::name::的悉心照料加深了你们之间的信任。</t>
+        <t id="heal_prisoner_trust">你治愈了::name::，加深了你们之间的信任。</t>
+        <t id="toothpaste_prisoner_trust">::name::感觉精力充沛，加深了你们之间的信任。</t>
+    </g>
+    <g id="prisoners_trust">
+        <t id="barberkit_prisoner_trust">他最近在部队中享受到的剃须护理使他不再那么恐惧。</t>
+        <t id="heal_prisoner_trust">在照顾他伤势的部队中感到很高兴。</t>
+        <t id="toothpaste_prisoner_trust">因发现牙膏而感到高兴。</t>
+        <t id="toolprod_prisoner_trust">努力忘记自己身处困境。</t>
+        <t id="pillory_prisoner_trust">他戴着镣铐，对部队同伴怒目而视。</t>
+        <t id="ally_prisoner_trust">不论如何，都感谢部队的陪伴。</t>
+        <t id="starvation_prisoner_trust">饥肠辘辘。</t>
+        <t id="well_fed_prisoner_trust">温饱无忧。</t>
+        <t id="belt_acc_prisoner_trust">漂亮腰带已装备。</t>
+        <t id="livestock_prisoner_trust">被像牛一样的动物看守使其感到不快。</t>
+        <t id="whip_prisoner_trust">憎恨部队。</t>
+        <t id="barberkit_prisoner_trust_W">她最近在部队中享受到的面部护理使她不再那么恐惧。</t>
+        <t id="heal_prisoner_trust_W">在照顾她伤势的部队中感到很高兴。</t>
+        <t id="toolprod_prisoner_trust_W">努力忘记自己身处困境。</t>
+        <t id="pillory_prisoner_trust_W">她戴着镣铐，对部队同伴怒目而视。</t>
+        <t id="ally_prisoner_trust_W">不论如何，都感谢部队的陪伴。</t>
+        <t id="starvation_prisoner_trust_W">饥肠辘辘。</t>
+        <t id="well_fed_prisoner_trust_W">温饱无忧。</t>
+        <t id="belt_acc_prisoner_trust_W">漂亮腰带已装备。</t>
+        <t id="livestock_prisoner_trust_W">被像牛一样的动物看守使其感到不快。</t>
+        <t id="whip_prisoner_trust_W">憎恨部队。</t>
+    </g>
+    <g id="npc_recruit_talk">
+        <t _id="sivouspayezbienjeparsavecvous">你给的钱多，我就跟你走！</t>
+        <t _id="laventuremappelle">冒险热情在召唤！</t>
+        <t _id="jaimeraisvoirdupaysparcourirlemonde">我喜欢环游世界，探索新奇的地方。</t>
+        <t _id="moyennantunesoldebiengrassejesuisvotredisposition">只要钱给到位，我随时听候差遣。</t>
+        <t _id="jaidjgagnplusieursbagarreslatavernevouspouvezavoirconfianceenmoi">我在酒馆里打赢过几架。你可以相信我。</t>
+        <t _id="sijemengageavecvousjeneseraiplusunpoidspourmafamille">要是能加入你们，我就不再是家里的累赘了。</t>
+        <t _id="jevoudraisparcourirlemondeavantdemtablir">我想在安定下来之前看看外面的世界。</t>
+        <t _id="jenaipeurderienetjapprendsvitevousnepouvezesprermeilleurcompagnon">我什么都不怕，而且我学东西快得很。你再也找不到比我好的同伴了。</t>
+        <t _id="jefaisaispartieduneautrecompagniedemercenairesmaisunmatinilssontpartissansmoi">我以前在另一伙雇佣兵里谋生，但是某天早上，他们丢下了我……</t>
+        <t _id="tantquejaileventrepleinjesuisunexcellentcompagnon">只要能让我填饱肚子，我就会是个超棒的同伴。</t>
+    </g>
+    <g id="npc_recruit_talk_localized">
+        <g id="Alazar">
+            <g id="Generic">
+                <t _id="lesbrigandsmonttoutprisjenaiplusrienperdre">强盗们夺走了我的一切。我已经再没有什么可失去的了。</t>
+                <t _id="jeprfreencoremefairemercenairequemendiersurlaplacedumarch">我宁愿当个雇佣兵，也不愿在集市广场上乞讨。</t>
+                <t _id="cesquerellesdevoisinagessontdevenuesinsupportablesemmenezmoiloindici">我受够了我那噩梦般的邻居了。带上我，远远地离开这儿！</t>
+            </g>
+            <g id="Man">
+                <t _id="nevousfiezpasmeshaillonsavantdtrerfugijtaissoldat">别看我穿得破衣烂衫的。在沦为难民之前，我也当过兵。</t>
+            </g>
+            <g id="Woman">
+                <t _id="nevousfiezpasmeshaillonsavantdtrerfugiejtaissoldate">别看我穿得破衣烂衫的。在沦为难民之前，我也当过兵。</t>
+            </g>
+        </g>
+        <g id="Edoran">
+            <g id="Generic">
+                <t _id="cenestpasparcequelalgionnapasvouludemoiquejenevauxrien">军团不肯雇我可不代表我本领不济。</t>
+                <t _id="cesguerresdenoblesnemintressentpascequejeveuxcestlaventure">贵族之间的战争我没兴趣罢了。我想要过充满冒险的生活。</t>
+                <t _id="jevoudraisvoirdupaysavantderejoindreuneabbeye">在进修道院之前，我想到处游历一番。</t>
+            </g>
+            <g id="Man">
+                <t _id="jaitoujourssuquelaviedepaysanntaitpaspourmoi">我就知道，农民的生活不适合我。</t>
+            </g>
+            <g id="Woman">
+                <t _id="jaitoujourssuquelaviedepaysannentaitpaspourmoi">我就知道，农民的生活不适合我。</t>
+            </g>
+        </g>
+        <g id="Gosenberg">
+            <g id="Generic">
+                <t _id="laviegosenbergestbientroptranquillepourmoi">戈森堡的生活对我来说太平静了。</t>
+                <t _id="autrefoismafamillesigeaitauconseildungoceaujourdhuijedoisvendremesbraspourpongernosdettes">我的家族原来也是掮客商会的一员。然而时至今日，我只能靠出卖劳力来还债了。</t>
+                <t _id="messervicesnesontpasgratuitsmaisvousenserezsatisfaits">我可不能白出力气，但我敢保证，你会满意的。</t>
+                <t _id="jaibesoindeconstituerunedotepourmonfils">我得存点儿钱给儿子办婚礼。</t>
+            </g>
+            <g id="Man">
+                <t _id="rejoindreunecompagniedemercenairesmefaitenviedepuistoutpetit">我小时候就一直梦想着当个雇佣兵。</t>
+            </g>
+            <g id="Woman">
+                <t _id="rejoindreunecompagniedemercenairesmefaitenviedepuistoutepetite">我小时候就一直梦想着当个雇佣兵。</t>
+            </g>
+        </g>
+        <g id="Harag">
+            <g id="Generic">
+                <t _id="lesteulsmontprditungrandavenircommemercenaire">图尔都预言过，我会作为雇佣兵大放异彩的。</t>
+                <t _id="tuerdesanimauxcestbonpourlestraqueursjaibesoindaffronterdesadversairesmamesure">对追踪者来猎杀动物是件好差事！我需要的是能给我带来真正战斗的对手！</t>
+                <t _id="jenerclamerienquunsalairehonnteetunevieloindesmarais">我只想远离沼泽，挣份儿本分的工钱过日子。</t>
+                <t _id="sivouspromettezdememmenervoirlestombeauxdesanciensjeviensavecvous">只要答应能带我去先民之墓，我就加入你们。</t>
+                <t _id="dormirlabelletoilenemeposepasdeproblme">我不介意睡在星空之下。</t>
+            </g>
+        </g>
+    </g>
+    <g id="npc_talk_prison">
+        <t _id="librezmoicestpromisjenevoleraiplus">放了我！我保证，再也不偷东西了！</t>
+        <t _id="jeneveuxpasmouririci">我不想死在这儿……</t>
+        <t _id="tantquejepourraimangermafinjevoussuivraipartoutovousirez">只要吃得好，我愿意跟随你走遍天涯海角！</t>
+        <t _id="cestuneerreurjudicairejexigeunjugementparcombat">审判不公！我要求比武定判！</t>
+        <t _id="payezmalibertetjeseraivtre">买断我的自由，我就听你差遣。</t>
+    </g>
+    <g id="animal_recruit_desc">
+        <t _id="loeilvifetlepoilsoyeuxuncompagnondetouslesjours">凌厉的目光，柔软的皮毛，真是朝夕相处的同伴首选。</t>
+        <t _id="ilsemblevoussupplierdelemmeneravecvous">那只生物似乎在哀求着你，希望你带它一起走。</t>
+        <t _id="patientlanimalmchedesfeuillesdechou">那只动物正在慢条斯理地咀嚼着卷心菜叶。</t>
+    </g>
+    <g id="animal_prison_desc">
+        <t _id="commentatilfaitpourseretrouverl">它怎么会在这儿？</t>
+    </g>
+    <g id="animal_prison_desc_mine">
+        <t _id="nameestcertainquevoustesrevenuslechercher">::name::确信你回来就是为了它。</t>
+        <t _id="voussavezquenamevousareconnusillveversvousdesyeuxpleinsdespoir">你知道::name::已经认出你了。它向你投来了希望的目光。</t>
+    </g>
+    <g id="animal_prison_desc_mine_extreme">
+        <t _id="votretrahisonalaissnametotalementapathique">你的背叛让::name::完全不知所措。</t>
+        <t _id="nameadjacceptsonfunestedestin">::name::已经接受了自己的命运。</t>
+    </g>
+    <g id="npc_talk_prison_mine">
+        <t _id="voustesrevenusmelibrerohmerci">你是回来救我的吗？啊，谢谢！</t>
+        <t _id="vitelibrezmoiilmetardederetrouverlesautres">快，放了我！我等不及要见其他人了！</t>
+        <t _id="enfinvoussavezdepuiscombiendetempsjecroupisici">终于自由了！你知道我在这地方颓废了多久吗？</t>
+    </g>
+    <g id="fight">
+        <t id="defender_default_desc">这帮人占领了这片区域，并且在威胁你。</t>
+    </g>
+    <g id="songs">
+        <t id="none">无</t>
+        <t id="jean_bon_name">大火腿</t>
+    </g>
+    <g id="steal">
+        <t id="wanted_level">通缉级别：</t>
+        <t id="wanted_level_desc"><bad>通缉级别</bad>越高，守卫巡逻就会越频繁。</t>
+        <t id="reason_steal">在::where::偷盗</t>
+        <t id="looting_merchants">受袭商人</t>
+        <t id="first_wanted">你会因这次偷窃而被守卫<bad>通缉</bad>。是否确定要开始行动？</t>
+        <t id="sell_stolen">守卫会因你售卖偷盗的物品而提高你的<bad>通缉级别</bad>。确定要继续吗？</t>
+        <t id="reason_sell_stolen">赃物转售</t>
+        <t id="cannot_because_wanted">你们犯下的罪行已经人尽皆知了。
+ 现在，只要你们偷东西，就一定会惹火上身。</t>
+        <t id="sell_stolen_wanted">你那些来历不明的东西引起了怀疑，只要你被<bad>通缉</bad>，就不能在这儿卖了它们。</t>
+        <t id="sell_stolen_fail">你那些来历不明的东西引起了怀疑，你无法将它们卖出去。
+你现在正被<bad>通缉</bad>！你应该尽快离开这里！</t>
+        <t id="unit_busted"><b>::name::</b>在行窃时被抓！
+该同伴已被交给守卫并送往“<b>::where::</b>”。
+你现在正被<bad>通缉</bad>。你应该尽快离开这里！</t>
+        <t id="unit_busted_no_prison"><b>::name::</b>在企图行窃时被发现了！
+你现在正被<bad>通缉</bad>。你应该尽快离开这里！</t>
+        <t id="unit_accused"><b>::name::</b>已被交给守卫并送往“<b>::where::</b>”。</t>
+        <t id="unit_accused_extreme"><b>::name::</b>已被交给守卫并送往“<b>::where::</b>”终身监禁。</t>
+        <t id="unit_accused_heretic"><b>::name::</b>被交给了审判庭并送往“<b>::where::</b>”。</t>
+        <t id="unit_surrender"><b>::name::</b>已向守卫投降并被送至“<b>::where::</b>”。</t>
+        <t id="unit_surrender_extreme"><b>::name::</b>已向守卫投降并被送往“<b>::where::</b>”终身监禁。</t>
+    </g>
+    <g id="customize_ui">
+        <t id="customization">自定义</t>
+        <t id="poney_appearance">小马外观</t>
+        <t id="name">名称</t>
+        <t id="appearance">外观</t>
+        <t id="skills">技能</t>
+        <t id="traits">特质</t>
+        <t id="skill">道具</t>
+        <t id="start_weapon">初始武器</t>
+        <t id="sex">男|女</t>
+        <t id="face">面部</t>
+        <t id="skin">肤色</t>
+        <t id="hairs">毛发</t>
+        <t id="hairs_color">发色</t>
+        <t id="hairiness">面部毛发</t>
+        <t id="clothes_color">服装颜色</t>
+        <t id="tattoos">纹身</t>
+        <t id="warpaint">战纹</t>
+        <t id="pattern_color">图案颜色</t>
+        <t id="none">无</t>
+        <t id="random">随机</t>
+        <t id="add_positive_trait">添加一项<good>正面</good>特质</t>
+        <t id="random_positive_trait">随机<good>正面</good>特质</t>
+        <t id="random_negative_trait">随机<bad>负面</bad>特质</t>
+    </g>
+    <g id="title">
+        <t id="new_game">新游戏</t>
+        <t id="continue_game">继续</t>
+        <t id="new_game_multi">开始合作模式新游戏</t>
+        <t id="multiplayer">多人游戏</t>
+        <t id="load_game">加载</t>
+        <t id="dlcs">附加内容</t>
+        <t id="options">选项</t>
+        <t id="credits">制作组</t>
+        <t id="exit">退出</t>
+        <t id="game_over">游戏结束</t>
+        <t id="local_coop">本地多人游戏</t>
+        <t id="join_with_code">使用邀请码加入</t>
+        <t id="create_local_coop">创建本地游戏</t>
+        <t id="no_lobbies_found">找不到联机会话</t>
+        <t id="join_local_coop">本地游戏</t>
+        <t id="join_internet_coop">在线游戏</t>
+        <t id="option_lang">语言</t>
+        <t id="option_sound_vol">音效</t>
+        <t id="option_ambient_vol">环境</t>
+        <t id="option_music_vol">音乐</t>
+        <t id="option_voice_vol">语音</t>
+        <t id="option_interface_vol">界面</t>
+        <t id="option_global_vol">总音量</t>
+        <t id="featureupvote">报告错误</t>
+        <t id="giveFeedback">反馈与评论</t>
+        <t id="discord">加入我们的Discord</t>
+        <t id="connectedAs">当前玩家：::name::</t>
+        <t id="invalid_files">部分游戏文件没有正确安装，可能会导致错误。</t>
+        <t id="invalid_files_repair_files">检查文件完整性或重新安装游戏。</t>
+        <g id="graphics">
+            <t id="general">综合</t>
+            <t id="monitors">屏幕</t>
+            <t id="brightness">亮度</t>
+            <t id="brightness_tuto">调节亮度</t>
+            <t id="displayMode">显示</t>
+            <t id="windowed">窗口</t>
+            <t id="fullscreen">全屏</t>
+            <t id="borderless">无边框</t>
+            <t id="terrain">地形</t>
+            <t id="vegetation">植被</t>
+            <t id="props">世界细节</t>
+            <t id="shadows">阴影</t>
+            <t id="ssr">反射</t>
+            <t id="sao">环境光遮蔽</t>
+            <t id="resolution">分辨率</t>
+            <t id="framerate">刷新率</t>
+            <t id="antialiasing">抗锯齿</t>
+            <t id="volumetric">体积效果</t>
+            <t id="meteo">天气效果</t>
+            <t id="population">世界单位数量</t>
+            <t id="vsync">垂直同步</t>
+            <t id="disabled">已禁用</t>
+            <t id="enabled">已启用</t>
+            <t id="low">低</t>
+            <t id="medium">中</t>
+            <t id="high">高</t>
+            <t id="default_params">默认</t>
+            <t id="custom">自定义</t>
+        </g>
+        <g id="options_category">
+            <t id="general">常规</t>
+            <t id="graphics">图像</t>
+            <t id="controls">快捷键</t>
+            <t id="pad">控制器</t>
+            <t id="audio">声音</t>
+            <t id="accessibility">无障碍</t>
+        </g>
+        <g id="gameplay">
+            <t id="tuto">显示教学内容</t>
+            <t id="reset_tuto">重置教学内容</t>
+            <t id="scale_text">文本尺寸</t>
+            <t id="escape_settings">[KEY_Settings]始终打开选项菜单</t>
+            <t id="run_with_mouse">鼠标跑动（双击）</t>
+            <t id="screenshakes">视野晃动</t>
+            <t id="blood">血液飞溅及击杀效果</t>
+            <t id="camera_borderscroll">激活边框滚动</t>
+            <t id="anim_speed">动画速度</t>
+            <t id="show_enemy_turn">在战斗中显示敌人的回合顺序</t>
+            <t id="show_hazard_outline">战斗时显示危险区域边界</t>
+            <t id="edit_skillbar">允许在战斗时修改技能顺序</t>
+            <t id="show_companions_list">显示战斗中同伴的名单</t>
+            <t id="always">始终</t>
+            <t id="oncePerGame">每个存档</t>
+            <t id="once">仅一次</t>
+            <t id="never">从不</t>
+        </g>
+        <g id="gamepad">
+            <t id="sensibilityMove">光标灵敏度</t>
+            <t id="sensibilityMoveOver">悬停灵敏度</t>
+            <t id="sensibilityMoveBattle">战斗灵敏度</t>
+            <t id="sensibilityCamX">水平视角灵敏度</t>
+            <t id="sensibilityCamY">垂直视角灵敏度</t>
+            <t id="DeadZone">死区</t>
+            <t id="rumble">振动</t>
+        </g>
+        <g id="options_categories">
+            <t id="Worldmap">世界</t>
+            <t id="Battle">战斗</t>
+            <t id="Advanced">进阶</t>
+            <t id="Camp">营地</t>
+            <t id="Coop">合作模式</t>
+            <t id="Outlines">高亮显示要素</t>
+        </g>
+        <g id="inputs">
+            <t id="reset">重置按键</t>
+            <g id="keys">
+                <t id="MouseLeft">鼠标左键</t>
+                <t id="MouseRight">鼠标右键</t>
+                <t id="MouseMiddle">鼠标中键</t>
+                <t id="Mouse3">鼠标后退键</t>
+                <t id="Mouse4">鼠标前进键</t>
+            </g>
+        </g>
+        <g id="accessibility">
+            <t id="ui_scaling">界面缩放</t>
+            <t id="colorblind_mode">色盲校正模式</t>
+            <t id="colorblind_amount">色盲校正级</t>
+            <t id="magnifier_amount">放大镜缩放倍数</t>
+            <t id="restore_button">重置</t>
+            <t id="outline_scale">调节轮廓粗细</t>
+            <t id="outline_over_color">更改悬停轮廓颜色</t>
+            <t id="outline_highlight_color">更改高亮轮廓颜色</t>
+            <t id="easy_navigation">简化船只控制</t>
+            <g id="colorblind">
+                <t _id="protanopie">红色盲</t>
+                <t _id="deutranopie">绿色盲</t>
+                <t _id="tritanopie">蓝色盲</t>
+            </g>
+        </g>
+        <t id="confirm_exit">要关闭游戏吗？</t>
+        <t id="loading">正在加载……</t>
+        <t id="load_game_title">加载存档</t>
+        <t id="pause_title">暂停</t>
+        <t id="pause_exit">返回主菜单</t>
+        <t id="pause_save">保存</t>
+        <t id="pause_save_override">覆盖</t>
+        <t id="pause_save_create_new">创建新存档</t>
+        <t id="pause_save_confirm">游戏已保存。</t>
+        <t id="pause_exit_confirm">是否返回主菜单？
+<bad>所有未保存的进度都将丢失。</bad></t>
+        <t id="pause_load_confirm">是否加载该存档？
+<bad>此后的所有进度都将丢失。</bad></t>
+        <t id="pause_load_battlebegin">重新开始战斗</t>
+        <t id="pause_load_lastvillage">返回前一村庄</t>
+        <t id="pause_load_ruinsenter">再次进入古墓</t>
+        <t id="pause_continue">继续</t>
+        <t id="ask_save_name">存档名？</t>
+        <t id="playTime">游戏时间：::time::</t>
+        <t id="hour_suffix">小时</t>
+        <t id="delete_save_confirm">删除存档<b>::name::</b>？
+<bad>所有数据都将被删除且无法恢复！</bad></t>
+        <t id="save_confirm_override">
+		覆盖存档<b>::name::</b>？
+		<bad>所有进度都将丢失！</bad>
+        </t>
+        <t id="save_file_corrupted">
+		该文件已损坏，无法读取。
+		<small>::file::</small>
+        </t>
+        <t id="early_access_tag">抢先体验</t>
+    </g>
+    <g id="dlcs">
+        <t id="list">附加内容：</t>
+        <t id="multi">一些玩家尚未拥有此附加内容：::names::</t>
+        <t id="unlock">解锁::name::</t>
+        <t id="buyNow">购买</t>
+        <t id="owned">已拥有</t>
+        <t id="goShop">更多信息</t>
+        <t id="belerion">解锁贝勒里翁</t>
+        <t id="tavern">开设酒馆</t>
+    </g>
+    <g id="bounty_adjectives">
+        <t _id="lgorgeur">割喉杀手</t>
+        <t _id="lcarteleur">碎骨者</t>
+        <t _id="leviolent">狂暴者</t>
+        <t _id="lepleutre">懦夫</t>
+        <t _id="lerebelle">反叛者</t>
+        <t _id="leflau">祸根</t>
+        <t _id="lemchant">吝啬鬼</t>
+        <t _id="lidiot">傻瓜</t>
+        <t _id="leparjure">破誓者</t>
+        <t _id="ledserteur">逃兵</t>
+        <t _id="lebalafr">刀疤客</t>
+        <t _id="lpouvantail">稻草人</t>
+        <t _id="lerat">老鼠</t>
+        <t _id="lerenard">狐狸</t>
+        <t _id="leloup">狼</t>
+        <t _id="labelette">黄鼠狼</t>
+        <t _id="lavipre">毒蛇</t>
+        <t _id="labuse">秃鹰</t>
+        <t _id="lerouge">赤红</t>
+        <t _id="levert">墨绿</t>
+        <t _id="lesournois">奸猾者</t>
+        <t _id="leglouton">暴食者</t>
+        <t _id="letyran">暴君</t>
+        <t _id="lebricoleur">修补匠</t>
+        <t _id="lecostaud">硬汉</t>
+        <t _id="lecoquin">厚脸皮</t>
+        <t _id="lerustique">乡巴佬</t>
+        <t _id="lepetit">小人物</t>
+        <t _id="lediplomatedupoing">野蛮斗士</t>
+        <t _id="leterrible">卑劣之徒</t>
+        <t _id="leperturb">失心疯</t>
+        <t _id="limpudique">浪荡之徒</t>
+        <t _id="labrute">莽夫</t>
+    </g>
+    <g id="bounty_adjectives_fem">
+        <t _id="legorgeuse">割喉杀手</t>
+        <t _id="lecarteleuse">碎骨魔</t>
+        <t _id="laviolente">狂暴者</t>
+        <t _id="lapleutre">懦夫</t>
+        <t _id="larebelle">反叛者</t>
+        <t _id="leflau">祸根</t>
+        <t _id="lamchante">吝啬鬼</t>
+        <t _id="lidiote">傻瓜</t>
+        <t _id="laparjure">破誓者</t>
+        <t _id="ladserteuse">逃兵</t>
+        <t _id="labalafre">刀疤客</t>
+        <t _id="lepouvantail">稻草人</t>
+        <t _id="larenarde">雌狐</t>
+        <t _id="lalouve">母狼</t>
+        <t _id="labelette">黄鼠狼</t>
+        <t _id="lavipre">毒蛇</t>
+        <t _id="labuse">秃鹰</t>
+        <t _id="larouge">赤红</t>
+        <t _id="laverte">墨绿</t>
+        <t _id="lasournoise">奸猾者</t>
+        <t _id="lagloutone">暴食者</t>
+        <t _id="latyranique">暴君</t>
+        <t _id="labricoleuse">修补匠</t>
+        <t _id="lapetite">小人物</t>
+        <t _id="ladiplomatedupoing">野蛮斗士</t>
+        <t _id="laterrible">卑劣之徒</t>
+        <t _id="laperturbe">失心疯</t>
+        <t _id="limpudique">浪荡之徒</t>
+        <t _id="labrute">莽夫</t>
+    </g>
+    <g id="systemic_goals">
+        <t id="defender_killed">已解放的地区</t>
+        <t id="defended_place">已驻守的地区</t>
+        <t id="rats">已摧毁的巢穴</t>
+        <t id="ruins">已探索的废墟</t>
+    </g>
+    <g id="start">
+        <t id="choose_troop">你的同伴是……</t>
+        <t id="troop_tip">加成</t>
+        <t id="troop_tip_malus">减益</t>
+        <t id="tip_bonus">初始：</t>
+        <t id="tip_units">初始同伴</t>
+        <t id="choose_bonus">你的同伴……</t>
+        <t id="choose_malus">如果他们有什么缺点，那就是……</t>
+        <t id="start_option">初始选项</t>
+        <t id="region">初始地区</t>
+        <t id="region_help">解锁新的初始地区，推进游戏进度。</t>
+        <t id="troop">部队</t>
+        <t id="difficulty_fight">战斗难度</t>
+        <t id="difficulty_sim">生存难度</t>
+        <t id="dif_sim_help">模拟难度会影响你同伴的疲劳和饥饿程度以及工钱情况。</t>
+        <t id="dif_fight_help">《战争传说》是一款很有挑战性的游戏，请根据自身游戏体验适当降低游戏难度。</t>
+        <t id="dif_change">你随时可以调整难度。</t>
+        <g id="difficulties">
+            <t _id="novice">新手</t>
+            <t _id="confirm">熟练</t>
+            <t _id="expert">专家</t>
+            <t _id="extrme">极限</t>
+        </g>
+        <g id="fight_difficulties_desc">
+            <t _id="voussouhaitezuneexpriencedecombatpluslgre">想要更轻松的战斗体验。</t>
+            <t _id="lescombatstactiquesetperdrevoscompagnonsnevouseffraientpas">在战斗中需要排兵布阵，随时可能失去同伴，但这些都唬不住你。</t>
+            <t _id="unseulfauxpasetcestlamortassure">毫无容错率，一旦失误即刻毙命。</t>
+            <t _id="voustesprtsaffronterlenferlamortestimmdiatelaretraiteestpluspunitivetoutcompagnonfuyardestperdulesgroupesennemissontplusrapideslesdsengagementssontpluspunitifsladifficultgnraleestsonmaximum">你已准备直捣地狱。
+
+- 死亡即刻发生。
+ - 撤退将面临更严厉的惩罚。
+ - 逃亡的同伴即为失去。
+ - 敌军的速度更加迅猛。
+ - 脱离交战状态代价更高。
+ - 总体难度升至最高级别。</t>
+        </g>
+        <g id="sim_difficulties_desc">
+            <t _id="unedifficultdegestioncalibrepourtresoupleetpeuintrusive">所设定的管理难度灵活度高，不会过度烦扰。</t>
+            <t _id="auquotidienvousdevrezgrerlafaimlafatigueetlessoldesdevoscompagnons">你需要每日留心管理同伴们的饥饿程度、疲劳和工钱情况。</t>
+            <t _id="survivreetfairedesconomiessavreronttredestchesdouloureuses">存活下来、积攒金钱都需要艰苦努力。</t>
+            <t _id="vousdevrezsubsisterdansdesconditionsimpitoyableslebonheurbaisseplusvitelespeinesdeprisonsontdfinitivescertainsmtierssontdangereuxlesmarchandssapprovisionnentlentementladifficultgnraleestsonmaximum">你不得不在残酷的条件下求生。
+
+- 满意度下降速度更快。
+ - 入狱判决不可逆转且不可撤回。
+ - 特定专业会有危险性。
+ - 商人补货的速度减慢。
+ - 总体难度升至最高级别。</t>
+        </g>
+        <t id="save_mode">保存模式</t>
+        <g id="save_modes">
+            <t _id="limit">限制模式</t>
+            <t _id="libre">自由模式</t>
+            <t _id="ironmen">铁血</t>
+        </g>
+        <g id="save_modes_desc">
+            <t _id="uneseulesauvegardeparpartiemaisvouspouvezrevenirtoutmomentcertainspointsderetourtelsquelederniervillagevisitledbutduncombatetc">每场游戏只能保存一个存档，但你可以随时返回特定检查点，如最近访问的村庄、一场战斗的开场等。</t>
+            <t _id="sauvegardeztoutmomentavecplusieurssauvegardespossiblespourlammepartie">你随时可以存档，且同个游戏可以保存多个存档。</t>
+            <t _id="uneseulesauvegardeuneseulechanceilestimpossiblederevenirenarrireettoutgameoverestdfinitiflemodedejeuleplusdifficileetexigeantdewartales">一个存档就是一次机会！你无法回头，任何游戏结束都不可逆。这是《战争传说》中最为困难、要求最高的游戏模式！</t>
+        </g>
+        <t id="save_mode_help">
+		你可以在两种不用的保存模式间选择：
+		- <inf>自由</inf>模式：你可以随时保存游戏，并保存同一游戏的多个不同存档。
+		- <inf>普通</inf>模式：每次游戏只能保存一个存档，但你可以随时返回某一特定关卡，如上次造访的村庄，战斗开始时等。
+		- <inf>铁血</inf>模式：只能保存一个存档，且只有一次机会！无法返回，一旦游戏结束即不可逆转。这是《战争传说》中难度最大、要求严苛的游戏模式。
+        </t>
+        <t id="scale_mode">探索模式</t>
+        <g id="scale_modes">
+            <t _id="explorationadaptative">自适应探索</t>
+            <t _id="explorationzone">区域锁定探索</t>
+        </g>
+        <g id="scale_modes_desc">
+            <t _id="lesrgionsdumondeontunedifficultquisadaptedynamiquementlatailledevotregroupeetlapuissancedevosunitslejeuvousproposeraenpermanenceunchallengeadaptvotrequipe">所有区域的难度都会动态适应你方队伍规模与你方各单位力量。游戏所提供的挑战将始终适合你的部队。</t>
+            <t _id="ladifficultdesrgionsdumondeestfixedsledpartetnvoluepasilvousfaudraagrandiretamliorervotretroupeavantdepouvoirexplorerlesrecoinslesplusdangereuxetaffronterlesennemislespluspuissants">世界上各个地区从一开始就有一个预设难度。你必须扩充并强化你的部队，才能探索更危险的区域，挑战更强大的敌人。</t>
+        </g>
+        <t id="scale_mode_help">探索《战争传说》世界的方式有两种：
+
+ - <inf>自由</inf>：完全自由地探索游戏世界。敌人将随着你力量的提升而增强，确保游戏难度与你队伍的能力相匹配。
+
+ - <inf>地区锁定</inf>：游戏世界中的每个地区在游戏开始时均有既定的难度。你必须扩充并强化你的部队，才能探索更危险的区域，挑战更强大的敌人。</t>
+        <g id="start_texts">
+            <t id="adventurers">
+			你的同伴出去探险了！
+
+			默默前行好几天后，他们唯一的壮举就是没有迷路，并成功到达了目的地。
+
+			在这里，新奇、刺激的任务将让学徒们枯燥乏味的生活骤起波澜！
+
+			路的尽头就是惊险奇遇！对于成功在那儿存活下来的探险者……
+            </t>
+            <t id="merchants">
+			雇佣兵的生活从无坦途……
+
+			在与强盗的热血交锋之后，你部队中最擅于投机的同伴逃走了，他们放弃了高额的赏金，也激怒了雇主……
+
+			他们渴望赚点小钱，但又不愿拿生命去冒险，现在需要重新找份差事……
+
+			毕竟，修修补补、饮酒作乐，都是要花钱的！
+            </t>
+            <t id="deserters">
+			适可而止吧！
+
+			在苦苦隐忍了上尉的虐待很长时间之后，你的同伴们终于可以享受他们应得的自由了。
+
+			不过……
+
+			逃兵向来是不受待见的，无论是从前的同行还是当地的居民，都因某种原因视他们为叛徒……
+
+			他们必须低眉顺眼，在世人的厌弃中苟活度日……
+            </t>
+            <t id="farmers">
+			啊，朝阳下的清风，裹挟着附近马厩中散发出来的淡淡腥咸，徐徐而来……
+
+			老掉牙的酒馆斗殴事件，桌椅板凳都成为了最趁手的武器……
+
+			在乡下土生土长的同伴都明白简单平凡的生活多么难能可贵。
+
+			但在这个残酷的世界里，要想出人头地，就必须冒险远行，追名逐利！
+
+			只是要当心，别在途中弄丢了最重要的东西——说的就是，你的鞋子。
+            </t>
+            <t id="bandits">
+			外面的世界简单粗暴……
+
+			小偷小摸、拦路抢劫，用一袋子钱贿赂如今效力于守卫的儿时好友，你的同伴就总是能逍遥法外。
+
+			这就是一帮无忧无虑的强盗的淳朴生活。
+
+			除了上次那最后一票……那一票得罪了不该得罪的人……受害者正在寻求复仇……
+
+			在手忙脚乱地踏上逃亡之旅后，你的部队来到了一个新的地区。
+
+			当然，他们会在这里发现许多快速发财致富的机会！毕竟，有人失，就有人得……
+            </t>
+            <t id="tavern">他们的酒馆将在五大王国名声大噪，吸引八方来客！
+
+ 你的同伴们信心满满，觉得以他们与生俱来的厨艺天赋和对好酒的热爱，足够经营一间梦寐以求的酒馆。
+
+ 即便他们并不知道距离这里最近的村庄在哪里，即便他们目前仅仅掌握了两三个菜谱，但没人在乎！成为酒馆老板是他们真正的使命！</t>
+            <t id="pugilist">至少你的同伴们还活着！
+
+ 他们根本不会料想到脚下的船会被风暴摧毁，而他们奔赴远洋称王称霸的海盗梦想也化为泡影。
+
+ 现在，他们被困在无水的陆地上，有足够的时间去探索各种乐趣，例如日行千里、迎战野兽，还有面对敌对的村民等等事件！
+
+ 不过，水手们总是足智多谋。假以时日一定会适应新环境，逐渐强大！</t>
+        </g>
+    </g>
+    <g id="padKeyInfo">
+        <t id="show_cursor">光标<small>（长按）</small></t>
+        <t id="run">跑动<small>（长按）</small></t>
+        <t id="drag_unit">移动<small>（长按）</small></t>
+        <t id="select_unit">选择</t>
+        <t id="unselect_unit">取消选中</t>
+        <t id="renfort_unit">撤回</t>
+        <t id="show_preview">显示预览</t>
+        <t id="save_edition">保存更改</t>
+        <t id="cancel_edition">放弃更改</t>
+    </g>
+</texts>

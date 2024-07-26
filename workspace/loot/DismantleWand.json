@@ -1,0 +1,21 @@
+
+{
+    "id": "DismantleWand",
+    "content": [
+        {
+            "proba": 0,
+            "item": "Wood",
+            "min": 1,
+            "max": 2
+        },
+        {
+            "proba": 0,
+            "item": "IronOre",
+            "min": 1,
+            "max": 2
+        }
+    ]
+},
+
+// separators
+L59282

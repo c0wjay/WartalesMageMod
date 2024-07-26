@@ -1,0 +1,352 @@
+{
+	"id": "Rogue",
+	"weaponTypes": [
+		{
+			"wp": "Dagger"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "Dash",
+			"minLevel": 0
+		},
+		{
+			"skill": "Wrath",
+			"minLevel": 0
+		},
+		{
+			"skill": "FirstAid",
+			"minLevel": 0
+		},
+		{
+			"skill": "BraveBoldness",
+			"minLevel": 2
+		},
+		{
+			"skill": "BraveVictory",
+			"minLevel": 2
+		},
+		{
+			"skill": "BraveSupport",
+			"minLevel": 2
+		},
+		{
+			"skill": "PoisonedWeapon",
+			"minLevel": 5
+		},
+		{
+			"skill": "KnifeThrow",
+			"minLevel": 5
+		},
+		{
+			"skill": "DeadlyContract",
+			"minLevel": 5
+		},
+		{
+			"skill": "ExplosiveGaz",
+			"minLevel": 8
+		},
+		{
+			"skill": "CheapShot",
+			"minLevel": 8
+		},
+		{
+			"skill": "CoolBlood",
+			"minLevel": 8
+		},
+		{
+			"skill": "WeaponSwapDagger",
+			"minLevel": 10
+		},
+		{
+			"skill": "Anticipation",
+			"minLevel": 10
+		},
+		{
+			"skill": "Unstoppable",
+			"minLevel": 10
+		},
+		{
+			"skill": "LongTermePlan",
+			"minLevel": 12
+		},
+		{
+			"skill": "ClassSpecialization",
+			"minLevel": 12
+		}
+	],
+	"props": {
+		"flags": 2
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 5,
+			"attribute": "Dexterity",
+			"upValue": 38
+		},
+		{
+			"value": 8,
+			"attribute": "Constitution",
+			"upValue": 44
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_D.prefab",
+	"notes": "",
+	"name": "Rôdeur",
+	"tier": 0,
+	"equipment": [
+		{
+			"armor": "BaseArmorStart1",
+			"weapon": "DaggerStart"
+		}
+	],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Cutthroat",
+	"weaponTypes": [
+		{
+			"wp": "Dagger"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "Frenzy"
+		}
+	],
+	"props": {
+		"armorKind": "ArmorLight",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 5,
+			"attribute": "Dexterity",
+			"upValue": 38
+		},
+		{
+			"value": 8,
+			"attribute": "Constitution",
+			"upValue": 44
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_D.prefab",
+	"notes": "",
+	"name": "Égorgeur",
+	"tier": 1,
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Strategist",
+	"weaponTypes": [
+		{
+			"wp": "Dagger"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "SmokeScreen"
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorLight",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 5,
+			"attribute": "Dexterity",
+			"upValue": 38
+		},
+		{
+			"value": 8,
+			"attribute": "Constitution",
+			"upValue": 44
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_D.prefab",
+	"notes": "",
+	"name": "Stratège",
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Poisoner",
+	"weaponTypes": [
+		{
+			"wp": "Dagger"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "PoisonFlask"
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorLight",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 5,
+			"attribute": "Dexterity",
+			"upValue": 38
+		},
+		{
+			"value": 8,
+			"attribute": "Constitution",
+			"upValue": 44
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_D.prefab",
+	"notes": "",
+	"name": "Empoisonneur",
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Assassin",
+	"weaponTypes": [
+		{
+			"wp": "Dagger"
+		}
+	],
+	"equipment": [],
+	"baseSkills": [
+		{
+			"skill": "BetweenTheEyes"
+		},
+		{
+			"skill": "Ordeal",
+			"minLevel": 5
+		},
+		{
+			"skill": "Withdrawal",
+			"minLevel": 8
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorLight",
+		"flags": 2080
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 20
+		},
+		{
+			"value": 5,
+			"attribute": "Dexterity",
+			"upValue": 38
+		},
+		{
+			"value": 8,
+			"attribute": "Constitution",
+			"upValue": 44
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_D.prefab",
+	"notes": "",
+	"name": "Assassin",
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},

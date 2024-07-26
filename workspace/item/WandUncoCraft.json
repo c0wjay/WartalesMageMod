@@ -1,0 +1,125 @@
+
+{
+	"id": "WandUncoCraftT1",
+	"name": "Crude Wand",
+	"weight": 1,
+	"baseBonus": [
+        {
+            "value": 1,
+            "attribute": "Willpower"
+        }
+    ],
+	"props": {
+		"model": "chars/Weapons/Torch.prefab",
+		"skill": "MagicMissile",
+		"requireLevel": 2,
+		"disableLoot": true,
+		"fixedLevel": 3
+	},
+	"icon": {
+		"file": "ui/Icons_Resources.png",
+		"size": 96,
+		"x": 10,
+		"y": 0,
+		"height": 2
+	},
+	"type": "Wand",
+	"price": 89,
+	"desc": "",
+	"rarity": 1,
+	"group": 4,
+	"iconeDone": true
+},
+{
+	"id": "WandUncoCraftT2",
+	"name": "Ghost Wand",
+	"weight": 1,
+	"baseBonus": [
+        {
+            "value": 2,
+            "attribute": "Willpower"
+        }
+    ],
+	"props": {
+		"model": "chars/Weapons/Torch.prefab",
+		"skill": "MagicMissile",
+		"requireLevel": 5,
+		"disableLoot": true,
+		"fixedLevel": 6
+	},
+	"icon": {
+		"file": "ui/Icons/Icons_Resources_02.png",
+		"size": 96,
+		"x": 19,
+		"y": 3,
+		"height": 2
+	},
+	"type": "Wand",
+	"price": 129,
+	"desc": "",
+	"rarity": 1,
+	"group": 4,
+	"iconeDone": true
+},
+{
+	"id": "WandUncoCraftT3",
+	"name": "Rimesteel Wand",
+	"weight": 1,
+	"baseBonus": [
+        {
+            "value": 3,
+            "attribute": "Willpower"
+        }
+    ],
+	"props": {
+		"model": "chars/Weapons/Mace_Arena.fbx",
+		"skill": "MagicMissile",
+		"requireLevel": 8,
+		"disableLoot": true,
+		"fixedLevel": 9
+	},
+	"icon": {
+		"file": "ui/Icons/GearIcons/1HHammersIcons.png",
+		"size": 96,
+		"x": 8,
+		"y": 0,
+		"height": 2
+	},
+	"type": "Wand",
+	"price": 169,
+	"desc": "",
+	"rarity": 1,
+	"group": 4,
+	"iconeDone": true
+},
+{
+	"id": "WandUncoCraftT4",
+	"name": "Akhedian Steel Wand",
+	"weight": 1,
+	"baseBonus": [
+        {
+            "value": 4,
+            "attribute": "Willpower"
+        }
+    ],
+	"props": {
+		"model": "chars/Weapons/Mace_Legion.fbx",
+		"skill": "MagicMissile",
+		"requireLevel": 11,
+		"disableLoot": true,
+		"fixedLevel": 12
+	},
+	"icon": {
+		"file": "ui/Icons/GearIcons/1HHammersIcons.png",
+		"size": 96,
+		"x": 9,
+		"y": 0,
+		"height": 2
+	},
+	"type": "Wand",
+	"price": 234,
+	"desc": "",
+	"rarity": 1,
+	"group": 4,
+	"iconeDone": true
+},

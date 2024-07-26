@@ -1,0 +1,23 @@
+
+{
+    "id": "WandBase",
+    "name": "Wand de base",
+    "weight": 0.5,
+    "baseBonus": [
+        {
+            "value": 2,
+            "attribute": "Willpower",
+            "upValue": 35
+        }
+    ],
+    "props": {
+        "disableLoot": true,
+        "feature": "HideInCheatMenu"
+    },
+    "iconeDone": true,
+    "group": 2,
+    "type": "Wand",
+    "__ignoreLoc__": true
+}
+
+// separators under BowBase

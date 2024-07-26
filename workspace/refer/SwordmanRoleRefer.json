@@ -1,0 +1,357 @@
+{
+	"id": "Swordman",
+	"weaponTypes": [
+		{
+			"wp": "Sword"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "Taunt",
+			"minLevel": 0
+		},
+		{
+			"skill": "Wrath",
+			"minLevel": 0
+		},
+		{
+			"skill": "FirstAid",
+			"minLevel": 0
+		},
+		{
+			"skill": "DefensivePosture",
+			"minLevel": 2
+		},
+		{
+			"skill": "BraveCleave",
+			"minLevel": 2
+		},
+		{
+			"skill": "BraveDuel",
+			"minLevel": 2
+		},
+		{
+			"skill": "Bulwark",
+			"minLevel": 5
+		},
+		{
+			"skill": "Counterattack",
+			"minLevel": 5
+		},
+		{
+			"skill": "Boldness",
+			"minLevel": 5
+		},
+		{
+			"skill": "LastStand",
+			"minLevel": 8
+		},
+		{
+			"skill": "CombatGrip",
+			"minLevel": 8
+		},
+		{
+			"skill": "HardTraining",
+			"minLevel": 8
+		},
+		{
+			"skill": "WeaponSwapSword",
+			"minLevel": 10
+		},
+		{
+			"skill": "DefensiveRiposte",
+			"minLevel": 10
+		},
+		{
+			"skill": "Intervention",
+			"minLevel": 10
+		},
+		{
+			"skill": "Exhorted",
+			"minLevel": 12
+		},
+		{
+			"skill": "ClassSpecialization",
+			"minLevel": 12
+		}
+	],
+	"props": {
+		"flags": 2
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 23
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_SS.prefab",
+	"notes": "",
+	"name": "Épéiste",
+	"tier": 0,
+	"equipment": [
+		{
+			"weapon": "SwordStart",
+			"armor": "BaseArmorStart2",
+			"leftHand": "ShieldStart"
+		},
+		{
+			"weapon": "Sword2HStart",
+			"armor": "BaseArmorStart1"
+		}
+	],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Protector",
+	"weaponTypes": [
+		{
+			"wp": "Sword"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "Encouragement"
+		}
+	],
+	"props": {
+		"armorKind": "ArmorHeavy",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 23
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 11,
+			"attribute": "Constitution",
+			"upValue": 93
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_SS.prefab",
+	"notes": "",
+	"name": "Protecteur",
+	"tier": 1,
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Fighter",
+	"weaponTypes": [
+		{
+			"wp": "Sword"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "DestabilisingStrike"
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorHeavy",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 23
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 11,
+			"attribute": "Constitution",
+			"upValue": 93
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_SS.prefab",
+	"notes": "",
+	"name": "Combattant",
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Swordmaster",
+	"weaponTypes": [
+		{
+			"wp": "Sword"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "Slashes"
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorMedium",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 5,
+			"attribute": "Strength",
+			"upValue": 33
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_SS.prefab",
+	"notes": "",
+	"name": "Maître d'armes",
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Duellist",
+	"weaponTypes": [
+		{
+			"wp": "Sword"
+		}
+	],
+	"equipment": [],
+	"baseSkills": [
+		{
+			"skill": "Estocade"
+		},
+		{
+			"skill": "DuellistInstinct",
+			"minLevel": 5
+		},
+		{
+			"skill": "GreatOpportunist",
+			"minLevel": 8
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorMedium",
+		"flags": 2080
+	},
+	"stats": [
+		{
+			"value": 5,
+			"attribute": "Strength",
+			"upValue": 33
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_SS.prefab",
+	"notes": "",
+	"name": "Duelliste",
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},

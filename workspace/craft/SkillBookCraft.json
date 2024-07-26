@@ -1,0 +1,295 @@
+{
+    "item": "BundleSkillBookT1",
+    "tool": "Anvil",
+    "recipe": [],
+    "props": {},
+    "learnCost": [
+        {
+            "qty": 1,
+            "item": "Knowledge"
+        }
+    ],
+    "itemCost": [],
+    "jobLevel": 3
+},
+{
+    "item": "BundleSkillBookT2",
+    "tool": "Anvil",
+    "recipe": [],
+    "props": {
+        "require": [
+            {
+                "item": "BundleSkillBookT1"
+            }
+        ]
+    },
+    "learnCost": [
+        {
+            "qty": 1,
+            "item": "Knowledge"
+        }
+    ],
+    "itemCost": [],
+    "jobLevel": 5
+},
+
+{
+    "item": "PriestSkillBookUncoCraftT1",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 4,
+            "item": "Rimesteel"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleSkillBookT1"
+    },
+    "learnCost": [],
+    "itemCost": [],
+    "jobLevel": 3
+},
+{
+    "item": "WarlockSkillBookUncoCraftT1",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 4,
+            "item": "Rimesteel"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleSkillBookT1"
+    },
+    "learnCost": [],
+    "itemCost": [],
+    "jobLevel": 3
+},
+{
+    "item": "SorcererSkillBookUncoCraftT1",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 4,
+            "item": "Rimesteel"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleSkillBookT1"
+    },
+    "learnCost": [],
+    "itemCost": [],
+    "jobLevel": 3
+},
+{
+    "item": "NecromancerSkillBookUncoCraftT1",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 4,
+            "item": "Rimesteel"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleSkillBookT1"
+    },
+    "learnCost": [],
+    "itemCost": [],
+    "jobLevel": 3
+},
+{
+    "item": "PriestSkillBookUncoCraftT2",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 1,
+            "item": "PriestSkillBookUncoCraftT1"
+        },
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 6,
+            "item": "GoldMineral"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleSkillBookT2"
+    },
+    "jobLevel": 5,
+    "learnCost": [],
+    "itemCost": []
+},
+{
+    "item": "WarlockSkillBookUncoCraftT2",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 1,
+            "item": "WarlockSkillBookUncoCraftT1"
+        },
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 6,
+            "item": "GoldMineral"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleSkillBookT2"
+    },
+    "jobLevel": 5,
+    "learnCost": [],
+    "itemCost": []
+},
+{
+    "item": "SorcererSkillBookUncoCraftT2",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 1,
+            "item": "SorcererSkillBookUncoCraftT1"
+        },
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 6,
+            "item": "GoldMineral"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleSkillBookT2"
+    },
+    "jobLevel": 5,
+    "learnCost": [],
+    "itemCost": []
+},
+{
+    "item": "NecromancerSkillBookUncoCraftT2",
+    "tool": "Anvil",
+    "recipe": [
+        {
+            "qty": 1,
+            "item": "NecromancerSkillBookUncoCraftT1"
+        },
+        {
+            "qty": 6,
+            "item": "IronOre"
+        },
+        {
+            "qty": 6,
+            "item": "GoldMineral"
+        },
+        {
+            "qty": 5,
+            "item": "Wood"
+        },
+        {
+            "qty": 6,
+            "item": "Charcoal"
+        }
+    ],
+    "props": {
+        "bundle": "BundleSkillBookT2"
+    },
+    "jobLevel": 5,
+    "learnCost": [],
+    "itemCost": []
+},
+
+
+{
+    "item": "Puppet",
+    "tool": "ApothecaryTable",
+    "recipe": [
+        {
+            "qty": 1,
+            "item": "AnimalCorpse"
+        },
+        {
+            "qty": 1,
+            "item": "Corpse"
+        }
+    ],
+    "props": {},
+    "jobLevel": 1,
+    "learnCost": [],
+    "itemCost": []
+},

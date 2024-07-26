@@ -1,0 +1,357 @@
+{
+	"id": "Axeman",
+	"weaponTypes": [
+		{
+			"wp": "Axe"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "Taunt",
+			"minLevel": 0
+		},
+		{
+			"skill": "Wrath",
+			"minLevel": 0
+		},
+		{
+			"skill": "FirstAid",
+			"minLevel": 0
+		},
+		{
+			"skill": "DefensivePosture",
+			"minLevel": 2
+		},
+		{
+			"skill": "BraveCleave",
+			"minLevel": 2
+		},
+		{
+			"skill": "BraveDuel",
+			"minLevel": 2
+		},
+		{
+			"skill": "Madness",
+			"minLevel": 5
+		},
+		{
+			"skill": "Recklessness",
+			"minLevel": 5
+		},
+		{
+			"skill": "Fanatism",
+			"minLevel": 5
+		},
+		{
+			"skill": "WarCry",
+			"minLevel": 8
+		},
+		{
+			"skill": "ChallengeCry",
+			"minLevel": 8
+		},
+		{
+			"skill": "Ecstasy",
+			"minLevel": 8
+		},
+		{
+			"skill": "WeaponSwapAxe",
+			"minLevel": 10
+		},
+		{
+			"skill": "Swiftness",
+			"minLevel": 10
+		},
+		{
+			"skill": "LoneWolf",
+			"minLevel": 10
+		},
+		{
+			"skill": "DeathLure",
+			"minLevel": 12
+		},
+		{
+			"skill": "ClassSpecialization",
+			"minLevel": 12
+		}
+	],
+	"props": {
+		"flags": 2
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 23
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_AS.prefab",
+	"notes": "",
+	"name": "Guerrier",
+	"tier": 0,
+	"equipment": [
+		{
+			"armor": "BaseArmorStart2",
+			"weapon": "AxeStart",
+			"leftHand": "ShieldStart"
+		},
+		{
+			"weapon": "Axe2HStart",
+			"armor": "BaseArmorStart1"
+		}
+	],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Berserker",
+	"weaponTypes": [
+		{
+			"wp": "Axe"
+		}
+	],
+	"equipment": [],
+	"baseSkills": [
+		{
+			"skill": "Outburst"
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorMedium",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 5,
+			"attribute": "Strength",
+			"upValue": 33
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_AS.prefab",
+	"notes": "",
+	"name": "Berserker",
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Executioner",
+	"weaponTypes": [
+		{
+			"wp": "Axe"
+		}
+	],
+	"equipment": [],
+	"baseSkills": [
+		{
+			"skill": "SharpWhirlwind"
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorMedium",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 5,
+			"attribute": "Strength",
+			"upValue": 33
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_AS.prefab",
+	"notes": "",
+	"name": "Bourreau",
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Sentinel",
+	"weaponTypes": [
+		{
+			"wp": "Axe"
+		}
+	],
+	"equipment": [],
+	"baseSkills": [
+		{
+			"skill": "Ovation"
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorHeavy",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 4,
+			"attribute": "Strength",
+			"upValue": 23
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 11,
+			"attribute": "Constitution",
+			"upValue": 93
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_AS.prefab",
+	"notes": "",
+	"name": "Sentinelle",
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Barbarian",
+	"weaponTypes": [
+		{
+			"wp": "Axe"
+		}
+	],
+	"equipment": [],
+	"baseSkills": [
+		{
+			"skill": "PridefulStrike"
+		},
+		{
+			"skill": "FirstBlood",
+			"minLevel": 5
+		},
+		{
+			"skill": "ExceedingLimits",
+			"minLevel": 8
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorMedium",
+		"flags": 2080
+	},
+	"stats": [
+		{
+			"value": 5,
+			"attribute": "Strength",
+			"upValue": 33
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_AS.prefab",
+	"notes": "",
+	"name": "Barbare",
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},

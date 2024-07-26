@@ -1,0 +1,352 @@
+{
+	"id": "Spearman",
+	"weaponTypes": [
+		{
+			"wp": "Polearm"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "Wrath",
+			"minLevel": 0
+		},
+		{
+			"skill": "FirstAid",
+			"minLevel": 0
+		},
+		{
+			"skill": "Dash",
+			"minLevel": 0
+		},
+		{
+			"skill": "BraveBoldness",
+			"minLevel": 2
+		},
+		{
+			"skill": "BraveVictory",
+			"minLevel": 2
+		},
+		{
+			"skill": "BraveSupport",
+			"minLevel": 2
+		},
+		{
+			"skill": "TeamSpirit",
+			"minLevel": 5
+		},
+		{
+			"skill": "SharpSupport",
+			"minLevel": 5
+		},
+		{
+			"skill": "SweetSpot",
+			"minLevel": 5
+		},
+		{
+			"skill": "Preparation",
+			"minLevel": 8
+		},
+		{
+			"skill": "ExploitationOfStrength",
+			"minLevel": 8
+		},
+		{
+			"skill": "LastEffort",
+			"minLevel": 8
+		},
+		{
+			"skill": "WeaponSwapPolearm",
+			"minLevel": 10
+		},
+		{
+			"skill": "Swiftness",
+			"minLevel": 10
+		},
+		{
+			"skill": "Unstoppable",
+			"minLevel": 10
+		},
+		{
+			"skill": "nake",
+			"minLevel": 12
+		},
+		{
+			"skill": "ClassSpecialization",
+			"minLevel": 12
+		}
+	],
+	"props": {
+		"flags": 2
+	},
+	"stats": [
+		{
+			"value": 5,
+			"attribute": "Strength",
+			"upValue": 33
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_P.prefab",
+	"notes": "",
+	"name": "Lancier",
+	"tier": 0,
+	"equipment": [
+		{
+			"armor": "BaseArmorStart2",
+			"weapon": "PolearmStart"
+		}
+	],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Harpooner",
+	"weaponTypes": [
+		{
+			"wp": "Polearm"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "SpearThrow"
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorMedium",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 5,
+			"attribute": "Strength",
+			"upValue": 33
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_P.prefab",
+	"notes": "",
+	"name": "Harponneur",
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Herald",
+	"weaponTypes": [
+		{
+			"wp": "Polearm"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "RallyingShout"
+		}
+	],
+	"props": {
+		"armorKind": "ArmorMedium",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 5,
+			"attribute": "Strength",
+			"upValue": 33
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_P.prefab",
+	"name": "Hérault",
+	"notes": "",
+	"tier": 1,
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Pikeman",
+	"weaponTypes": [
+		{
+			"wp": "Polearm"
+		}
+	],
+	"baseSkills": [
+		{
+			"skill": "SpearsWall"
+		}
+	],
+	"props": {
+		"armorKind": "ArmorMedium",
+		"flags": 32
+	},
+	"stats": [
+		{
+			"value": 5,
+			"attribute": "Strength",
+			"upValue": 33
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_P.prefab",
+	"name": "Piquier",
+	"notes": "",
+	"tier": 1,
+	"equipment": [],
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},
+{
+	"id": "Halberdier",
+	"weaponTypes": [
+		{
+			"wp": "Polearm"
+		}
+	],
+	"equipment": [],
+	"baseSkills": [
+		{
+			"skill": "MasteredWhirlwind"
+		},
+		{
+			"skill": "InspiringPresence",
+			"minLevel": 5
+		},
+		{
+			"skill": "ChangeOfPace",
+			"minLevel": 8
+		}
+	],
+	"tier": 1,
+	"props": {
+		"armorKind": "ArmorMedium",
+		"flags": 2080
+	},
+	"stats": [
+		{
+			"value": 5,
+			"attribute": "Strength",
+			"upValue": 33
+		},
+		{
+			"value": 4,
+			"attribute": "Dexterity",
+			"upValue": 20
+		},
+		{
+			"value": 9,
+			"attribute": "Constitution",
+			"upValue": 64
+		},
+		{
+			"value": 0,
+			"attribute": "CritHitPercent",
+			"upValue": 10
+		},
+		{
+			"value": 10,
+			"attribute": "Movement"
+		},
+		{
+			"value": 10,
+			"attribute": "Willpower"
+		}
+	],
+	"model": "chars/Prefabs/Prefab_P.prefab",
+	"notes": "",
+	"name": "Hallebardier",
+	"rarity": 0,
+	"timelinePriority": 0,
+	"iconeDone": true
+},

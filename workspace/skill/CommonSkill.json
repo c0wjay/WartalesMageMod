@@ -1,0 +1,118 @@
+{
+    "id": "Meditation",
+    "name": "Meditation",
+    "desc": "",
+    "mode": 4,
+    "range": {},
+    "props": {
+        "vars": {
+            "value1": 3
+        },
+		"useWithoutWeapon": true,
+        "defaultAction": true
+    },
+    "script": "function onSkill() {\n\tskill.unit.gainsActionPoint(vars.value1);\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons/BattleIcons_02_96PX.png",
+        "size": 96,
+        "x": 1,
+        "y": 15
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "Enlightment",
+    "name": "Enlightment",
+    "desc": "",
+    "mode": 2,
+    "range": {},
+    "props": {
+        "attributes": [
+            {
+                "kind": "Willpower",
+                "value": 20,
+                "isPercentage": true
+            }
+        ]
+    },
+    "script": "",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons/BattleIcons_02_96PX.png",
+        "size": 96,
+        "x": 1,
+        "y": 13
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "AutoSwapPosition",
+    "name": "Magical Veil",
+    "desc": "",
+    "mode": 2,
+    "range": {
+        "allowedTargets": 1,
+        "radius": 15
+    },
+    "props": {
+        "targetAlly": true,
+        "vars": {
+            "value1": 15
+        },
+		"useWithoutWeapon": true,
+        "tooltipStatus": [
+            {
+                "st": "Dodge"
+            },
+            {
+                "st": "Confus"
+            }
+        ]
+    },
+    "script": "function onDamageTaken(a) {\n\tvar arr = [];\n\tfor(u in getAllies(skill.unit)) {\n\t\tif( getDistance(u, skill.unit) <= vars.value1 && !u.isEngaged() && u.canMove() ) {\n\t\t\tarr.push(u);\n\t\t}\n\t}\n\tif( arr.length > 0 ) {\n\t\tvar target = arr[randInt(0, arr.length-1)];\n\t\tskill.unit.swapPositionWith(target, 0.2);\n\t\ttarget.addStatus( Status.Dodge );\n\t\ta.unit.addStatus( Status.Confus, 1 );\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons/BattleIcons96PX.png",
+        "size": 96,
+        "x": 9,
+        "y": 17
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},
+{
+    "id": "SwapPosition",
+    "name": "SwapPosition",
+    "desc": "",
+    "mode": 0,
+    "range": {
+        "allowedTargets": 1,
+        "baseDistance": 15
+    },
+    "props": {
+        "cursor": "CursorHelp",
+        "tooltipStatus": [
+            {
+                "st": "Dodge"
+            }
+        ],
+		"useWithoutWeapon": true
+    },
+    "script": "function onEval(a) {\n\tif( !a.target.canMove() ) {\n\t\tdontAllow();\n\t}\n}\n\nfunction onSkill() {\n\tif( skill.target.canMove() ) {\n\t\tskill.unit.swapPositionWith(skill.target, 0.2);\n\t\tskill.target.addStatus( Status.Dodge );\n\t}\n}",
+    "notes": "",
+    "icon": {
+        "file": "ui/Icons/BattleIcons_02_96PX.png",
+        "size": 96,
+        "x": 1,
+        "y": 1
+    },
+    "iconeDone": true,
+    "group": 16,
+    "done": 2
+},

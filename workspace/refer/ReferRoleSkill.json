@@ -1,0 +1,799 @@
+                {
+					"id": "Slashes",
+					"name": "Lacérations",
+					"desc": "Inflige ::value1:: fois [DMG] à toutes les unités dans la zone.\nUtilisable après ::value2:: attaques.\n\nAttaques effectuées : ::value3::/::value2::",
+					"mode": 5,
+					"range": {
+						"radius": 2,
+						"angle": 160,
+						"type": 1,
+						"allowedTargets": 5
+					},
+					"props": {
+						"vars": {
+							"allowed": false,
+							"value1": 2,
+							"value2": 2,
+							"value3": 0
+						},
+						"dmgAttribute": 0,
+						"isHeroic": true,
+						"apCost": 2,
+						"value": 0
+					},
+					"script": "function onSkillPlayed(s) {\n\tfor( t in s.getTargets() ) {\n\t\tif( t.dmg > 0 && s.kind != skill.kind ) {\n\t\t\tif( !vars.allowed ) {\n\t\t\t\tvars.value3++;\n\t\t\t\tif( vars.value3 >= vars.value2 ) {\n\t\t\t\t\tvars.allowed = true;\n\t\t\t\t}\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t}\n}\n\nfunction onEval(t) {\n\tt.attackCount = vars.value1;\n}\n\nfunction onSkill() {\n\tfor( i in 0...vars.value1 ) {\n\t\tattack({ anim : \"AttackWide\"+(i%2+1), fast : i < vars.value1-1 });\n\t}\n}\n\nfunction onPostSkill() {\n\tvars.allowed = false;\n\tvars.value3 = 0;\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 13,
+						"y": 2
+					},
+					"minDmg": 7,
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"value2": 1
+								}
+							}
+						}
+					],
+					"iconeDone": true,
+					"group": 9,
+					"done": 2
+				},
+                {
+					"id": "Estocade",
+					"name": "Estocade",
+					"desc": "Inflige [DMG] à la cible et gagne [Riposte].",
+					"mode": 0,
+					"range": {},
+					"props": {
+						"dmgAttribute": 0,
+						"tooltipStatus": [
+							{
+								"st": "Riposte"
+							}
+						],
+						"isHeroic": true,
+						"apCost": 1,
+						"vars": {
+							"value1": 50
+						},
+						"specialAnim": "AttackPower"
+					},
+					"script": "function onEval(a) {\n\tif( skill.level == 2 && skill.unit.hasStatus(Status.Riposte) ) {\n\t\ta.baseDamageBonus += vars.value1;\n\t}\n}\n\nfunction onDamage(a) {\n\tskill.unit.addStatus(Status.Riposte);\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 14,
+						"y": 2
+					},
+					"minDmg": 7,
+					"maxDmg": 9,
+					"levels": [
+						{
+							"props": {},
+							"desc": "Inflige [DMG] à la cible et gagne [Riposte].\nSi cette unité a déjà [Riposte], les dégâts sont augmentés de ::value1::%."
+						}
+					],
+					"iconeDone": true,
+					"group": 9,
+					"done": 2
+				},
+                {
+					"id": "Barrage",
+					"name": "Barrage",
+					"desc": "Cible une zone.\nEffectue une attaque d'opportunité contre les ::value1:: premiers ennemis qui traversent la zone.",
+					"mode": 5,
+					"range": {
+						"type": 1,
+						"angle": 60,
+						"radius": 9,
+						"allowedTargets": 0
+					},
+					"props": {
+						"globalEvents": true,
+						"needDisengaged": true,
+						"vars": {
+							"value1": 3,
+							"value2": 0
+						},
+						"isHeroic": true,
+						"apCost": 2,
+						"tooltipStatus": [
+							{
+								"st": "Targeting"
+							},
+							{
+								"st": "OpportunityAttack"
+							}
+						],
+						"reactionSkill": true,
+						"castFx": "prefabs/fx/fight/Attack/Attack_B.fx",
+						"extraFx": "prefabs/fx/fight/Attack/AttackPower_B.fx"
+					},
+					"script": "function onSkill() {\n\tif( waitNextTurn() ) {\n\t\tvars.value2 = 0;\n\t\tcreateZone();\n\t\treturn;\n\t}\n\tcancelZone();\n}\n\nfunction onMoveEvent(m) {\n\tskill.unit.cast(Skill.OpportunityAttack, m.unit, skill);\n\tvars.value2++ ;\n\tif( vars.value2 == vars.value1 ) {\n\t\tcancelZone();\n\t}\n}\n\nfunction onMove(m) {\n\tif( m.unit.side == skill.unit.side ) return;\n\tvar z = getZone();\n\tif( z == null ) return;\n\tm.addZoneEvent(z, onMoveEvent);\n}",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 6,
+						"y": 1
+					},
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"value1": 4
+								}
+							}
+						}
+					],
+					"iconeDone": true,
+					"group": 10,
+					"done": 2
+				},
+				{
+					"id": "RecoilShot",
+					"name": "Tir de recul",
+					"desc": "Inflige [DMG] à la cible, la repousse de ::value1:: mètres et lui applique [Slowdown] pendant ::value2:: rounds.",
+					"mode": 1,
+					"range": {
+						"minDistance": 1,
+						"baseDistance": 9
+					},
+					"props": {
+						"dmgAttribute": 1,
+						"needDisengaged": true,
+						"tooltipStatus": [
+							{
+								"st": "Pushback"
+							},
+							{
+								"st": "Slowdown"
+							}
+						],
+						"isHeroic": true,
+						"apCost": 1,
+						"vars": {
+							"value1": 2,
+							"value2": 1
+						},
+						"extraFx": "prefabs/fx/fight/Attack/AttackPower_B.fx"
+					},
+					"script": "function onHit(a) {\n\ta.target.pushback({ unit : skill.unit }, getPushback(a));\n}\nfunction onDamage(a) {\n\ta.target.addStatus(Status.Slowdown, vars.value2, true);\n}\n\nfunction getPushback( a ) {\n\treturn vars.value1;\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 15,
+						"y": 2
+					},
+					"minDmg": 7,
+					"maxDmg": 10,
+					"levels": [
+						{
+							"props": {
+								"minDmg": 8,
+								"maxDmg": 12,
+								"vars": {
+									"value1": 3,
+									"value2": 2
+								}
+							}
+						}
+					],
+					"iconeDone": true,
+					"group": 10,
+					"done": 2
+				},
+				{
+					"id": "ATTACK",
+					"name": "ATTAQUE !",
+					"desc": "Tous les animaux alliés adjacents à la cible l'attaquent avec une attaque d'opportunité.",
+					"mode": 0,
+					"range": {
+						"baseDistance": 12
+					},
+					"props": {
+						"isHeroic": true,
+						"apCost": 1,
+						"vars": {
+							"value1": 2,
+							"value2": 1
+						},
+						"specialAnim": "Taunt",
+						"useWithoutWeapon": true,
+						"tooltipStatus": [
+							{
+								"st": "OpportunityAttack"
+							}
+						]
+					},
+					"script": "function onSkill() {\n\tplay();\n\tfor( t in skill.getTargets() ) {\n\t\tfor(u in getAllies(skill.unit) ) {\n\t\t\tif( t.target.isAlive() && u.isAnimal && u.isMelee(t.target) ) {\n\t\t\t\tif( skill.level == 2 ) {\n\t\t\t\t\tu.addStatus(Status.Fury);\n\t\t\t\t}\n\t\t\t\tu.opportunityAttack(t.target, skill);\n\t\t\t}\n\t\t}\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 16,
+						"y": 2
+					},
+					"levels": [
+						{
+							"props": {
+								"tooltipStatus": [
+									{
+										"st": "Fury"
+									}
+								]
+							},
+							"desc": "Tous les animaux alliés adjacents à la cible gagnent [Fury] et l'attaquent avec une attaque d'opportunité."
+						}
+					],
+					"iconeDone": true,
+					"group": 10,
+					"done": 2
+				},
+				{
+					"id": "AimedShot",
+					"name": "Tir visé",
+					"desc": "Inflige [DMG] à la cible. Les dégâts sont augmentés de ::value1::% pour chaque mètre de distance entre la cible et cette unité.",
+					"mode": 1,
+					"range": {
+						"baseDistance": 8
+					},
+					"props": {
+						"dmgAttribute": 1,
+						"needDisengaged": true,
+						"isHeroic": true,
+						"apCost": 2,
+						"vars": {
+							"value1": 5
+						},
+						"extraFx": "prefabs/fx/fight/Attack/AttackPower_B.fx"
+					},
+					"script": "function onEval(a) {\n\tvar dist = round(getDistance(a.target, skill.unit) );\n\ta.baseDamageBonus += ceil(vars.value1*dist);\n\tif( skill.level == 2 ) {\n\t\ta.criticalHitPercent += ceil(vars.value1*dist);\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 0,
+						"y": 8
+					},
+					"minDmg": 7,
+					"levels": [
+						{
+							"props": {},
+							"desc": "Inflige [DMG] à la cible. Les dégâts et les chances de coup critique sont augmentés de ::value1::% pour chaque mètre de distance entre la cible et cette unité."
+						}
+					],
+					"iconeDone": true,
+					"group": 10,
+					"done": 2
+				},
+                {
+					"id": "PoisonFlask",
+					"name": "Fiole de poison",
+					"desc": "Applique ::value1:: [Poison]s à toutes les unités dans la zone.",
+					"mode": 5,
+					"range": {
+						"type": 0,
+						"radius": 3,
+						"allowedTargets": 4,
+						"baseDistance": 6
+					},
+					"props": {
+						"isHeroic": true,
+						"tooltipStatus": [
+							{
+								"st": "Poison"
+							}
+						],
+						"apCost": 1,
+						"specialAnim": "ThrowLeftGrenade",
+						"vars": {
+							"value1": 4
+						},
+						"useWithoutWeapon": true,
+						"castFx": "prefabs/fx/fight/Explosion/PoisonBomb/PoisonBomb.fx",
+						"flags": 64,
+						"needDisengaged": true,
+						"throwModel": "chars/Weapons/LeftHand_IncendiaryFlask.fbx"
+					},
+					"script": "function onSkill() {\n\tplayAttack();\n\tfor( t in skill.getTargets() ) {\n\t\tif( skill.level == 2 && t.target.hasStatus(Status.Poison) ) {\n\t\t\tt.target.addStatus(Status.Vulnerability);\n\t\t}\n\t\tt.target.addStatus(Status.Poison, vars.value1);\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 9,
+						"y": 1
+					},
+					"levels": [
+						{
+							"props": {
+								"tooltipStatus": [
+									{
+										"st": "Vulnerability"
+									}
+								]
+							},
+							"desc": "Applique ::value1:: [Poison]s à toutes les unités dans la zone.\nApplique [Vulnerability] à celles déjà empoisonnées."
+						}
+					],
+					"iconeDone": true,
+					"group": 11,
+					"done": 2
+				},
+				{
+					"id": "Frenzy",
+					"name": "Frénésie",
+					"desc": "Inflige [DMG] à la cible.\n\n[Backstab] : Effectue ::value1:: attaques supplémentaires.",
+					"mode": 0,
+					"range": {},
+					"props": {
+						"dmgAttribute": 1,
+						"vars": {
+							"value1": 2,
+							"value2": 1
+						},
+						"isHeroic": true,
+						"apCost": 2,
+						"extraFx": "prefabs/fx/fight/Attack/AttackPower_D.fx"
+					},
+					"script": "function onSkill() {\n\tfor( t in skill.getTargets() ) {\n\t\tfor( i in 0...t.attackCount ) {\n\t\t\tattack({ anim : i == t.attackCount - 1 ? null : \"AttackFast\"+(i+1), fast : i < t.attackCount - 1 });\n\t\t}\n\t}\n}\n\nfunction onEval(t) {\n\tvar count = vars.value2;\n\tif( t.backstab ) {\n\t\tcount += vars.value1;\n\t}\n\tt.attackCount = count;\n}\n\nfunction onPostSkill() {\n\tif( skill.level >= 2 && skill.hasTarget() && !skill.target.isAlive() ) {\n\t\tallowReplay();\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 7,
+						"y": 2
+					},
+					"minDmg": 3.5,
+					"maxDmg": 4.5,
+					"levels": [
+						{
+							"props": {},
+							"desc": "Inflige [DMG] à la cible.\n\n[Backstab] : Effectue ::value1:: attaques supplémentaires.\n\n[DeadlyBlow] : Peut réutiliser cette compétence ce tour."
+						}
+					],
+					"iconeDone": true,
+					"group": 11,
+					"done": 2
+				},
+				{
+					"id": "SmokeScreen",
+					"name": "Écran de fumée",
+					"desc": "Force les ennemis engagés dans la zone à se désengager. Ils subissent une attaque d'opportunité de leur adversaire.",
+					"mode": 5,
+					"range": {
+						"type": 0,
+						"radius": 4,
+						"allowedTargets": 0,
+						"baseDistance": 6
+					},
+					"props": {
+						"isHeroic": true,
+						"tooltipStatus": [
+							{
+								"st": "OpportunityAttack"
+							}
+						],
+						"needDisengaged": true,
+						"apCost": 1,
+						"specialAnim": "ThrowLeftGrenade",
+						"vars": {
+							"value1": 2
+						},
+						"useWithoutWeapon": true,
+						"castFx": "prefabs/fx/fight/Explosion/SmokeBomb/SmokeBomb.fx",
+						"flags": 64,
+						"throwModel": "chars/Weapons/LeftHand_BlindingPowder.fbx"
+					},
+					"script": "function onSkill() {\n\tplayAttack();\n\tfor( t in skill.getTargets() ) {\n\t\tif( checkReinforce(t) ) {\n\t\t\tt.target.disengage(true);\n\t\t} else if( skill.level == 2 ) {\n\t\t\tt.target.pushback({ unit : skill.unit }, getPushback(t));\n\t\t}\n\t}\n}\n\nfunction getPushback( a ) {\n\tif( skill.level == 2 ) {\n\t\treturn vars.value1;\n\t}\n\treturn 0;\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 10,
+						"y": 0
+					},
+					"levels": [
+						{
+							"props": {
+								"pushbackPreview": 2
+							},
+							"desc": "Force les ennemis engagés dans la zone à se désengager. Ils subissent une attaque d'opportunité de leur adversaire.\nLes ennemis n'étant pas engagés sont repoussés de ::value1:: mètres."
+						}
+					],
+					"iconeDone": true,
+					"group": 11,
+					"done": 2
+				},
+                {
+					"id": "Protection",
+					"name": "Protection",
+					"desc": "Gagne [Deflection].",
+					"mode": 4,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "Deflection"
+							}
+						],
+						"isHeroic": true,
+						"apCost": 1,
+						"specialAnim": "Taunt",
+						"aiOrder": 1
+					},
+					"script": "function onSkill() {\n\tplay();\n\tskill.unit.addStatus(Status.Deflection);\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 19,
+						"y": 1
+					},
+					"iconeDone": true,
+					"group": 15,
+					"done": 2
+				},
+				{
+					"id": "ShieldSlam",
+					"name": "Coup de bouclier",
+					"desc": "Inflige [DMG] à la cible et lui applique [Fragility] pendant ::value1:: round.",
+					"mode": 0,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "Fragility"
+							}
+						],
+						"vars": {
+							"value1": 1
+						},
+						"isHeroic": true,
+						"apCost": 1,
+						"dmgAttribute": 0,
+						"specialAnim": "AttackShield",
+						"aiOrder": 1
+					},
+					"script": "function onDamage(a) {\n\ta.target.addStatus(Status.Fragility, vars.value1, true);\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 15,
+						"y": 3
+					},
+					"minDmg": 3,
+					"maxDmg": 4,
+					"iconeDone": true,
+					"group": 15,
+					"done": 2
+				},
+				{
+					"id": "BurningShieldSlam",
+					"name": "Coup flamboyant",
+					"desc": "Inflige [DMG] à la cible et lui applique [Burning].",
+					"mode": 0,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "Burning"
+							}
+						],
+						"isHeroic": true,
+						"apCost": 1,
+						"dmgAttribute": 0,
+						"specialAnim": "AttackShield",
+						"aiOrder": 1
+					},
+					"script": "function onDamage(a) {\n\ta.target.addStatus(Status.Burning);\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 12,
+						"y": 8
+					},
+					"minDmg": 3,
+					"maxDmg": 4,
+					"iconeDone": true,
+					"group": 15,
+					"done": 2
+				},
+				{
+					"id": "CounterArrows",
+					"name": "Contre-flèches",
+					"desc": "[DamageTakenPercent] des attaques de Tir réduits de ::value1::%.",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"vars": {
+							"value1": 90
+						},
+						"isHeroic": true,
+						"globalEvents": true
+					},
+					"script": "function onSkillEval(a) {\n\tfor( t in a.getTargets() ) {\n\t\tif( a.isPrecisionSkill() ) {\n\t\t\tif( a.unit != skill.unit && t.target == skill.unit ) {\n\t\t\t\tt.baseDamageBonus -= vars.value1;\n\t\t\t}\n\t\t}\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 11,
+						"y": 0
+					},
+					"iconeDone": true,
+					"group": 15,
+					"done": 2
+				},
+				{
+					"id": "MotivatingSlam",
+					"name": "Heurt motivant",
+					"desc": "Inflige [DMG] à la cible et cette unité et tous ses alliés adjacents gagnent [Motivation] pendant ::value1:: round.",
+					"mode": 0,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "Motivation"
+							}
+						],
+						"vars": {
+							"value1": 1
+						},
+						"isHeroic": true,
+						"apCost": 1,
+						"dmgAttribute": 0,
+						"specialAnim": "AttackShield",
+						"aiOrder": 1
+					},
+					"script": "function onDamage(a) {\n\tskill.unit.addStatus(Status.Motivation, vars.value1, true);\n\tfor(u in getAllies(skill.unit) ) {\n\t\tif( u.isMelee(skill.unit) ) {\n\t\t\tu.addStatus(Status.Motivation, vars.value1, true);\n\t\t}\n\t}\n}",
+					"notes": "",
+					"done": 1,
+					"iconeDone": true,
+					"group": 15,
+					"icon": {
+						"file": "ui/Icons/BattleIcons_03_96PX.png",
+						"size": 96,
+						"x": 16,
+						"y": 1
+					},
+					"minDmg": 3,
+					"maxDmg": 4
+				},
+				{
+					"id": "EngagingSlam",
+					"name": "Heurt d'engagement",
+					"desc": "Inflige [DMG] à la cible. Si la cible est engagée avec cette capacité, cette unité gagne [Riposte].",
+					"mode": 0,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "Riposte"
+							}
+						],
+						"isHeroic": true,
+						"apCost": 1,
+						"dmgAttribute": 0,
+						"specialAnim": "AttackShield",
+						"vars": {
+							"engaged": false
+						},
+						"aiOrder": 1
+					},
+					"script": "function onEval(a) {\n\tif( !a.target.isEngaged() || a.target.engagedUnit != skill.unit ) {\n\t\tvars.engaged = false;\n\t} else vars.engaged = true;\n}\n\nfunction onDamage(a) {\n\tif( a.target.isEngaged() && skill.unit.engagedUnit == a.target && !vars.engaged ) {\n\t\tskill.unit.addStatus(Status.Riposte);\n\t}\n}",
+					"notes": "",
+					"done": 1,
+					"iconeDone": true,
+					"group": 15,
+					"icon": {
+						"file": "ui/Icons/BattleIcons_03_96PX.png",
+						"size": 96,
+						"x": 17,
+						"y": 1
+					},
+					"minDmg": 3,
+					"maxDmg": 4
+				},
+                {
+					"id": "ShootOrder",
+					"name": "Ordre de tir",
+					"desc": "Cible une zone. Effectue ::value1:: attaque d'opportunité contre le premier ennemi qui traverse la zone. ",
+					"mode": 5,
+					"range": {
+						"type": 1,
+						"angle": 60,
+						"radius": 9,
+						"allowedTargets": 0
+					},
+					"props": {
+						"globalEvents": true,
+						"needDisengaged": true,
+						"vars": {
+							"value1": 1,
+							"value2": 0
+						},
+						"isHeroic": true,
+						"tooltipStatus": [
+							{
+								"st": "Targeting"
+							},
+							{
+								"st": "OpportunityAttack"
+							}
+						],
+						"reactionSkill": true,
+						"isAttack": true,
+						"defaultAction": true
+					},
+					"script": "function onSkill() {\n\tif( waitNextTurn() ) {\n\t\tvars.value2 = 0;\n\t\tcreateZone();\n\t\treturn;\n\t}\n\tcancelZone();\n}\n\nfunction onMoveEvent(m) {\n\tskill.unit.cast(Skill.OpportunityAttack, m.unit, skill);\n\tvars.value2++ ;\n\tif( vars.value2 == vars.value1 ) {\n\t\tcancelZone();\n\t}\n}\n\nfunction onMove(m) {\n\tif( m.unit.side == skill.unit.side ) return;\n\tvar z = getZone();\n\tif( z == null ) return;\n\tm.addZoneEvent(z, onMoveEvent);\n}",
+					"notes": "1",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 3,
+						"y": 9
+					},
+					"iconeDone": true,
+					"group": 21,
+					"done": 2
+				},
+                {
+					"id": "MartialImpact",
+					"name": "Impact martial",
+					"desc": "Inflige [DMG] à la cible et applique [Confus] pendant ::value1:: rounds.",
+					"mode": 0,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "Confus"
+							}
+						],
+						"vars": {
+							"value1": 1
+						},
+						"isHeroic": true,
+						"apCost": 1,
+						"dmgAttribute": 0,
+						"specialAnim": "AttackShield",
+						"feature": "Difficulty_Update"
+					},
+					"script": "function onDamage(a) {\n\ta.target.addStatus(Status.Confus, vars.value1, true);\n}",
+					"notes": "",
+					"iconeDone": true,
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 10,
+						"y": 10
+					},
+					"minDmg": 4,
+					"maxDmg": 6,
+					"group": 21,
+					"done": 2
+				},
+                {
+					"id": "PheromoneShooting",
+					"name": "Tir de phéromones",
+					"desc": "Inflige [DMG] à la cible et lui applique [Chased] pendant ::value1:: round.",
+					"mode": 1,
+					"range": {
+						"minDistance": 1,
+						"baseDistance": 9
+					},
+					"props": {
+						"dmgAttribute": 1,
+						"tooltipStatus": [
+							{
+								"st": "Chased"
+							}
+						],
+						"isHeroic": true,
+						"apCost": 1,
+						"vars": {
+							"value1": 1
+						},
+						"feature": "Alazar1_Update"
+					},
+					"script": "function onDamage(a) {\n\ta.target.addStatus(Status.Chased, vars.value1, true);\n}",
+					"notes": "",
+					"iconeDone": true,
+					"group": 60,
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 8,
+						"y": 19
+					},
+					"minDmg": 6,
+					"maxDmg": 10,
+					"done": 2
+				},
+				{
+					"id": "BestialShooting",
+					"name": "Tir bestial",
+					"desc": "Inflige [DMG] à la cible et tous les animaux adjacents à la cible effectuent une attaque d'opportunité sur la cible.",
+					"mode": 1,
+					"range": {
+						"baseDistance": 9
+					},
+					"props": {
+						"dmgAttribute": 1,
+						"tooltipStatus": [],
+						"isHeroic": true,
+						"vars": {
+							"value1": 2,
+							"value2": 1
+						},
+						"feature": "Alazar1_Update"
+					},
+					"script": "function onDamage(a) {\n\tfor(u in getAllies(skill.unit) ) {\n\t\tif( u.isAnimal && u.isMelee(a.target) ) {\n\t\t\tu.opportunityAttack(a.target, skill);\n\t\t}\n\t}\n}",
+					"notes": "",
+					"iconeDone": true,
+					"group": 60,
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 7,
+						"y": 19
+					},
+					"minDmg": 4,
+					"maxDmg": 8,
+					"done": 2
+				},
+                {
+					"id": "ArenaRulePoisonZoneSkill",
+					"name": "",
+					"desc": "",
+					"mode": 5,
+					"range": {
+						"type": 0,
+						"radius": 1.5,
+						"allowedTargets": 4
+					},
+					"props": {
+						"isHeroic": true,
+						"specialAnim": "Throw"
+					},
+					"script": "function onSkill() {\n\tcreateAreaEffect(\"EndRound\", 1, { skillId: Skill.PoisonZone });\n}",
+					"notes": "",
+					"iconeDone": true,
+					"group": 75,
+					"done": 2
+				},
+                {
+					"id": "Ideax",
+					"name": "Entre les deux yeux",
+					"desc": "Inflige [DMG] à la cible plus [VALUE] pour chaque application de [Poison].",
+					"mode": 0,
+					"range": {},
+					"props": {
+						"isHeroic": true,
+						"apCost": 1,
+						"dmgAttribute": 1,
+						"scaledValue": 1,
+						"scaledValueAttribute": 1
+					},
+					"script": "function onEval(a) {\n\tfor( s in a.target.getAllStatus() )\n\t\tif( s.kind == Status.Poison ) {\n\t\t\ta.dmg += s.count * skill.value;\n\t\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/statusIcons.png",
+						"size": 32,
+						"x": 10,
+						"y": 1
+					},
+					"minDmg": 8,
+					"__ignoreLoc__": true,
+					"iconeDone": true,
+					"group": 80,
+					"done": 2
+				},

@@ -1,0 +1,263 @@
+
+{
+    "id": "BundleSkillBookT1",
+    "name": "Skill Book I",
+    "weight": 0,
+    "baseBonus": [],
+    "props": {
+        "feature": "HideInCheatMenu"
+    },
+    "group": 13,
+    "type": "BundleForge",
+    "desc": "",
+    "iconeDone": true,
+    "icon": {
+        "file": "ui/Icons/Icons_Resources_02.png",
+        "size": 1,
+        "x": 4,
+        "y": 1918
+    }
+},
+{
+    "id": "BundleSkillBookT2",
+    "name": "Skill Book II",
+    "weight": 0,
+    "baseBonus": [],
+    "props": {
+        "feature": "HideInCheatMenu"
+    },
+    "group": 13,
+    "type": "BundleForge",
+    "desc": "",
+    "iconeDone": true,
+    "icon": {
+        "file": "ui/Icons/Icons_Resources_02.png",
+        "size": 1,
+        "x": 4,
+        "y": 1918
+    }
+},
+
+{
+	"id": "PriestSkillBookUncoCraftT1",
+	"name": "Priest Skill Book I",
+	"weight": 0.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+		"passiveSkill": "PriestSkillBook1",
+		"requireLevel": 5,
+		"disableLoot": true,
+		"fixedLevel": 6
+	},
+	"icon": {
+		"file": "ui/Icons_Resources.png",
+		"size": 96,
+		"x": 11,
+		"y": 18
+	},
+	"type": "LeftHand",
+	"price": 129,
+	"desc": "",
+	"rarity": 1,
+	"group": 12,
+	"iconeDone": true
+},
+{
+	"id": "WarlockSkillBookUncoCraftT1",
+	"name": "Warlock Skill Book I",
+	"weight": 0.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+		"passiveSkill": "WarlockSkillBook1",
+		"requireLevel": 5,
+		"disableLoot": true,
+		"fixedLevel": 6
+	},
+	"icon": {
+		"file": "ui/Icons_Resources.png",
+		"size": 96,
+		"x": 11,
+		"y": 17
+	},
+	"type": "LeftHand",
+	"price": 129,
+	"desc": "",
+	"rarity": 1,
+	"group": 12,
+	"iconeDone": true
+},
+{
+	"id": "SorcererSkillBookUncoCraftT1",
+	"name": "Sorcerer Skill Book I",
+	"weight": 0.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+		"passiveSkill": "SorcererSkillBook1",
+		"requireLevel": 5,
+		"disableLoot": true,
+		"fixedLevel": 6
+	},
+	"icon": {
+		"file": "ui/Icons_Resources.png",
+		"size": 96,
+		"x": 10,
+		"y": 16
+	},
+	"type": "LeftHand",
+	"price": 129,
+	"desc": "",
+	"rarity": 1,
+	"group": 12,
+	"iconeDone": true
+},
+{
+	"id": "NecromancerSkillBookUncoCraftT1",
+	"name": "Necromancer Skill Book I",
+	"weight": 0.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+		"passiveSkill": "NecromancerSkillBook1",
+		"requireLevel": 5,
+		"disableLoot": true,
+		"fixedLevel": 6
+	},
+	"icon": {
+		"file": "ui/Icons_Resources.png",
+		"size": 96,
+		"x": 7,
+		"y": 16
+	},
+	"type": "LeftHand",
+	"price": 129,
+	"desc": "",
+	"rarity": 1,
+	"group": 12,
+	"iconeDone": true
+},
+{
+	"id": "PriestSkillBookUncoCraftT2",
+	"name": "Priest Skill Book II",
+	"weight": 0.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+		"passiveSkill": "PriestSkillBook2",
+		"requireLevel": 11,
+		"disableLoot": true,
+		"fixedLevel": 12
+	},
+	"icon": {
+		"file": "ui/Icons_Resources.png",
+		"size": 96,
+		"x": 12,
+		"y": 18
+	},
+	"type": "LeftHand",
+	"price": 234,
+	"desc": "",
+	"rarity": 1,
+	"group": 12,
+	"iconeDone": true
+},
+{
+	"id": "WarlockSkillBookUncoCraftT2",
+	"name": "Warlock Skill Book II",
+	"weight": 0.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+		"passiveSkill": "WarlockSkillBook2",
+		"requireLevel": 11,
+		"disableLoot": true,
+		"fixedLevel": 12
+	},
+	"icon": {
+		"file": "ui/Icons_Resources.png",
+		"size": 96,
+		"x": 12,
+		"y": 17
+	},
+	"type": "LeftHand",
+	"price": 234,
+	"desc": "",
+	"rarity": 1,
+	"group": 12,
+	"iconeDone": true
+},
+{
+	"id": "SorcererSkillBookUncoCraftT2",
+	"name": "Sorcerer Skill Book II",
+	"weight": 0.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+		"passiveSkill": "SorcererSkillBook2",
+		"requireLevel": 11,
+		"disableLoot": true,
+		"fixedLevel": 12
+	},
+	"icon": {
+		"file": "ui/Icons_Resources.png",
+		"size": 96,
+		"x": 11,
+		"y": 16
+	},
+	"type": "LeftHand",
+	"price": 234,
+	"desc": "",
+	"rarity": 1,
+	"group": 12,
+	"iconeDone": true
+},
+{
+	"id": "NecromancerSkillBookUncoCraftT2",
+	"name": "Necromancer Skill Book II",
+	"weight": 0.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+		"passiveSkill": "NecromancerSkillBook2",
+		"requireLevel": 11,
+		"disableLoot": true,
+		"fixedLevel": 12
+	},
+	"icon": {
+		"file": "ui/Icons_Resources.png",
+		"size": 96,
+		"x": 8,
+		"y": 16
+	},
+	"type": "LeftHand",
+	"price": 234,
+	"desc": "",
+	"rarity": 1,
+	"group": 12,
+	"iconeDone": true
+},
+
+
+{
+	"id": "Puppet",
+	"name": "Shaman's Puppet",
+	"weight": 3,
+	"baseBonus": [],
+	"props": {
+		"disableLoot": true
+	},
+	"icon": {
+		"file": "ui/Icons_Resources.png",
+		"size": 96,
+		"x": 7,
+		"y": 3
+	},
+	"type": "BeltAccessory",
+	"price": 1,
+	"desc": "",
+	"rarity": 1,
+	"group": 21,
+	"iconeDone": true
+},

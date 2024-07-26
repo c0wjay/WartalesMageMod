@@ -1,0 +1,223 @@
+
+{
+	"id": "MaceUncoCraftT1",
+	"name": "Masse cloutée en fer",
+	"weight": 1.5,
+	"props": {
+		"model": "chars/Weapons/Mace_02.fbx",
+		"skill": "Crushing",
+		"requireLevel": 2,
+		"disableLoot": true,
+		"fixedLevel": 3
+	},
+	"icon": {
+		"file": "ui/Icons/GearIcons/1HHammersIcons.png",
+		"size": 96,
+		"x": 1,
+		"y": 0,
+		"height": 2
+	},
+	"type": "Mace",
+	"rarity": 1,
+	"baseBonus": [],
+	"price": 89,
+	"desc": "Bien qu'elle manque un peu de raffinement, cette masse cloutée est tout à fait adéquate pour tuer son prochain.",
+	"group": 4,
+	"iconeDone": true
+},
+{
+	"id": "MaceUncoCraftT2",
+	"name": "Masse fantôme",
+	"weight": 1.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/Mace_UncoCraftT2.fbx",
+		"skill": "Crushing",
+		"requireLevel": 5,
+		"disableLoot": true,
+		"fixedLevel": 6
+	},
+	"icon": {
+		"file": "ui/Icons/GearIcons/1HHammersIcons.png",
+		"size": 96,
+		"x": 6,
+		"y": 0,
+		"height": 2
+	},
+	"type": "Mace",
+	"rarity": 1,
+	"desc": "La force de cette petite masse sans prétention réside dans son équilibre impeccable.",
+	"price": 129,
+	"group": 4,
+	"iconeDone": true
+},
+{
+	"id": "MaceUncoCraftT3",
+	"name": "Masse à ailettes en givracier",
+	"weight": 1.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/Mace_UncoCraftT3.fbx",
+		"skill": "Crushing",
+		"requireLevel": 8,
+		"disableLoot": true,
+		"fixedLevel": 9
+	},
+	"group": 4,
+	"icon": {
+		"file": "ui/Icons/GearIcons/1HHammersIcons.png",
+		"size": 96,
+		"x": 7,
+		"y": 0,
+		"height": 2
+	},
+	"type": "Mace",
+	"price": 169,
+	"rarity": 1,
+	"desc": "D'une redoutable efficacité, son maniement peut être assez salissant.",
+	"iconeDone": true
+},
+{
+	"id": "MaceUncoCraftT4",
+	"name": "Morgenstern en acier akhedien",
+	"weight": 1.5,
+	"baseBonus": [],
+	"props": {
+		"model": "chars/Weapons/Mace_06.fbx",
+		"skill": "Crushing",
+		"requireLevel": 11,
+		"disableLoot": true,
+		"fixedLevel": 12,
+		"feature": "Alazar1_Update"
+	},
+	"iconeDone": true,
+	"group": 4,
+	"type": "Mace",
+	"price": 234,
+	"rarity": 2,
+	"desc": "Rien ne résiste à cette morgenstern : armures, boucliers, crânes, tous sont écrasés avec la même efficacité.",
+	"icon": {
+		"file": "ui/Icons/GearIcons/1HHammersIcons.png",
+		"size": 96,
+		"x": 5,
+		"y": 0,
+		"height": 2
+	}
+},
+{
+    "id": "Torch",
+    "name": "Torche",
+    "weight": 1,
+    "baseBonus": [
+        {
+            "value": 3,
+            "attribute": "CritHitPercent"
+        },
+        {
+            "value": 5,
+            "attribute": "VisionRange"
+        }
+    ],
+    "props": {
+        "value": 6,
+        "special": 1,
+        "model": "chars/Weapons/Torch.prefab",
+        "skill": "TorchStrike"
+    },
+    "icon": {
+        "file": "ui/Icons_Resources.png",
+        "size": 96,
+        "x": 10,
+        "y": 0,
+        "height": 2
+    },
+    "type": "LeftHand",
+    "price": 27,
+    "desc": "Une torche capable d'éclairer les lieux les plus obscurs et de mettre le feu aux chairs infectées.",
+    "rarity": 0,
+    "group": 12,
+    "iconeDone": true
+},
+{
+    "id": "TorchRuins",
+    "name": "Torche de pillard",
+    "weight": 1,
+    "baseBonus": [
+        {
+            "value": 5,
+            "attribute": "CritHitPercent"
+        },
+        {
+            "value": 8,
+            "attribute": "VisionRange"
+        }
+    ],
+    "props": {
+        "feature": "Alazar1_Update",
+        "disableLoot": true,
+        "skill": "TorchRuinsThrow",
+        "value": 12,
+        "special": 1,
+        "model": "chars/Weapons/Torch.prefab"
+    },
+    "iconeDone": true,
+    "icon": {
+        "file": "ui/Icons/Icons_Resources_02.png",
+        "size": 96,
+        "x": 19,
+        "y": 3,
+        "height": 2
+    },
+    "type": "LeftHand",
+    "group": 12,
+    "rarity": 1,
+    "price": 60,
+    "desc": "Non seulement cette torche éclaire votre chemin, mais elle peut aussi éclater la tête d'un rampant un peu trop entreprenant."
+},
+{
+    "id": "MaceLegendaryArena1A1",
+    "name": "Froidure",
+    "weight": 1.5,
+    "baseBonus": [],
+    "props": {
+        "model": "chars/Weapons/Mace_Arena.fbx",
+        "feature": "Alazar1_Update"
+    },
+    "iconeDone": true,
+    "group": 4,
+    "icon": {
+        "file": "ui/Icons/GearIcons/1HHammersIcons.png",
+        "size": 96,
+        "x": 8,
+        "y": 0,
+        "height": 2
+    },
+    "type": "Mace",
+    "price": 169,
+    "rarity": 3,
+    "desc": "Fait pour écraser et arracher les plaques d'armures, ce bec de corbin est une arme redoutable."
+},
+{
+    "id": "MaceRareLegion",
+    "name": "Masse de la tête brûlée",
+    "weight": 1.5,
+    "baseBonus": [],
+    "props": {
+        "skill": "FractiousSequence",
+        "model": "chars/Weapons/Mace_Legion.fbx",
+        "feature": "Difficulty_Update"
+    },
+    "iconeDone": true,
+    "group": 4,
+    "icon": {
+        "file": "ui/Icons/GearIcons/1HHammersIcons.png",
+        "size": 96,
+        "x": 9,
+        "y": 0,
+        "height": 2
+    },
+    "type": "Mace",
+    "price": 130,
+    "rarity": 2,
+    "desc": "Les masses sont apparues dans la Légion au moment de l'invasion d'Alazar."
+},

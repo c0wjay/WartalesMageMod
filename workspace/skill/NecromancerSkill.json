@@ -1,0 +1,132 @@
+{
+	"id": "SummonBeast",
+	"name": "Summoning Beast",
+	"desc": "",
+	"mode": 4,
+	"range": {},
+	"props": {
+		"isHeroic": true,
+		"specialAnim": "Taunt",
+		"apCost": 0,
+        "defaultAction": true,
+		"vars": {
+			"value1": 20
+		},
+		"itemCost": {
+			"item": "Puppet",
+			"qty": 1
+		},
+		"needDisengaged": true,
+		"useWithoutWeapon": true,
+		"extraFx": "prefabs/fx/fight/BuffCry/BuffCryWhite.fx"
+	},
+	"script": "function onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedNecromancy ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar dice = [];\n\tdice.push(randomDice(will));\n\tdice.push(randomDice(max(will - vars.value1, 0)));\n\n\tvar tab = [];\n\tif (skill.level == 2) {\n\t\ttab.push(UnitClass.Swamoar);\n\t\ttab.push(UnitClass.SnowWolf);\n\t\ttab.push(UnitClass.SnowAlpha);\n\t\ttab.push(UnitClass.WhiteBear);\n\t} else {\n\t\ttab.push(UnitClass.Boar);\n\t\ttab.push(UnitClass.Wolf);\n\t\ttab.push(UnitClass.Alpha);\n\t\ttab.push(UnitClass.Bear);\n\t}\n\n\tvar idx = dice[0] -1;\n\tvar num = (dice[1]+2)/2;\n\tif (idx ==3) {\n\t\tspawnRenfort(tab[3], (num+1)/2, false);\n\t} else if (idx == 4) {\n\t\tspawnRenfort(tab[0], num, false);\n\t} else {\n\t\tspawnRenfort(tab[idx], num, false);\n\t}\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+	"notes": "",
+	"levels": [
+		{
+			"props": {
+				"vars": {
+					"value1": 10
+				}
+			}
+		}
+	],
+	"icon": {
+		"file": "ui/Icons/BattleIcons_02_96PX.png",
+		"size": 96,
+		"x": 13,
+		"y": 3
+	},
+	"iconeDone": true,
+	"group": 16,
+	"done": 2
+},
+{
+	"id": "SummonUndead",
+	"name": "Summoning Undead",
+	"desc": "",
+	"mode": 4,
+	"range": {},
+	"props": {
+		"isHeroic": true,
+		"specialAnim": "Taunt",
+		"apCost": 1,
+        "defaultAction": true,
+		"vars": {
+			"value1": 20,
+			"value2": 2,
+			"allowed": true
+		},
+		"itemCost": {
+			"item": "Puppet",
+			"qty": 2
+		},
+		"needDisengaged": true,
+		"useWithoutWeapon": true,
+		"extraFx": "prefabs/fx/fight/BuffCry/BuffCryBlue.fx"
+	},
+	"script": "function onBeginBattle() {\n\tvars.allowed = true;\n\tvars.value2 = 2;\n}\nfunction onBeginAction() {\n\tvars.allowed = false;\n\tif( vars.value2 >= 2 ){\n\t\tvars.allowed = true;\n\t}\n}\nfunction onEval(a) {\n\tif( vars.value2 < 2 ){\n\t\tdontAllow();\n\t}\n}\nfunction onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedNecromancy ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar dice = [];\n\tdice.push(randomDice(will));\n\tdice.push(randomDice(max(will - vars.value1, 0)));\n\n\tvar tab = [];\n\tif (skill.level == 2) {\n\t\ttab.push(UnitClass.PlaguedRat);\n\t\ttab.push(UnitClass.Plagueridden);\n\t\ttab.push(UnitClass.Nightmare);\n\t\ttab.push(UnitClass.SnowCrawler);\n\t} else {\n\t\ttab.push(UnitClass.Molerat);\n\t\ttab.push(UnitClass.GhostBoar);\n\t\ttab.push(UnitClass.GhostWolf);\n\t\ttab.push(UnitClass.Crawler);\n\t}\n\n\tvar idx = dice[0] -1;\n\tif (idx == 4) {\n\t\tspawnRenfort(tab[0], dice[1], false);\n\t} else {\n\t\tspawnRenfort(tab[idx], dice[1], false);\n\t}\n\tvars.value2 = 0;\n}\nfunction onEndRound() {\n\tvars.value2++;\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+	"notes": "",
+	"levels": [
+		{
+			"props": {
+				"vars": {
+					"value1": 10
+				}
+			}
+		}
+	],
+	"icon": {
+		"file": "ui/Icons/BattleIcons96PX.png",
+		"size": 96,
+		"x": 14,
+		"y": 7
+	},
+	"iconeDone": true,
+	"group": 16,
+	"done": 2
+},
+{
+	"id": "SummonChampion",
+	"name": "Summoning Legendary",
+	"desc": "",
+	"mode": 4,
+	"range": {},
+	"props": {
+		"isHeroic": true,
+		"specialAnim": "Taunt",
+		"apCost": 2,
+        "defaultAction": true,
+		"vars": {
+			"value1": 20,
+			"allowed": true
+		},
+		"itemCost": {
+			"item": "Puppet",
+			"qty": 4
+		},
+		"needDisengaged": true,
+		"useWithoutWeapon": true,
+		"extraFx": "prefabs/fx/fight/BuffCry/BionnTransformation.fx"
+	},
+	"script": "function onBeginBattle() {\n\tvars.allowed = true;\n}\nfunction onEval(a) {\n\tif( !vars.allowed ){\n\t\tdontAllow();\n\t}\n}\nfunction onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedNecromancy ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar dice = [];\n\tdice.push(randomDice(max(will - vars.value1, 0)));\n\tdice.push(randomDice(will));\n\n\tvar tab = [];\n\tvar idx = [];\n\tif (dice[0] == 2) {\n\t\ttab.push(UnitClass.PuzzleMan);\n\t\tidx.push(1);\n\t} else if (dice[0] == 3) {\n\t\tif (skill.level == 2 && dice[1] > 3 ) {\n\t\t\ttab.push(UnitClass.Kaghal);\n\t\t\tidx.push(1);\n\t\t} else {\n\t\t\ttab.push(UnitClass.Smot);\n\t\t\tidx.push(1);\n\t\t}\n\t} else if (dice[0] == 4) {\n\t\tif (skill.level == 2 && dice[1] > 3 ) {\n\t\t\ttab.push(UnitClass.CrawlerChampion);\n\t\t\tidx.push(1);\n\t\t} else {\n\t\t\ttab.push(UnitClass.Kogo);\n\t\t\ttab.push(UnitClass.Toro);\n\t\t\tidx.push(1);\n\t\t\tidx.push(1);\n\t\t}\n\t} else if (dice[0] == 5) {\n\t\tif (skill.level == 2 && dice[1] > 3 ) {\n\t\t\ttab.push(UnitClass.ChristophGluck);\n\t\t\tidx.push(1);\n\t\t} else {\n\t\t\ttab.push(UnitClass.Bionn);\n\t\t\tidx.push(1);\n\t\t}\n\t} else {\n\t\ttab.push(UnitClass.Mobster);\n\t\tidx.push(dice[1]);\n\t}\n\n\tvar i = 0;\n\twhile(i < min(tab.length, idx.length)) {\n\t\tif (idx[i] != 0) {\n\t\t\tspawnRenfort(tab[i], idx[i], false);\n\t\t}\n\t\ti++;\n\t}\n\tvars.allowed = false;\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+	"notes": "",
+	"levels": [
+		{
+			"props": {
+				"vars": {
+					"value1": 10
+				}
+			}
+		}
+	],
+	"icon": {
+		"file": "ui/Icons/BattleIcons_02_96PX.png",
+		"size": 96,
+		"x": 8,
+		"y": 15
+	},
+	"iconeDone": true,
+	"group": 16,
+	"done": 2
+},

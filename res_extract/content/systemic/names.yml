@@ -1,0 +1,1559 @@
+name:
+	name_prefix+name_suffix[2]
+	name_prefix+[V]+GUT+name_suffix[0.5]
+	name_prefix+name_mid+name_suffix[0.2]
+
+V:
+	a
+	i
+	e
+	u
+	o
+	y
+
+GUT:
+	l
+	m
+	n
+	d
+	t
+
+#BASIC NAMES
+
+#Male names
+name_prefix:
+	Ad
+	Aeg
+	Arn
+	Alph
+	Ant
+	Ald
+	Ast
+	Ath
+	Aul
+	Ay
+	Bor
+	Bard
+	Barr
+	Berth
+	Bur
+	Cud
+	Corn
+	Cas
+	Dam
+	Drak
+	Dio
+	Ed
+	Eng
+	Fran
+	Fred
+	Fri
+	Forth
+	Ger
+	God
+	Guil
+	Gun
+	Gyl
+	Grim
+	Had
+	Held
+	Ham
+	Hug
+	Hru
+	Hum
+	Hyp
+	Herm
+	Her
+	Ing
+	Kall
+	Ken
+	Kyr
+	Lamb
+	Lao
+	Laun
+	Le
+	Laur
+	Leo
+	Lew
+	Lor
+	Lud
+	Mag
+	Magn
+	Mal
+	Mene
+	Mil
+	Mik
+	Mein
+	Mart
+	Marc
+	Mun
+	Nord
+	Nic
+	Nea
+	Od
+	Ost
+	Osb
+	Ot
+	Ow
+	Pan
+	Parm
+	Patr
+	Pel
+	Per
+	Perc[0.5]
+	Peri[0.5]
+	Phe
+	Phil
+	Pho
+	Rag
+	Rand
+	Ran
+	Rao
+	Regn[0.5]
+	Regi[0.5]
+	Rein[0.5]
+	Ren
+	Reyn[0.5]
+	Rich
+	Rog
+	Rol
+	Roth
+	Sant
+	Sand
+	Seb
+	Serl
+	Sib
+	Sieg[0.5]
+	Sig[0.5]
+	Sin
+	Steph
+	Taur
+	Ter
+	Thar
+	Than
+	Theo
+	Ther
+	Theu
+	Thy
+	Thor
+	Tri
+	Tyn
+	Tyb
+	Ub
+	Uck
+	Ugh
+	Ul
+	Um
+	Ur
+	Urb
+	Vald
+	Van
+	Vet
+	Vin
+	Vid
+	Vinc
+	Vith
+	Vit
+	Vult
+	Wald
+	Wand
+	War
+	Wil
+	Will
+	Win
+	Wisc
+	Wyl
+	Wym
+
+name_mid:
+	[V]+name_mid_c
+	[^V]+name_mid_v
+
+name_mid_v:
+	ing
+	ac
+	ang
+	el
+	era
+
+name_mid_c:
+	liz
+	rth
+	gn
+	gue
+	ph
+	GUT
+
+name_suffix:
+	[V]+name_suffix_c
+	[^V]+name_suffix_v
+	name_suffix_o
+
+name_suffix_c:
+	drel
+	rain
+	hall
+	gh+GUT
+	roth
+	xos
+	fra+ED
+	lein
+	tes
+	sme
+	GUT
+
+ED:
+	ed
+	e
+	in
+	i
+	es
+
+name_suffix_v:
+	ian
+	anor
+	inon
+	enal
+	aeon
+	inus
+	ault
+	ard
+	eus
+	us
+	ar
+	ert
+	ick
+	ic
+	un
+
+name_suffix_o:
+	ric
+	wi+[mnlt]
+	lyn
+	ha+[mnlrd]
+	ra+[mnls]
+	tos
+	t
+
+#female names
+name_f:
+	name_fprefix+name_fsuffix[2]
+	name_fprefix+name_mid+name_fsuffix
+	name_fprefix+name_mid+name_suffix[0.5]
+
+name_fprefix:
+	Adel
+	Ali
+	Aman
+	Ana
+	Ann
+	Ay
+	Bea
+	Beth
+	Cele
+	Ceci
+	Ceph
+	Dee
+	Doro
+	Eury
+	Emm
+	Elen
+	Elea
+	Eliz
+	Ev
+	Flor
+	Gal
+	Gab
+	Gun
+	Bene
+	Hel
+	Hild
+	Isab
+	Id
+	Is
+	I
+	Joce
+	Joan
+	Jud
+	Jain
+	Kath
+	Ket
+	Leti
+	Lor
+	Luci
+	Ly
+	La
+	Marg
+	Mar
+	Matil
+	Mi
+	Mel
+	Mur
+	Roe
+	Quin
+	Sar
+	Sus
+	Syl
+	Viv[0.5]
+	Vio[0.5]
+	Vi
+
+name_fsuffix:
+	[V]+name_fsuffix_c
+	[^V]+name_fsuffix_v
+	name_fsuffix_o
+
+name_fsuffix_c:
+	rin
+	ne
+	lie
+	se
+	tas
+	fte
+	dis
+	ka
+
+name_fsuffix_o:
+	na
+
+name_fsuffix_v:
+	eth
+	yll
+	elys
+	ina
+	ede
+	ade
+	an
+	ea
+	ude
+	et
+	yse
+	ende
+
+
+#EDORAN
+
+#male names
+
+nameEdoran_m:
+	nameEdoran_mprefix+nameEdoran_msuffix[2]
+	nameEdoran_mprefix+nameEdoran_mmid+nameEdoran_msuffix
+
+nameEdoran_mprefix:
+	Me
+	Le
+	Mar
+	Odr
+	Od
+	Acer
+	Cass
+	Rho
+	Jul
+	Cer
+	Ci
+	Tibe
+	Men
+	Api
+	Domi
+	Dani
+	Emi
+	Eli
+	Elo
+	Eute
+	Flav
+	Ga
+	Gac
+	Hec
+	Her
+	Hera
+	Iv
+	Jul
+	Just
+	Jun
+	Leo
+	Meg
+	Mar
+	Mene
+	Nom
+	Ol
+	Pha
+	Phi
+	Patr
+	Pie
+	Quin
+	Quen
+	Remi
+	Sept
+	Sel
+	Sit
+	Sir
+	The
+	Thi
+	Tele
+	Vi
+	Viss
+	Zo
+	Oct
+
+nameEdoran_mmid:
+	[V]+nameEdoran_mmid_c
+	[^V]+nameEdoran_mmid_v
+
+nameEdoran_mmid_c:
+	le
+	re
+	ve
+	va
+	cer
+	ci
+	ro
+	ll
+	ri
+	tio
+	ges
+	co
+
+nameEdoran_mmid_v:
+	en
+	iss
+	e
+	en
+	iar
+	ir
+	il
+	i
+	iop
+	op
+
+nameEdoran_msuffix:
+	[V]+nameEdoran_msuffix_c
+	[^V]+nameEdoran_msuffix_v
+
+nameEdoran_msuffix_c:
+	ris
+	lis
+	me
+	cene
+	tus
+	re
+	tes
+	vios
+	ve
+
+nameEdoran_msuffix_v:
+	ime
+	ius
+	aeste
+	ios
+	ior
+	ien
+	os
+	andre
+	ance
+	or
+
+#female names
+nameEdoran_f:
+	nameEdoran_fprefix+nameEdoran_fsuffix[2]
+	nameEdoran_fprefix+nameEdoran_fmid+nameEdoran_fsuffix
+
+nameEdoran_fprefix:
+	Ca
+	Dan
+	El
+	Fl
+	Jul
+	Noe
+	Sel
+	Syl
+	Ar
+	The
+	Phi
+	Mar
+	Roe
+	Viv
+	Vi
+	An
+	Cele
+	Ceci
+	Eury
+	Hel
+	Luci
+	Li
+	La
+	Mel
+	Ire
+	Be
+	Aur
+	Octa
+	Sept
+	Mega
+	Rhe
+	Cle
+
+nameEdoran_fmid:
+	[V]+nameEdoran_fmid_c
+	[^V]+nameEdoran_fmid_v
+
+nameEdoran_fmid_c:
+	mi
+	ni
+	li
+	do
+	ra
+	ri
+	lo
+	ne
+	tu
+	th
+	ph
+
+nameEdoran_fmid_v:
+	an
+	ian
+	e
+	en
+	iar
+	ir
+	il
+	ii
+
+nameEdoran_fsuffix:
+	[V]+nameEdoran_fsuffix_c
+	[^V]+nameEdoran_fsuffix_v
+
+nameEdoran_fsuffix_c:
+	vie
+	lissa
+	cee
+	ssa
+	cia
+	lia
+	ma
+	lla
+	sta
+
+nameEdoran_fsuffix_v:
+	elys
+	ina
+	ede
+	ea
+	ys
+	ia
+	or
+	ée
+	e
+	oë
+	ora
+	a
+	ra
+	issa
+	eis
+	ëe
+	ëlia
+	ia
+	a
+	line
+
+#HARAG
+#male names
+
+nameHarag_m:
+	nameHarag_mprefix+nameHarag_msuffix[2]
+	nameHarag_mprefix+nameHarag_mmid+nameHarag_msuffix
+
+nameHarag_mprefix:
+	Ao
+	Ca
+	Bre
+	Co
+	Og
+	Tar
+	Cern
+	Nem
+	Nod
+	Mocc
+	Bel
+	Dag
+	Mo
+	Sin
+	Sint
+	Voss
+	Seg
+	Tiger
+	Ver
+	Odr
+	Ae
+	Bar
+	Dan
+	Harr
+	Gre
+	Ga
+	Le
+	Leg
+	Maud
+	Paro
+	Viss
+	Ue
+	Cna
+	Tame
+	Lug
+	Par
+	Endo
+
+nameHarag_mmid:
+	[V]+nameHarag_mmid_c
+	[^V]+nameHarag_mmid_v
+
+nameHarag_mmid_c:
+	ta
+	ssi
+	de
+	ba
+	tas
+	mu
+	mi
+	le
+	be
+	to
+	ra
+	co
+	rio
+
+nameHarag_mmid_v:
+	el
+	ir
+	ic
+	na
+	el
+	ant
+
+
+nameHarag_msuffix:
+	[V]+nameHarag_msuffix_c
+	[^V]+nameHarag_msuffix_v
+
+nameHarag_msuffix_c:
+	dh
+	dan
+	stos
+	nan
+	he
+	sene
+	gue
+	gre
+	nos
+	sse
+	nos
+	von
+	ran
+	ros
+	nos
+	ggios
+
+nameHarag_msuffix_v:
+	ios
+	es
+	os
+	ens
+	ons
+	eg
+	ur
+	is
+	us
+
+#female names
+
+nameHarag_f:
+	nameHarag_fprefix+nameHarag_fsuffix[2]
+	nameHarag_fprefix+nameHarag_fmid+nameHarag_fsuffix[0.5]
+
+nameHarag_fprefix:
+	Abrex
+	Ae
+	Ai
+	And
+	Ande
+	Avr
+	Bede
+	Begg
+	Bod
+	Bri
+	Brigh
+	Bron
+	Cai
+	Cal
+	Cam
+	Dan
+	Do
+	Er
+	Fed
+	Finn
+	Hen
+	Iss
+	Leri
+	Lub
+	Lue
+	Maav
+	Man
+	Maud
+	Maur
+	Nev
+	Onh
+	Roi
+	Sce
+	Senu
+	Sue
+	Uell
+
+nameHarag_fmid:
+	[V]+nameHarag_fmid_c
+	[^V]+nameHarag_fmid_v
+
+nameHarag_fmid_c:
+	de
+	li
+	so
+	ra
+	to
+	go
+
+
+nameHarag_fmid_v:
+	i
+	el
+	ant
+
+nameHarag_fsuffix:
+	[V]+nameHarag_fsuffix_c
+	[^V]+nameHarag_fsuffix_v
+
+nameHarag_fsuffix_c:
+	ste
+	na
+	ron
+	ven
+	wen
+	gan
+	ban
+	ba
+	da
+	lig
+	ma
+	sa
+	ggia
+
+nameHarag_fsuffix_v:
+	a
+	ig
+	id
+	etes
+	en
+	asta
+	onn
+	issa
+
+#Gosenberg
+
+#male names
+
+nameGosenberg_m:
+	nameGosenberg_mprefix+nameGosenberg_msuffix[2]
+	nameGosenberg_mprefix+nameGosenberg_mmid+nameGosenberg_msuffix
+
+nameGosenberg_mprefix:
+	Adel
+	Ada
+	Cle
+	Ger
+	Jor
+	Je
+	Ro
+	Luu
+	Yj
+	Ga
+	Ogg
+	Arn
+	Hu
+	Die
+	Rein
+	Bern
+	Lyd
+	Rem
+	Egb
+	Gust
+	Gu
+	Hyu
+	Lie
+	Li
+	Mart
+	Pie
+	Em
+	Flo
+	Ig
+	Her
+	Roe
+	Bart
+	Joo
+	Ca
+	Hend
+	Kl
+	Lode
+	Robbe
+	Sto
+	Vaa
+
+nameGosenberg_mmid:
+	[V]+nameGosenberg_mmid_c
+	[^V]+nameGosenberg_mmid_v
+
+nameGosenberg_mmid_c:
+	ma
+	jen
+	ja
+	wa
+	we
+	de
+	st
+	ta
+	tr
+	br
+
+nameGosenberg_mmid_v:
+	e
+	eb
+	ast
+	atr
+	a
+	ma
+	jet
+	wi
+
+nameGosenberg_msuffix:
+	[V]+nameGosenberg_msuffix_c
+	[^V]+nameGosenberg_msuffix_v
+
+nameGosenberg_msuffix_c:
+	bert
+	mens
+	k
+	g
+	wer
+	gger
+	ggerth
+	got
+	cle
+	je
+	j
+	told
+	os
+	laas
+	st
+
+nameGosenberg_msuffix_v:
+	ens
+	olt
+	en
+	an
+	oud
+	es
+	art
+	eric
+	av
+	ed
+
+# Female Names
+nameGosenberg_f:
+	nameGosenberg_fprefix+nameGosenberg_fsuffix[2]
+	nameGosenberg_fprefix+nameGosenberg_fmid+nameGosenberg_fsuffix[0.5]
+
+nameGosenberg_fprefix:
+	Ad
+	Adel
+	Ale
+	Ann
+	Ari
+	Bea
+	Bet
+	Claas
+	Cor
+	Die
+	Elsi
+	Ern
+	Ern
+	Fem
+	Fre
+	Gert
+	Gre
+	Hann
+	Il
+	Jan
+	Joha
+	Jol
+	Jul
+	Kaa
+	Klaa
+	Krist
+	Leen
+	Lie
+	Madel
+	Magda
+	Mar
+	Mer
+	Nee
+	Nelle
+	Nien
+	Petra
+	Ri
+	Ros
+	Saar
+	Sie
+	Ti
+	Zul
+
+
+nameGosenberg_fmid:
+	[V]+nameGosenberg_fmid_c
+	[^V]+nameGosenberg_fmid_v
+
+nameGosenberg_fmid_c:
+	dri
+	ver
+	wi
+	me
+	si
+	ri
+	ne
+	ge
+	le
+	ly
+
+nameGosenberg_fmid_v:
+	an
+	en
+	a
+	e
+
+nameGosenberg_fsuffix:
+	[V]+nameGosenberg_fsuffix_c[2]
+	[^V]+nameGosenberg_fsuffix_v[2]
+	nameGosenberg_fsuffix_o[0.5]
+
+nameGosenberg_fsuffix_c:
+	dis
+	ska
+	ne
+	ta
+	berte
+	te
+	da
+	dje
+	tta
+	tje
+	grit
+	ke
+	grid
+	ka
+	bet
+	the
+	ve
+
+nameGosenberg_fsuffix_v:
+	a
+	el
+	e
+	id
+	it
+	iek
+	en
+	a
+	et
+	eve
+
+nameGosenberg_fsuffix_o:
+	dred
+	tred
+	truda
+
+#Alazar
+
+#male names
+
+nameAlazar_m:
+	nameAlazar_mprefix+nameAlazar_msuffix[2]
+	nameAlazar_mprefix+nameAlazar_mmid+nameAlazar_msuffix
+
+nameAlazar_mprefix:
+	Ad
+	Al
+	Arn
+	Bru
+	Er
+	Ful
+	Gei
+	Gri
+	Gund
+	Gu
+	Ha
+	Jur
+	Man
+	Ott
+	Rom
+	Sa
+	Sar
+	Sise
+	Tan
+	Thor
+	Ul
+	Wan
+	Wi
+	Wid
+	Wul
+	Wil
+	Herm
+	Ae
+	Dam
+	Gott
+	Lied
+	So
+	Sil
+	Ha
+	Win
+
+nameAlazar_mmid:
+	[V]+nameAlazar_mmid_c
+	[^V]+nameAlazar_mmid_v
+
+nameAlazar_mmid_c:
+	thel
+	the
+	do
+	m
+	ge
+	gg
+	sel
+
+nameAlazar_mmid_v:
+	o
+	kr
+	fri
+	hal
+	her
+	d
+	li
+
+nameAlazar_msuffix:
+	[V]+nameAlazar_msuffix_c
+	[^V]+nameAlazar_msuffix_v
+
+nameAlazar_msuffix_c:
+	bald
+	bert
+	gart
+	wald
+	hem
+
+nameAlazar_msuffix_v:
+	ulf
+	art
+	id
+	of
+	ann
+	us
+	ert
+	ied
+	alk
+
+# Female Names
+nameAlazar_f:
+	nameAlazar_fprefix+nameAlazar_fsuffix[2]
+	nameAlazar_fprefix+nameAlazar_fmid+nameAlazar_fsuffix[0.5]
+
+nameAlazar_fprefix:
+	Adel
+	Al
+	Ald
+	Ama
+	Bat
+	Ber
+	Bru
+	Brun
+	Eit
+	Erm
+	Ern
+	Ger
+	Gu
+	Hadw
+	Hed
+	Hil
+	Hild
+	Ing
+	Iso
+	Kun
+	Le
+	Len
+	Lied
+	Ma
+	Rade
+	Sno
+	So
+	Somm
+	Theu
+	Ull
+	Wal
+	Wi
+	Sig
+	Krie
+	El
+	Fran
+	Hen
+	Gre
+	Mei
+	Wil
+
+
+nameAlazar_fmid:
+	[V]+nameAlazar_fmid_c
+	[^V]+nameAlazar_fmid_v
+
+nameAlazar_fmid_c:
+	tr
+	th
+	de
+	ve
+	bur
+	vi
+	ri
+
+nameAlazar_fmid_v:
+	heid
+	ian
+	en
+	e
+	en
+	un
+
+nameAlazar_fsuffix:
+	[V]+nameAlazar_fsuffix_c[2]
+	[^V]+nameAlazar_fsuffix_v[2]
+	nameAlazar_fsuffix_o[0.5]
+
+nameAlazar_fsuffix_c:
+	wind
+	gond
+	ra
+	grid
+	sold
+	de
+	la
+	ge
+	gard
+	lind
+	tild
+	da
+	the
+	ka
+
+nameAlazar_fsuffix_v:
+	old
+	ig
+	a
+	ar
+
+nameAlazar_fsuffix_o:
+	mer
+	hild
+	gond
+	ne
+	a
+	te
+
+#Belerion_1 = Belerian
+
+#male names
+
+nameBelerion_m:
+	nameBelerion_mprefix+nameBelerion_msuffix[2]
+	nameBelerion_mprefix+nameBelerion_mmid+nameBelerion_msuffix
+
+nameBelerion_mprefix:
+	Ai
+	Ald
+	Ar
+	Barr
+	Ben
+	Bren
+	Car
+	Corn
+	Dan
+	Drak
+	Dun
+	Ech
+	Eo
+	Finn
+	Fra
+	Gael
+	God
+	Gyl
+	Ill
+	Keith
+	Ken
+	Kyr
+	Laun
+	Leo
+	Mael
+	Mag
+	Mun
+	Od
+	Ott
+	Regi
+	Rog
+	Ron
+	Thar
+	The
+	Van
+	Wy
+	Ai
+
+nameBelerion_mmid:
+	[V]+nameBelerion_mmid_c
+	[^V]+nameBelerion_mmid_v
+
+nameBelerion_mmid_c:
+	o
+	kr
+	la
+	bri
+	si
+	ga
+	ro
+	ba
+	th
+
+
+nameBelerion_mmid_v:
+	u
+	ur
+
+nameBelerion_msuffix:
+	[V]+nameBelerion_msuffix_c
+	[^V]+nameBelerion_msuffix_v
+
+nameBelerion_msuffix_c:
+	lan
+	dan
+	ssen
+	sed
+	dri
+	trad
+	laech
+	gan
+	bod
+
+nameBelerion_msuffix_v:
+	an
+	est
+	en
+	ig
+	aeg
+	ald
+	eth
+	ach
+	och
+
+
+# Female Names
+nameBelerion_f:
+	nameBelerion_fprefix+nameBelerion_fsuffix[2]
+	nameBelerion_fprefix+nameBelerion_fmid+nameBelerion_fsuffix[0.5]
+
+nameBelerion_fprefix:
+	Cir
+	Dei
+	Gan
+	Kath
+	Kat
+	Moi
+	Thy
+	Mar
+	Mer
+	Beth
+	Al
+	Ann
+	Bet
+	Bri
+	Dann
+	Den
+	Emi
+	En
+	Fi
+	Gi
+	Guer
+	Hel
+	Ith
+	Jess
+	Ker
+	Keith
+	Lan
+	Lenn
+	Leth
+	Mat
+	Nin
+	Onn
+	Petr
+	Rith
+	Rit
+	Ron
+	Sed
+	Thyr
+	Term
+	Tann
+	Vic
+	Ceph
+	Joan
+	Marg
+	Maev
+	Catr
+
+
+nameBelerion_fmid:
+	[V]+nameBelerion_fmid_c
+	[^V]+nameBelerion_fmid_v
+
+nameBelerion_fmid_c:
+	le
+
+nameBelerion_fmid_v:
+	aw
+
+nameBelerion_fsuffix:
+	[V]+nameBelerion_fsuffix_c[2]
+	[^V]+nameBelerion_fsuffix_v[2]
+	nameBelerion_fsuffix_o[0.5]
+
+nameBelerion_fsuffix_c:
+	ra
+	rin
+	lla
+	nra
+	lyn
+	wyn
+	gail
+	idh
+	leen
+	mel
+	dra
+
+nameBelerion_fsuffix_v:
+	a
+	ig
+	eith
+	ella
+	yll
+	yse
+	ende
+	eth
+	a
+	ys
+	elys
+	en
+nameBelerion_fsuffix_o:
+	a
+
+#Ihraa_1 = Irhian
+
+#male names
+
+nameIhraa_m:
+	nameIhraa_mprefix+nameIhraa_msuffix[2]
+	nameIhraa_mprefix+nameIhraa_mmid+nameIhraa_msuffix
+
+nameIhraa_mprefix:
+	Ad
+	Ak
+	Am
+	An
+	Ba
+	Bel
+	Sha
+	Dal
+	Dje
+	Du
+	Eh
+	Em
+	Fa
+	Fe
+	Fer
+	Ha
+	Hi
+	Ir
+	Kher
+	Kon
+	Os
+	Sed
+	She
+	Ga
+	Hou
+	In
+	Ja
+	Jab
+	Im
+	Kha
+	Bad
+	Mer
+	Maz
+	Nou
+	Kj
+	Is
+	Uur
+
+nameIhraa_mmid:
+	[V]+nameIhraa_mmid_c
+	[^V]+nameIhraa_mmid_v
+
+nameIhraa_mmid_c:
+	ki
+	r
+	ra
+	s
+	ss
+	ri
+	del
+	ra
+	hi
+	re
+
+nameIhraa_mmid_v:
+	mu
+	r
+	ou
+	iss
+
+nameIhraa_msuffix:
+	[V]+nameIhraa_msuffix_c
+	[^V]+nameIhraa_msuffix_v
+
+nameIhraa_msuffix_c:
+	ne
+	ty
+	lel
+	hed
+	kthes
+	ty
+	su
+	ris
+	shir
+	d
+	cem
+	des
+	ppar
+	zen
+	r
+
+nameIhraa_msuffix_v:
+	ur
+	ad
+	ou
+	ei
+	oun
+	el
+	es
+	em
+	ab
+	am
+
+# Female Names
+nameIhraa_f:
+	nameIhraa_fprefix+nameIhraa_fsuffix[2]
+	nameIhraa_fprefix+nameIhraa_fmid+nameIhraa_fsuffix[0.5]
+
+nameIhraa_fprefix:
+	Aba
+	Ahi
+	Al
+	Ams
+	Bas
+	Be
+	Bel
+	Ca
+	Cha
+	Cin
+	Da
+	Da
+	Dan
+	Em
+	Fa
+	Ha
+	Heq
+	In
+	Ir
+	Jel
+	Ka
+	Kha
+	Ki
+	Laki
+	Lyn
+	Ma
+	Mir
+	Nin
+	Oua
+	Sar
+	Ta
+	Tou
+	Yas
+	Zah
+
+
+nameIhraa_fmid:
+	[V]+nameIhraa_fmid_c
+	[^V]+nameIhraa_fmid_v
+
+nameIhraa_fmid_c:
+	di
+	hi
+	ki
+	li
+	ma
+	mi
+	ra
+	ssa
+
+nameIhraa_fmid_v:
+	i
+	ki
+	ma
+
+nameIhraa_fsuffix:
+	[V]+nameIhraa_fsuffix_c[2]
+	[^V]+nameIhraa_fsuffix_v[2]
+	nameIhraa_fsuffix_o[0.5]
+
+nameIhraa_fsuffix_c:
+	hit
+	jil
+	lit
+	na
+	ra
+	rah
+	ret
+	shar
+	ssa
+	sset
+
+nameIhraa_fsuffix_v:
+	a
+	da
+	et
+	ia
+	isis
+	iya
+	oun
+	ihr
+
+nameIhraa_fsuffix_o:
+	set
+	sun
+	pa
+	na
+	ne
+	tet
