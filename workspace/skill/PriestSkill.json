@@ -65,7 +65,7 @@
         "cursor": "CursorHeal",
         "healPreview": 1,
 		"useWithoutWeapon": true,
-		"castFx": "prefabs/fx/fight/Explosion/PoisonBomb/PoisonBomb.fx",
+		"hitFx": "prefabs/fx/fight/Explosion/PoisonBomb/PoisonBomb.fx",
 		"throwModel": "chars/Weapons/LeftHand_IncendiaryFlask.fbx"
 	},
 	"script": "function onSkill() {\n\tplay();\n\tvar multiple = vars.multiplier;\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedRecovery ) {\n\t\t\tmultiple += ( multiple * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tfor( t in skill.getTargets() ) {\n\t\tt.target.gainsHealth( calculateRecovery(t.target, multiple) , null);\n\t\tif( skill.level == 2 && randomDice(skill.unit.stats.willpower) > 2 ) {\n\t\t\tfor( s in t.target.getAllStatus() ) {\n\t\t\t\tif( s.isMalus ) s.cancel();\n\t\t\t}\n\t\t}\n\t}\n}\nfunction calculateRecovery(t, mul) {\n\tvar target_hp = t.stats.health;\n\tvar recovery = (target_hp * mul) + vars.fixheal;\n\trecovery = recovery * ( min(skill.unit.stats.willpower, 50)/50 * randInt(12,20)/16 );\n\treturn ceil(recovery);\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",

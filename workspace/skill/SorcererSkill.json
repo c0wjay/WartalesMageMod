@@ -18,7 +18,7 @@
             "elite": 0.25
 		},
 		"needDisengaged": true,
-        "castFx": "prefabs/fx/environment/RockSlide/RockSlide.fx",
+        "hitFx": "prefabs/fx/environment/RockSlide/RockSlide.fx",
         "flags": 1
     },
     "script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.stats.health + t.stats.armor;\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * (skill.unit.stats.willpower / 100);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedElement ) {\n\t\t\tdamage += ( damage * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\treturn ceil(damage);\n}",
@@ -68,7 +68,7 @@
         "damageType": [
             0
         ],
-        "castFx": "prefabs/fx/fight/Explosion/Molotov/MolotovExplosion.fx",
+        "hitFx": "prefabs/fx/fight/Explosion/Molotov/MolotovExplosion.fx",
         "vars": {
             "multiplier": 0.15,
             "fixdmg": 20,
@@ -114,7 +114,7 @@
     "props": {
 		"isHeroic": true,
         "apCost": 2,
-        "castFx": "prefabs/fx/environment/lightning/EyeLightning_SecretStrike.fx",
+        "hitFx": "prefabs/fx/environment/lightning/EyeLightning_SecretStrike.fx",
         "vars": {
             "multiplier": 0.2,
             "fixdmg": 25,
@@ -161,7 +161,7 @@
         "allowedTargets": 4
     },
     "props": {
-        "castFx": "prefabs/fx/environment/lightning/CelestiumBattleLightning.fx",
+        "hitFx": "prefabs/fx/environment/lightning/CelestiumBattleLightning.fx",
         "flags": 2,
         "tooltipStatus": [
             {
@@ -196,7 +196,7 @@
             "value1": 20,
             "value2": 5
         },
-        "castFx": "prefabs/fx/fight/status/Electrified.fx"
+        "hitFx": "prefabs/fx/fight/status/Electrified.fx"
     },
     "script": "function onEval(a) {\n\tvar value = a.target.hasStatus(Status.Champion) ? vars.value2 : vars.value1;\n\ta.dmg = floor(a.target.health * value / 100);\n}",
     "notes": "",

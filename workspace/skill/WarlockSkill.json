@@ -87,7 +87,7 @@
 		],
 		"needDisengaged": true,
 		"useWithoutWeapon": true,
-        "castFx": "prefabs/fx/fight/Explosion/ConfusingPowder/ConfusingPowder.fx",
+        "hitFx": "prefabs/fx/fight/Explosion/ConfusingPowder/ConfusingPowder.fx",
         "throwFx": "prefabs/fx/fight/Explosion/ConfusingPowder/ConfusingPowderThrowTrail.fx",
 		"throwModel": "chars/Weapons/LeftHand_BlindingPowder.fbx"
 	},

@@ -21336,12 +21336,13 @@
 					],
 					"props": {
 						"disableLoot": true,
-						"feature": "HideInCheatMenu"
+						"hideInCheatMenu": true
 					},
 					"iconeDone": true,
 					"group": 2,
 					"type": "Wand",
-					"__ignoreLoc__": true
+					"__ignoreLoc__": true,
+					"done": 2
 				},
 				{
 					"id": "ShieldBase",
@@ -29052,7 +29053,7 @@
 					"weight": 0,
 					"baseBonus": [],
 					"props": {
-						"feature": "HideInCheatMenu"
+						"hideInCheatMenu": true
 					},
 					"group": 13,
 					"type": "BundleForge",
@@ -29063,7 +29064,8 @@
 						"size": 1,
 						"x": 4,
 						"y": 1918
-					}
+					},
+					"done": 2
 				},
 				{
 					"id": "BundleSkillBookT2",
@@ -29071,7 +29073,7 @@
 					"weight": 0,
 					"baseBonus": [],
 					"props": {
-						"feature": "HideInCheatMenu"
+						"hideInCheatMenu": true
 					},
 					"group": 13,
 					"type": "BundleForge",
@@ -29082,7 +29084,8 @@
 						"size": 1,
 						"x": 4,
 						"y": 1918
-					}
+					},
+					"done": 2
 				},
 				{
 					"id": "HeavyArmorCommonGeneric",
@@ -72709,8 +72712,8 @@
 							"item": "Knowledge"
 						}
 					],
-					"itemCost": [],
-					"jobLevel": 3
+					"jobLevel": 3,
+					"group": "ForgeVarious"
 				},
 				{
 					"item": "BundleOneHandedSwordAxeMaceT3",
@@ -73033,8 +73036,8 @@
 							"item": "Knowledge"
 						}
 					],
-					"itemCost": [],
-					"jobLevel": 5
+					"jobLevel": 5,
+					"group": "ForgeVarious"
 				},
 				{
 					"item": "ThrowingSickle",
@@ -76035,7 +76038,6 @@
 						"bundle": "BundleOneHandedSwordAxeMaceT1"
 					},
 					"learnCost": [],
-					"itemCost": [],
 					"jobLevel": 2
 				},
 				{
@@ -76063,7 +76065,6 @@
 						"bundle": "BundleOneHandedSwordAxeMaceT2"
 					},
 					"learnCost": [],
-					"itemCost": [],
 					"jobLevel": 3
 				},
 				{
@@ -76091,7 +76092,6 @@
 						"bundle": "BundleOneHandedSwordAxeMaceT3"
 					},
 					"learnCost": [],
-					"itemCost": [],
 					"jobLevel": 4
 				},
 				{
@@ -76116,12 +76116,10 @@
 						}
 					],
 					"props": {
-						"bundle": "BundleOneHandedSwordAxeMaceT4",
-						"feature": "Alazar1_Update"
+						"bundle": "BundleOneHandedSwordAxeMaceT4"
 					},
 					"jobLevel": 5,
-					"learnCost": [],
-					"itemCost": []
+					"learnCost": []
 				},
 				{
 					"item": "PriestSkillBookUncoCraftT1",
@@ -76148,7 +76146,6 @@
 						"bundle": "BundleSkillBookT1"
 					},
 					"learnCost": [],
-					"itemCost": [],
 					"jobLevel": 3
 				},
 				{
@@ -76176,7 +76173,6 @@
 						"bundle": "BundleSkillBookT1"
 					},
 					"learnCost": [],
-					"itemCost": [],
 					"jobLevel": 3
 				},
 				{
@@ -76204,7 +76200,6 @@
 						"bundle": "BundleSkillBookT1"
 					},
 					"learnCost": [],
-					"itemCost": [],
 					"jobLevel": 3
 				},
 				{
@@ -76232,7 +76227,6 @@
 						"bundle": "BundleSkillBookT1"
 					},
 					"learnCost": [],
-					"itemCost": [],
 					"jobLevel": 3
 				},
 				{
@@ -76260,8 +76254,7 @@
 						"bundle": "BundleSkillBookT2"
 					},
 					"jobLevel": 5,
-					"learnCost": [],
-					"itemCost": []
+					"learnCost": []
 				},
 				{
 					"item": "WarlockSkillBookUncoCraftT2",
@@ -76288,8 +76281,7 @@
 						"bundle": "BundleSkillBookT2"
 					},
 					"jobLevel": 5,
-					"learnCost": [],
-					"itemCost": []
+					"learnCost": []
 				},
 				{
 					"item": "SorcererSkillBookUncoCraftT2",
@@ -76316,8 +76308,7 @@
 						"bundle": "BundleSkillBookT2"
 					},
 					"jobLevel": 5,
-					"learnCost": [],
-					"itemCost": []
+					"learnCost": []
 				},
 				{
 					"item": "NecromancerSkillBookUncoCraftT2",
@@ -76348,8 +76339,7 @@
 						"bundle": "BundleSkillBookT2"
 					},
 					"jobLevel": 5,
-					"learnCost": [],
-					"itemCost": []
+					"learnCost": []
 				},
 				{
 					"item": "MasterBall",
@@ -76367,14 +76357,9 @@
 					"props": {
 						"produces": 2
 					},
-					"learnCost": [
-						{
-							"qty": 3,
-							"item": "Knowledge"
-						}
-					],
-					"itemCost": [],
-					"jobLevel": 4
+					"learnCost": [],
+					"jobLevel": 5,
+					"group": "ForgeVarious"
 				},
 				{
 					"item": "LockPick",
@@ -82180,7 +82165,7 @@
 					"props": {},
 					"jobLevel": 1,
 					"learnCost": [],
-					"itemCost": []
+					"group": "AlchemistVarious"
 				},
 				{
 					"item": "Brandy",
@@ -104912,7 +104897,7 @@
 						},
 						{
 							"slot": 1,
-							"unitClass": "Bowman"
+							"unitClass": "Mage"
 						},
 						{
 							"slot": 2,
@@ -105039,7 +105024,7 @@
 						},
 						{
 							"slot": 1,
-							"unitClass": "Mage"
+							"unitClass": "Brute"
 						},
 						{
 							"slot": 2,
@@ -112248,7 +112233,7 @@
 						"cursor": "CursorHeal",
 						"healPreview": 1,
 						"useWithoutWeapon": true,
-						"castFx": "prefabs/fx/fight/Explosion/PoisonBomb/PoisonBomb.fx",
+						"hitFx": "prefabs/fx/fight/Explosion/PoisonBomb/PoisonBomb.fx",
 						"throwModel": "chars/Weapons/LeftHand_IncendiaryFlask.fbx"
 					},
 					"script": "function onSkill() {\n\tplay();\n\tvar multiple = vars.multiplier;\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedRecovery ) {\n\t\t\tmultiple += ( multiple * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tfor( t in skill.getTargets() ) {\n\t\tt.target.gainsHealth( calculateRecovery(t.target, multiple) , null);\n\t\tif( skill.level == 2 && randomDice(skill.unit.stats.willpower) > 2 ) {\n\t\t\tfor( s in t.target.getAllStatus() ) {\n\t\t\t\tif( s.isMalus ) s.cancel();\n\t\t\t}\n\t\t}\n\t}\n}\nfunction calculateRecovery(t, mul) {\n\tvar target_hp = t.stats.health;\n\tvar recovery = (target_hp * mul) + vars.fixheal;\n\trecovery = recovery * ( min(skill.unit.stats.willpower, 50)/50 * randInt(12,20)/16 );\n\treturn ceil(recovery);\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
@@ -112409,7 +112394,7 @@
 						],
 						"needDisengaged": true,
 						"useWithoutWeapon": true,
-						"castFx": "prefabs/fx/fight/Explosion/ConfusingPowder/ConfusingPowder.fx",
+						"hitFx": "prefabs/fx/fight/Explosion/ConfusingPowder/ConfusingPowder.fx",
 						"throwFx": "prefabs/fx/fight/Explosion/ConfusingPowder/ConfusingPowderThrowTrail.fx",
 						"throwModel": "chars/Weapons/LeftHand_BlindingPowder.fbx"
 					},
@@ -112517,7 +112502,7 @@
 							"elite": 0.25
 						},
 						"needDisengaged": true,
-						"castFx": "prefabs/fx/environment/RockSlide/RockSlide.fx",
+						"hitFx": "prefabs/fx/environment/RockSlide/RockSlide.fx",
 						"flags": 1
 					},
 					"script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.stats.health + t.stats.armor;\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * (skill.unit.stats.willpower / 100);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedElement ) {\n\t\t\tdamage += ( damage * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\treturn ceil(damage);\n}",
@@ -112567,7 +112552,7 @@
 						"damageType": [
 							0
 						],
-						"castFx": "prefabs/fx/fight/Explosion/Molotov/MolotovExplosion.fx",
+						"hitFx": "prefabs/fx/fight/Explosion/Molotov/MolotovExplosion.fx",
 						"vars": {
 							"multiplier": 0.15,
 							"fixdmg": 20,
@@ -112613,7 +112598,7 @@
 					"props": {
 						"isHeroic": true,
 						"apCost": 2,
-						"castFx": "prefabs/fx/environment/lightning/EyeLightning_SecretStrike.fx",
+						"hitFx": "prefabs/fx/environment/lightning/EyeLightning_SecretStrike.fx",
 						"vars": {
 							"multiplier": 0.2,
 							"fixdmg": 25,
@@ -112660,7 +112645,7 @@
 						"allowedTargets": 4
 					},
 					"props": {
-						"castFx": "prefabs/fx/environment/lightning/CelestiumBattleLightning.fx",
+						"hitFx": "prefabs/fx/environment/lightning/CelestiumBattleLightning.fx",
 						"flags": 2,
 						"tooltipStatus": [
 							{
@@ -112695,7 +112680,7 @@
 							"value1": 20,
 							"value2": 5
 						},
-						"castFx": "prefabs/fx/fight/status/Electrified.fx"
+						"hitFx": "prefabs/fx/fight/status/Electrified.fx"
 					},
 					"script": "function onEval(a) {\n\tvar value = a.target.hasStatus(Status.Champion) ? vars.value2 : vars.value1;\n\ta.dmg = floor(a.target.health * value / 100);\n}",
 					"notes": "",
@@ -113313,7 +113298,7 @@
 					},
 					"props": {
 						"needDisengaged": true,
-						"castFx": "prefabs/fx/fight/hits & impacts/impactElectrical.fx",
+						"impactFx": "prefabs/fx/fight/hits & impacts/impactElectrical.fx",
 						"isAttack": true,
 						"defaultAction": true,
 						"vars": {
@@ -115744,7 +115729,7 @@
 							"item": "MasterBall",
 							"qty": 1
 						},
-						"castFx": "prefabs/fx/fight/Explosion/SmokeBomb/SmokeBomb.fx",
+						"projectileEndFx": "prefabs/fx/fight/BattlefieldSpecial/PumkinExplosion.fx",
 						"throwFx": "prefabs/fx/fight/Explosion/Grenade/FlameBallThrowTrail.fx",
 						"needDisengaged": true
 					},

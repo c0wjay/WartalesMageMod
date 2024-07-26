@@ -1,35 +1,35 @@
 {
-    "id": "MagicMissile",
-    "name": "Magical Missile",
-    "desc": "",
-    "mode": 1,
-    "range": {
-        "minDistance": 1,
-        "baseDistance": 6
+  "id": "MagicMissile",
+  "name": "Magical Missile",
+  "desc": "",
+  "mode": 1,
+  "range": {
+    "minDistance": 1,
+    "baseDistance": 6
+  },
+  "props": {
+    "needDisengaged": true,
+    "impactFx": "prefabs/fx/fight/hits & impacts/impactElectrical.fx",
+    "isAttack": true,
+    "defaultAction": true,
+    "vars": {
+      "multiplier": 0.4,
+      "fixdmg": 50,
+      "elite": 0.2
     },
-    "props": {
-        "needDisengaged": true,
-        "castFx": "prefabs/fx/fight/hits & impacts/impactElectrical.fx",
-        "isAttack": true,
-        "defaultAction": true,
-        "vars": {
-            "multiplier": 0.4,
-            "fixdmg": 50,
-            "elite": 0.2
-        },
-        "flags": 1
-    },
-    "script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.health + t.armor;\n\tif (target_hp == null) {\n\t\ttarget_hp = t.stats.health;\n\t}\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * skill.unit.stats.willpower / 100;\n\treturn ceil(damage);\n}",
-    "notes": "",
-    "icon": {
-        "file": "ui/Icons/BattleIcons_02_96PX.png",
-        "size": 96,
-        "x": 0,
-        "y": 3
-    },
-    "minDmg": 6,
-    "maxDmg": 10,
-    "iconeDone": true,
-    "group": 3,
-    "done": 2
+    "flags": 1
+  },
+  "script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.health + t.armor;\n\tif (target_hp == null) {\n\t\ttarget_hp = t.stats.health;\n\t}\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * skill.unit.stats.willpower / 100;\n\treturn ceil(damage);\n}",
+  "notes": "",
+  "icon": {
+    "file": "ui/Icons/BattleIcons_02_96PX.png",
+    "size": 96,
+    "x": 0,
+    "y": 3
+  },
+  "minDmg": 6,
+  "maxDmg": 10,
+  "iconeDone": true,
+  "group": 3,
+  "done": 2
 }
