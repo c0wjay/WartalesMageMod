@@ -39585,6 +39585,10 @@
             <name>Brawling Weapon</name>
             <props.nameCraftCategory>Brawling Weapons</props.nameCraftCategory>
         </FistWeapon>
+        <Wand>
+            <name>Wand</name>
+            <props.nameCraftCategory>Wand</props.nameCraftCategory>
+        </Wand>
         <AnimalAccessory>
             <name>Animal accessory</name>
             <props.nameCraftCategory>Animal Accessories</props.nameCraftCategory>
@@ -40621,6 +40625,62 @@
             <name>Sippur Katar</name>
             <desc>This katar is different to other ancient weapons. It seems simpler and less ornate.</desc>
         </FistLegendaryRuinB1>
+        <WandStart>
+            <name>Clunky Wand</name>
+            <desc>It's a lousy wand.</desc>
+        </WandStart>
+        <WandUncoCraftT1>
+            <name>Crude Wand</name>
+            <desc>It's not a sophisticated wand, but it's pretty good.</desc>
+        </WandUncoCraftT1>
+        <WandUncoCraftT2>
+            <name>Ghost Wand</name>
+            <desc>This small, simple wand glows in the dark.</desc>
+        </WandUncoCraftT2>
+        <WandUncoCraftT3>
+            <name>Rimesteel Wand</name>
+            <desc>It's going to hurt quite a bit to get hit with this wand.</desc>
+        </WandUncoCraftT3>
+        <WandUncoCraftT4>
+            <name>Akhedian Steel Wand</name>
+            <desc>This elaborate wand symbolises wisdom.</desc>
+        </WandUncoCraftT4>
+        <PriestSkillBookUncoCraftT1>
+            <name>Priest Skill Book I</name>
+            <desc>Slightly increases the effectiveness of the [Priest] class skill.</desc>
+		</PriestSkillBookUncoCraftT1>
+        <WarlockSkillBookUncoCraftT1>
+            <name>Warlock Skill Book I</name>
+            <desc>Slightly increases the effectiveness of the [Warlock] class skill.</desc>
+		</WarlockSkillBookUncoCraftT1>
+        <SorcererSkillBookUncoCraftT1>
+            <name>Sorcerer Skill Book I</name>
+            <desc>Slightly increases the effectiveness of the [Sorcerer] class skill.</desc>
+		</SorcererSkillBookUncoCraftT1>
+        <NecromancerSkillBookUncoCraftT1>
+            <name>Necromancer Skill Book I</name>
+            <desc>Slightly increases the effectiveness of the [Necromancer] class skill.</desc>
+		</NecromancerSkillBookUncoCraftT1>
+        <PriestSkillBookUncoCraftT2>
+            <name>Priest Skill Book II</name>
+            <desc>Increases the effectiveness of the [Priest] class skill.</desc>
+		</PriestSkillBookUncoCraftT2>
+        <WarlockSkillBookUncoCraftT2>
+            <name>Warlock Skill Book II</name>
+            <desc>Increases the effectiveness of the [Warlock] class skill.</desc>
+		</WarlockSkillBookUncoCraftT2>
+        <SorcererSkillBookUncoCraftT2>
+            <name>Sorcerer Skill Book II</name>
+            <desc>Increases the effectiveness of the [Sorcerer] class skill.</desc>
+		</SorcererSkillBookUncoCraftT2>
+        <NecromancerSkillBookUncoCraftT2>
+            <name>Necromancer Skill Book II</name>
+            <desc>Increases the effectiveness of the [Necromancer] class skill.</desc>
+		</NecromancerSkillBookUncoCraftT2>
+        <Puppet>
+            <name>Ritual Puppet</name>
+            <desc>Used to Necromancer's summoning.</desc>
+		</Puppet>
         <ShieldStart>
             <name>Barrel Lid</name>
             <desc>A shield that gives off a faint odour of cheap wine.</desc>
@@ -40981,6 +41041,10 @@
             <name>Experienced Blacksmith Set - Left Hand</name>
             <desc>Learn the following &lt;narrator&gt;Throwing Weapon&lt;/narrator&gt; blueprints:</desc>
         </BundleThrowingLeftHandT2>
+        <BundleSkillBookT1>
+            <name>Experienced Blacksmith Set - Skill Book</name>
+            <desc>Learn the following &lt;narrator&gt;Skill Book&lt;/narrator&gt; blueprints:</desc>
+        </BundleSkillBookT1>
         <BundleThrowingLeftHandSpecialT2>
             <name>Experienced Alchemist Set - I</name>
             <desc>Learn the following &lt;narrator&gt;Special Throwing Weapon&lt;/narrator&gt; blueprints:</desc>
@@ -41045,6 +41109,10 @@
             <name>Master Blacksmith Set - Left Hand</name>
             <desc>Learn the following &lt;narrator&gt;Throwing Weapon&lt;/narrator&gt; blueprints:</desc>
         </BundleThrowingLeftHandT4>
+        <BundleSkillBookT2>
+            <name>Master Blacksmith Set - Skill Book</name>
+            <desc>Learn the following &lt;narrator&gt;Skill Book&lt;/narrator&gt; blueprints:</desc>
+        </BundleSkillBookT2>
         <BundleThrowingLeftHandSpecialT4>
             <name>Master Alchemist Set - I</name>
             <desc>Learn the following &lt;narrator&gt;Special Throwing Weapon&lt;/narrator&gt; blueprints:</desc>
@@ -45973,6 +46041,21 @@
         <Brute>
             <name>Brute</name>
         </Brute>
+        <Mage>
+            <name>Mage</name>
+        </Mage>
+        <Priest>
+            <name>Priest</name>
+        </Priest>
+        <Warlock>
+            <name>Warlock</name>
+        </Warlock>
+        <Sorcerer>
+            <name>Sorcerer</name>
+        </Sorcerer>
+        <Necromancer>
+            <name>Necromancer</name>
+        </Necromancer>
         <Vanguard>
             <name>Vanguard</name>
         </Vanguard>
@@ -47311,6 +47394,214 @@
             <name>Stance Knowledge</name>
             <desc>In [AttackStance], attacks also deal an amount of damage equal to ::value1::% of the target's max [Health]. <br/><br/>In [DefenseStance], all attacks suffered deal an amount of damage equal to ::value2::%.</desc>
         </StancesKnowledge>
+        <TargetHeal>
+            <name>Distance Heal</name>
+            <desc>Restores [Health] to an allied unit. This skill is affected by the caster's [Willpower].</desc>
+            <levels>
+                <line0>
+                    <desc>Restores [Health] to an allied unit. This skill is affected by the caster's [Willpower].<br/>Increases healing and apply [Protection].</desc>
+                </line0>
+            </levels>
+        </TargetHeal>
+        <RangeHeal>
+            <name>Healing Bomb</name>
+            <desc>Restores [Health] to all allied units in the area. This skill is affected by the caster's [Willpower].</desc>
+            <levels>
+                <line0>
+                    <desc>Restores [Health] to all allied units in the area. This skill is affected by the caster's [Willpower].<br/>Increases healing and has a chance to remove any harmful effects from allies.</desc>
+                </line0>
+            </levels>
+        </RangeHeal>
+        <GroupHeal>
+            <name>Group Heal</name>
+            <desc>Restores [Health] to all allied units on the battlefield. This skill is affected by the caster's [Willpower].</desc>
+            <levels>
+                <line0>
+                    <desc>
+                        Restores [Health] to all allied units on the battlefield. This skill is affected by the caster's [Willpower].<br/>Increases healing and repairs some of the target's [Armor].
+                    </desc>
+                </line0>
+            </levels>
+        </GroupHeal>
+        <FearVoice>
+            <name>Voice of Fear</name>
+            <desc>Enemies who hear the voice will receive between 1 and 5 [Terror]. The higher the caster's [Willpower], the more [Terror] they can deal.</desc>
+            <levels>
+                <line0>
+                    <desc>Enemies who hear the voice will receive between 1 and 5 [Terror]. The higher the caster's [Willpower], the more [Terror] they can deal.<br/>Higher chance to deal more [Terror], and have a chance to inflict [Immobile].</desc>
+                </line0>
+            </levels>
+        </FearVoice>
+        <DeathScent>
+            <name>Scent of Death</name>
+            <desc>Enemies in the range will be in one of the following states: 3 - 5 stacks of [Fever], [Slowdown], or [Weakening]. Create clouds of poison on the area.</desc>
+            <levels>
+                <line0>
+                    <desc>Enemies in the range will be in one of the following states: 3 - 5 stacks of [Fever], [Slowdown], or [Weakening]. Create clouds of poison on the area.<br/>Enemies will get 2 stacks of [Fever]. Enemies in the [Terror] state lose all beneficial effects.</desc>
+                </line0>
+            </levels>
+        </DeathScent>
+        <PainLess>
+            <name>Painless</name>
+            <desc>The targeted ally will be in one of the following states: [Enervate], [Berserk], or [BrothersFury].</desc>
+            <levels>
+                <line0>
+                    <desc>The targeted ally will be in one of the following states: [Enervate], [Berserk], or [BrothersFury].<br/>Allies have a low chance to become [Arena_Willforce].</desc>
+                </line0>
+            </levels>
+        </PainLess>
+        <EarthQuake>
+            <name>Earthquake</name>
+            <desc>Enemy takes damage proportional to the caster's [Willpower]. This attack ignores [Guard].</desc>
+            <levels>
+                <line0>
+                    <desc>Enemy takes <b>Heavy</b> damage proportional to the caster's [Willpower]. This attack ignores [Guard].</desc>
+                </line0>
+            </levels>
+        </EarthQuake>
+        <FireBall>
+            <name>Fire Ball</name>
+            <desc>Units in the area take damage proportional to the caster's [Willpower]. This attack ignores [Guard].<br/>This attack creates [Fire], which applies [Burning] to units in area.</desc>
+            <levels>
+                <line0>
+                    <desc>Units in the area take <b>Heavy</b> damage proportional to the caster's [Willpower]. This attack ignores [Guard].<br/>This attack creates [Fire], which applies [Burning] to units in area.</desc>
+                </line0>
+            </levels>
+        </FireBall>
+        <ThunderStorm>
+            <name>Thunder Storm</name>
+            <desc>Units in the area take damage proportional to the caster's [Willpower].<br/>This attack penetrates [Armor] and deals direct damage to [Health].</desc>
+            <levels>
+                <line0>
+                    <desc>Units in the area take <b>Heavy</b> damage proportional to the caster's [Willpower].<br/>This attack penetrates [Armor] and deals direct damage to [Health].<br/>Units hit by this attack are [Immobile], and if none survive, it creates a [ThunderStormZone] that makes passing units [Immobile].</desc>
+                </line0>
+            </levels>
+        </ThunderStorm>
+        <ThunderStormZone>
+            <name>Charged Cloud</name>
+            <desc>Makes passing units [Immobile].</desc>
+        </ThunderStormZone>
+        <SummonBeast>
+            <name>Summoning Beasts</name>
+            <desc>Summon 1-3 of one of the following: [Boar], [Wolf], [Alpha], or [Bear].<br/>This spell costs 1 [Puppet].<br/>The higher the caster's [Willpower], the stronger the unit summoned.</desc>
+            <levels>
+                <line0>
+                    <desc>Summon 1-3 of one of the following: [Swamoar], [SnowWolf], [SnowAlpha], or [WhiteBear].<br/>This spell costs 1 [Puppet].<br/>The higher the caster's [Willpower], the stronger the unit summoned.</desc>
+                </line0>
+            </levels>
+        </SummonBeast>
+        <SummonUndead>
+            <name>Summoning Undead</name>
+            <desc>Summon 1-5 of one of the following: [Molerat], [GhostBoar], [GhostWolf], or [Crawler].<br/>This spell costs 2 [Puppet], and can use once per 2 turns.<br/>The higher the caster's [Willpower], the stronger the unit summoned.</desc>
+            <levels>
+                <line0>
+                    <desc>Summon 1-5 of one of the following: [PlaguedRat], [Plagueridden], [Nightmare], or [SnowCrawler].<br/>This spell costs 2 [Puppet], and can use once per 2 turns.<br/>The higher the caster's [Willpower], the stronger the unit summoned.</desc>
+                </line0>
+            </levels>
+        </SummonUndead>
+        <SummonChampion>
+            <name>Summoning Legendary</name>
+            <desc>Summon one of the following: [PuzzleMan], [Smot], [Kogo] and [Toro], or [Bionn].<br/>If the cast fails, summon [Mobster]s.<br/>This spell costs 4 [Puppet], and can use once in a battle.<br/>The higher the caster's [Willpower], the stronger the unit summoned.</desc>
+            <levels>
+                <line0>
+                    <desc>Summon one of the following: [PuzzleMan], [Smot], [Kaghal], [Kogo] and [Toro], [CrawlerChampion], [Bionn], or [ChristophGluck].<br/>If the cast fails, summon [Mobster]s.<br/>This spell costs 4 [Puppet], and can use once in a battle.<br/>The higher the caster's [Willpower], the stronger the unit summoned.</desc>
+                </line0>
+            </levels>
+        </SummonChampion>
+        <Meditation>
+            <name>Meditation</name>
+            <desc>Restores ::value1:: Valour points.</desc>
+        </Meditation>
+        <Enlightment>
+            <name>Enlightment</name>
+            <desc>Unit's [Willpower] is increased by [ATTR]%.</desc>
+        </Enlightment>
+        <AutoSwapPosition>
+            <name>Escape Maneuver</name>
+            <desc>When this unit is attacked, it swaps position with an unengaged ally nearby.<br/>Ally gains [Dodge] and attacking enemy gains [Confuse] for 1 turn.</desc>
+        </AutoSwapPosition>
+        <SwapPosition>
+            <name>Position Swap</name>
+            <desc>This unit swaps places with a selected ally.<br/>The swapped ally gains [Dodge].</desc>
+        </SwapPosition>
+        <MagicMissile>
+            <name>Magic Missile</name>
+            <desc>
+                Deals [DMG] to the target. Deals additional damage proportional to the target's [Armor] and [Health].<br/>This additional damage increases as the caster's [Willpower] increases.
+            </desc>
+        </MagicMissile>
+        <PriestSkillBook1>
+            <name>Priest Skill Book I</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedRecovery].
+            </desc>
+        </PriestSkillBook1>
+        <WarlockSkillBook1>
+            <name>Warlock Skill Book I</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedCurse].
+            </desc>
+        </WarlockSkillBook1>
+        <SorcererSkillBook1>
+            <name>Sorcerer Skill Book I</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedElement].
+            </desc>
+        </SorcererSkillBook1>
+        <NecromancerSkillBook1>
+            <name>Necromancer Skill Book I</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedNecromancy].
+            </desc>
+        </NecromancerSkillBook1>
+        <PriestSkillBook2>
+            <name>Priest Skill Book II</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedRecovery].
+            </desc>
+        </PriestSkillBook2>
+        <WarlockSkillBook2>
+            <name>Warlock Skill Book II</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedCurse].
+            </desc>
+        </WarlockSkillBook2>
+        <SorcererSkillBook2>
+            <name>Sorcerer Skill Book II</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedElement].
+            </desc>
+        </SorcererSkillBook2>
+        <NecromancerSkillBook2>
+            <name>Necromancer Skill Book II</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedNecromancy].
+            </desc>
+        </NecromancerSkillBook2>
+        <PriestPath>
+            <name>Path of Priest</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedRecovery].
+            </desc>
+        </PriestPath>
+        <WarlockPath>
+            <name>Path of Warlock</name>
+            <desc>
+                At the start of combat, you gain [Protection] and ::value1:: stacks of [ReinforcedCurse].
+            </desc>
+        </WarlockPath>
+        <SorcererPath>
+            <name>Path of Sorcerer</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedElement].
+            </desc>
+        </SorcererPath>
+        <NecromancerPath>
+            <name>Path of Necromancer</name>
+            <desc>
+                At the start of combat, you gain ::value1:: stacks of [ReinforcedNecromancy].
+            </desc>
+        </NecromancerPath>
         <Protection>
             <name>Protection</name>
             <desc>Gains [Deflection].</desc>
@@ -50429,6 +50720,30 @@
             <name>Fit of Rage</name>
             <desc>[CritHitDamageBonusPercent] increased by [ATTR_0]%.</desc>
         </CritDamageBonus>
+        <ReinforcedRecovery>
+            <name>Reinforced Recovery</name>
+            <desc>
+                Increases the effectiveness of the [Priest] class skill. Increases [Willpower] by [ATTR_0]%.<br/>Stackable up to 10 stacks.
+            </desc>
+        </ReinforcedRecovery>
+        <ReinforcedCurse>
+            <name>Reinforced Curse</name>
+            <desc>
+                Increases the effectiveness of the [Warlock] class skill. Increases [Willpower] by [ATTR_0]%.<br/>Stackable up to 10 stacks.
+            </desc>
+        </ReinforcedCurse>
+        <ReinforcedElement>
+            <name>Reinforced Element</name>
+            <desc>
+                Increases the effectiveness of the [Sorcerer] class skill. Increases [Willpower] by [ATTR_0]%.<br/>Stackable up to 10 stacks.
+            </desc>
+        </ReinforcedElement>
+        <ReinforcedNecromancy>
+            <name>Reinforced Necromancy</name>
+            <desc>
+                Increases the effectiveness of the [Necromancer] class skill. Increases [Willpower] by [ATTR_0]%.<br/>Stackable up to 10 stacks.
+            </desc>
+        </ReinforcedNecromancy>
         <Weakening>
             <name>Weakening</name>
             <desc>[DamageBonusPercent] reduced by [ATTR_0]%.</desc>
@@ -50878,7 +51193,7 @@
         </Constitution>
         <Willpower>
             <name>Willpower</name>
-            <desc>Used to boost the troop's Morale in combat. Also increases the [CritHitPercent].</desc>
+            <desc>Used to boost the troop's Morale in combat. Also increases the [CritHitPercent].<br/>Affect skill efficiency for the mage class.</desc>
         </Willpower>
         <CritHitPercent>
             <name>Critical Hit</name>

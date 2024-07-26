@@ -19417,6 +19417,30 @@
 					}
 				},
 				{
+					"id": "Wand",
+					"name": "Canne",
+					"icon": {
+						"file": "ui/Icons/WM_Icons.png",
+						"size": 42,
+						"x": 5,
+						"y": 0
+					},
+					"parentType": "Weapon",
+					"props": {
+						"isCraftSeparator": true,
+						"dismantleLoot": "DismantleWand",
+						"baseBonusDefault": "WandBase",
+						"nameCraftCategory": "Cannes"
+					},
+					"equipDefault": {
+						"file": "ui/Icons/GearIcons/1HHammersIcons.png",
+						"size": 96,
+						"x": 0,
+						"y": 0,
+						"height": 2
+					}
+				},
+				{
 					"id": "AnimalAccessory",
 					"name": "Accessoire d'animal",
 					"props": {
@@ -21297,6 +21321,26 @@
 					"done": 2,
 					"iconeDone": true,
 					"type": "FistWeapon",
+					"__ignoreLoc__": true
+				},
+				{
+					"id": "WandBase",
+					"name": "Wand de base",
+					"weight": 0.5,
+					"baseBonus": [
+						{
+							"value": 2,
+							"attribute": "Willpower",
+							"upValue": 35
+						}
+					],
+					"props": {
+						"disableLoot": true,
+						"feature": "HideInCheatMenu"
+					},
+					"iconeDone": true,
+					"group": 2,
+					"type": "Wand",
 					"__ignoreLoc__": true
 				},
 				{
@@ -25969,6 +26013,159 @@
 					"desc": "Ce katar est différent des autres armes anciennes. Il semble plus simple et moins décoré."
 				},
 				{
+					"id": "WandStart",
+					"name": "Basic Wand",
+					"weight": 0.5,
+					"baseBonus": [
+						{
+							"value": 1,
+							"attribute": "Willpower"
+						}
+					],
+					"props": {
+						"model": "chars/Weapons/Mace_01.fbx",
+						"skill": "MagicMissile",
+						"disableLoot": true
+					},
+					"icon": {
+						"file": "ui/Icons/GearIcons/1HHammersIcons.png",
+						"size": 96,
+						"x": 0,
+						"y": 0,
+						"height": 2
+					},
+					"type": "Wand",
+					"price": 11,
+					"desc": "",
+					"rarity": 0,
+					"group": 4,
+					"iconeDone": true
+				},
+				{
+					"id": "WandUncoCraftT1",
+					"name": "Crude Wand",
+					"weight": 1,
+					"baseBonus": [
+						{
+							"value": 1,
+							"attribute": "Willpower"
+						}
+					],
+					"props": {
+						"model": "chars/Weapons/Torch.prefab",
+						"skill": "MagicMissile",
+						"requireLevel": 2,
+						"disableLoot": true,
+						"fixedLevel": 3
+					},
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 10,
+						"y": 0,
+						"height": 2
+					},
+					"type": "Wand",
+					"price": 89,
+					"desc": "",
+					"rarity": 1,
+					"group": 4,
+					"iconeDone": true
+				},
+				{
+					"id": "WandUncoCraftT2",
+					"name": "Ghost Wand",
+					"weight": 1,
+					"baseBonus": [
+						{
+							"value": 2,
+							"attribute": "Willpower"
+						}
+					],
+					"props": {
+						"model": "chars/Weapons/Torch.prefab",
+						"skill": "MagicMissile",
+						"requireLevel": 5,
+						"disableLoot": true,
+						"fixedLevel": 6
+					},
+					"icon": {
+						"file": "ui/Icons/Icons_Resources_02.png",
+						"size": 96,
+						"x": 19,
+						"y": 3,
+						"height": 2
+					},
+					"type": "Wand",
+					"price": 129,
+					"desc": "",
+					"rarity": 1,
+					"group": 4,
+					"iconeDone": true
+				},
+				{
+					"id": "WandUncoCraftT3",
+					"name": "Rimesteel Wand",
+					"weight": 1,
+					"baseBonus": [
+						{
+							"value": 3,
+							"attribute": "Willpower"
+						}
+					],
+					"props": {
+						"model": "chars/Weapons/Mace_Arena.fbx",
+						"skill": "MagicMissile",
+						"requireLevel": 8,
+						"disableLoot": true,
+						"fixedLevel": 9
+					},
+					"icon": {
+						"file": "ui/Icons/GearIcons/1HHammersIcons.png",
+						"size": 96,
+						"x": 8,
+						"y": 0,
+						"height": 2
+					},
+					"type": "Wand",
+					"price": 169,
+					"desc": "",
+					"rarity": 1,
+					"group": 4,
+					"iconeDone": true
+				},
+				{
+					"id": "WandUncoCraftT4",
+					"name": "Akhedian Steel Wand",
+					"weight": 1,
+					"baseBonus": [
+						{
+							"value": 4,
+							"attribute": "Willpower"
+						}
+					],
+					"props": {
+						"model": "chars/Weapons/Mace_Legion.fbx",
+						"skill": "MagicMissile",
+						"requireLevel": 11,
+						"disableLoot": true,
+						"fixedLevel": 12
+					},
+					"icon": {
+						"file": "ui/Icons/GearIcons/1HHammersIcons.png",
+						"size": 96,
+						"x": 9,
+						"y": 0,
+						"height": 2
+					},
+					"type": "Wand",
+					"price": 234,
+					"desc": "",
+					"rarity": 1,
+					"group": 4,
+					"iconeDone": true
+				},
+				{
 					"id": "ShieldStart",
 					"name": "Couvercle de tonneau",
 					"weight": 4,
@@ -26707,6 +26904,206 @@
 					"price": 129,
 					"rarity": 3,
 					"desc": "Ce bouclier a autrefois appartenu à un chevalier tout d'or vêtu."
+				},
+				{
+					"id": "PriestSkillBookUncoCraftT1",
+					"name": "Priest Skill Book I",
+					"weight": 0.5,
+					"baseBonus": [],
+					"props": {
+						"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+						"passiveSkill": "PriestSkillBook1",
+						"requireLevel": 5,
+						"disableLoot": true,
+						"fixedLevel": 6
+					},
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 11,
+						"y": 18
+					},
+					"type": "LeftHand",
+					"price": 129,
+					"desc": "",
+					"rarity": 1,
+					"group": 12,
+					"iconeDone": true
+				},
+				{
+					"id": "WarlockSkillBookUncoCraftT1",
+					"name": "Warlock Skill Book I",
+					"weight": 0.5,
+					"baseBonus": [],
+					"props": {
+						"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+						"passiveSkill": "WarlockSkillBook1",
+						"requireLevel": 5,
+						"disableLoot": true,
+						"fixedLevel": 6
+					},
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 11,
+						"y": 17
+					},
+					"type": "LeftHand",
+					"price": 129,
+					"desc": "",
+					"rarity": 1,
+					"group": 12,
+					"iconeDone": true
+				},
+				{
+					"id": "SorcererSkillBookUncoCraftT1",
+					"name": "Sorcerer Skill Book I",
+					"weight": 0.5,
+					"baseBonus": [],
+					"props": {
+						"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+						"passiveSkill": "SorcererSkillBook1",
+						"requireLevel": 5,
+						"disableLoot": true,
+						"fixedLevel": 6
+					},
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 10,
+						"y": 16
+					},
+					"type": "LeftHand",
+					"price": 129,
+					"desc": "",
+					"rarity": 1,
+					"group": 12,
+					"iconeDone": true
+				},
+				{
+					"id": "NecromancerSkillBookUncoCraftT1",
+					"name": "Necromancer Skill Book I",
+					"weight": 0.5,
+					"baseBonus": [],
+					"props": {
+						"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+						"passiveSkill": "NecromancerSkillBook1",
+						"requireLevel": 5,
+						"disableLoot": true,
+						"fixedLevel": 6
+					},
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 7,
+						"y": 16
+					},
+					"type": "LeftHand",
+					"price": 129,
+					"desc": "",
+					"rarity": 1,
+					"group": 12,
+					"iconeDone": true
+				},
+				{
+					"id": "PriestSkillBookUncoCraftT2",
+					"name": "Priest Skill Book II",
+					"weight": 0.5,
+					"baseBonus": [],
+					"props": {
+						"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+						"passiveSkill": "PriestSkillBook2",
+						"requireLevel": 11,
+						"disableLoot": true,
+						"fixedLevel": 12
+					},
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 12,
+						"y": 18
+					},
+					"type": "LeftHand",
+					"price": 234,
+					"desc": "",
+					"rarity": 1,
+					"group": 12,
+					"iconeDone": true
+				},
+				{
+					"id": "WarlockSkillBookUncoCraftT2",
+					"name": "Warlock Skill Book II",
+					"weight": 0.5,
+					"baseBonus": [],
+					"props": {
+						"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+						"passiveSkill": "WarlockSkillBook2",
+						"requireLevel": 11,
+						"disableLoot": true,
+						"fixedLevel": 12
+					},
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 12,
+						"y": 17
+					},
+					"type": "LeftHand",
+					"price": 234,
+					"desc": "",
+					"rarity": 1,
+					"group": 12,
+					"iconeDone": true
+				},
+				{
+					"id": "SorcererSkillBookUncoCraftT2",
+					"name": "Sorcerer Skill Book II",
+					"weight": 0.5,
+					"baseBonus": [],
+					"props": {
+						"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+						"passiveSkill": "SorcererSkillBook2",
+						"requireLevel": 11,
+						"disableLoot": true,
+						"fixedLevel": 12
+					},
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 11,
+						"y": 16
+					},
+					"type": "LeftHand",
+					"price": 234,
+					"desc": "",
+					"rarity": 1,
+					"group": 12,
+					"iconeDone": true
+				},
+				{
+					"id": "NecromancerSkillBookUncoCraftT2",
+					"name": "Necromancer Skill Book II",
+					"weight": 0.5,
+					"baseBonus": [],
+					"props": {
+						"model": "chars/Weapons/LeftHand_BlindingPowder.fbx",
+						"passiveSkill": "NecromancerSkillBook2",
+						"requireLevel": 11,
+						"disableLoot": true,
+						"fixedLevel": 12
+					},
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 8,
+						"y": 16
+					},
+					"type": "LeftHand",
+					"price": 234,
+					"desc": "",
+					"rarity": 1,
+					"group": 12,
+					"iconeDone": true
 				},
 				{
 					"id": "BlindingPowder",
@@ -28625,6 +29022,44 @@
 					"type": "BundleForge",
 					"desc": "Apprend les plans des <narrator>armes de jet spéciale</narrator> suivantes :",
 					"done": 2
+				},
+				{
+					"id": "BundleSkillBookT1",
+					"name": "Skill Book I",
+					"weight": 0,
+					"baseBonus": [],
+					"props": {
+						"feature": "HideInCheatMenu"
+					},
+					"group": 13,
+					"type": "BundleForge",
+					"desc": "",
+					"iconeDone": true,
+					"icon": {
+						"file": "ui/Icons/Icons_Resources_02.png",
+						"size": 1,
+						"x": 4,
+						"y": 1918
+					}
+				},
+				{
+					"id": "BundleSkillBookT2",
+					"name": "Skill Book II",
+					"weight": 0,
+					"baseBonus": [],
+					"props": {
+						"feature": "HideInCheatMenu"
+					},
+					"group": 13,
+					"type": "BundleForge",
+					"desc": "",
+					"iconeDone": true,
+					"icon": {
+						"file": "ui/Icons/Icons_Resources_02.png",
+						"size": 1,
+						"x": 4,
+						"y": 1918
+					}
 				},
 				{
 					"id": "HeavyArmorCommonGeneric",
@@ -40347,6 +40782,27 @@
 					"price": 200,
 					"rarity": 3,
 					"desc": "Il vaut mieux manipuler cet objet avec des gants car un simple contact peut s'avérer extrêmement douloureux."
+				},
+				{
+					"id": "Puppet",
+					"name": "Shaman's Puppet",
+					"weight": 3,
+					"baseBonus": [],
+					"props": {
+						"disableLoot": true
+					},
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 7,
+						"y": 3
+					},
+					"type": "BeltAccessory",
+					"price": 1,
+					"desc": "",
+					"rarity": 1,
+					"group": 21,
+					"iconeDone": true
 				},
 				{
 					"id": "BackAccMiningGemsChance",
@@ -69489,6 +69945,11 @@
 					"id": "FistStart"
 				},
 				{
+					"title": "Wands",
+					"level": 2,
+					"id": "WandStart"
+				},
+				{
 					"title": "Lefthand",
 					"level": 1,
 					"id": "ShieldStart"
@@ -72215,6 +72676,20 @@
 					"group": "ForgeWeapon"
 				},
 				{
+					"item": "BundleSkillBookT1",
+					"tool": "Anvil",
+					"recipe": [],
+					"props": {},
+					"learnCost": [
+						{
+							"qty": 1,
+							"item": "Knowledge"
+						}
+					],
+					"itemCost": [],
+					"jobLevel": 3
+				},
+				{
 					"item": "BundleOneHandedSwordAxeMaceT3",
 					"tool": "Anvil",
 					"recipe": [],
@@ -72517,6 +72992,26 @@
 					},
 					"learnCost": [],
 					"jobLevel": 1
+				},
+				{
+					"item": "BundleSkillBookT2",
+					"tool": "Anvil",
+					"recipe": [],
+					"props": {
+						"require": [
+							{
+								"item": "BundleSkillBookT1"
+							}
+						]
+					},
+					"learnCost": [
+						{
+							"qty": 1,
+							"item": "Knowledge"
+						}
+					],
+					"itemCost": [],
+					"jobLevel": 5
 				},
 				{
 					"item": "ThrowingSickle",
@@ -75495,6 +75990,343 @@
 					],
 					"jobLevel": 2,
 					"group": "ForgeVarious"
+				},
+				{
+					"item": "WandUncoCraftT1",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 2,
+							"item": "Leather"
+						}
+					],
+					"props": {
+						"bundle": "BundleOneHandedSwordAxeMaceT1"
+					},
+					"learnCost": [],
+					"itemCost": [],
+					"jobLevel": 2
+				},
+				{
+					"item": "WandUncoCraftT2",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 2,
+							"item": "WhiteLeather"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleOneHandedSwordAxeMaceT2"
+					},
+					"learnCost": [],
+					"itemCost": [],
+					"jobLevel": 3
+				},
+				{
+					"item": "WandUncoCraftT3",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 4,
+							"item": "Rimesteel"
+						},
+						{
+							"qty": 4,
+							"item": "Wood"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleOneHandedSwordAxeMaceT3"
+					},
+					"learnCost": [],
+					"itemCost": [],
+					"jobLevel": 4
+				},
+				{
+					"item": "WandUncoCraftT4",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 6,
+							"item": "GoldMineral"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleOneHandedSwordAxeMaceT4",
+						"feature": "Alazar1_Update"
+					},
+					"jobLevel": 5,
+					"learnCost": [],
+					"itemCost": []
+				},
+				{
+					"item": "PriestSkillBookUncoCraftT1",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 4,
+							"item": "Rimesteel"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleSkillBookT1"
+					},
+					"learnCost": [],
+					"itemCost": [],
+					"jobLevel": 3
+				},
+				{
+					"item": "WarlockSkillBookUncoCraftT1",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 4,
+							"item": "Rimesteel"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleSkillBookT1"
+					},
+					"learnCost": [],
+					"itemCost": [],
+					"jobLevel": 3
+				},
+				{
+					"item": "SorcererSkillBookUncoCraftT1",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 4,
+							"item": "Rimesteel"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleSkillBookT1"
+					},
+					"learnCost": [],
+					"itemCost": [],
+					"jobLevel": 3
+				},
+				{
+					"item": "NecromancerSkillBookUncoCraftT1",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 4,
+							"item": "Rimesteel"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleSkillBookT1"
+					},
+					"learnCost": [],
+					"itemCost": [],
+					"jobLevel": 3
+				},
+				{
+					"item": "PriestSkillBookUncoCraftT2",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 6,
+							"item": "GoldMineral"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleSkillBookT2"
+					},
+					"jobLevel": 5,
+					"learnCost": [],
+					"itemCost": []
+				},
+				{
+					"item": "WarlockSkillBookUncoCraftT2",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 6,
+							"item": "GoldMineral"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleSkillBookT2"
+					},
+					"jobLevel": 5,
+					"learnCost": [],
+					"itemCost": []
+				},
+				{
+					"item": "SorcererSkillBookUncoCraftT2",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 6,
+							"item": "GoldMineral"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleSkillBookT2"
+					},
+					"jobLevel": 5,
+					"learnCost": [],
+					"itemCost": []
+				},
+				{
+					"item": "NecromancerSkillBookUncoCraftT2",
+					"tool": "Anvil",
+					"recipe": [
+						{
+							"qty": 1,
+							"item": "NecromancerSkillBookUncoCraftT1"
+						},
+						{
+							"qty": 6,
+							"item": "IronOre"
+						},
+						{
+							"qty": 6,
+							"item": "GoldMineral"
+						},
+						{
+							"qty": 5,
+							"item": "Wood"
+						},
+						{
+							"qty": 6,
+							"item": "Charcoal"
+						}
+					],
+					"props": {
+						"bundle": "BundleSkillBookT2"
+					},
+					"jobLevel": 5,
+					"learnCost": [],
+					"itemCost": []
 				},
 				{
 					"item": "LockPick",
@@ -81285,6 +82117,24 @@
 					"group": "AlchemistVarious"
 				},
 				{
+					"item": "Puppet",
+					"tool": "ApothecaryTable",
+					"recipe": [
+						{
+							"qty": 1,
+							"item": "AnimalCorpse"
+						},
+						{
+							"qty": 1,
+							"item": "Corpse"
+						}
+					],
+					"props": {},
+					"jobLevel": 1,
+					"learnCost": [],
+					"itemCost": []
+				},
+				{
 					"item": "Brandy",
 					"tool": "BrewBarrel",
 					"recipe": [
@@ -84483,68 +85333,68 @@
 					"title": "Anvil"
 				},
 				{
-					"index": 219,
+					"index": 233,
 					"title": "Workshop"
 				},
 				{
-					"index": 219,
+					"index": 233,
 					"title": "Divers",
 					"level": 1
 				},
 				{
-					"index": 234,
+					"index": 248,
 					"level": 1,
 					"title": "Animal"
 				},
 				{
-					"index": 247,
+					"index": 261,
 					"level": 1,
 					"title": "Belts"
 				},
 				{
-					"index": 267,
+					"index": 281,
 					"level": 1,
 					"title": "ToolCampUpgradable"
 				},
 				{
-					"index": 307,
+					"index": 321,
 					"level": 1,
 					"title": "ToolCampNonUpgradable"
 				},
 				{
-					"index": 314,
+					"index": 328,
 					"title": "Apothecary"
 				},
 				{
-					"index": 413,
+					"index": 428,
 					"title": "BrewBarrel"
 				},
 				{
-					"index": 429,
+					"index": 444,
 					"title": "ConverterTools"
 				},
 				{
-					"index": 444,
+					"index": 459,
 					"title": "BoatComponents"
 				},
 				{
-					"index": 489,
+					"index": 504,
 					"title": "Meta"
 				},
 				{
-					"index": 528,
+					"index": 543,
 					"title": "PathMight"
 				},
 				{
-					"index": 540,
+					"index": 555,
 					"title": "PathTrade"
 				},
 				{
-					"index": 552,
+					"index": 567,
 					"title": "PathCrime"
 				},
 				{
-					"index": 564,
+					"index": 579,
 					"title": "PathMystery"
 				}
 			],
@@ -88166,6 +89016,23 @@
 							"item": "IronOre",
 							"min": 2,
 							"max": 4
+						}
+					]
+				},
+				{
+					"id": "DismantleWand",
+					"content": [
+						{
+							"proba": 0,
+							"item": "Wood",
+							"min": 1,
+							"max": 2
+						},
+						{
+							"proba": 0,
+							"item": "IronOre",
+							"min": 1,
+							"max": 2
 						}
 					]
 				},
@@ -93946,6 +94813,367 @@
 					"iconeDone": true,
 					"notes": "",
 					"name": "Tyran"
+				},
+				{
+					"id": "Mage",
+					"weaponTypes": [
+						{
+							"wp": "Wand"
+						}
+					],
+					"baseSkills": [
+						{
+							"skill": "Wrath",
+							"minLevel": 0
+						},
+						{
+							"skill": "Dash",
+							"minLevel": 0
+						},
+						{
+							"skill": "FirstAid",
+							"minLevel": 0
+						},
+						{
+							"skill": "TargetHeal",
+							"minLevel": 2
+						},
+						{
+							"skill": "FearVoice",
+							"minLevel": 2
+						},
+						{
+							"skill": "EarthQuake",
+							"minLevel": 2
+						},
+						{
+							"skill": "SummonBeast",
+							"minLevel": 2
+						},
+						{
+							"skill": "RangeHeal",
+							"minLevel": 5
+						},
+						{
+							"skill": "DeathScent",
+							"minLevel": 5
+						},
+						{
+							"skill": "FireBall",
+							"minLevel": 5
+						},
+						{
+							"skill": "SummonUndead",
+							"minLevel": 5
+						},
+						{
+							"skill": "Meditation",
+							"minLevel": 8
+						},
+						{
+							"skill": "Enlightment",
+							"minLevel": 8
+						},
+						{
+							"skill": "AutoSwapPosition",
+							"minLevel": 8
+						},
+						{
+							"skill": "GroupHeal",
+							"minLevel": 10
+						},
+						{
+							"skill": "PainLess",
+							"minLevel": 10
+						},
+						{
+							"skill": "ThunderStorm",
+							"minLevel": 10
+						},
+						{
+							"skill": "SummonChampion",
+							"minLevel": 10
+						},
+						{
+							"skill": "SwapPosition",
+							"minLevel": 12
+						},
+						{
+							"skill": "ClassSpecialization",
+							"minLevel": 12
+						}
+					],
+					"props": {
+						"flags": 2
+					},
+					"stats": [
+						{
+							"value": 4,
+							"attribute": "Strength",
+							"upValue": 20
+						},
+						{
+							"value": 4,
+							"attribute": "Dexterity",
+							"upValue": 20
+						},
+						{
+							"value": 6,
+							"attribute": "Constitution",
+							"upValue": 32
+						},
+						{
+							"value": 0,
+							"attribute": "CritHitPercent",
+							"upValue": 10
+						},
+						{
+							"value": 6,
+							"attribute": "Movement"
+						},
+						{
+							"value": 6,
+							"attribute": "Willpower",
+							"upValue": 30
+						}
+					],
+					"model": "chars/Prefabs/Prefab_WP.prefab",
+					"notes": "",
+					"name": "Wizard",
+					"tier": 0,
+					"equipment": [
+						{
+							"armor": "BaseArmorStart1",
+							"weapon": "WandStart"
+						}
+					],
+					"rarity": 0,
+					"timelinePriority": 0,
+					"iconeDone": true
+				},
+				{
+					"id": "Priest",
+					"weaponTypes": [
+						{
+							"wp": "Wand"
+						}
+					],
+					"baseSkills": [
+						{
+							"skill": "PriestPath"
+						}
+					],
+					"props": {
+						"armorKind": "ArmorLight",
+						"flags": 32
+					},
+					"stats": [
+						{
+							"value": 4,
+							"attribute": "Strength",
+							"upValue": 20
+						},
+						{
+							"value": 4,
+							"attribute": "Dexterity",
+							"upValue": 20
+						},
+						{
+							"value": 6,
+							"attribute": "Constitution",
+							"upValue": 32
+						},
+						{
+							"value": 0,
+							"attribute": "CritHitPercent",
+							"upValue": 10
+						},
+						{
+							"value": 6,
+							"attribute": "Movement"
+						},
+						{
+							"value": 6,
+							"attribute": "Willpower",
+							"upValue": 30
+						}
+					],
+					"model": "chars/Prefabs/Prefab_WP.prefab",
+					"notes": "",
+					"name": "Priest",
+					"tier": 1,
+					"equipment": [],
+					"rarity": 0,
+					"timelinePriority": 0,
+					"iconeDone": true
+				},
+				{
+					"id": "Warlock",
+					"weaponTypes": [
+						{
+							"wp": "Wand"
+						}
+					],
+					"baseSkills": [
+						{
+							"skill": "WarlockPath"
+						}
+					],
+					"props": {
+						"armorKind": "ArmorLight",
+						"flags": 32
+					},
+					"stats": [
+						{
+							"value": 4,
+							"attribute": "Strength",
+							"upValue": 20
+						},
+						{
+							"value": 4,
+							"attribute": "Dexterity",
+							"upValue": 20
+						},
+						{
+							"value": 6,
+							"attribute": "Constitution",
+							"upValue": 32
+						},
+						{
+							"value": 0,
+							"attribute": "CritHitPercent",
+							"upValue": 10
+						},
+						{
+							"value": 6,
+							"attribute": "Movement"
+						},
+						{
+							"value": 6,
+							"attribute": "Willpower",
+							"upValue": 30
+						}
+					],
+					"model": "chars/Prefabs/Prefab_WP.prefab",
+					"notes": "",
+					"name": "Warlock",
+					"tier": 1,
+					"equipment": [],
+					"rarity": 0,
+					"timelinePriority": 0,
+					"iconeDone": true
+				},
+				{
+					"id": "Sorcerer",
+					"weaponTypes": [
+						{
+							"wp": "Wand"
+						}
+					],
+					"baseSkills": [
+						{
+							"skill": "SorcererPath"
+						}
+					],
+					"props": {
+						"armorKind": "ArmorLight",
+						"flags": 32
+					},
+					"stats": [
+						{
+							"value": 4,
+							"attribute": "Strength",
+							"upValue": 20
+						},
+						{
+							"value": 4,
+							"attribute": "Dexterity",
+							"upValue": 20
+						},
+						{
+							"value": 6,
+							"attribute": "Constitution",
+							"upValue": 32
+						},
+						{
+							"value": 0,
+							"attribute": "CritHitPercent",
+							"upValue": 10
+						},
+						{
+							"value": 6,
+							"attribute": "Movement"
+						},
+						{
+							"value": 6,
+							"attribute": "Willpower",
+							"upValue": 30
+						}
+					],
+					"model": "chars/Prefabs/Prefab_WP.prefab",
+					"notes": "",
+					"name": "Sorcerer",
+					"tier": 1,
+					"equipment": [],
+					"rarity": 0,
+					"timelinePriority": 0,
+					"iconeDone": true
+				},
+				{
+					"id": "Necromancer",
+					"weaponTypes": [
+						{
+							"wp": "Wand"
+						}
+					],
+					"baseSkills": [
+						{
+							"skill": "NecromancerPath"
+						}
+					],
+					"props": {
+						"armorKind": "ArmorLight",
+						"flags": 32
+					},
+					"stats": [
+						{
+							"value": 4,
+							"attribute": "Strength",
+							"upValue": 20
+						},
+						{
+							"value": 4,
+							"attribute": "Dexterity",
+							"upValue": 20
+						},
+						{
+							"value": 6,
+							"attribute": "Constitution",
+							"upValue": 32
+						},
+						{
+							"value": 0,
+							"attribute": "CritHitPercent",
+							"upValue": 10
+						},
+						{
+							"value": 6,
+							"attribute": "Movement"
+						},
+						{
+							"value": 6,
+							"attribute": "Willpower",
+							"upValue": 30
+						}
+					],
+					"model": "chars/Prefabs/Prefab_WP.prefab",
+					"notes": "",
+					"name": "Necromancer",
+					"tier": 1,
+					"equipment": [],
+					"rarity": 0,
+					"timelinePriority": 0,
+					"iconeDone": true
 				},
 				{
 					"id": "Mobster",
@@ -103481,6 +104709,11 @@
 					"id": "Pugilist"
 				},
 				{
+					"title": "Wand",
+					"level": 1,
+					"id": "Mage"
+				},
+				{
 					"title": "Enemies",
 					"id": "Mobster"
 				},
@@ -103758,7 +104991,7 @@
 						},
 						{
 							"slot": 1,
-							"unitClass": "Axeman"
+							"unitClass": "Mage"
 						},
 						{
 							"slot": 2,
@@ -110899,6 +112132,1162 @@
 							}
 						}
 					]
+				},
+				{
+					"id": "TargetHeal",
+					"name": "Distance Heal",
+					"desc": "",
+					"mode": 0,
+					"range": {
+						"allowedTargets": 2,
+						"baseDistance": 8
+					},
+					"props": {
+						"isHeroic": true,
+						"apCost": 0,
+						"defaultAction": true,
+						"vars": {
+							"multiplier": 0.50,
+							"fixheal": 50
+						},
+						"needDisengaged": true,
+						"cursor": "CursorHeal",
+						"healPreview": 1,
+						"useWithoutWeapon": true
+					},
+					"script": "function onSkill() {\n\tplay();\n\tvar multiple = vars.multiplier;\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedRecovery ) {\n\t\t\tmultiple += ( multiple * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tskill.target.gainsHealth( calculateRecovery(skill.target, multiple) , null);\n\tif( skill.level == 2 ) {\n\t\tskill.target.addStatus(Status.Protection);\n\t}\n}\nfunction calculateRecovery(t, mul) {\n\tvar target_hp = t.stats.health;\n\tvar recovery = (target_hp * mul) + vars.fixheal;\n\trecovery = recovery * ( min(skill.unit.stats.willpower, 50)/50 * randInt(12,20)/16 );\n\treturn ceil(recovery);\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"multiplier": 0.75,
+									"fixheal": 75
+								}
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 19,
+						"y": 12
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "RangeHeal",
+					"name": "Healing Bomb",
+					"desc": "",
+					"mode": 5,
+					"range": {
+						"type": 0,
+						"radius": 3,
+						"allowedTargets": 2,
+						"baseDistance": 6
+					},
+					"props": {
+						"isHeroic": true,
+						"specialAnim": "ThrowLeftGrenade",
+						"apCost": 1,
+						"vars": {
+							"multiplier": 0.25,
+							"fixheal": 40
+						},
+						"needDisengaged": true,
+						"cursor": "CursorHeal",
+						"healPreview": 1,
+						"useWithoutWeapon": true,
+						"castFx": "prefabs/fx/fight/Explosion/PoisonBomb/PoisonBomb.fx",
+						"throwModel": "chars/Weapons/LeftHand_IncendiaryFlask.fbx"
+					},
+					"script": "function onSkill() {\n\tplay();\n\tvar multiple = vars.multiplier;\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedRecovery ) {\n\t\t\tmultiple += ( multiple * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tfor( t in skill.getTargets() ) {\n\t\tt.target.gainsHealth( calculateRecovery(t.target, multiple) , null);\n\t\tif( skill.level == 2 && randomDice(skill.unit.stats.willpower) > 2 ) {\n\t\t\tfor( s in t.target.getAllStatus() ) {\n\t\t\t\tif( s.isMalus ) s.cancel();\n\t\t\t}\n\t\t}\n\t}\n}\nfunction calculateRecovery(t, mul) {\n\tvar target_hp = t.stats.health;\n\tvar recovery = (target_hp * mul) + vars.fixheal;\n\trecovery = recovery * ( min(skill.unit.stats.willpower, 50)/50 * randInt(12,20)/16 );\n\treturn ceil(recovery);\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"multiplier": 0.50,
+									"fixheal": 60
+								},
+								"tooltipStatus": [
+									{
+										"st": "Protection"
+									}
+								]
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 9,
+						"y": 13
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "GroupHeal",
+					"name": "Group Heal",
+					"desc": "",
+					"mode": 4,
+					"range": {},
+					"props": {
+						"isHeroic": true,
+						"specialAnim": "Taunt",
+						"apCost": 2,
+						"vars": {
+							"multiplier": 0.2,
+							"fixheal": 50
+						},
+						"needDisengaged": true,
+						"cursor": "CursorHeal",
+						"healPreview": 1,
+						"useWithoutWeapon": true,
+						"extraFx": "prefabs/fx/fight/BuffCry/BuffCryBlue.fx"
+					},
+					"script": "function onSkill() {\n\tplay();\n\tvar multiple = vars.multiplier;\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedRecovery ) {\n\t\t\tmultiple += ( multiple * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\t@sync for( u in getAllies(skill.unit) ) {\n\t\tvar recovery = (u.stats.health * multiple) + vars.fixheal;\n\t\trecovery = recovery * ( min(skill.unit.stats.willpower, 50)/50 );\n\t\tu.gainsHealth(ceil( recovery ), null);\n\t\tif( skill.level == 2 ) {\n\t\t\tvar armorRecovery = ceil ( u.stats.armor * skill.unit.stats.willpower/100 * multiple );\n\t\t\tu.armor = min(u.armor + armorRecovery, u.stats.armor);\n\t\t}\n\t}\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"multiplier": 0.40,
+									"fixheal": 75
+								}
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 0,
+						"y": 15
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "FearVoice",
+					"name": "Voice of Fear",
+					"desc": "",
+					"mode": 5,
+					"range": {
+						"type": 1,
+						"angle": 90,
+						"radius": 3,
+						"allowedTargets": 0
+					},
+					"props": {
+						"isHeroic": true,
+						"specialAnim": "Taunt",
+						"apCost": 0,
+						"defaultAction": true,
+						"vars": {
+							"value1": 20,
+							"value2": 20
+						},
+						"tooltipStatus": [
+							{
+								"st": "Terror"
+							}
+						],
+						"needDisengaged": true,
+						"useWithoutWeapon": true,
+						"extraFx": "prefabs/fx/fight/BuffCry/BionnTransformation.fx"
+					},
+					"script": "function onSkill() {\n\tplayAttack();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedCurse ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tfor( t in skill.getTargets() ) {\n\t\tvar num = randomDice( max(will - vars.value1, 0) );\n\t\tif ( !t.target.hasStatus(Status.Champion) ) t.target.addStatus(Status.Terror, num);\n\t\tif( skill.level == 2 ) {\n\t\t\tvar num2 = randomDice( max(will - vars.value2, 0) );\n\t\t\tif( num2 > 2 ) {\n\t\t\t\tt.target.addStatus(Status.Immobile);\n\t\t\t}\n\t\t}\n\t}\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"rangeRadius": 5,
+								"vars": {
+									"value1": 10,
+									"value2": 10
+								},
+								"tooltipStatus": [
+									{
+										"st": "Immobile"
+									}
+								]
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 10,
+						"y": 3
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "DeathScent",
+					"name": "Scent of Death",
+					"desc": "",
+					"mode": 5,
+					"range": {
+						"type": 0,
+						"radius": 2,
+						"allowedTargets": 0,
+						"baseDistance": 4
+					},
+					"props": {
+						"isHeroic": true,
+						"specialAnim": "ThrowLeftGrenade",
+						"apCost": 1,
+						"vars": {
+							"value1": 20,
+							"value2": 20
+						},
+						"tooltipStatus": [
+							{
+								"st": "Slowdown"
+							},
+							{
+								"st": "Fever"
+							},
+							{
+								"st": "Weakening"
+							}
+						],
+						"needDisengaged": true,
+						"useWithoutWeapon": true,
+						"castFx": "prefabs/fx/fight/Explosion/ConfusingPowder/ConfusingPowder.fx",
+						"throwFx": "prefabs/fx/fight/Explosion/ConfusingPowder/ConfusingPowderThrowTrail.fx",
+						"throwModel": "chars/Weapons/LeftHand_BlindingPowder.fbx"
+					},
+					"script": "function onSkill() {\n\tplayAttack();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedCurse ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tfor( t in skill.getTargets() ) {\n\t\t\tvar num = randomDice( max(will - vars.value1, 0) );\n\t\t\tif ( num == 1 ) t.target.addStatus(Status.Slowdown);\n\t\t\tif ( num == 2 ) t.target.addStatus(Status.Fever, 3);\n\t\t\tif ( num == 3 || num == 4 ) t.target.addStatus(Status.Weakening);\n\t\t\tif ( num == 5 ) t.target.addStatus(Status.Fever, 5);\n\t\t\tif( skill.level == 2 ) {\n\t\t\t\tif( t.target.hasStatus(Status.Terror) ) {\n\t\t\t\t\tfor( s in t.target.getAllStatus() ) {\n\t\t\t\t\t\tif( s.isBonus ) s.cancel();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tt.target.addStatus(Status.Fever, 2);\n\t\t\t}\n\t}\n}\nfunction onZoneHit() {\n\tcreateSkillZone(Skill.PoisonZone);\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"value1": 10,
+									"value2": 10
+								},
+								"tooltipStatus": [
+									{
+										"st": "Stun"
+									}
+								]
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 3,
+						"y": 7
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "PainLess",
+					"name": "Painless",
+					"desc": "",
+					"mode": 0,
+					"range": {
+						"allowedTargets": 1,
+						"baseDistance": 3
+					},
+					"props": {
+						"isHeroic": true,
+						"apCost": 1,
+						"vars": {
+							"value1": 20,
+							"value2": 20
+						},
+						"tooltipStatus": [
+							{
+								"st": "Enervate"
+							},
+							{
+								"st": "Berserk"
+							},
+							{
+								"st": "BrothersFury"
+							}
+						],
+						"needDisengaged": true,
+						"useWithoutWeapon": true
+					},
+					"script": "function onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedCurse ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar num = randomDice( max(will - vars.value1, 0) );\n\tif ( num < 3 || num == 4 ) {\n\t\tskill.target.addStatus(Status.Enervate, randomDice(will));\n\t}\n\tif ( num == 3 ) skill.target.addStatus(Status.Berserk, 1);\n\tif ( num == 5 ) skill.target.addStatus(Status.BrothersFury, 1);\n\tif( skill.level == 2 ) {\n\t\tvar num2 = randomDice( max(will - vars.value2, 0) );\n\t\tif( num2 > 2 ) {\n\t\t\tif (!skill.target.hasStatus(Status.Arena_Willforce)) {\n\t\t\t\tskill.target.addStatus(Status.Arena_Willforce);\n\t\t\t} else {\n\t\t\t\tskill.target.addStatus(Status.Enervate, 3);\n\t\t\t}\n\t\t}\n\t}\n\tspawnFx();\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"value1": 10,
+									"value2": 10
+								},
+								"tooltipStatus": [
+									{
+										"st": "Arena_Willforce"
+									}
+								]
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons_03_96PX.png",
+						"size": 96,
+						"x": 0,
+						"y": 0
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "EarthQuake",
+					"name": "Earthquake",
+					"desc": "",
+					"mode": 5,
+					"range": {
+						"type": 0,
+						"radius": 1,
+						"baseDistance": 6
+					},
+					"props": {
+						"isHeroic": true,
+						"apCost": 0,
+						"defaultAction": true,
+						"vars": {
+							"multiplier": 0.4,
+							"fixdmg": 50,
+							"elite": 0.25
+						},
+						"needDisengaged": true,
+						"castFx": "prefabs/fx/environment/RockSlide/RockSlide.fx",
+						"flags": 1
+					},
+					"script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.stats.health + t.stats.armor;\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * (skill.unit.stats.willpower / 100);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedElement ) {\n\t\t\tdamage += ( damage * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\treturn ceil(damage);\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"multiplier": 0.5,
+									"fixdmg": 100
+								}
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 3,
+						"y": 7
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "FireBall",
+					"name": "Fire Ball",
+					"desc": "",
+					"mode": 5,
+					"range": {
+						"type": 0,
+						"radius": 3,
+						"allowedTargets": 4,
+						"baseDistance": 6
+					},
+					"props": {
+						"isHeroic": true,
+						"tooltipStatus": [
+							{
+								"st": "Fire"
+							},
+							{
+								"st": "Burning"
+							}
+						],
+						"apCost": 1,
+						"damageType": [
+							0
+						],
+						"castFx": "prefabs/fx/fight/Explosion/Molotov/MolotovExplosion.fx",
+						"vars": {
+							"multiplier": 0.15,
+							"fixdmg": 20,
+							"elite": 0.20
+						},
+						"flags": 1,
+						"throwFx": "prefabs/fx/activity/Rouste/FlameBall.fx",
+						"needDisengaged": true
+					},
+					"script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction onZoneHit() {\n\tcreateSkillZone(Skill.FireZone);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.stats.health + t.stats.armor;\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * (skill.unit.stats.willpower / 100);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedElement ) {\n\t\t\tdamage += ( damage * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\treturn ceil(damage);\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"multiplier": 0.2,
+									"fixdmg": 30
+								}
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 10,
+						"y": 19
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "ThunderStorm",
+					"name": "Thunder Storm",
+					"desc": "",
+					"mode": 5,
+					"range": {
+						"type": 0,
+						"radius": 2,
+						"allowedTargets": 4,
+						"baseDistance": 6
+					},
+					"props": {
+						"isHeroic": true,
+						"apCost": 2,
+						"castFx": "prefabs/fx/environment/lightning/EyeLightning_SecretStrike.fx",
+						"vars": {
+							"multiplier": 0.2,
+							"fixdmg": 25,
+							"elite": 0.33
+						},
+						"needDisengaged": true,
+						"flags": 2
+					},
+					"script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction onPostSkill() {\n\tif ( skill.level == 2 )\n\t\tcast(Skill.ThunderStormZone, { skill : skill }, skill);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.stats.health;\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * (skill.unit.stats.willpower / 100);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedElement ) {\n\t\t\tdamage += ( damage * s.count / 10 );\n\t\t\tbreak;\n\t\t}\n\t}\n\treturn ceil(damage);\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"multiplier": 0.3,
+									"fixdmg": 50
+								},
+								"tooltipStatus": [
+									{
+										"st": "Immobile"
+									}
+								]
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 0,
+						"y": 19
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "ThunderStormZone",
+					"name": "Charged Cloud",
+					"desc": "",
+					"mode": 5,
+					"range": {
+						"type": 0,
+						"radius": 2,
+						"allowedTargets": 4
+					},
+					"props": {
+						"castFx": "prefabs/fx/environment/lightning/CelestiumBattleLightning.fx",
+						"flags": 2,
+						"tooltipStatus": [
+							{
+								"st": "Immobile"
+							}
+						],
+						"zoneFx": "prefabs/fx/environment/lightning/BattleCelestiumElectrifiedZone.fx"
+					},
+					"script": "function onSkill() {\n\tcreateAreaEffect(\"Infinite\", 0);\n}\n\nfunction onZoneIn( a ) {\n\ta.stopMove(true);\n\tcast(Skill.Discharge, { unit : a.target }, skill);\n\ta.target.addStatus(Status.Immobile);\n\ta.remove();\n}",
+					"notes": "",
+					"iconeDone": true,
+					"group": 16,
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 1,
+						"y": 19
+					},
+					"done": 2
+				},
+				{
+					"id": "Discharge",
+					"name": "",
+					"desc": "",
+					"mode": 0,
+					"range": {
+						"allowedTargets": 5
+					},
+					"props": {
+						"flags": 2,
+						"vars": {
+							"value1": 20,
+							"value2": 5
+						},
+						"castFx": "prefabs/fx/fight/status/Electrified.fx"
+					},
+					"script": "function onEval(a) {\n\tvar value = a.target.hasStatus(Status.Champion) ? vars.value2 : vars.value1;\n\ta.dmg = floor(a.target.health * value / 100);\n}",
+					"notes": "",
+					"done": 2,
+					"iconeDone": true,
+					"group": 16,
+					"minDmg": 1
+				},
+				{
+					"id": "SummonBeast",
+					"name": "Summoning Beast",
+					"desc": "",
+					"mode": 4,
+					"range": {},
+					"props": {
+						"isHeroic": true,
+						"specialAnim": "Taunt",
+						"apCost": 0,
+						"defaultAction": true,
+						"vars": {
+							"value1": 20
+						},
+						"itemCost": {
+							"item": "Puppet",
+							"qty": 1
+						},
+						"needDisengaged": true,
+						"useWithoutWeapon": true,
+						"extraFx": "prefabs/fx/fight/BuffCry/BuffCryWhite.fx"
+					},
+					"script": "function onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedNecromancy ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar dice = [];\n\tdice.push(randomDice(will));\n\tdice.push(randomDice(max(will - vars.value1, 0)));\n\n\tvar tab = [];\n\tif (skill.level == 2) {\n\t\ttab.push(UnitClass.Swamoar);\n\t\ttab.push(UnitClass.SnowWolf);\n\t\ttab.push(UnitClass.SnowAlpha);\n\t\ttab.push(UnitClass.WhiteBear);\n\t} else {\n\t\ttab.push(UnitClass.Boar);\n\t\ttab.push(UnitClass.Wolf);\n\t\ttab.push(UnitClass.Alpha);\n\t\ttab.push(UnitClass.Bear);\n\t}\n\n\tvar idx = dice[0] -1;\n\tvar num = (dice[1]+2)/2;\n\tif (idx ==3) {\n\t\tspawnRenfort(tab[3], (num+1)/2, false);\n\t} else if (idx == 4) {\n\t\tspawnRenfort(tab[0], num, false);\n\t} else {\n\t\tspawnRenfort(tab[idx], num, false);\n\t}\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"value1": 10
+								}
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 13,
+						"y": 3
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "SummonUndead",
+					"name": "Summoning Undead",
+					"desc": "",
+					"mode": 4,
+					"range": {},
+					"props": {
+						"isHeroic": true,
+						"specialAnim": "Taunt",
+						"apCost": 1,
+						"defaultAction": true,
+						"vars": {
+							"value1": 20,
+							"value2": 2,
+							"allowed": true
+						},
+						"itemCost": {
+							"item": "Puppet",
+							"qty": 2
+						},
+						"needDisengaged": true,
+						"useWithoutWeapon": true,
+						"extraFx": "prefabs/fx/fight/BuffCry/BuffCryBlue.fx"
+					},
+					"script": "function onBeginBattle() {\n\tvars.allowed = true;\n\tvars.value2 = 2;\n}\nfunction onBeginAction() {\n\tvars.allowed = false;\n\tif( vars.value2 >= 2 ){\n\t\tvars.allowed = true;\n\t}\n}\nfunction onEval(a) {\n\tif( vars.value2 < 2 ){\n\t\tdontAllow();\n\t}\n}\nfunction onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedNecromancy ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar dice = [];\n\tdice.push(randomDice(will));\n\tdice.push(randomDice(max(will - vars.value1, 0)));\n\n\tvar tab = [];\n\tif (skill.level == 2) {\n\t\ttab.push(UnitClass.PlaguedRat);\n\t\ttab.push(UnitClass.Plagueridden);\n\t\ttab.push(UnitClass.Nightmare);\n\t\ttab.push(UnitClass.SnowCrawler);\n\t} else {\n\t\ttab.push(UnitClass.Molerat);\n\t\ttab.push(UnitClass.GhostBoar);\n\t\ttab.push(UnitClass.GhostWolf);\n\t\ttab.push(UnitClass.Crawler);\n\t}\n\n\tvar idx = dice[0] -1;\n\tif (idx == 4) {\n\t\tspawnRenfort(tab[0], dice[1], false);\n\t} else {\n\t\tspawnRenfort(tab[idx], dice[1], false);\n\t}\n\tvars.value2 = 0;\n}\nfunction onEndRound() {\n\tvars.value2++;\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"value1": 10
+								}
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 14,
+						"y": 7
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "SummonChampion",
+					"name": "Summoning Legendary",
+					"desc": "",
+					"mode": 4,
+					"range": {},
+					"props": {
+						"isHeroic": true,
+						"specialAnim": "Taunt",
+						"apCost": 2,
+						"defaultAction": true,
+						"vars": {
+							"value1": 20,
+							"allowed": true
+						},
+						"itemCost": {
+							"item": "Puppet",
+							"qty": 4
+						},
+						"needDisengaged": true,
+						"useWithoutWeapon": true,
+						"extraFx": "prefabs/fx/fight/BuffCry/BionnTransformation.fx"
+					},
+					"script": "function onBeginBattle() {\n\tvars.allowed = true;\n}\nfunction onEval(a) {\n\tif( !vars.allowed ){\n\t\tdontAllow();\n\t}\n}\nfunction onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedNecromancy ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar dice = [];\n\tdice.push(randomDice(max(will - vars.value1, 0)));\n\tdice.push(randomDice(will));\n\n\tvar tab = [];\n\tvar idx = [];\n\tif (dice[0] == 2) {\n\t\ttab.push(UnitClass.PuzzleMan);\n\t\tidx.push(1);\n\t} else if (dice[0] == 3) {\n\t\tif (skill.level == 2 && dice[1] > 3 ) {\n\t\t\ttab.push(UnitClass.Kaghal);\n\t\t\tidx.push(1);\n\t\t} else {\n\t\t\ttab.push(UnitClass.Smot);\n\t\t\tidx.push(1);\n\t\t}\n\t} else if (dice[0] == 4) {\n\t\tif (skill.level == 2 && dice[1] > 3 ) {\n\t\t\ttab.push(UnitClass.CrawlerChampion);\n\t\t\tidx.push(1);\n\t\t} else {\n\t\t\ttab.push(UnitClass.Kogo);\n\t\t\ttab.push(UnitClass.Toro);\n\t\t\tidx.push(1);\n\t\t\tidx.push(1);\n\t\t}\n\t} else if (dice[0] == 5) {\n\t\tif (skill.level == 2 && dice[1] > 3 ) {\n\t\t\ttab.push(UnitClass.ChristophGluck);\n\t\t\tidx.push(1);\n\t\t} else {\n\t\t\ttab.push(UnitClass.Bionn);\n\t\t\tidx.push(1);\n\t\t}\n\t} else {\n\t\ttab.push(UnitClass.Mobster);\n\t\tidx.push(dice[1]);\n\t}\n\n\tvar i = 0;\n\twhile(i < min(tab.length, idx.length)) {\n\t\tif (idx[i] != 0) {\n\t\t\tspawnRenfort(tab[i], idx[i], false);\n\t\t}\n\t\ti++;\n\t}\n\tvars.allowed = false;\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+					"notes": "",
+					"levels": [
+						{
+							"props": {
+								"vars": {
+									"value1": 10
+								}
+							}
+						}
+					],
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 8,
+						"y": 15
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "Meditation",
+					"name": "Meditation",
+					"desc": "",
+					"mode": 4,
+					"range": {},
+					"props": {
+						"vars": {
+							"value1": 3
+						},
+						"useWithoutWeapon": true,
+						"defaultAction": true
+					},
+					"script": "function onSkill() {\n\tskill.unit.gainsActionPoint(vars.value1);\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 1,
+						"y": 15
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "Enlightment",
+					"name": "Enlightment",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"attributes": [
+							{
+								"kind": "Willpower",
+								"value": 20,
+								"isPercentage": true
+							}
+						]
+					},
+					"script": "",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 1,
+						"y": 13
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "AutoSwapPosition",
+					"name": "Magical Veil",
+					"desc": "",
+					"mode": 2,
+					"range": {
+						"allowedTargets": 1,
+						"radius": 15
+					},
+					"props": {
+						"targetAlly": true,
+						"vars": {
+							"value1": 15
+						},
+						"useWithoutWeapon": true,
+						"tooltipStatus": [
+							{
+								"st": "Dodge"
+							},
+							{
+								"st": "Confus"
+							}
+						]
+					},
+					"script": "function onDamageTaken(a) {\n\tvar arr = [];\n\tfor(u in getAllies(skill.unit)) {\n\t\tif( getDistance(u, skill.unit) <= vars.value1 && !u.isEngaged() && u.canMove() ) {\n\t\t\tarr.push(u);\n\t\t}\n\t}\n\tif( arr.length > 0 ) {\n\t\tvar target = arr[randInt(0, arr.length-1)];\n\t\tskill.unit.swapPositionWith(target, 0.2);\n\t\ttarget.addStatus( Status.Dodge );\n\t\ta.unit.addStatus( Status.Confus, 1 );\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons96PX.png",
+						"size": 96,
+						"x": 9,
+						"y": 17
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "SwapPosition",
+					"name": "SwapPosition",
+					"desc": "",
+					"mode": 0,
+					"range": {
+						"allowedTargets": 1,
+						"baseDistance": 15
+					},
+					"props": {
+						"cursor": "CursorHelp",
+						"tooltipStatus": [
+							{
+								"st": "Dodge"
+							}
+						],
+						"useWithoutWeapon": true
+					},
+					"script": "function onEval(a) {\n\tif( !a.target.canMove() ) {\n\t\tdontAllow();\n\t}\n}\n\nfunction onSkill() {\n\tif( skill.target.canMove() ) {\n\t\tskill.unit.swapPositionWith(skill.target, 0.2);\n\t\tskill.target.addStatus( Status.Dodge );\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 1,
+						"y": 1
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "PriestSkillBook1",
+					"name": "Priest Skill Book I",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedRecovery"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 1
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedRecovery, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 11,
+						"y": 18
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "WarlockSkillBook1",
+					"name": "Warlock Skill Book I",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedCurse"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 1
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedCurse, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 11,
+						"y": 17
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "SorcererSkillBook1",
+					"name": "Sorcerer Skill Book I",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedElement"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 1
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedElement, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 10,
+						"y": 16
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "NecromancerSkillBook1",
+					"name": "Necromancer Skill Book I",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedNecromancy"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 1
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedNecromancy, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 7,
+						"y": 16
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "PriestSkillBook2",
+					"name": "Priest Skill Book II",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedRecovery"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 2
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedRecovery, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 12,
+						"y": 18
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "WarlockSkillBook2",
+					"name": "Warlock Skill Book II",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedCurse"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 2
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedCurse, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 12,
+						"y": 17
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "SorcererSkillBook2",
+					"name": "Sorcerer Skill Book II",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedElement"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 2
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedElement, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 11,
+						"y": 16
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "NecromancerSkillBook2",
+					"name": "Necromancer Skill Book II",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedNecromancy"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 2
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedNecromancy, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 8,
+						"y": 16
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "PriestPath",
+					"name": "Path of Priest",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedRecovery"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 5
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedRecovery, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 13,
+						"y": 18
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "WarlockPath",
+					"name": "Path of Warlock",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedCurse"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 5
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatusPersist(Status.Protection, skill);\n\t\tskill.unit.addStatus(Status.ReinforcedCurse, vars.value1);\n\t\tskill.unit.armor = skill.unit.stats.armor;\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 13,
+						"y": 17
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "SorcererPath",
+					"name": "Path of Sorcerer",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedElement"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 5
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedElement, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 12,
+						"y": 16
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "NecromancerPath",
+					"name": "Path of Necromancer",
+					"desc": "",
+					"mode": 2,
+					"range": {},
+					"props": {
+						"tooltipStatus": [
+							{
+								"st": "ReinforcedNecromancy"
+							}
+						],
+						"vars": {
+							"start": false,
+							"value1": 5
+						}
+					},
+					"script": "function onBeginBattle() {\n\tvars.start = false;\n}\n\nfunction onBeginAction() {\n\tif ( vars.start == false ) {\n\t\tskill.unit.addStatus(Status.ReinforcedNecromancy, vars.value1);\n\t\tvars.start = true;\n\t}\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons_Resources.png",
+						"size": 96,
+						"x": 9,
+						"y": 16
+					},
+					"iconeDone": true,
+					"group": 16,
+					"done": 2
+				},
+				{
+					"id": "MagicMissile",
+					"name": "Magical Missile",
+					"desc": "",
+					"mode": 1,
+					"range": {
+						"minDistance": 1,
+						"baseDistance": 6
+					},
+					"props": {
+						"needDisengaged": true,
+						"castFx": "prefabs/fx/fight/hits & impacts/impactElectrical.fx",
+						"isAttack": true,
+						"defaultAction": true,
+						"vars": {
+							"multiplier": 0.4,
+							"fixdmg": 50,
+							"elite": 0.2
+						},
+						"flags": 1
+					},
+					"script": "function onEval(a) {\n\ta.dmg += calculateDamage(a.target);\n}\nfunction calculateDamage(t) {\n\tvar target_hp = t.health + t.armor;\n\tif (target_hp == null) {\n\t\ttarget_hp = t.stats.health;\n\t}\n\tif ( t.hasStatus(Status.Champion) ) target_hp = floor(target_hp * vars.elite);\n\tvar damage = (target_hp * vars.multiplier) + vars.fixdmg;\n\tdamage = damage * skill.unit.stats.willpower / 100;\n\treturn ceil(damage);\n}",
+					"notes": "",
+					"icon": {
+						"file": "ui/Icons/BattleIcons_02_96PX.png",
+						"size": 96,
+						"x": 0,
+						"y": 3
+					},
+					"minDmg": 6,
+					"maxDmg": 10,
+					"iconeDone": true,
+					"group": 3,
+					"done": 2
 				},
 				{
 					"id": "Protection",
@@ -130888,6 +133277,11 @@
 					"id": "AttackStance"
 				},
 				{
+					"title": "Wand",
+					"level": 1,
+					"id": "TargetHeal"
+				},
+				{
 					"title": "Lefthands",
 					"id": "Protection"
 				},
@@ -133481,6 +135875,122 @@
 					}
 				},
 				{
+					"id": "ReinforcedRecovery",
+					"name": "Reinforced Recovery",
+					"desc": "",
+					"props": {
+						"stackable": true,
+						"maxStacks": 10
+					},
+					"group": 4,
+					"icon": {
+						"file": "ui/Icons/statusIcons.png",
+						"size": 32,
+						"x": 13,
+						"y": 8
+					},
+					"attributes": [
+						{
+							"kind": "Willpower",
+							"value": 2,
+							"isPercentage": true,
+							"valueEasy": 3,
+							"valueHard": 1
+						}
+					],
+					"iconeDone": true
+				},
+				{
+					"id": "ReinforcedCurse",
+					"name": "Reinforced Curse",
+					"desc": "",
+					"props": {
+						"stackable": true,
+						"maxStacks": 10
+					},
+					"group": 4,
+					"icon": {
+						"file": "ui/Icons/statusIcons.png",
+						"size": 32,
+						"x": 13,
+						"y": 8
+					},
+					"attributes": [
+						{
+							"kind": "Willpower",
+							"value": 2,
+							"isPercentage": true,
+							"valueEasy": 3,
+							"valueHard": 1
+						}, 
+						{
+							"kind": "Armor",
+							"value": 10,
+							"valueEasy": 15,
+							"valueHard": 5
+						}, 
+						{
+							"kind": "Guard",
+							"value": 6,
+							"valueEasy": 9,
+							"valueHard": 3
+						}
+					],
+					"iconeDone": true
+				},
+				{
+					"id": "ReinforcedElement",
+					"name": "Reinforced Element",
+					"desc": "",
+					"props": {
+						"stackable": true,
+						"maxStacks": 10
+					},
+					"group": 4,
+					"icon": {
+						"file": "ui/Icons/statusIcons.png",
+						"size": 32,
+						"x": 13,
+						"y": 8
+					},
+					"attributes": [
+						{
+							"kind": "Willpower",
+							"value": 2,
+							"isPercentage": true,
+							"valueEasy": 3,
+							"valueHard": 1
+						}
+					],
+					"iconeDone": true
+				},
+				{
+					"id": "ReinforcedNecromancy",
+					"name": "Reinforced Necromancy",
+					"desc": "",
+					"props": {
+						"stackable": true,
+						"maxStacks": 10
+					},
+					"group": 4,
+					"icon": {
+						"file": "ui/Icons/statusIcons.png",
+						"size": 32,
+						"x": 13,
+						"y": 8
+					},
+					"attributes": [
+						{
+							"kind": "Willpower",
+							"value": 2,
+							"isPercentage": true,
+							"valueEasy": 3,
+							"valueHard": 1
+						}
+					],
+					"iconeDone": true
+				},
+				{
 					"id": "Weakening",
 					"name": "Affaiblissement",
 					"desc": "[DamageBonusPercent] réduits de [ATTR_0]%.",
@@ -135807,7 +138317,7 @@
 				},
 				{
 					"id": "Willpower",
-					"defaultValue": 10,
+					"defaultValue": 8,
 					"name": "Volonté",
 					"desc": "Permet de renforcer le Moral de la troupe pendant les combats. Augmente également le [CritHitPercent].",
 					"canUp": true,
@@ -148980,8 +151490,8 @@
 				},
 				{
 					"id": "PitonPlaceRope",
-					"color": 12296830,
-					"value": 0.15
+					"color": 16753920,
+					"value": 0.2
 				},
 				{
 					"id": "RoamingUnitScale",
@@ -153297,7 +155807,7 @@
 				},
 				{
 					"id": "WillpowerForNotDying",
-					"value": 15,
+					"value": 50,
 					"info": "Willpower required to trigger \"Resolve\" (protect the first dying) + MaxWillPower"
 				},
 				{
