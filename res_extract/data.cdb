@@ -94453,6 +94453,380 @@
 					"iconeDone": true
 				},
 				{
+					"id": "Mage",
+					"weaponTypes": [
+						{
+							"wp": "Wand"
+						}
+					],
+					"baseSkills": [
+						{
+							"skill": "Wrath",
+							"minLevel": 0
+						},
+						{
+							"skill": "Dash",
+							"minLevel": 0
+						},
+						{
+							"skill": "FirstAid",
+							"minLevel": 0
+						},
+						{
+							"skill": "TargetHeal",
+							"minLevel": 2
+						},
+						{
+							"skill": "FearVoice",
+							"minLevel": 2
+						},
+						{
+							"skill": "EarthQuake",
+							"minLevel": 2
+						},
+						{
+							"skill": "SummonBeast",
+							"minLevel": 2
+						},
+						{
+							"skill": "RangeHeal",
+							"minLevel": 5
+						},
+						{
+							"skill": "DeathScent",
+							"minLevel": 5
+						},
+						{
+							"skill": "FireBall",
+							"minLevel": 5
+						},
+						{
+							"skill": "SummonUndead",
+							"minLevel": 5
+						},
+						{
+							"skill": "Meditation",
+							"minLevel": 8
+						},
+						{
+							"skill": "Enlightment",
+							"minLevel": 8
+						},
+						{
+							"skill": "AutoSwapPosition",
+							"minLevel": 8
+						},
+						{
+							"skill": "GroupHeal",
+							"minLevel": 10
+						},
+						{
+							"skill": "PainLess",
+							"minLevel": 10
+						},
+						{
+							"skill": "ThunderStorm",
+							"minLevel": 10
+						},
+						{
+							"skill": "SummonChampion",
+							"minLevel": 10
+						},
+						{
+							"skill": "SwapPosition",
+							"minLevel": 12
+						},
+						{
+							"skill": "ClassSpecialization",
+							"minLevel": 12
+						}
+					],
+					"props": {
+						"flags": 2
+					},
+					"stats": [
+						{
+							"value": 4,
+							"attribute": "Strength",
+							"upValue": 20
+						},
+						{
+							"value": 4,
+							"attribute": "Dexterity",
+							"upValue": 20
+						},
+						{
+							"value": 6,
+							"attribute": "Constitution",
+							"upValue": 32
+						},
+						{
+							"value": 0,
+							"attribute": "CritHitPercent",
+							"upValue": 10
+						},
+						{
+							"value": 6,
+							"attribute": "Movement"
+						},
+						{
+							"value": 6,
+							"attribute": "Willpower",
+							"upValue": 30
+						}
+					],
+					"model": "chars/Prefabs/Prefab_WP.prefab",
+					"notes": "",
+					"name": "Wizard",
+					"tier": 0,
+					"equipment": [
+						{
+							"armor": "BaseArmorStart1",
+							"weapon": "WandStart"
+						},
+						{
+							"regions": [
+								{
+									"region": "Ihraa_1"
+								}
+							],
+							"weapon": "WandStart",
+							"armor": "BaseArmorCommonBelerion1"
+						}
+					],
+					"rarity": 0,
+					"timelinePriority": 0,
+					"iconeDone": true
+				},
+				{
+					"id": "Priest",
+					"weaponTypes": [
+						{
+							"wp": "Wand"
+						}
+					],
+					"baseSkills": [
+						{
+							"skill": "PriestPath"
+						}
+					],
+					"props": {
+						"armorKind": "ArmorLight",
+						"flags": 32,
+						"helmetKind": "HelmetLight"
+					},
+					"stats": [
+						{
+							"value": 4,
+							"attribute": "Strength",
+							"upValue": 20
+						},
+						{
+							"value": 4,
+							"attribute": "Dexterity",
+							"upValue": 20
+						},
+						{
+							"value": 6,
+							"attribute": "Constitution",
+							"upValue": 32
+						},
+						{
+							"value": 0,
+							"attribute": "CritHitPercent",
+							"upValue": 10
+						},
+						{
+							"value": 6,
+							"attribute": "Movement"
+						},
+						{
+							"value": 6,
+							"attribute": "Willpower",
+							"upValue": 30
+						}
+					],
+					"model": "chars/Prefabs/Prefab_WP.prefab",
+					"notes": "",
+					"name": "Priest",
+					"tier": 1,
+					"equipment": [],
+					"rarity": 0,
+					"timelinePriority": 0,
+					"iconeDone": true
+				},
+				{
+					"id": "Warlock",
+					"weaponTypes": [
+						{
+							"wp": "Wand"
+						}
+					],
+					"baseSkills": [
+						{
+							"skill": "WarlockPath"
+						}
+					],
+					"props": {
+						"armorKind": "ArmorLight",
+						"flags": 32,
+						"helmetKind": "HelmetLight"
+					},
+					"stats": [
+						{
+							"value": 4,
+							"attribute": "Strength",
+							"upValue": 20
+						},
+						{
+							"value": 4,
+							"attribute": "Dexterity",
+							"upValue": 20
+						},
+						{
+							"value": 6,
+							"attribute": "Constitution",
+							"upValue": 32
+						},
+						{
+							"value": 0,
+							"attribute": "CritHitPercent",
+							"upValue": 10
+						},
+						{
+							"value": 6,
+							"attribute": "Movement"
+						},
+						{
+							"value": 6,
+							"attribute": "Willpower",
+							"upValue": 30
+						}
+					],
+					"model": "chars/Prefabs/Prefab_WP.prefab",
+					"notes": "",
+					"name": "Warlock",
+					"tier": 1,
+					"equipment": [],
+					"rarity": 0,
+					"timelinePriority": 0,
+					"iconeDone": true
+				},
+				{
+					"id": "Sorcerer",
+					"weaponTypes": [
+						{
+							"wp": "Wand"
+						}
+					],
+					"baseSkills": [
+						{
+							"skill": "SorcererPath"
+						}
+					],
+					"props": {
+						"armorKind": "ArmorLight",
+						"flags": 32,
+						"helmetKind": "HelmetLight"
+					},
+					"stats": [
+						{
+							"value": 4,
+							"attribute": "Strength",
+							"upValue": 20
+						},
+						{
+							"value": 4,
+							"attribute": "Dexterity",
+							"upValue": 20
+						},
+						{
+							"value": 6,
+							"attribute": "Constitution",
+							"upValue": 32
+						},
+						{
+							"value": 0,
+							"attribute": "CritHitPercent",
+							"upValue": 10
+						},
+						{
+							"value": 6,
+							"attribute": "Movement"
+						},
+						{
+							"value": 6,
+							"attribute": "Willpower",
+							"upValue": 30
+						}
+					],
+					"model": "chars/Prefabs/Prefab_WP.prefab",
+					"notes": "",
+					"name": "Sorcerer",
+					"tier": 1,
+					"equipment": [],
+					"rarity": 0,
+					"timelinePriority": 0,
+					"iconeDone": true
+				},
+				{
+					"id": "Necromancer",
+					"weaponTypes": [
+						{
+							"wp": "Wand"
+						}
+					],
+					"baseSkills": [
+						{
+							"skill": "NecromancerPath"
+						}
+					],
+					"props": {
+						"armorKind": "ArmorLight",
+						"flags": 32,
+						"helmetKind": "HelmetLight"
+					},
+					"stats": [
+						{
+							"value": 4,
+							"attribute": "Strength",
+							"upValue": 20
+						},
+						{
+							"value": 4,
+							"attribute": "Dexterity",
+							"upValue": 20
+						},
+						{
+							"value": 6,
+							"attribute": "Constitution",
+							"upValue": 32
+						},
+						{
+							"value": 0,
+							"attribute": "CritHitPercent",
+							"upValue": 10
+						},
+						{
+							"value": 6,
+							"attribute": "Movement"
+						},
+						{
+							"value": 6,
+							"attribute": "Willpower",
+							"upValue": 30
+						}
+					],
+					"model": "chars/Prefabs/Prefab_WP.prefab",
+					"notes": "",
+					"name": "Necromancer",
+					"tier": 1,
+					"equipment": [],
+					"rarity": 0,
+					"timelinePriority": 0,
+					"iconeDone": true
+				},
+				{
 					"id": "Pugilist",
 					"weaponTypes": [
 						{
@@ -94846,367 +95220,6 @@
 					"iconeDone": true,
 					"notes": "",
 					"name": "Tyran"
-				},
-				{
-					"id": "Mage",
-					"weaponTypes": [
-						{
-							"wp": "Wand"
-						}
-					],
-					"baseSkills": [
-						{
-							"skill": "Wrath",
-							"minLevel": 0
-						},
-						{
-							"skill": "Dash",
-							"minLevel": 0
-						},
-						{
-							"skill": "FirstAid",
-							"minLevel": 0
-						},
-						{
-							"skill": "TargetHeal",
-							"minLevel": 2
-						},
-						{
-							"skill": "FearVoice",
-							"minLevel": 2
-						},
-						{
-							"skill": "EarthQuake",
-							"minLevel": 2
-						},
-						{
-							"skill": "SummonBeast",
-							"minLevel": 2
-						},
-						{
-							"skill": "RangeHeal",
-							"minLevel": 5
-						},
-						{
-							"skill": "DeathScent",
-							"minLevel": 5
-						},
-						{
-							"skill": "FireBall",
-							"minLevel": 5
-						},
-						{
-							"skill": "SummonUndead",
-							"minLevel": 5
-						},
-						{
-							"skill": "Meditation",
-							"minLevel": 8
-						},
-						{
-							"skill": "Enlightment",
-							"minLevel": 8
-						},
-						{
-							"skill": "AutoSwapPosition",
-							"minLevel": 8
-						},
-						{
-							"skill": "GroupHeal",
-							"minLevel": 10
-						},
-						{
-							"skill": "PainLess",
-							"minLevel": 10
-						},
-						{
-							"skill": "ThunderStorm",
-							"minLevel": 10
-						},
-						{
-							"skill": "SummonChampion",
-							"minLevel": 10
-						},
-						{
-							"skill": "SwapPosition",
-							"minLevel": 12
-						},
-						{
-							"skill": "ClassSpecialization",
-							"minLevel": 12
-						}
-					],
-					"props": {
-						"flags": 2
-					},
-					"stats": [
-						{
-							"value": 4,
-							"attribute": "Strength",
-							"upValue": 20
-						},
-						{
-							"value": 4,
-							"attribute": "Dexterity",
-							"upValue": 20
-						},
-						{
-							"value": 6,
-							"attribute": "Constitution",
-							"upValue": 32
-						},
-						{
-							"value": 0,
-							"attribute": "CritHitPercent",
-							"upValue": 10
-						},
-						{
-							"value": 6,
-							"attribute": "Movement"
-						},
-						{
-							"value": 6,
-							"attribute": "Willpower",
-							"upValue": 30
-						}
-					],
-					"model": "chars/Prefabs/Prefab_WP.prefab",
-					"notes": "",
-					"name": "Wizard",
-					"tier": 0,
-					"equipment": [
-						{
-							"armor": "BaseArmorStart1",
-							"weapon": "WandStart"
-						}
-					],
-					"rarity": 0,
-					"timelinePriority": 0,
-					"iconeDone": true
-				},
-				{
-					"id": "Priest",
-					"weaponTypes": [
-						{
-							"wp": "Wand"
-						}
-					],
-					"baseSkills": [
-						{
-							"skill": "PriestPath"
-						}
-					],
-					"props": {
-						"armorKind": "ArmorLight",
-						"flags": 32
-					},
-					"stats": [
-						{
-							"value": 4,
-							"attribute": "Strength",
-							"upValue": 20
-						},
-						{
-							"value": 4,
-							"attribute": "Dexterity",
-							"upValue": 20
-						},
-						{
-							"value": 6,
-							"attribute": "Constitution",
-							"upValue": 32
-						},
-						{
-							"value": 0,
-							"attribute": "CritHitPercent",
-							"upValue": 10
-						},
-						{
-							"value": 6,
-							"attribute": "Movement"
-						},
-						{
-							"value": 6,
-							"attribute": "Willpower",
-							"upValue": 30
-						}
-					],
-					"model": "chars/Prefabs/Prefab_WP.prefab",
-					"notes": "",
-					"name": "Priest",
-					"tier": 1,
-					"equipment": [],
-					"rarity": 0,
-					"timelinePriority": 0,
-					"iconeDone": true
-				},
-				{
-					"id": "Warlock",
-					"weaponTypes": [
-						{
-							"wp": "Wand"
-						}
-					],
-					"baseSkills": [
-						{
-							"skill": "WarlockPath"
-						}
-					],
-					"props": {
-						"armorKind": "ArmorLight",
-						"flags": 32
-					},
-					"stats": [
-						{
-							"value": 4,
-							"attribute": "Strength",
-							"upValue": 20
-						},
-						{
-							"value": 4,
-							"attribute": "Dexterity",
-							"upValue": 20
-						},
-						{
-							"value": 6,
-							"attribute": "Constitution",
-							"upValue": 32
-						},
-						{
-							"value": 0,
-							"attribute": "CritHitPercent",
-							"upValue": 10
-						},
-						{
-							"value": 6,
-							"attribute": "Movement"
-						},
-						{
-							"value": 6,
-							"attribute": "Willpower",
-							"upValue": 30
-						}
-					],
-					"model": "chars/Prefabs/Prefab_WP.prefab",
-					"notes": "",
-					"name": "Warlock",
-					"tier": 1,
-					"equipment": [],
-					"rarity": 0,
-					"timelinePriority": 0,
-					"iconeDone": true
-				},
-				{
-					"id": "Sorcerer",
-					"weaponTypes": [
-						{
-							"wp": "Wand"
-						}
-					],
-					"baseSkills": [
-						{
-							"skill": "SorcererPath"
-						}
-					],
-					"props": {
-						"armorKind": "ArmorLight",
-						"flags": 32
-					},
-					"stats": [
-						{
-							"value": 4,
-							"attribute": "Strength",
-							"upValue": 20
-						},
-						{
-							"value": 4,
-							"attribute": "Dexterity",
-							"upValue": 20
-						},
-						{
-							"value": 6,
-							"attribute": "Constitution",
-							"upValue": 32
-						},
-						{
-							"value": 0,
-							"attribute": "CritHitPercent",
-							"upValue": 10
-						},
-						{
-							"value": 6,
-							"attribute": "Movement"
-						},
-						{
-							"value": 6,
-							"attribute": "Willpower",
-							"upValue": 30
-						}
-					],
-					"model": "chars/Prefabs/Prefab_WP.prefab",
-					"notes": "",
-					"name": "Sorcerer",
-					"tier": 1,
-					"equipment": [],
-					"rarity": 0,
-					"timelinePriority": 0,
-					"iconeDone": true
-				},
-				{
-					"id": "Necromancer",
-					"weaponTypes": [
-						{
-							"wp": "Wand"
-						}
-					],
-					"baseSkills": [
-						{
-							"skill": "NecromancerPath"
-						}
-					],
-					"props": {
-						"armorKind": "ArmorLight",
-						"flags": 32
-					},
-					"stats": [
-						{
-							"value": 4,
-							"attribute": "Strength",
-							"upValue": 20
-						},
-						{
-							"value": 4,
-							"attribute": "Dexterity",
-							"upValue": 20
-						},
-						{
-							"value": 6,
-							"attribute": "Constitution",
-							"upValue": 32
-						},
-						{
-							"value": 0,
-							"attribute": "CritHitPercent",
-							"upValue": 10
-						},
-						{
-							"value": 6,
-							"attribute": "Movement"
-						},
-						{
-							"value": 6,
-							"attribute": "Willpower",
-							"upValue": 30
-						}
-					],
-					"model": "chars/Prefabs/Prefab_WP.prefab",
-					"notes": "",
-					"name": "Necromancer",
-					"tier": 1,
-					"equipment": [],
-					"rarity": 0,
-					"timelinePriority": 0,
-					"iconeDone": true
 				},
 				{
 					"id": "Mobster",
@@ -104737,14 +104750,14 @@
 					"id": "Brute"
 				},
 				{
-					"level": 1,
-					"title": "Fists",
-					"id": "Pugilist"
-				},
-				{
 					"title": "Wand",
 					"level": 1,
 					"id": "Mage"
+				},
+				{
+					"level": 1,
+					"title": "Fists",
+					"id": "Pugilist"
 				},
 				{
 					"title": "Enemies",
@@ -105028,7 +105041,7 @@
 						},
 						{
 							"slot": 2,
-							"unitClass": "Rogue"
+							"unitClass": "Mage"
 						},
 						{
 							"slot": 3,
@@ -112711,7 +112724,7 @@
 						"useWithoutWeapon": true,
 						"extraFx": "prefabs/fx/fight/BuffCry/BuffCryWhite.fx"
 					},
-					"script": "function onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedNecromancy ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar dice = [];\n\tdice.push(randomDice(will));\n\tdice.push(randomDice(max(will - vars.value1, 0)));\n\n\tvar tab = [];\n\tif (skill.level == 2) {\n\t\ttab.push(UnitClass.Swamoar);\n\t\ttab.push(UnitClass.SnowWolf);\n\t\ttab.push(UnitClass.SnowAlpha);\n\t\ttab.push(UnitClass.WhiteBear);\n\t} else {\n\t\ttab.push(UnitClass.Boar);\n\t\ttab.push(UnitClass.Wolf);\n\t\ttab.push(UnitClass.Alpha);\n\t\ttab.push(UnitClass.Bear);\n\t}\n\n\tvar idx = dice[0] -1;\n\tvar num = (dice[1]+2)/2;\n\tif (idx ==3) {\n\t\tspawnRenfort(tab[3], (num+1)/2, false);\n\t} else if (idx == 4) {\n\t\tspawnRenfort(tab[0], num, false);\n\t} else {\n\t\tspawnRenfort(tab[idx], num, false);\n\t}\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+					"script": "function onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedNecromancy ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar dice = [];\n\tdice.push(randomDice(will));\n\tdice.push(randomDice(max(will - vars.value1, 0)));\n\n\tvar tab = [];\n\tif (skill.level == 2) {\n\t\ttab.push(UnitClass.Swamoar);\n\t\ttab.push(UnitClass.SnowWolf);\n\t\ttab.push(UnitClass.SnowAlpha);\n\t\ttab.push(UnitClass.SaurianAlpha);\n\t} else {\n\t\ttab.push(UnitClass.Boar);\n\t\ttab.push(UnitClass.Wolf);\n\t\ttab.push(UnitClass.Alpha);\n\t\ttab.push(UnitClass.Bear);\n\t}\n\n\tvar idx = dice[0] -1;\n\tvar num = (dice[1]+2)/2;\n\tif (idx ==3) {\n\t\tspawnRenfort(tab[3], (num+1)/2, false);\n\t} else if (idx == 4) {\n\t\tspawnRenfort(tab[0], num, false);\n\t} else {\n\t\tspawnRenfort(tab[idx], num, false);\n\t}\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
 					"notes": "",
 					"levels": [
 						{
@@ -112756,7 +112769,7 @@
 						"useWithoutWeapon": true,
 						"extraFx": "prefabs/fx/fight/BuffCry/BuffCryBlue.fx"
 					},
-					"script": "function onBeginBattle() {\n\tvars.allowed = true;\n\tvars.value2 = 2;\n}\nfunction onBeginAction() {\n\tvars.allowed = false;\n\tif( vars.value2 >= 2 ){\n\t\tvars.allowed = true;\n\t}\n}\nfunction onEval(a) {\n\tif( vars.value2 < 2 ){\n\t\tdontAllow();\n\t}\n}\nfunction onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedNecromancy ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar dice = [];\n\tdice.push(randomDice(will));\n\tdice.push(randomDice(max(will - vars.value1, 0)));\n\n\tvar tab = [];\n\tif (skill.level == 2) {\n\t\ttab.push(UnitClass.PlaguedRat);\n\t\ttab.push(UnitClass.Plagueridden);\n\t\ttab.push(UnitClass.Nightmare);\n\t\ttab.push(UnitClass.SnowCrawler);\n\t} else {\n\t\ttab.push(UnitClass.Molerat);\n\t\ttab.push(UnitClass.GhostBoar);\n\t\ttab.push(UnitClass.GhostWolf);\n\t\ttab.push(UnitClass.Crawler);\n\t}\n\n\tvar idx = dice[0] -1;\n\tif (idx == 4) {\n\t\tspawnRenfort(tab[0], dice[1], false);\n\t} else {\n\t\tspawnRenfort(tab[idx], dice[1], false);\n\t}\n\tvars.value2 = 0;\n}\nfunction onEndRound() {\n\tvars.value2++;\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
+					"script": "function onBeginBattle() {\n\tvars.allowed = true;\n\tvars.value2 = 2;\n}\nfunction onBeginAction() {\n\tvars.allowed = false;\n\tif( vars.value2 >= 2 ){\n\t\tvars.allowed = true;\n\t}\n}\nfunction onEval(a) {\n\tif( vars.value2 < 2 ){\n\t\tdontAllow();\n\t}\n}\nfunction onSkill() {\n\tplay();\n\tvar will = min(skill.unit.stats.willpower, 50);\n\tfor ( s in skill.unit.getAllStatus() ) {\n\t\tif( s.kind == Status.ReinforcedNecromancy ) {\n\t\t\twill += ( s.count * 2 );\n\t\t\tbreak;\n\t\t}\n\t}\n\tvar dice = [];\n\tdice.push(randomDice(will));\n\tdice.push(randomDice(max(will - vars.value1, 0)));\n\n\tvar tab = [];\n\tif (skill.level == 2) {\n\t\ttab.push(UnitClass.Plagueridden);\n\t\ttab.push(UnitClass.Nightmare);\n\t\ttab.push(UnitClass.GhostBear);\n\t\ttab.push(UnitClass.SeaCrawler);\n\t} else {\n\t\ttab.push(UnitClass.PlaguedRat);\n\t\ttab.push(UnitClass.GhostBoar);\n\t\ttab.push(UnitClass.GhostWolf);\n\t\ttab.push(UnitClass.SnowCrawler);\n\t}\n\n\tvar idx = dice[0] -1;\n\tif (idx == 4) {\n\t\tspawnRenfort(tab[0], dice[1], false);\n\t} else {\n\t\tspawnRenfort(tab[idx], dice[1], false);\n\t}\n\tvars.value2 = 0;\n}\nfunction onEndRound() {\n\tvars.value2++;\n}\nfunction randomDice (w) {\n\tvar dice = randInt(w, 100);\n\tif ( dice > 90 ) return 5;\n\tif ( dice > 80 ) return 4;\n\tif ( dice > 60 ) return 3;\n\tif ( dice > 30 ) return 2;\n\telse return 1;\n}",
 					"notes": "",
 					"levels": [
 						{
@@ -115720,7 +115733,7 @@
 					"props": {
 						"vars": {
 							"allowed": false,
-							"value1": 50,
+							"value1": 100,
 							"value2": 25
 						},
 						"apCost": 0,
@@ -115729,11 +115742,12 @@
 							"item": "MasterBall",
 							"qty": 1
 						},
+						"hitFx": "prefabs/fx/fight/Explosion/SmokeBomb/SmokeBomb.fx",
 						"projectileEndFx": "prefabs/fx/fight/BattlefieldSpecial/PumkinExplosion.fx",
 						"throwFx": "prefabs/fx/fight/Explosion/Grenade/FlameBallThrowTrail.fx",
 						"needDisengaged": true
 					},
-					"script": "function onBeginAction() {\n\tvars.allowed = false;\n\tfor( u in getFoes(skill.unit) )\n\t\tif( canCaptureTarget(u) ) {\n\t\t\tvars.allowed = true;\n\t\t\tbreak;\n\t\t}\n}\n\nfunction onEval(a) {\n\tif( !canCaptureTarget(a.target) ){\n\t\tdontAllow();\n\t}\n}\n\nfunction onSkill() {\n\tplayAttack();\n\tfor (t in skill.getTargets()){\n\t\tif ( randInt(0, 100) <= vars.value1 ) {\n\t\t\tcaptureTarget(t);\n\t\t\tspawnFx();\n\t\t}\n\t}\n}\n\nfunction canCaptureTarget(t){\n\treturn ( (t.health / t.stats.health) < (vars.value2/100) );\n}",
+					"script": "function onBeginAction() {\n\tvars.allowed = false;\n\tfor( u in getFoes(skill.unit) )\n\t\tif( canCaptureTarget(u) ) {\n\t\t\tvars.allowed = true;\n\t\t\tbreak;\n\t\t}\n}\n\nfunction onEval(a) {\n\tif( !canCaptureTarget(a.target) ){\n\t\tdontAllow();\n\t}\n}\n\nfunction onSkill() {\n\tplayAttack();\n\tfor (t in skill.getTargets()){\n\t\t\tcaptureTarget(t);\n\t\t\tspawnFx();\n\t}\n}\n\nfunction canCaptureTarget(t){\n\treturn ( (t.health / t.stats.health) < (vars.value2/100) );\n}",
 					"notes": "",
 					"icon": {
 						"file": "ui/Icons/BattleIcons_02_96PX.png",

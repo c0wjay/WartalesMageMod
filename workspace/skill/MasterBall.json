@@ -12,7 +12,8 @@
   "props": {
     "vars": {
       "allowed": false,
-      "value1": 50
+      "value1": 100,
+      "value2": 25
     },
     "apCost": 0,
     "specialAnim": "ThrowLeftGrenade",
@@ -20,11 +21,12 @@
       "item": "MasterBall",
       "qty": 1
     },
+    "hitFx": "prefabs/fx/fight/Explosion/SmokeBomb/SmokeBomb.fx",
     "projectileEndFx": "prefabs/fx/fight/BattlefieldSpecial/PumkinExplosion.fx",
     "throwFx": "prefabs/fx/fight/Explosion/Grenade/FlameBallThrowTrail.fx",
     "needDisengaged": true
   },
-  "script": "function onBeginAction() {\n\tvars.allowed = false;\n\tfor( u in getFoes(skill.unit) )\n\t\tif( canCaptureTarget(u) ) {\n\t\t\tvars.allowed = true;\n\t\t\tbreak;\n\t\t}\n}\n\nfunction onEval(a) {\n\tif( !canCaptureTarget(a.target) ){\n\t\tdontAllow();\n\t}\n}\n\nfunction onSkill() {\n\tfor (t in skill.getTargets()){\n\t\tif ( randInt(0, 100) <= vars.value1 ) {\n\t\t\tcaptureTarget(t);\n\t\t}\n\t}\n}\n\nfunction canCaptureTarget(t){\n\treturn true;\n}",
+  "script": "function onBeginAction() {\n\tvars.allowed = false;\n\tfor( u in getFoes(skill.unit) )\n\t\tif( canCaptureTarget(u) ) {\n\t\t\tvars.allowed = true;\n\t\t\tbreak;\n\t\t}\n}\n\nfunction onEval(a) {\n\tif( !canCaptureTarget(a.target) ){\n\t\tdontAllow();\n\t}\n}\n\nfunction onSkill() {\n\tplayAttack();\n\tfor (t in skill.getTargets()){\n\t\t\tcaptureTarget(t);\n\t\t\tspawnFx();\n\t}\n}\n\nfunction canCaptureTarget(t){\n\treturn ( (t.health / t.stats.health) < (vars.value2/100) );\n}",
   "notes": "",
   "icon": {
     "file": "ui/Icons/BattleIcons_02_96PX.png",
