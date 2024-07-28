@@ -21319,7 +21319,6 @@
 						"hideInCheatMenu": true
 					},
 					"iconeDone": true,
-					"group": 2,
 					"type": "Wand",
 					"__ignoreLoc__": true,
 					"done": 2
@@ -25697,7 +25696,7 @@
 					"price": 11,
 					"desc": "",
 					"rarity": 0,
-					"group": 4,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -25728,7 +25727,7 @@
 					"price": 89,
 					"desc": "",
 					"rarity": 1,
-					"group": 4,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -25759,7 +25758,7 @@
 					"price": 129,
 					"desc": "",
 					"rarity": 1,
-					"group": 4,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -25790,7 +25789,7 @@
 					"price": 169,
 					"desc": "",
 					"rarity": 1,
-					"group": 4,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -25821,7 +25820,7 @@
 					"price": 234,
 					"desc": "",
 					"rarity": 1,
-					"group": 4,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -26928,7 +26927,7 @@
 					"price": 129,
 					"desc": "",
 					"rarity": 1,
-					"group": 12,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -26953,7 +26952,7 @@
 					"price": 129,
 					"desc": "",
 					"rarity": 1,
-					"group": 12,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -26978,7 +26977,7 @@
 					"price": 129,
 					"desc": "",
 					"rarity": 1,
-					"group": 12,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -27003,7 +27002,7 @@
 					"price": 129,
 					"desc": "",
 					"rarity": 1,
-					"group": 12,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -27028,7 +27027,7 @@
 					"price": 234,
 					"desc": "",
 					"rarity": 1,
-					"group": 12,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -27053,7 +27052,7 @@
 					"price": 234,
 					"desc": "",
 					"rarity": 1,
-					"group": 12,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -27078,7 +27077,7 @@
 					"price": 234,
 					"desc": "",
 					"rarity": 1,
-					"group": 12,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -27103,7 +27102,7 @@
 					"price": 234,
 					"desc": "",
 					"rarity": 1,
-					"group": 12,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -28436,7 +28435,7 @@
 						"skill": "MasterBall",
 						"model": "chars/Weapons/LeftHand_BlindingPowder.fbx"
 					},
-					"group": 12,
+					"done": 2,
 					"type": "LeftHand",
 					"icon": {
 						"file": "ui/Icons_Resources.png",
@@ -29055,7 +29054,6 @@
 					"props": {
 						"hideInCheatMenu": true
 					},
-					"group": 13,
 					"type": "BundleForge",
 					"desc": "",
 					"iconeDone": true,
@@ -29075,7 +29073,6 @@
 					"props": {
 						"hideInCheatMenu": true
 					},
-					"group": 13,
 					"type": "BundleForge",
 					"desc": "",
 					"iconeDone": true,
@@ -40827,7 +40824,7 @@
 					"price": 1,
 					"desc": "",
 					"rarity": 1,
-					"group": 21,
+					"done": 2,
 					"iconeDone": true
 				},
 				{
@@ -111698,7 +111695,6 @@
 						"y": 12
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -111751,7 +111747,6 @@
 						"y": 13
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -111793,7 +111788,6 @@
 						"y": 15
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -111850,7 +111844,6 @@
 						"y": 3
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -111913,7 +111906,6 @@
 						"y": 7
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -111970,7 +111962,6 @@
 						"y": 0
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112015,7 +112006,6 @@
 						"y": 7
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112072,7 +112062,6 @@
 						"y": 19
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112122,7 +112111,6 @@
 						"y": 19
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112148,7 +112136,6 @@
 					"script": "function onSkill() {\n\tcreateAreaEffect(\"Infinite\", 0);\n}\n\nfunction onZoneIn( a ) {\n\ta.stopMove(true);\n\tcast(Skill.Discharge, { unit : a.target }, skill);\n\ta.target.addStatus(Status.Immobile);\n\ta.remove();\n}",
 					"notes": "",
 					"iconeDone": true,
-					"group": 16,
 					"icon": {
 						"file": "ui/Icons/BattleIcons_02_96PX.png",
 						"size": 96,
@@ -112177,7 +112164,6 @@
 					"notes": "",
 					"done": 2,
 					"iconeDone": true,
-					"group": 16,
 					"minDmg": 1
 				},
 				{
@@ -112220,7 +112206,6 @@
 						"y": 3
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112265,7 +112250,6 @@
 						"y": 7
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112309,7 +112293,6 @@
 						"y": 15
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112334,7 +112317,6 @@
 						"y": 15
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112361,7 +112343,6 @@
 						"y": 13
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112397,7 +112378,6 @@
 						"y": 17
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112427,7 +112407,6 @@
 						"y": 1
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112456,7 +112435,6 @@
 						"y": 18
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112485,7 +112463,6 @@
 						"y": 17
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112514,7 +112491,6 @@
 						"y": 16
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112543,7 +112519,6 @@
 						"y": 16
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112572,7 +112547,6 @@
 						"y": 18
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112601,7 +112575,6 @@
 						"y": 17
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112630,7 +112603,6 @@
 						"y": 16
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112659,7 +112631,6 @@
 						"y": 16
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112688,7 +112659,6 @@
 						"y": 18
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112717,7 +112687,6 @@
 						"y": 17
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112746,7 +112715,6 @@
 						"y": 16
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112775,7 +112743,6 @@
 						"y": 16
 					},
 					"iconeDone": true,
-					"group": 16,
 					"done": 2
 				},
 				{
@@ -112810,7 +112777,6 @@
 					"minDmg": 6,
 					"maxDmg": 10,
 					"iconeDone": true,
-					"group": 3,
 					"done": 2
 				},
 				{
@@ -115756,7 +115722,6 @@
 						"y": 9
 					},
 					"iconeDone": true,
-					"group": 15,
 					"done": 2
 				},
 				{
@@ -135966,7 +135931,6 @@
 						"stackable": true,
 						"maxStacks": 10
 					},
-					"group": 4,
 					"icon": {
 						"file": "ui/Icons/statusIcons.png",
 						"size": 32,
@@ -135992,7 +135956,6 @@
 						"stackable": true,
 						"maxStacks": 10
 					},
-					"group": 4,
 					"icon": {
 						"file": "ui/Icons/statusIcons.png",
 						"size": 32,
@@ -136030,7 +135993,6 @@
 						"stackable": true,
 						"maxStacks": 10
 					},
-					"group": 4,
 					"icon": {
 						"file": "ui/Icons/statusIcons.png",
 						"size": 32,
@@ -136056,7 +136018,6 @@
 						"stackable": true,
 						"maxStacks": 10
 					},
-					"group": 4,
 					"icon": {
 						"file": "ui/Icons/statusIcons.png",
 						"size": 32,
